@@ -650,3 +650,41 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .pl-meal-txt span{font-weight:600;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pl-meal-txt em{font-style:normal;font-size:11px;opacity:.65}
 .pl-meal .pl-swap{flex:0 0 auto}
+
+/* ===== v25: premium polish layer (CRED/Zomato bar) ===== */
+/* images: skeleton base + fade-in when loaded — no pop-in */
+.ph{background:linear-gradient(110deg,rgba(0,0,0,.05) 8%,rgba(0,0,0,.09) 18%,rgba(0,0,0,.05) 33%);background-size:200% 100%;animation:phshimmer 1.4s linear infinite}
+.ph img{opacity:0;transition:opacity .5s cubic-bezier(.22,.61,.36,1)}
+.ph img.ld{opacity:1}
+.ph.ph-fallback{animation:none}
+@keyframes phshimmer{to{background-position-x:-200%}}
+
+/* view transitions: calm, fast, never bouncy */
+.view.vt{animation:viewin .26s cubic-bezier(.22,.61,.36,1)}
+@keyframes viewin{from{opacity:.001;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* topbar: glass */
+.topbar{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+
+/* typography discipline */
+.page-head h1,.home-head h1{letter-spacing:-.02em;font-weight:800}
+.row-sec>h2,.me-sec h2{letter-spacing:-.01em;font-weight:700;font-size:16px}
+.muted{opacity:.62}
+
+/* cards: soft depth, honest press feedback */
+.card{box-shadow:0 1px 2px rgba(16,10,4,.04),0 6px 18px rgba(16,10,4,.05);transition:transform .18s cubic-bezier(.22,.61,.36,1),box-shadow .18s}
+.card:active{transform:scale(.977)}
+.btn,.chip,.qtile,.mood,.deal-chip,.nav-btn{transition:transform .16s cubic-bezier(.22,.61,.36,1),background .16s,opacity .16s}
+.btn:active,.chip:active,.qtile:active,.mood:active,.deal-chip:active{transform:scale(.96)}
+
+/* toast: quiet, floating, glass */
+.toast{border-radius:14px;box-shadow:0 8px 30px rgba(16,10,4,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-weight:600;letter-spacing:.01em}
+
+/* hero: gentle depth */
+.hero-sec{box-shadow:0 10px 34px rgba(16,10,4,.10)}
+
+@media (prefers-reduced-motion: reduce){
+  .view.vt,.ph{animation:none}
+  .ph img{transition:none;opacity:1}
+  .card,.btn,.chip,.qtile,.mood,.deal-chip{transition:none}
+}
