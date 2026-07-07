@@ -23,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2.0.24107">
-  <script src="config.js?v=2.0.24107"></script>
+  <link rel="stylesheet" href="styles.css?v=2.0.24132">
+  <script src="config.js?v=2.0.24132"></script>
   <script src="vendor/kb_engine.js"></script>
   <script src="vendor/health_classifier.js"></script>
   <script src="vendor/kb_brain.js"></script>
@@ -42,23 +42,83 @@ setTimeout(next,1200); // rest streams shortly after first paint, never blocking
 })();</script>
 </head>
 <body>
-  <div id="boot" style="position:fixed;inset:0;display:flex;flex-direction:column;background:#FFF9F2;font-family:'Plus Jakarta Sans',sans-serif;z-index:999;padding:24px 18px">
-    <style>@keyframes bp{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}@keyframes bsh{to{background-position-x:-200%}}.bsk{border-radius:14px;background:linear-gradient(110deg,#f3e9de 8%,#efe2d2 18%,#f3e9de 33%);background-size:200% 100%;animation:bsh 1.3s linear infinite}</style>
-    <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px">
-      <img src="icons/icon-192.png" width="44" height="44" style="border-radius:14px;animation:bp 1.6s ease-in-out infinite" alt="">
-      <b style="font-size:20px;letter-spacing:-.4px;color:#1F1A14">KhanaPro</b>
+  <div id="boot" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#FFF9F2;font-family:'Plus Jakarta Sans',sans-serif;z-index:999;padding:24px;overflow:hidden">
+    <style>
+    @keyframes bp{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+    @keyframes scene{0%,21%{opacity:1;transform:none}25%,96%{opacity:0;transform:translateY(-10px)}100%{opacity:1}}
+    @keyframes pop{0%{opacity:0;transform:translateY(14px) scale(.88)}100%{opacity:1;transform:none}}
+    @keyframes glow{0%,100%{opacity:.5}50%{opacity:1}}
+    @keyframes wave{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+    @keyframes ring{0%{stroke-dashoffset:88}100%{stroke-dashoffset:22}}
+    @keyframes steam{0%{opacity:0;transform:translateY(6px)}40%{opacity:.7}100%{opacity:0;transform:translateY(-10px)}}
+    @keyframes drop{0%{opacity:0;transform:translateY(-14px)}60%{opacity:1;transform:translateY(2px)}100%{transform:none}}
+    @keyframes barload{0%{width:8%}90%{width:93%}100%{width:96%}}
+    .bs{position:absolute;width:300px;text-align:center;animation:scene 8s infinite}
+    .bs2{animation-delay:2s;opacity:0}.bs3{animation-delay:4s;opacity:0}.bs4{animation-delay:6s;opacity:0}
+    .bs h3{margin:16px 0 0;font-size:15.5px;color:#1F1A14;letter-spacing:-.01em;font-weight:800}
+    .bs p{margin:5px 0 0;font-size:12px;color:#6E6258;line-height:1.5}
+    .qm{font-size:40px;font-weight:800;color:#E8420A;animation:pop .5s backwards}
+    .aigrid{display:flex;gap:8px;justify-content:center;margin-top:12px}
+    .aigrid i{width:66px;height:52px;border-radius:12px;position:relative;animation:pop .45s backwards;background:linear-gradient(135deg,#F5A623,#E8420A)}
+    .aigrid i:nth-child(2){animation-delay:.35s;background:linear-gradient(135deg,#0f8a3d,#0a6b2e)}
+    .aigrid i:nth-child(3){animation-delay:.5s;background:linear-gradient(135deg,#7c3aed,#5b21b6)}
+    .aigrid i:after{content:"";position:absolute;left:8px;right:26px;bottom:8px;height:4px;border-radius:2px;background:rgba(255,255,255,.75)}
+    .spark{position:absolute;top:-8px;right:-6px;font-size:15px;animation:glow 1.4s infinite}
+    .stores{display:flex;gap:8px;justify-content:center;align-items:flex-end}
+    .stores b{padding:9px 12px;border-radius:12px;font-size:13.5px;color:#fff;animation:drop .5s backwards;position:relative}
+    .stores b:nth-child(1){background:#0f8a3d;transform-origin:bottom;box-shadow:0 6px 16px rgba(15,138,61,.35)}
+    .stores b:nth-child(2){background:#b9a89a;animation-delay:.22s;text-decoration:line-through}
+    .stores b:nth-child(3){background:#b9a89a;animation-delay:.42s;text-decoration:line-through}
+    .stores b:nth-child(1):after{content:"BEST";position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:8px;letter-spacing:.1em;color:#0f8a3d}
+    .qc{margin-top:10px;font-size:10.5px;color:#6E6258;letter-spacing:.02em}
+    .pot{width:64px;height:36px;border-radius:6px 6px 16px 16px;background:#1F1A14;margin:14px auto 0;position:relative}
+    .pot:before{content:"";position:absolute;top:-7px;left:6px;right:6px;height:7px;border-radius:4px 4px 0 0;background:#3a2f24}
+    .steam i{position:absolute;top:-24px;width:3px;height:14px;border-radius:2px;background:#b9a89a;animation:steam 1.6s infinite}
+    .steam i:nth-child(1){left:22px}.steam i:nth-child(2){left:31px;animation-delay:.4s}.steam i:nth-child(3){left:40px;animation-delay:.8s}
+    .cookrow{display:flex;gap:16px;justify-content:center;align-items:center}
+    .tring{transform:rotate(-90deg)}
+    .tring circle{fill:none;stroke:#E8420A;stroke-width:3;stroke-dasharray:88;animation:ring 2.4s linear infinite}
+    .wv{display:flex;gap:3px;height:16px;align-items:center}
+    .wv i{width:3px;height:14px;border-radius:2px;background:#E8420A;animation:wave .9s infinite}
+    .wv i:nth-child(2){animation-delay:.12s}.wv i:nth-child(3){animation-delay:.24s}.wv i:nth-child(4){animation-delay:.36s}
+    .week{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;width:240px;margin:0 auto}
+    .week i{height:26px;border-radius:7px;background:linear-gradient(135deg,#F5A623,#E8420A);animation:pop .4s backwards}
+    .week i:nth-child(2n){background:linear-gradient(135deg,#0f8a3d,#0a6b2e)}
+    .week i:nth-child(3n){background:linear-gradient(135deg,#7c3aed,#5b21b6)}
+    .week i:nth-child(1){animation-delay:.05s}.week i:nth-child(2){animation-delay:.1s}.week i:nth-child(3){animation-delay:.15s}.week i:nth-child(4){animation-delay:.2s}.week i:nth-child(5){animation-delay:.25s}.week i:nth-child(6){animation-delay:.3s}.week i:nth-child(7){animation-delay:.35s}.week i:nth-child(8){animation-delay:.4s}.week i:nth-child(9){animation-delay:.45s}.week i:nth-child(10){animation-delay:.5s}.week i:nth-child(11){animation-delay:.55s}.week i:nth-child(12){animation-delay:.6s}.week i:nth-child(13){animation-delay:.65s}.week i:nth-child(14){animation-delay:.7s}
+    @media (prefers-reduced-motion:reduce){.bs,.qm,.aigrid i,.spark,.stores b,.steam i,.tring circle,.wv i,.week i{animation:none!important}.bs2,.bs3,.bs4{display:none}}
+    </style>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:30px">
+      <img src="icons/icon-192.png" width="40" height="40" style="border-radius:12px;animation:bp 1.8s ease-in-out infinite" alt="">
+      <b style="font-size:19px;letter-spacing:-.4px;color:#1F1A14">KhanaPro</b>
     </div>
-    <div class="bsk" style="height:26px;width:65%;margin-bottom:18px"></div>
-    <div class="bsk" style="height:48px;width:100%;margin-bottom:22px;border-radius:24px"></div>
-    <div style="display:flex;gap:10px;margin-bottom:24px">
-      <div class="bsk" style="height:72px;flex:1"></div><div class="bsk" style="height:72px;flex:1"></div><div class="bsk" style="height:72px;flex:1"></div><div class="bsk" style="height:72px;flex:1"></div>
+    <div style="position:relative;height:190px;width:100%;display:flex;justify-content:center">
+      <div class="bs">
+        <span class="qm">?</span>
+        <div class="aigrid"><i><span class="spark">✨</span></i><i></i><i></i></div>
+        <h3>Confused what to eat?</h3><p>4,000+ healthy recipes — recommended by AI,<br>in English, Hindi, ya dono.</p>
+      </div>
+      <div class="bs bs2">
+        <div class="stores"><b>₹214</b><b>₹239</b><b>₹268</b></div>
+        <div class="qc">BLINKIT · ZEPTO · INSTAMART · BIGBASKET · JIOMART +2</div>
+        <h3>Cheapest basket, always</h3><p>One list, live-compared across every quick-commerce app.</p>
+      </div>
+      <div class="bs bs3">
+        <div class="cookrow">
+          <svg class="tring" width="34" height="34"><circle cx="17" cy="17" r="14"/></svg>
+          <div style="position:relative"><div class="steam"><i></i><i></i><i></i></div><div class="pot"></div></div>
+          <div class="wv"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <h3>Cook Mode — hands-free</h3><p>Steps read aloud, timers run themselves.<br>Cook two things at once.</p>
+      </div>
+      <div class="bs bs4">
+        <div class="week"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <h3>Your week, planned</h3><p>21 real meals in one tap — protein-balanced,<br>shopping list included.</p>
+      </div>
     </div>
-    <div class="bsk" style="height:190px;width:100%;margin-bottom:20px;border-radius:20px"></div>
-    <div style="display:flex;gap:12px">
-      <div class="bsk" style="height:150px;flex:0 0 42%"></div><div class="bsk" style="height:150px;flex:0 0 42%"></div>
-    </div>
-    <span style="color:#6E6258;font-size:12px;font-weight:600;margin-top:auto;text-align:center">First open loads the full 4,458-recipe kitchen — after this it's instant.</span>
+    <div style="width:200px;height:3px;border-radius:2px;background:rgba(0,0,0,.08);margin-top:24px;overflow:hidden"><i style="display:block;height:100%;border-radius:2px;background:#E8420A;animation:barload 2.6s ease-out forwards"></i></div>
+    <span style="color:#6E6258;font-size:11px;font-weight:600;margin-top:10px">Loading your kitchen…</span>
   </div>
-  <script defer src="app.js?v=2.0.24107"></script>
+  <script defer src="app.js?v=2.0.24132"></script>
 </body>
 </html>
