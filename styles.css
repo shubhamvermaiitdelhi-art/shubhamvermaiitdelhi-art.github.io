@@ -693,3 +693,11 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .vo-card{padding:16px;border-radius:16px;background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.25)}
 .vo-card b{display:block;margin-bottom:6px}
 .vo-card .btn{margin-top:12px}
+
+/* ===== v27 audit fixes ===== */
+.su-skip{background:none;border:none;color:inherit;opacity:.55;font:inherit;font-size:13px;margin-top:12px;cursor:pointer;text-decoration:underline}
+.rf-sum.clamp3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.undo-bar{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:12px;background:rgba(0,0,0,.06);margin-bottom:10px;font-size:13px}
+.undo-bar button{background:none;border:none;color:#E8420A;font-weight:800;cursor:pointer;font:inherit}
+#cart-badge.bump{animation:cbump .4s cubic-bezier(.34,1.56,.64,1)}
+@keyframes cbump{0%{transform:scale(1)}40%{transform:scale(1.45)}100%{transform:scale(1)}}
