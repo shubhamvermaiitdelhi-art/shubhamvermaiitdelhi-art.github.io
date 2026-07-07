@@ -1,5 +1,5 @@
-/* KhanaPro SW 2.0.23816 — self-updating */
-const V = "kp-2.0.23816";
+/* KhanaPro SW 2.0.23846 — self-updating */
+const V = "kp-2.0.23846";
 self.addEventListener("install", e => self.skipWaiting());
 self.addEventListener("activate", e => e.waitUntil(
   caches.keys().then(keys => Promise.all(keys.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())

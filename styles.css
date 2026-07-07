@@ -822,3 +822,12 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 @media (prefers-reduced-motion: reduce){
   .signup .su-card,.signup .su-card>*,.signup .su-logo-img,.signup.bye,.view.vt.vt-l,.view.vt.vt-r,.nav-btn.on .ico,.sheet-wrap.open .sheet,#kp-sheet.open .sheet,.toast{animation:none}
 }
+
+/* v30.1: single-meal swap feedback */
+.pl-meal.swapped{animation:mealswap .45s cubic-bezier(.2,.9,.3,1.15)}
+@keyframes mealswap{0%{opacity:0;transform:translateX(18px) scale(.97)}100%{opacity:1;transform:none}}
+
+/* ===== v31: casing + data honesty + rank chips ===== */
+.ing-name,.cart-name b,.shop-aisle span,.pa-match-main,.pl-count,.deal-chip b{text-transform:capitalize}
+.data-note{font-size:12px;padding:8px 12px;border-radius:10px;background:rgba(245,158,11,.12);color:#92600a;margin:6px 0 10px}
+.rank-chips{margin:4px 0 10px}
