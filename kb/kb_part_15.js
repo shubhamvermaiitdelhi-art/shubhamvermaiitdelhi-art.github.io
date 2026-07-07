@@ -1,0 +1,4187 @@
+;(function (root) {
+  var DATA = [
+    {
+      "id": "kb-15-001",
+      "title": "Light Paneer Korma Almond",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 340,
+        "protein": 24,
+        "fibre": 4,
+        "fat": 18,
+        "carbs": 20
+      },
+      "summary": "A lighter paneer korma in a creamy almond and curd gravy, rich in protein without heavy cream.",
+      "channels": [
+        "Your Food Lab",
+        "Ranveer Brar"
+      ],
+      "videoQuery": "light paneer korma almond curd recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "almonds",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Soak and blend almonds with a little water into a smooth paste.",
+        "Saute onion and ginger garlic paste till soft, cool and blend.",
+        "Cook the onion paste in oil, add spices and almond paste.",
+        "Whisk curd and stir in on low heat so it does not split.",
+        "Add paneer cubes and simmer 5 minutes.",
+        "Garnish and serve with roti or rice."
+      ]
+    },
+    {
+      "id": "kb-15-002",
+      "title": "Paneer Do Pyaza Light",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 310,
+        "protein": 23,
+        "fibre": 5,
+        "fat": 16,
+        "carbs": 18
+      },
+      "summary": "Paneer simmered with double onions in a light tomato masala; protein-rich and low on oil.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "paneer do pyaza light recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "coriander powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cube half the onions and slice the rest into chunks.",
+        "Saute ginger garlic paste and chopped onion till golden.",
+        "Add tomato and spices, cook into a thick masala.",
+        "Toss in onion chunks and saute till just softened.",
+        "Add paneer, splash of water and simmer 4 minutes.",
+        "Garnish with coriander and serve."
+      ]
+    },
+    {
+      "id": "kb-15-003",
+      "title": "Methi Paneer Masala",
+      "cuisine": "North Indian",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 24,
+        "fibre": 6,
+        "fat": 18,
+        "carbs": 16
+      },
+      "summary": "Soft paneer cooked with fresh fenugreek leaves in a light masala; iron and protein in one bowl.",
+      "channels": [
+        "Ranveer Brar",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "methi paneer masala healthy recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "fenugreek leaves",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Clean and chop fenugreek leaves, blanch briefly to cut bitterness.",
+        "Saute onion and ginger garlic paste till soft.",
+        "Add tomato and spices, cook into a masala.",
+        "Stir in fenugreek leaves and cook 3 minutes.",
+        "Add paneer and a splash of water, simmer 4 minutes.",
+        "Serve hot with phulka."
+      ]
+    },
+    {
+      "id": "kb-15-004",
+      "title": "Baked Paneer Kofta Curry",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 360,
+        "protein": 26,
+        "fibre": 5,
+        "fat": 16,
+        "carbs": 26
+      },
+      "summary": "Baked paneer koftas in a light tomato gravy; all the comfort without deep frying.",
+      "channels": [
+        "Your Food Lab",
+        "Sanjeev Kapoor Khazana"
+      ],
+      "videoQuery": "baked paneer kofta curry healthy recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "besan",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Crumble paneer, mix with besan and spices, shape into koftas.",
+        "Bake koftas at 200C for 15 minutes till golden.",
+        "Blend tomato and onion, cook in oil with ginger garlic paste.",
+        "Add spices and simmer the gravy till thick.",
+        "Add koftas just before serving so they stay firm.",
+        "Garnish and serve warm."
+      ]
+    },
+    {
+      "id": "kb-15-005",
+      "title": "Chilli Milli Paneer",
+      "cuisine": "North Indian",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 320,
+        "protein": 24,
+        "fibre": 5,
+        "fat": 17,
+        "carbs": 16
+      },
+      "summary": "Paneer tossed with colourful bell peppers in a tangy chilli masala; vibrant and protein-packed.",
+      "channels": [
+        "Sanjeev Kapoor Khazana",
+        "Get Curried"
+      ],
+      "videoQuery": "chilli milli paneer recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cube paneer and mixed bell peppers.",
+        "Saute onion and ginger garlic paste till soft.",
+        "Add tomato and chilli powder, cook into a masala.",
+        "Toss in peppers and stir-fry on high 2 minutes.",
+        "Add paneer and coat well, cook 3 minutes.",
+        "Serve hot."
+      ]
+    },
+    {
+      "id": "kb-15-006",
+      "title": "Air-Fried Paneer 65",
+      "cuisine": "South Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "veg",
+        "snack",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 280,
+        "protein": 24,
+        "fibre": 2,
+        "fat": 14,
+        "carbs": 12
+      },
+      "summary": "Spicy South-Indian style paneer 65, air-fried for a crisp bite with far less oil.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Cookd"
+      ],
+      "videoQuery": "air fried paneer 65 recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "rice flour",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "curry leaves",
+          "qty": 5,
+          "unit": "pc"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cube paneer and marinate in curd, ginger garlic paste and spices.",
+        "Coat lightly with rice flour.",
+        "Air-fry at 200C for 10-12 minutes, shaking once.",
+        "Toss curry leaves in a hot pan with a drop of oil.",
+        "Add the crisp paneer and toss to coat.",
+        "Serve hot with onion rings."
+      ]
+    },
+    {
+      "id": "kb-15-007",
+      "title": "Paneer Kathi Roll Whole Wheat",
+      "cuisine": "North Indian",
+      "category": "wrap",
+      "tags": [
+        "high-protein",
+        "veg",
+        "lunch",
+        "wrap"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 400,
+        "protein": 26,
+        "fibre": 7,
+        "fat": 14,
+        "carbs": 42
+      },
+      "summary": "Marinated paneer wrapped in a whole-wheat roti with crunchy salad; a balanced high-protein roll.",
+      "channels": [
+        "Your Food Lab",
+        "Sanjyot Keer"
+      ],
+      "videoQuery": "paneer kathi roll whole wheat recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "whole wheat flour",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Marinate paneer strips in curd and spices for 10 minutes.",
+        "Knead whole wheat flour and roll into thin rotis, cook on a tawa.",
+        "Pan-sear the paneer till lightly charred.",
+        "Saute onion and capsicum till just soft.",
+        "Lay paneer and veg on a roti, sprinkle chaat masala.",
+        "Roll tight, wrap and serve."
+      ]
+    },
+    {
+      "id": "kb-15-008",
+      "title": "Baked Paneer Cutlet",
+      "cuisine": "North Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "veg",
+        "snack"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 18,
+        "fibre": 5,
+        "fat": 9,
+        "carbs": 24
+      },
+      "summary": "Golden baked paneer and veg cutlets bound with oats; a crisp protein snack without frying.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "baked paneer cutlet healthy recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "potato",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "oats",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "peas",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Mash paneer with boiled potato and peas.",
+        "Add powdered oats and spices, mix into a dough.",
+        "Shape into cutlets and brush with a little oil.",
+        "Bake at 200C for 18-20 minutes, flipping once.",
+        "Cool slightly so they firm up.",
+        "Serve with green chutney."
+      ]
+    },
+    {
+      "id": "kb-15-009",
+      "title": "Baked Tofu Katsu",
+      "cuisine": "Pan-Asian",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 22,
+        "fibre": 5,
+        "fat": 12,
+        "carbs": 34
+      },
+      "summary": "Crisp panko-crusted tofu katsu, baked not fried, served with a tangy katsu sauce.",
+      "channels": [
+        "Sanjyot Keer",
+        "Your Food Lab"
+      ],
+      "videoQuery": "baked tofu katsu recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "panko breadcrumbs",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "cornflour",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "tomato ketchup",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Press tofu and slice into thick slabs.",
+        "Dust with cornflour slurry, then coat in panko.",
+        "Brush with oil and bake at 210C for 20 minutes till crisp.",
+        "Mix ketchup, soy sauce and a little water for katsu sauce.",
+        "Slice the baked tofu.",
+        "Serve drizzled with katsu sauce over rice."
+      ]
+    },
+    {
+      "id": "kb-15-010",
+      "title": "Tofu Satay Skewers",
+      "cuisine": "Pan-Asian",
+      "category": "grill",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner",
+        "grill"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 300,
+        "protein": 20,
+        "fibre": 4,
+        "fat": 18,
+        "carbs": 16
+      },
+      "summary": "Grilled tofu skewers glazed in a peanut satay marinade; smoky, protein-rich and dairy-free.",
+      "channels": [
+        "Sanjyot Keer",
+        "Nick Saraf's Foodlog"
+      ],
+      "videoQuery": "tofu satay skewers peanut recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "peanut butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lime juice",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Press and cube tofu.",
+        "Whisk peanut butter, soy sauce, lime and ginger garlic into a marinade.",
+        "Coat tofu and rest 15 minutes.",
+        "Thread onto skewers.",
+        "Grill or pan-sear, basting with marinade, till charred.",
+        "Serve with extra satay sauce."
+      ]
+    },
+    {
+      "id": "kb-15-011",
+      "title": "Tofu Poke Protein Bowl",
+      "cuisine": "Pan-Asian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "lunch",
+        "bowl"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 380,
+        "protein": 22,
+        "fibre": 7,
+        "fat": 12,
+        "carbs": 46
+      },
+      "summary": "A fresh poke bowl with marinated tofu, edamame and brown rice; clean, vegan and filling.",
+      "channels": [
+        "Sanjyot Keer",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "tofu poke protein bowl recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "brown rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "edamame",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sesame seeds",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Cook brown rice and cool slightly.",
+        "Cube tofu and marinate in soy sauce.",
+        "Boil edamame and dice cucumber.",
+        "Pan-sear tofu till lightly golden.",
+        "Assemble rice, tofu, edamame and cucumber in a bowl.",
+        "Sprinkle sesame seeds and serve."
+      ]
+    },
+    {
+      "id": "kb-15-012",
+      "title": "Smoked Tofu Salad",
+      "cuisine": "Continental",
+      "category": "salad",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "lunch",
+        "salad",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 15,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 260,
+        "protein": 20,
+        "fibre": 6,
+        "fat": 16,
+        "carbs": 12
+      },
+      "summary": "Smoky tofu over crisp greens with a lemon dressing; light, vegan and high in protein.",
+      "channels": [
+        "Healthy Kadai",
+        "Nick Saraf's Foodlog"
+      ],
+      "videoQuery": "smoked tofu salad recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "lettuce",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "cherry tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "olive oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lemon juice",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Pat tofu dry and pan-smoke with a little smoked paprika.",
+        "Cube the tofu once seared.",
+        "Toss lettuce, tomato and cucumber.",
+        "Whisk olive oil and lemon juice for dressing.",
+        "Add tofu and drizzle dressing.",
+        "Toss gently and serve."
+      ]
+    },
+    {
+      "id": "kb-15-013",
+      "title": "Baked Soya Cutlet",
+      "cuisine": "North Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "snack"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 220,
+        "protein": 18,
+        "fibre": 6,
+        "fat": 7,
+        "carbs": 24
+      },
+      "summary": "Protein-loaded baked soya granule cutlets with veggies; a guilt-free vegan snack.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "baked soya cutlet recipe",
+      "ingredients": [
+        {
+          "name": "soya granules",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "potato",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "oats",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "peas",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Soak soya granules in hot water, squeeze dry.",
+        "Mash with boiled potato, peas and oats.",
+        "Add spices and shape into cutlets.",
+        "Brush with oil and bake at 200C for 20 minutes.",
+        "Flip halfway for even crisping.",
+        "Serve with mint chutney."
+      ]
+    },
+    {
+      "id": "kb-15-014",
+      "title": "Soya Chunk 65",
+      "cuisine": "South Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "snack"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 22,
+        "fibre": 5,
+        "fat": 9,
+        "carbs": 18
+      },
+      "summary": "South-Indian style soya chunk 65, air-fried and tossed with curry leaves; spicy and lean.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Cookd"
+      ],
+      "videoQuery": "soya chunk 65 recipe",
+      "ingredients": [
+        {
+          "name": "soya chunks",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "rice flour",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "curry leaves",
+          "qty": 5,
+          "unit": "pc"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Boil soya chunks, squeeze and marinate in spices.",
+        "Coat with rice flour.",
+        "Air-fry at 200C for 12 minutes till crisp.",
+        "Temper curry leaves in a hot pan.",
+        "Toss the crisp soya chunks to coat.",
+        "Serve hot."
+      ]
+    },
+    {
+      "id": "kb-15-015",
+      "title": "Baked Soya Manchurian",
+      "cuisine": "Indo-Chinese",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 280,
+        "protein": 22,
+        "fibre": 5,
+        "fat": 8,
+        "carbs": 30
+      },
+      "summary": "Baked soya chunk manchurian in a glossy Indo-Chinese sauce; high protein, low oil.",
+      "channels": [
+        "Your Food Lab",
+        "Sanjyot Keer"
+      ],
+      "videoQuery": "baked soya manchurian recipe",
+      "ingredients": [
+        {
+          "name": "soya chunks",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "cornflour",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "tomato ketchup",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "capsicum",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Boil and squeeze soya chunks, coat in cornflour.",
+        "Bake at 210C for 15 minutes till crisp.",
+        "Saute ginger garlic and capsicum on high heat.",
+        "Add soy sauce, ketchup and a splash of water.",
+        "Toss in the baked soya chunks to coat.",
+        "Garnish with spring onion and serve."
+      ]
+    },
+    {
+      "id": "kb-15-016",
+      "title": "Light Egg Curry Masala",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 300,
+        "protein": 20,
+        "fibre": 4,
+        "fat": 18,
+        "carbs": 14
+      },
+      "summary": "Boiled eggs simmered in a light onion-tomato gravy; comforting and protein-rich.",
+      "channels": [
+        "Your Food Lab",
+        "Get Curried"
+      ],
+      "videoQuery": "light egg curry masala recipe",
+      "ingredients": [
+        {
+          "name": "egg",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "name": "onion",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Boil and peel the eggs, lightly score them.",
+        "Saute onion and ginger garlic paste till golden.",
+        "Add tomato and spices, cook into a gravy.",
+        "Add water and simmer 5 minutes.",
+        "Slip in the eggs and simmer 3 minutes.",
+        "Garnish with coriander and serve."
+      ]
+    },
+    {
+      "id": "kb-15-017",
+      "title": "Whole-Wheat Egg Roll",
+      "cuisine": "North Indian",
+      "category": "wrap",
+      "tags": [
+        "high-protein",
+        "lunch",
+        "wrap"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 360,
+        "protein": 22,
+        "fibre": 6,
+        "fat": 14,
+        "carbs": 38
+      },
+      "summary": "Classic Kolkata-style egg roll on a whole-wheat paratha with onion and lime; lean street food.",
+      "channels": [
+        "Sanjyot Keer",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "whole wheat egg roll recipe",
+      "ingredients": [
+        {
+          "name": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "name": "whole wheat flour",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "lemon juice",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Knead whole wheat flour and roll thin parathas.",
+        "Cook a paratha, pour beaten egg on top and flip.",
+        "Cook till egg sets onto the paratha.",
+        "Add sliced onion and green chilli.",
+        "Squeeze lime and sprinkle chaat masala.",
+        "Roll tight and serve."
+      ]
+    },
+    {
+      "id": "kb-15-018",
+      "title": "Masala Egg Skillet",
+      "cuisine": "North Indian",
+      "category": "breakfast",
+      "tags": [
+        "high-protein",
+        "breakfast",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 15,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 250,
+        "protein": 18,
+        "fibre": 3,
+        "fat": 18,
+        "carbs": 6
+      },
+      "summary": "Whole boiled eggs tossed in a quick masala skillet; a fast high-protein breakfast.",
+      "channels": [
+        "Your Food Lab",
+        "Nick Saraf's Foodlog"
+      ],
+      "videoQuery": "masala egg skillet recipe",
+      "ingredients": [
+        {
+          "name": "egg",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Boil, peel and halve the eggs.",
+        "Saute onion till soft, add tomato and spices.",
+        "Cook into a thick masala.",
+        "Add the halved eggs cut-side down.",
+        "Toss gently to coat for 2 minutes.",
+        "Serve hot with toast."
+      ]
+    },
+    {
+      "id": "kb-15-019",
+      "title": "Egg Brown Fried Rice Veggie",
+      "cuisine": "Indo-Chinese",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "dinner",
+        "bowl"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 360,
+        "protein": 18,
+        "fibre": 5,
+        "fat": 12,
+        "carbs": 46
+      },
+      "summary": "Brown rice tossed with scrambled egg and crunchy veggies; a wholesome one-pan dinner.",
+      "channels": [
+        "Sanjyot Keer",
+        "Your Food Lab"
+      ],
+      "videoQuery": "egg brown fried rice veggie recipe",
+      "ingredients": [
+        {
+          "name": "brown rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "name": "carrot",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "beans",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cook and cool the brown rice.",
+        "Scramble eggs in a hot wok, set aside.",
+        "Stir-fry chopped carrot and beans on high heat.",
+        "Add rice and soy sauce, toss well.",
+        "Fold in the scrambled egg.",
+        "Garnish with spring onion and serve."
+      ]
+    },
+    {
+      "id": "kb-15-020",
+      "title": "Shakshuka-Style Egg Skillet",
+      "cuisine": "Mediterranean",
+      "category": "breakfast",
+      "tags": [
+        "high-protein",
+        "breakfast",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 280,
+        "protein": 18,
+        "fibre": 5,
+        "fat": 16,
+        "carbs": 16
+      },
+      "summary": "Eggs poached in a spiced tomato and pepper sauce; a hearty Mediterranean breakfast.",
+      "channels": [
+        "Your Food Lab",
+        "Nick Saraf's Foodlog"
+      ],
+      "videoQuery": "shakshuka style egg skillet recipe",
+      "ingredients": [
+        {
+          "name": "egg",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "name": "tomato",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "olive oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Saute onion and capsicum in olive oil.",
+        "Add tomato and paprika, simmer into a thick sauce.",
+        "Make wells in the sauce.",
+        "Crack an egg into each well.",
+        "Cover and cook till whites set.",
+        "Garnish with parsley and serve from the skillet."
+      ]
+    },
+    {
+      "id": "kb-15-021",
+      "title": "Paneer Dosa Protein",
+      "cuisine": "South Indian",
+      "category": "breakfast",
+      "tags": [
+        "high-protein",
+        "veg",
+        "breakfast"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 340,
+        "protein": 22,
+        "fibre": 5,
+        "fat": 12,
+        "carbs": 40
+      },
+      "summary": "Crisp dosa stuffed with spiced paneer bhurji; a protein-rich South-Indian breakfast.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Vahchef"
+      ],
+      "videoQuery": "paneer dosa protein recipe",
+      "ingredients": [
+        {
+          "name": "dosa batter",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "paneer",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Crumble paneer and saute with onion, chilli and turmeric.",
+        "Heat a tawa and spread the dosa batter thin.",
+        "Drizzle a little oil and cook till crisp.",
+        "Place the paneer filling on one half.",
+        "Fold the dosa over the filling.",
+        "Serve hot with coconut chutney."
+      ]
+    },
+    {
+      "id": "kb-15-022",
+      "title": "Tofu Bhurji Wrap Whole Wheat",
+      "cuisine": "North Indian",
+      "category": "wrap",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "breakfast",
+        "wrap"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 20,
+        "fibre": 7,
+        "fat": 12,
+        "carbs": 38
+      },
+      "summary": "Spiced tofu scramble rolled in a whole-wheat wrap; a vegan high-protein breakfast on the go.",
+      "channels": [
+        "Your Food Lab",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "tofu bhurji wrap whole wheat recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "whole wheat flour",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Crumble tofu and saute with onion, tomato and turmeric.",
+        "Cook till dry and well-spiced.",
+        "Knead whole wheat flour and roll thin wraps.",
+        "Cook each wrap on a tawa.",
+        "Fill with the tofu bhurji and roll.",
+        "Serve warm."
+      ]
+    },
+    {
+      "id": "kb-15-023",
+      "title": "Paneer Lahsuni Pepper Curry",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 24,
+        "fibre": 4,
+        "fat": 18,
+        "carbs": 14
+      },
+      "summary": "Paneer in a garlicky black-pepper gravy; bold flavour with a protein-forward profile.",
+      "channels": [
+        "Ranveer Brar",
+        "Get Curried"
+      ],
+      "videoQuery": "paneer lahsuni pepper curry recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Crush garlic and crack the black pepper.",
+        "Saute garlic and onion till golden.",
+        "Add crushed pepper and whisked curd on low heat.",
+        "Simmer into a smooth gravy.",
+        "Add paneer and cook 4 minutes.",
+        "Garnish and serve with rice."
+      ]
+    },
+    {
+      "id": "kb-15-024",
+      "title": "Tofu Edamame Poke Brown Rice",
+      "cuisine": "Pan-Asian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "lunch",
+        "bowl"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 390,
+        "protein": 24,
+        "fibre": 8,
+        "fat": 12,
+        "carbs": 48
+      },
+      "summary": "A double-soy poke bowl of tofu and edamame over brown rice; plant protein at its best.",
+      "channels": [
+        "Sanjyot Keer",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "tofu edamame poke brown rice recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "edamame",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "brown rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sesame oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Cook brown rice and cool.",
+        "Marinate cubed tofu in soy sauce and sesame oil.",
+        "Boil edamame and julienne carrot.",
+        "Sear tofu till golden.",
+        "Build the bowl with rice, tofu, edamame and carrot.",
+        "Drizzle remaining marinade and serve."
+      ]
+    },
+    {
+      "id": "kb-15-025",
+      "title": "Soya Chunk Pepper Dry Fry",
+      "cuisine": "Indo-Chinese",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "snack"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 230,
+        "protein": 22,
+        "fibre": 5,
+        "fat": 7,
+        "carbs": 18
+      },
+      "summary": "Soya chunks tossed dry with crushed pepper and peppers; a lean, spicy protein snack.",
+      "channels": [
+        "Cookd",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "soya chunk pepper dry fry recipe",
+      "ingredients": [
+        {
+          "name": "soya chunks",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Boil soya chunks and squeeze dry.",
+        "Stir-fry onion and capsicum on high heat.",
+        "Add soya chunks and toss.",
+        "Add soy sauce and crushed pepper.",
+        "Cook till dry and coated.",
+        "Serve hot."
+      ]
+    },
+    {
+      "id": "kb-15-026",
+      "title": "Egg White Shakshuka Light",
+      "cuisine": "Mediterranean",
+      "category": "breakfast",
+      "tags": [
+        "high-protein",
+        "breakfast",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 180,
+        "protein": 16,
+        "fibre": 5,
+        "fat": 8,
+        "carbs": 14
+      },
+      "summary": "A leaner shakshuka using egg whites poached in spiced tomato sauce; low-fat, high-protein.",
+      "channels": [
+        "Healthy Kadai",
+        "Nick Saraf's Foodlog"
+      ],
+      "videoQuery": "egg white shakshuka light recipe",
+      "ingredients": [
+        {
+          "name": "egg white",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "name": "tomato",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "olive oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Saute onion and capsicum in olive oil.",
+        "Add tomato and paprika, simmer into sauce.",
+        "Make small wells in the sauce.",
+        "Pour egg whites into the wells.",
+        "Cover and cook till just set.",
+        "Garnish with herbs and serve."
+      ]
+    },
+    {
+      "id": "kb-15-027",
+      "title": "Paneer Tawa Masala Light",
+      "cuisine": "North Indian",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 24,
+        "fibre": 5,
+        "fat": 17,
+        "carbs": 16
+      },
+      "summary": "Paneer slabs seared on a tawa and coated in a light spicy masala; quick and protein-rich.",
+      "channels": [
+        "Sanjeev Kapoor Khazana",
+        "Your Food Lab"
+      ],
+      "videoQuery": "paneer tawa masala light recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Sear paneer slabs on a hot tawa till spotted, set aside.",
+        "Saute onion, tomato and capsicum on the same tawa.",
+        "Add spices and cook into a masala.",
+        "Return paneer and toss to coat.",
+        "Cook 3 minutes on low heat.",
+        "Serve hot."
+      ]
+    },
+    {
+      "id": "kb-15-028",
+      "title": "Tofu Lemongrass Coconut Curry",
+      "cuisine": "Pan-Asian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 320,
+        "protein": 20,
+        "fibre": 5,
+        "fat": 18,
+        "carbs": 20
+      },
+      "summary": "Tofu simmered in a fragrant lemongrass coconut broth; a light, aromatic vegan curry.",
+      "channels": [
+        "Sanjyot Keer",
+        "Nick Saraf's Foodlog"
+      ],
+      "videoQuery": "tofu lemongrass coconut curry recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "coconut milk",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "name": "lemongrass",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Press and cube tofu, sear lightly.",
+        "Bruise lemongrass and saute with ginger garlic paste.",
+        "Pour in coconut milk and simmer.",
+        "Add green chilli and a little water.",
+        "Add tofu and simmer 6 minutes.",
+        "Remove lemongrass and serve with rice."
+      ]
+    },
+    {
+      "id": "kb-15-029",
+      "title": "Masala Egg White Bhurji Skillet",
+      "cuisine": "North Indian",
+      "category": "breakfast",
+      "tags": [
+        "high-protein",
+        "breakfast",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 15,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 160,
+        "protein": 18,
+        "fibre": 3,
+        "fat": 6,
+        "carbs": 8
+      },
+      "summary": "A lean masala bhurji made only with egg whites and veggies; high protein, very low fat.",
+      "channels": [
+        "Healthy Kadai",
+        "Fit Tuber"
+      ],
+      "videoQuery": "masala egg white bhurji skillet recipe",
+      "ingredients": [
+        {
+          "name": "egg white",
+          "qty": 8,
+          "unit": "pc"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Saute onion, tomato and chilli in a non-stick pan.",
+        "Add turmeric and a pinch of salt.",
+        "Pour in the egg whites.",
+        "Scramble gently till just set.",
+        "Do not overcook to keep them soft.",
+        "Serve hot with multigrain toast."
+      ]
+    },
+    {
+      "id": "kb-15-030",
+      "title": "Paneer Achari Tawa Bhuna",
+      "cuisine": "North Indian",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 24,
+        "fibre": 4,
+        "fat": 18,
+        "carbs": 14
+      },
+      "summary": "Paneer bhuna in a tangy pickle-spiced masala; intense flavour with a clean protein hit.",
+      "channels": [
+        "Ranveer Brar",
+        "Get Curried"
+      ],
+      "videoQuery": "paneer achari tawa bhuna recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "pickle masala",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "mustard seeds",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Temper mustard seeds in oil.",
+        "Add onion and saute till golden.",
+        "Stir in pickle masala and whisked curd.",
+        "Cook into a thick bhuna masala.",
+        "Add paneer and coat well.",
+        "Cook 4 minutes and serve."
+      ]
+    },
+    {
+      "id": "kb-15-031",
+      "title": "Tofu Veggie Frittata Bake",
+      "cuisine": "Continental",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "breakfast"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 3,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 220,
+        "protein": 18,
+        "fibre": 5,
+        "fat": 12,
+        "carbs": 12
+      },
+      "summary": "A baked eggless frittata of silken tofu and veggies bound with besan; a savoury vegan bake.",
+      "channels": [
+        "Healthy Kadai",
+        "Sanjyot Keer"
+      ],
+      "videoQuery": "tofu veggie frittata bake vegan recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "besan",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Blend tofu with besan, turmeric and a little water.",
+        "Fold in chopped capsicum and onion.",
+        "Pour into a greased baking dish.",
+        "Bake at 190C for 22 minutes till set.",
+        "Cool slightly before slicing.",
+        "Serve in wedges."
+      ]
+    },
+    {
+      "id": "kb-15-032",
+      "title": "Soya Chunk Kathi Roll",
+      "cuisine": "North Indian",
+      "category": "wrap",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "lunch",
+        "wrap"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 370,
+        "protein": 24,
+        "fibre": 8,
+        "fat": 11,
+        "carbs": 46
+      },
+      "summary": "Spiced soya chunks rolled in a whole-wheat wrap with salad; a hearty vegan kathi roll.",
+      "channels": [
+        "Your Food Lab",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "soya chunk kathi roll recipe",
+      "ingredients": [
+        {
+          "name": "soya chunks",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "whole wheat flour",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Boil soya chunks, squeeze and saute with spices.",
+        "Knead whole wheat flour and roll thin wraps.",
+        "Cook each wrap on a tawa.",
+        "Saute onion and capsicum till crunchy.",
+        "Fill the wrap with soya and veg.",
+        "Roll tight and serve."
+      ]
+    },
+    {
+      "id": "kb-15-033",
+      "title": "Paneer Palak Korma Light",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 320,
+        "protein": 24,
+        "fibre": 6,
+        "fat": 16,
+        "carbs": 16
+      },
+      "summary": "Paneer in a light spinach-cashew korma; green, creamy and packed with protein and iron.",
+      "channels": [
+        "Ranveer Brar",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "paneer palak korma light recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "spinach",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "cashew",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Blanch spinach and blend with soaked cashews.",
+        "Saute onion and ginger garlic paste.",
+        "Add the spinach-cashew paste and cook.",
+        "Season with spices and a splash of water.",
+        "Add paneer and simmer 5 minutes.",
+        "Serve hot with roti."
+      ]
+    },
+    {
+      "id": "kb-15-034",
+      "title": "Egg Curry Coconut Light",
+      "cuisine": "South Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 310,
+        "protein": 19,
+        "fibre": 4,
+        "fat": 20,
+        "carbs": 12
+      },
+      "summary": "Boiled eggs in a light coconut curry with curry leaves; a fragrant South-Indian protein dish.",
+      "channels": [
+        "Vahchef",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "egg curry coconut light recipe",
+      "ingredients": [
+        {
+          "name": "egg",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "name": "coconut milk",
+          "qty": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "curry leaves",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Boil and peel the eggs.",
+        "Temper curry leaves and saute onion.",
+        "Add tomato and spices, cook down.",
+        "Pour in coconut milk and simmer.",
+        "Add eggs and simmer 4 minutes.",
+        "Serve with appam or rice."
+      ]
+    },
+    {
+      "id": "kb-15-035",
+      "title": "Tofu Manchurian Baked Dry",
+      "cuisine": "Indo-Chinese",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 290,
+        "protein": 20,
+        "fibre": 4,
+        "fat": 9,
+        "carbs": 30
+      },
+      "summary": "Baked tofu manchurian tossed in a dry Indo-Chinese sauce; crispy without deep frying.",
+      "channels": [
+        "Your Food Lab",
+        "Sanjyot Keer"
+      ],
+      "videoQuery": "tofu manchurian baked dry recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "cornflour",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "tomato ketchup",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "capsicum",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cube tofu and coat in cornflour.",
+        "Bake at 210C for 18 minutes till crisp.",
+        "Saute ginger garlic and capsicum on high.",
+        "Add soy sauce and ketchup.",
+        "Toss in the baked tofu to coat.",
+        "Garnish with spring onion and serve."
+      ]
+    },
+    {
+      "id": "kb-15-036",
+      "title": "Paneer Kalimirch Tikka Salad",
+      "cuisine": "North Indian",
+      "category": "salad",
+      "tags": [
+        "high-protein",
+        "veg",
+        "lunch",
+        "salad",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 290,
+        "protein": 24,
+        "fibre": 5,
+        "fat": 15,
+        "carbs": 12
+      },
+      "summary": "Black-pepper paneer tikka over fresh greens; a warm, protein-rich salad bowl.",
+      "channels": [
+        "Your Food Lab",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "paneer kalimirch tikka salad recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "lettuce",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "lemon juice",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Marinate paneer cubes in curd and crushed pepper.",
+        "Sear on a hot pan till lightly charred.",
+        "Toss lettuce and cucumber.",
+        "Add the warm paneer.",
+        "Squeeze lemon over the top.",
+        "Toss gently and serve."
+      ]
+    },
+    {
+      "id": "kb-15-037",
+      "title": "Tofu Sesame Soba Toss",
+      "cuisine": "Pan-Asian",
+      "category": "noodles",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner",
+        "noodles"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 380,
+        "protein": 22,
+        "fibre": 6,
+        "fat": 12,
+        "carbs": 48
+      },
+      "summary": "Soba noodles tossed with sesame tofu and veggies; a nutty, plant-protein dinner.",
+      "channels": [
+        "Sanjyot Keer",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "tofu sesame soba toss recipe",
+      "ingredients": [
+        {
+          "name": "soba noodles",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "tofu",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sesame seeds",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sesame oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Boil soba noodles, drain and rinse.",
+        "Sear cubed tofu in sesame oil.",
+        "Stir-fry julienned carrot.",
+        "Add noodles and soy sauce, toss.",
+        "Fold in the tofu.",
+        "Sprinkle sesame seeds and serve."
+      ]
+    },
+    {
+      "id": "kb-15-038",
+      "title": "Egg Fried Brown Rice Schezwan",
+      "cuisine": "Indo-Chinese",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "dinner",
+        "bowl"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 370,
+        "protein": 18,
+        "fibre": 5,
+        "fat": 12,
+        "carbs": 48
+      },
+      "summary": "Spicy schezwan egg fried brown rice with veggies; a fiery, protein-packed one-bowl meal.",
+      "channels": [
+        "Sanjyot Keer",
+        "Your Food Lab"
+      ],
+      "videoQuery": "egg fried brown rice schezwan recipe",
+      "ingredients": [
+        {
+          "name": "brown rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "name": "schezwan sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "capsicum",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "spring onion",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cook and cool the brown rice.",
+        "Scramble eggs in a hot wok, set aside.",
+        "Stir-fry capsicum and spring onion whites.",
+        "Add rice and schezwan sauce, toss.",
+        "Fold in the egg.",
+        "Top with spring onion greens and serve."
+      ]
+    },
+    {
+      "id": "kb-15-039",
+      "title": "Paneer Reshmi Skewers Baked",
+      "cuisine": "North Indian",
+      "category": "grill",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "grill",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 300,
+        "protein": 24,
+        "fibre": 3,
+        "fat": 16,
+        "carbs": 12
+      },
+      "summary": "Creamy reshmi paneer skewers baked till golden; a soft, protein-rich starter.",
+      "channels": [
+        "Ranveer Brar",
+        "Get Curried"
+      ],
+      "videoQuery": "paneer reshmi skewers baked recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "cashew",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "white pepper",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Blend curd with soaked cashews into a smooth marinade.",
+        "Add ginger garlic paste and white pepper.",
+        "Coat paneer cubes and rest 15 minutes.",
+        "Thread onto skewers.",
+        "Bake at 210C for 15 minutes till spotted.",
+        "Serve with mint chutney."
+      ]
+    },
+    {
+      "id": "kb-15-040",
+      "title": "Soya Granule Egg-Free Bhurji",
+      "cuisine": "North Indian",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "breakfast"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 210,
+        "protein": 20,
+        "fibre": 6,
+        "fat": 8,
+        "carbs": 16
+      },
+      "summary": "A protein-dense soya granule bhurji spiced like egg bhurji; a vegan breakfast staple.",
+      "channels": [
+        "Healthy Kadai",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "soya granule egg free bhurji recipe",
+      "ingredients": [
+        {
+          "name": "soya granules",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Soak soya granules in hot water, squeeze dry.",
+        "Saute onion, tomato and chilli.",
+        "Add turmeric and a pinch of salt.",
+        "Stir in the soya granules.",
+        "Cook till dry and fluffy.",
+        "Serve hot with toast."
+      ]
+    },
+    {
+      "id": "kb-15-041",
+      "title": "Tofu Larb Lettuce Cups",
+      "cuisine": "Pan-Asian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "snack",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 220,
+        "protein": 18,
+        "fibre": 5,
+        "fat": 12,
+        "carbs": 12
+      },
+      "summary": "Crumbled tofu larb spooned into crisp lettuce cups; zesty, vegan and high in protein.",
+      "channels": [
+        "Sanjyot Keer",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "tofu larb lettuce cups recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "lettuce",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "lime juice",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "mint",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Crumble tofu and dry-fry till lightly golden.",
+        "Add soy sauce and lime juice.",
+        "Toss in chopped mint.",
+        "Separate lettuce leaves into cups.",
+        "Spoon the tofu larb into each cup.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "id": "kb-15-042",
+      "title": "Paneer Hariyali Tikka Baked",
+      "cuisine": "North Indian",
+      "category": "grill",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "grill",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 300,
+        "protein": 24,
+        "fibre": 4,
+        "fat": 16,
+        "carbs": 12
+      },
+      "summary": "Paneer marinated in a green coriander-mint paste and baked; vibrant and protein-rich.",
+      "channels": [
+        "Your Food Lab",
+        "Ranveer Brar"
+      ],
+      "videoQuery": "paneer hariyali tikka baked recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "coriander",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "mint",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Blend coriander, mint and curd into a green marinade.",
+        "Add ginger garlic paste and spices.",
+        "Coat paneer cubes and rest 15 minutes.",
+        "Thread onto skewers.",
+        "Bake at 210C for 15 minutes.",
+        "Serve hot with onion rings."
+      ]
+    },
+    {
+      "id": "kb-15-043",
+      "title": "Tofu Banh Mi Bowl",
+      "cuisine": "Pan-Asian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "lunch",
+        "bowl"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 380,
+        "protein": 22,
+        "fibre": 7,
+        "fat": 12,
+        "carbs": 48
+      },
+      "summary": "A deconstructed banh mi bowl with marinated tofu, pickled carrot and brown rice; fresh and vegan.",
+      "channels": [
+        "Sanjyot Keer",
+        "Nick Saraf's Foodlog"
+      ],
+      "videoQuery": "tofu banh mi bowl recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "brown rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "vinegar",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cook brown rice and cool.",
+        "Quick-pickle carrot in vinegar.",
+        "Marinate tofu in soy sauce and sear.",
+        "Slice cucumber.",
+        "Assemble rice, tofu, pickled carrot and cucumber.",
+        "Serve with extra chilli sauce."
+      ]
+    },
+    {
+      "id": "kb-15-044",
+      "title": "Egg Drop Veg Brown Rice Bowl",
+      "cuisine": "Indo-Chinese",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "dinner",
+        "bowl"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 340,
+        "protein": 18,
+        "fibre": 5,
+        "fat": 11,
+        "carbs": 44
+      },
+      "summary": "Silky egg-ribboned brown rice with veggies in a light savoury sauce; a comforting protein bowl.",
+      "channels": [
+        "Sanjyot Keer",
+        "Your Food Lab"
+      ],
+      "videoQuery": "egg drop veg brown rice bowl recipe",
+      "ingredients": [
+        {
+          "name": "brown rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "name": "carrot",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "beans",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cook brown rice and keep aside.",
+        "Stir-fry carrot and beans on high heat.",
+        "Add rice and soy sauce, toss.",
+        "Make a well and pour beaten egg, swirl into ribbons.",
+        "Fold gently once set.",
+        "Serve hot."
+      ]
+    },
+    {
+      "id": "kb-15-045",
+      "title": "Paneer Shimla Mirch Bhuna",
+      "cuisine": "North Indian",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 320,
+        "protein": 24,
+        "fibre": 5,
+        "fat": 16,
+        "carbs": 16
+      },
+      "summary": "Paneer and capsicum bhuna in a dry roasted masala; smoky, simple and protein-rich.",
+      "channels": [
+        "Nisha Madhulika",
+        "Sanjeev Kapoor Khazana"
+      ],
+      "videoQuery": "paneer shimla mirch bhuna recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "coriander powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Saute onion till golden.",
+        "Add tomato and spices, cook into a dry masala.",
+        "Toss in capsicum and stir-fry 2 minutes.",
+        "Add paneer and coat well.",
+        "Cook 3 minutes on low heat.",
+        "Garnish and serve."
+      ]
+    },
+    {
+      "id": "kb-15-046",
+      "title": "Tofu Gochujang Lettuce Wrap",
+      "cuisine": "Pan-Asian",
+      "category": "wrap",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner",
+        "wrap"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 20,
+        "fibre": 5,
+        "fat": 12,
+        "carbs": 16
+      },
+      "summary": "Spicy gochujang tofu spooned into lettuce wraps; bold Korean flavour, vegan and lean.",
+      "channels": [
+        "Sanjyot Keer",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "tofu gochujang lettuce wrap recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "gochujang",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lettuce",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "sesame seeds",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Cube tofu and sear till golden.",
+        "Mix gochujang and soy sauce with a little water.",
+        "Toss tofu in the sauce.",
+        "Separate lettuce leaves.",
+        "Spoon tofu into each leaf.",
+        "Sprinkle sesame seeds and serve."
+      ]
+    },
+    {
+      "id": "kb-15-047",
+      "title": "Egg White Veggie Roll Whole Wheat",
+      "cuisine": "North Indian",
+      "category": "wrap",
+      "tags": [
+        "high-protein",
+        "breakfast",
+        "wrap"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 280,
+        "protein": 20,
+        "fibre": 6,
+        "fat": 8,
+        "carbs": 34
+      },
+      "summary": "An egg-white omelette rolled in a whole-wheat wrap with veggies; lean breakfast protein.",
+      "channels": [
+        "Fit Tuber",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "egg white veggie roll whole wheat recipe",
+      "ingredients": [
+        {
+          "name": "egg white",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "name": "whole wheat flour",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Knead whole wheat flour and roll thin wraps, cook on tawa.",
+        "Whisk egg whites with chopped onion, capsicum and chilli.",
+        "Pour onto a non-stick pan to make a thin omelette.",
+        "Place the omelette on a wrap.",
+        "Roll tight.",
+        "Slice and serve."
+      ]
+    },
+    {
+      "id": "kb-15-048",
+      "title": "Paneer Makhani Light Almond",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 350,
+        "protein": 24,
+        "fibre": 4,
+        "fat": 18,
+        "carbs": 22
+      },
+      "summary": "A lighter makhani gravy thickened with almond instead of cream; rich taste, more protein.",
+      "channels": [
+        "Ranveer Brar",
+        "Get Curried"
+      ],
+      "videoQuery": "paneer makhani light almond recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "almonds",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "kasuri methi",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Boil tomato with ginger garlic, blend with soaked almonds.",
+        "Strain into a smooth gravy.",
+        "Cook the gravy in oil till it thickens.",
+        "Add kasuri methi and spices.",
+        "Add paneer and simmer 5 minutes.",
+        "Serve hot with roti."
+      ]
+    },
+    {
+      "id": "kb-15-049",
+      "title": "Soya Chunk Pepper Salad Bowl",
+      "cuisine": "Healthy",
+      "category": "salad",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "lunch",
+        "salad",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 22,
+        "fibre": 7,
+        "fat": 8,
+        "carbs": 20
+      },
+      "summary": "Boiled soya chunks tossed with peppers and greens in a pepper-lime dressing; a lean protein salad.",
+      "channels": [
+        "Healthy Kadai",
+        "Fit Tuber"
+      ],
+      "videoQuery": "soya chunk pepper salad bowl recipe",
+      "ingredients": [
+        {
+          "name": "soya chunks",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "capsicum",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "lettuce",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "lemon juice",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Boil soya chunks, squeeze and cool.",
+        "Chop capsicum, cucumber and lettuce.",
+        "Toss everything together.",
+        "Add lemon juice and crushed pepper.",
+        "Season with salt.",
+        "Serve fresh."
+      ]
+    },
+    {
+      "id": "kb-15-050",
+      "title": "Tofu Teriyaki Soba Bowl",
+      "cuisine": "Pan-Asian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner",
+        "bowl"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 390,
+        "protein": 22,
+        "fibre": 6,
+        "fat": 11,
+        "carbs": 52
+      },
+      "summary": "Glazed teriyaki tofu over soba noodles with veggies; a glossy, satisfying vegan bowl.",
+      "channels": [
+        "Sanjyot Keer",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "tofu teriyaki soba bowl recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "soba noodles",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "carrot",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "sesame oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Boil soba noodles and rinse.",
+        "Sear cubed tofu in sesame oil.",
+        "Make teriyaki glaze with soy sauce, ginger garlic and a little water.",
+        "Toss tofu in the glaze.",
+        "Stir-fry carrot and add noodles.",
+        "Top with tofu and serve."
+      ]
+    },
+    {
+      "id": "kb-15-051",
+      "title": "Egg Bhurji Brown Rice Bowl",
+      "cuisine": "North Indian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "dinner",
+        "bowl"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 360,
+        "protein": 20,
+        "fibre": 5,
+        "fat": 14,
+        "carbs": 42
+      },
+      "summary": "Spiced egg bhurji over brown rice with veggies; a quick, balanced protein bowl.",
+      "channels": [
+        "Your Food Lab",
+        "Fit Tuber"
+      ],
+      "videoQuery": "egg bhurji brown rice bowl recipe",
+      "ingredients": [
+        {
+          "name": "brown rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Cook brown rice and keep warm.",
+        "Saute onion and tomato with turmeric.",
+        "Pour in beaten eggs and scramble.",
+        "Cook till just set.",
+        "Spoon the bhurji over the brown rice.",
+        "Garnish with coriander and serve."
+      ]
+    },
+    {
+      "id": "kb-15-052",
+      "title": "Paneer Methi Matar Light",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "veg",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 28,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 23,
+        "fibre": 7,
+        "fat": 16,
+        "carbs": 20
+      },
+      "summary": "Paneer with fenugreek and green peas in a light masala; comforting, fibre-rich and protein-forward.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "paneer methi matar light recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "fenugreek leaves",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "peas",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Saute onion till soft.",
+        "Add tomato and spices, cook into a masala.",
+        "Stir in fenugreek leaves and peas.",
+        "Cook 4 minutes till peas are tender.",
+        "Add paneer and a splash of water, simmer 4 minutes.",
+        "Serve hot with roti."
+      ]
+    },
+    {
+      "id": "kb-15-053",
+      "title": "Tofu Tikka Masala Light",
+      "cuisine": "Fusion",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "vegan",
+        "dinner",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 310,
+        "protein": 20,
+        "fibre": 5,
+        "fat": 16,
+        "carbs": 20
+      },
+      "summary": "Smoky tofu tikka simmered in a light tomato-cashew masala; a vegan take on a classic.",
+      "channels": [
+        "Your Food Lab",
+        "Sanjyot Keer"
+      ],
+      "videoQuery": "tofu tikka masala light vegan recipe",
+      "ingredients": [
+        {
+          "name": "tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "cashew",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Sear cubed tofu till lightly charred.",
+        "Blend tomato with soaked cashews.",
+        "Saute onion and ginger garlic paste.",
+        "Add the tomato-cashew paste and spices, simmer.",
+        "Fold in the tofu and cook 5 minutes.",
+        "Serve with rice or roti."
+      ]
+    },
+    {
+      "id": "kb-15-054",
+      "title": "Masala Egg Brown Rice Khichdi",
+      "cuisine": "North Indian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "dinner",
+        "bowl"
+      ],
+      "diet": {
+        "veg": false,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": false,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 380,
+        "protein": 20,
+        "fibre": 7,
+        "fat": 12,
+        "carbs": 50
+      },
+      "summary": "A protein-boosted khichdi of brown rice, moong and folded egg; wholesome one-pot comfort.",
+      "channels": [
+        "Healthy Kadai",
+        "Fit Tuber"
+      ],
+      "videoQuery": "masala egg brown rice khichdi recipe",
+      "ingredients": [
+        {
+          "name": "brown rice",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "moong dal",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Pressure cook brown rice and moong with turmeric.",
+        "Saute onion in oil in a separate pan.",
+        "Scramble the eggs into the onion.",
+        "Fold the cooked khichdi into the egg.",
+        "Adjust seasoning and a splash of water.",
+        "Serve hot."
+      ]
+    },
+    {
+      "id": "kb-15-055",
+      "title": "Paneer Schezwan Lettuce Cups",
+      "cuisine": "Indo-Chinese",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "veg",
+        "snack",
+        "gluten-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 260,
+        "protein": 22,
+        "fibre": 4,
+        "fat": 14,
+        "carbs": 12
+      },
+      "summary": "Spicy schezwan paneer spooned into crisp lettuce cups; a low-carb, high-protein snack.",
+      "channels": [
+        "Your Food Lab",
+        "Healthy Kadai"
+      ],
+      "videoQuery": "paneer schezwan lettuce cups recipe",
+      "ingredients": [
+        {
+          "name": "paneer",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "schezwan sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "capsicum",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "lettuce",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "spring onion",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Cube paneer and capsicum.",
+        "Stir-fry capsicum on high heat.",
+        "Add paneer and schezwan sauce, toss.",
+        "Cook till coated and glossy.",
+        "Separate lettuce leaves into cups.",
+        "Spoon paneer in, top with spring onion and serve."
+      ]
+    }
+  ];
+  if (typeof module !== "undefined" && module.exports) module.exports = DATA;
+  else { (root.KhanaProKBParts = root.KhanaProKBParts || []).push(DATA); }
+})(typeof window !== "undefined" ? window : globalThis);

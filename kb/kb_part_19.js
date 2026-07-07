@@ -1,0 +1,4646 @@
+;(function (root) {
+  var DATA = [
+  {
+    "id": "kb-19-001",
+    "title": "Light Chicken Curry",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "low-oil",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 290,
+      "protein": 34,
+      "fibre": 4,
+      "fat": 11,
+      "carbs": 12
+    },
+    "summary": "A homestyle chicken curry simmered in onion-tomato masala with minimal oil — lean protein in a light, flavour-packed gravy.",
+    "channels": [
+      "Your Food Lab",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "light chicken curry healthy low oil recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Marinate chicken in curd, turmeric and salt for 10 minutes.",
+      "Saute onion in oil till golden, add ginger garlic paste.",
+      "Add tomato and cook to a soft masala.",
+      "Add chicken and sear, then add a little water.",
+      "Cover and simmer 15 minutes till tender.",
+      "Finish with garam masala and coriander."
+    ]
+  },
+  {
+    "id": "kb-19-002",
+    "title": "Chicken Chettinad Light",
+    "cuisine": "South Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "spicy",
+      "dinner",
+      "gluten-free",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 310,
+      "protein": 33,
+      "fibre": 5,
+      "fat": 13,
+      "carbs": 13
+    },
+    "summary": "Fiery Chettinad-style chicken in roasted-spice and coconut masala, made light with less oil for a high-protein South Indian dinner.",
+    "channels": [
+      "Home Cooking Show",
+      "Steffi's Recipes"
+    ],
+    "videoQuery": "chicken chettinad light healthy recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "grated coconut",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "black pepper",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "coriander seeds",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 10,
+        "unit": "pc",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Dry-roast pepper, coriander seeds and coconut, then grind to a paste.",
+      "Saute onion and curry leaves in oil.",
+      "Add tomato and the ground masala, cook 4 minutes.",
+      "Add chicken and coat well.",
+      "Pour a little water, cover and simmer 18 minutes.",
+      "Garnish with fresh curry leaves."
+    ]
+  },
+  {
+    "id": "kb-19-003",
+    "title": "Chicken Kolhapuri Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "spicy",
+      "dinner",
+      "gluten-free",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 320,
+      "protein": 33,
+      "fibre": 5,
+      "fat": 14,
+      "carbs": 13
+    },
+    "summary": "Maharashtrian Kolhapuri chicken in a robust roasted-spice gravy, lightened with lean breast and minimal oil.",
+    "channels": [
+      "Your Food Lab",
+      "Archana's Kitchen"
+    ],
+    "videoQuery": "chicken kolhapuri light healthy recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "grated coconut",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "name": "kolhapuri masala",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Roast coconut and grind with a little water.",
+      "Saute onion in oil till brown, add ginger garlic paste.",
+      "Add tomato and kolhapuri masala, cook down.",
+      "Stir in coconut paste.",
+      "Add chicken and water, simmer covered 18 minutes.",
+      "Garnish with coriander."
+    ]
+  },
+  {
+    "id": "kb-19-004",
+    "title": "Butter Chicken Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "low-fat",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 330,
+      "protein": 32,
+      "fibre": 4,
+      "fat": 15,
+      "carbs": 16
+    },
+    "summary": "Creamy butter chicken made guilt-free with curd, low-fat cream and grilled lean chicken for that classic taste with fewer calories.",
+    "channels": [
+      "Sanjeev Kapoor Khazana",
+      "Your Food Lab"
+    ],
+    "videoQuery": "butter chicken light healthy low fat recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "low-fat cream",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "name": "butter",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "kasuri methi",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Marinate chicken in curd and spices, then grill or pan-sear.",
+      "Boil tomatoes, blend to a smooth puree.",
+      "Cook puree with ginger garlic paste and butter.",
+      "Add a splash of water and simmer.",
+      "Add chicken and low-fat cream.",
+      "Finish with kasuri methi and garam masala."
+    ]
+  },
+  {
+    "id": "kb-19-005",
+    "title": "Chicken Bhuna Masala",
+    "cuisine": "North Indian",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "spicy",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 300,
+      "protein": 34,
+      "fibre": 4,
+      "fat": 12,
+      "carbs": 10
+    },
+    "summary": "Slow-bhuna chicken cooked down in a thick, dry onion-tomato masala that clings to every piece — intensely flavoured and protein-rich.",
+    "channels": [
+      "Kabita's Kitchen",
+      "Your Food Lab"
+    ],
+    "videoQuery": "chicken bhuna masala recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "curd",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "red chilli powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Saute onion in oil till deep golden.",
+      "Add ginger garlic paste and tomato, cook to a paste.",
+      "Add chilli powder and curd, bhuna for 5 minutes.",
+      "Add chicken and sear well.",
+      "Cook on low without water, stirring, 15 minutes.",
+      "Finish with garam masala and coriander."
+    ]
+  },
+  {
+    "id": "kb-19-006",
+    "title": "Pepper Chicken Masala",
+    "cuisine": "South Indian",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "spicy",
+      "dinner",
+      "gluten-free",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 280,
+      "protein": 34,
+      "fibre": 3,
+      "fat": 10,
+      "carbs": 8
+    },
+    "summary": "Coarsely crushed black pepper coats lean chicken in this dry South Indian stir-fry — bold heat with very little oil.",
+    "channels": [
+      "Home Cooking Show",
+      "Steffi's Recipes"
+    ],
+    "videoQuery": "pepper chicken masala dry recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "black pepper",
+        "qty": 1.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "curry leaves",
+        "qty": 10,
+        "unit": "pc",
+        "staple": true
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Toss chicken with half the pepper, ginger garlic paste and salt.",
+      "Saute onion and curry leaves in oil.",
+      "Add chicken and sear on high heat.",
+      "Sprinkle remaining crushed pepper.",
+      "Cook dry, tossing, till chicken is done.",
+      "Finish with lemon juice."
+    ]
+  },
+  {
+    "id": "kb-19-007",
+    "title": "Lemon Coriander Chicken Soup",
+    "cuisine": "Pan-Asian",
+    "category": "soup",
+    "tags": [
+      "high-protein",
+      "low-calorie",
+      "dinner",
+      "gluten-free",
+      "light"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 150,
+      "protein": 22,
+      "fibre": 3,
+      "fat": 3,
+      "carbs": 8
+    },
+    "summary": "A clear, zingy broth with shredded chicken, lots of coriander and a squeeze of lemon — warming and very low in calories.",
+    "channels": [
+      "Nisha Madhulika",
+      "Your Food Lab"
+    ],
+    "videoQuery": "lemon coriander chicken soup recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "cabbage",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "spring onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "coriander",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "lemon juice",
+        "qty": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cornflour",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil chicken, shred it and keep the stock.",
+      "Simmer carrot and cabbage in the stock.",
+      "Add shredded chicken and pepper.",
+      "Thicken slightly with cornflour slurry.",
+      "Stir in coriander and spring onion.",
+      "Finish with lemon juice off the heat."
+    ]
+  },
+  {
+    "id": "kb-19-008",
+    "title": "Grilled Chicken Avocado Salad",
+    "cuisine": "Continental",
+    "category": "salad",
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "lunch",
+      "gluten-free",
+      "keto-friendly"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 340,
+      "protein": 32,
+      "fibre": 7,
+      "fat": 18,
+      "carbs": 10
+    },
+    "summary": "Smoky grilled chicken over greens with creamy avocado and a light lemon dressing — a filling, low-carb high-protein salad.",
+    "channels": [
+      "Fit Tuber",
+      "Guiltfree by Bhumika"
+    ],
+    "videoQuery": "grilled chicken avocado salad recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "name": "lettuce",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "avocado",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "cherry tomato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Season chicken and grill till charred, then slice.",
+      "Chop lettuce, cucumber and tomato into a bowl.",
+      "Add sliced avocado.",
+      "Whisk olive oil, lemon juice, pepper and salt.",
+      "Top salad with grilled chicken.",
+      "Drizzle dressing and toss gently."
+    ]
+  },
+  {
+    "id": "kb-19-009",
+    "title": "Grilled Chicken Greek Salad",
+    "cuisine": "Mediterranean",
+    "category": "salad",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "gluten-free",
+      "low-carb",
+      "mediterranean"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 330,
+      "protein": 31,
+      "fibre": 6,
+      "fat": 17,
+      "carbs": 12
+    },
+    "summary": "Greek salad meets lean grilled chicken with feta, olives and a herby olive-oil dressing — fresh, tangy and protein-dense.",
+    "channels": [
+      "Guiltfree by Bhumika",
+      "Fit Tuber"
+    ],
+    "videoQuery": "grilled chicken greek salad recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "feta cheese",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "olives",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "oregano",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Grill seasoned chicken and slice.",
+      "Chop cucumber and tomato into chunks.",
+      "Add olives and crumbled feta.",
+      "Whisk olive oil, lemon, oregano and salt.",
+      "Top with grilled chicken.",
+      "Toss lightly and serve."
+    ]
+  },
+  {
+    "id": "kb-19-010",
+    "title": "Baked Chicken Seekh Kebab",
+    "cuisine": "North Indian",
+    "category": "grill",
+    "tags": [
+      "high-protein",
+      "snack",
+      "gluten-free",
+      "low-oil",
+      "dinner"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 230,
+      "protein": 30,
+      "fibre": 2,
+      "fat": 9,
+      "carbs": 5
+    },
+    "summary": "Spiced minced chicken seekh kebabs baked instead of fried — juicy, smoky and packed with lean protein.",
+    "channels": [
+      "Your Food Lab",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "baked chicken seekh kebab healthy recipe",
+    "ingredients": [
+      {
+        "name": "chicken mince",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "coriander",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "name": "green chilli",
+        "qty": 2,
+        "unit": "pc"
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "roasted besan",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Mix mince with onion, ginger garlic paste and spices.",
+      "Add roasted besan to bind.",
+      "Shape onto skewers as seekh kebabs.",
+      "Place on a lined tray.",
+      "Bake at 200C for 18-20 minutes, turning once.",
+      "Serve with mint chutney."
+    ]
+  },
+  {
+    "id": "kb-19-011",
+    "title": "Whole Wheat Chicken Kathi Roll",
+    "cuisine": "North Indian",
+    "category": "wrap",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "dinner",
+      "high-fibre",
+      "street-food"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 380,
+      "protein": 30,
+      "fibre": 6,
+      "fat": 12,
+      "carbs": 38
+    },
+    "summary": "Spiced chicken tikka rolled in a whole-wheat paratha with onions and chutney — a high-protein, high-fibre take on the classic kathi roll.",
+    "channels": [
+      "Your Food Lab",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "whole wheat chicken kathi roll recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "name": "whole wheat flour",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "mint chutney",
+        "qty": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "tandoori masala",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Marinate chicken in curd and tandoori masala.",
+      "Pan-grill chicken till cooked, then slice.",
+      "Knead atta and roll thin whole-wheat parathas.",
+      "Cook parathas on a tawa with minimal oil.",
+      "Spread chutney, add chicken and onion.",
+      "Roll up tightly and serve."
+    ]
+  },
+  {
+    "id": "kb-19-012",
+    "title": "Chicken Brown Rice Biryani",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "dinner",
+      "high-fibre",
+      "one-pot"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 50,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 420,
+      "protein": 33,
+      "fibre": 6,
+      "fat": 12,
+      "carbs": 48
+    },
+    "summary": "A lighter biryani layered with lean chicken and fibre-rich brown rice — all the aroma with a healthier grain.",
+    "channels": [
+      "Your Food Lab",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "chicken brown rice biryani light recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "biryani masala",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "mint",
+        "qty": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Soak and parboil brown rice till 70% done.",
+      "Marinate chicken in curd, ginger garlic and masala.",
+      "Cook chicken with browned onions till nearly done.",
+      "Layer rice over the chicken with mint.",
+      "Cover and dum on low heat 18 minutes.",
+      "Fluff gently and serve."
+    ]
+  },
+  {
+    "id": "kb-19-013",
+    "title": "Dhaba Style Egg Curry",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 280,
+      "protein": 18,
+      "fibre": 4,
+      "fat": 18,
+      "carbs": 12
+    },
+    "summary": "Boiled eggs simmered in a spicy dhaba-style onion-tomato gravy — a hearty, protein-rich curry made with modest oil.",
+    "channels": [
+      "Kabita's Kitchen",
+      "Nisha Madhulika"
+    ],
+    "videoQuery": "dhaba style egg curry recipe",
+    "ingredients": [
+      {
+        "name": "egg",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "onion",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "red chilli powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil and peel the eggs, lightly fry till golden.",
+      "Saute onion till brown, add ginger garlic paste.",
+      "Add tomato and spices, cook to a thick masala.",
+      "Add water and simmer the gravy.",
+      "Add eggs and cook 5 minutes.",
+      "Finish with garam masala and coriander."
+    ]
+  },
+  {
+    "id": "kb-19-014",
+    "title": "Egg Bhuna Masala",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 270,
+      "protein": 17,
+      "fibre": 4,
+      "fat": 17,
+      "carbs": 11
+    },
+    "summary": "Boiled eggs tossed in a thick, dry bhuna masala — bold spices coat every egg for a quick protein-rich side.",
+    "channels": [
+      "Your Food Lab",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "egg bhuna masala recipe",
+    "ingredients": [
+      {
+        "name": "egg",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "onion",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "red chilli powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "coriander powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil, peel and halve the eggs.",
+      "Saute onion till golden in oil.",
+      "Add ginger garlic paste and tomato.",
+      "Add chilli and coriander powder, bhuna to a thick masala.",
+      "Add eggs and toss gently to coat.",
+      "Garnish with coriander."
+    ]
+  },
+  {
+    "id": "kb-19-015",
+    "title": "Kerala Egg Roast Curry",
+    "cuisine": "South Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 300,
+      "protein": 18,
+      "fibre": 5,
+      "fat": 19,
+      "carbs": 14
+    },
+    "summary": "Kerala-style egg roast with caramelised onions, curry leaves and a touch of coconut — fragrant and protein-rich.",
+    "channels": [
+      "Home Cooking Show",
+      "Steffi's Recipes"
+    ],
+    "videoQuery": "kerala egg roast curry recipe",
+    "ingredients": [
+      {
+        "name": "egg",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "onion",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "grated coconut",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "name": "curry leaves",
+        "qty": 10,
+        "unit": "pc",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "coconut oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil and peel the eggs.",
+      "Slow-cook sliced onion in coconut oil till caramelised.",
+      "Add curry leaves, tomato and spices.",
+      "Stir in grated coconut and a little water.",
+      "Add eggs and roast in the masala.",
+      "Finish with garam masala."
+    ]
+  },
+  {
+    "id": "kb-19-016",
+    "title": "Egg Biryani Light",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "dinner",
+      "one-pot",
+      "high-fibre"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 45,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 410,
+      "protein": 19,
+      "fibre": 5,
+      "fat": 15,
+      "carbs": 52
+    },
+    "summary": "A lighter egg biryani layered with brown rice, boiled eggs and aromatic spices — comforting and protein-boosted.",
+    "channels": [
+      "Kabita's Kitchen",
+      "Your Food Lab"
+    ],
+    "videoQuery": "egg biryani light brown rice recipe",
+    "ingredients": [
+      {
+        "name": "egg",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "biryani masala",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "mint",
+        "qty": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Parboil brown rice to 70%.",
+      "Boil eggs and make a quick onion-curd masala.",
+      "Toss eggs in the masala with biryani spices.",
+      "Layer rice over the egg masala with mint.",
+      "Dum on low heat 15 minutes.",
+      "Fluff and serve hot."
+    ]
+  },
+  {
+    "id": "kb-19-017",
+    "title": "Doi Maach Light",
+    "cuisine": "South Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "low-oil"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 260,
+      "protein": 28,
+      "fibre": 2,
+      "fat": 12,
+      "carbs": 8
+    },
+    "summary": "Bengali fish cooked in a light spiced yogurt gravy — delicate, tangy and rich in lean protein.",
+    "channels": [
+      "Bong Eats",
+      "Get Curried"
+    ],
+    "videoQuery": "doi maach light bengali fish curry recipe",
+    "ingredients": [
+      {
+        "name": "rohu fish",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "ginger paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "turmeric",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "mustard oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "green chilli",
+        "qty": 2,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Marinate fish in turmeric and salt.",
+      "Lightly sear fish in mustard oil, set aside.",
+      "Saute onion and ginger paste.",
+      "Whisk curd and add to the pan on low heat.",
+      "Return fish and simmer gently 8 minutes.",
+      "Add slit green chillies and serve."
+    ]
+  },
+  {
+    "id": "kb-19-018",
+    "title": "Goan Fish Curry Light",
+    "cuisine": "South Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 280,
+      "protein": 28,
+      "fibre": 3,
+      "fat": 14,
+      "carbs": 9
+    },
+    "summary": "Tangy Goan-style fish curry in a light coconut and tamarind gravy — coastal flavour with lean protein.",
+    "channels": [
+      "Get Curried",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "goan fish curry light recipe",
+    "ingredients": [
+      {
+        "name": "basa fillet",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "grated coconut",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "tamarind paste",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "red chilli powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "turmeric",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "coconut oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Grind coconut with spices and a little water.",
+      "Saute onion in coconut oil till soft.",
+      "Add the coconut paste and cook 4 minutes.",
+      "Add tamarind and water, simmer the gravy.",
+      "Slide in fish pieces and cook 8 minutes.",
+      "Adjust salt and serve."
+    ]
+  },
+  {
+    "id": "kb-19-019",
+    "title": "Kerala Meen Curry Light",
+    "cuisine": "South Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 270,
+      "protein": 28,
+      "fibre": 3,
+      "fat": 13,
+      "carbs": 8
+    },
+    "summary": "Kerala-style fish curry simmered in kokum-tang and light coconut masala with curry leaves — bold and protein-rich.",
+    "channels": [
+      "Home Cooking Show",
+      "Steffi's Recipes"
+    ],
+    "videoQuery": "kerala meen curry light fish recipe",
+    "ingredients": [
+      {
+        "name": "rohu fish",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "grated coconut",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "name": "shallots",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "kokum",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "red chilli powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 10,
+        "unit": "pc",
+        "staple": true
+      },
+      {
+        "name": "coconut oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Grind coconut with chilli powder to a paste.",
+      "Saute shallots and curry leaves in coconut oil.",
+      "Add coconut paste and cook briefly.",
+      "Add kokum and water, bring to a simmer.",
+      "Add fish and cook gently 8 minutes.",
+      "Rest 10 minutes before serving."
+    ]
+  },
+  {
+    "id": "kb-19-020",
+    "title": "Grilled Salmon Fillet",
+    "cuisine": "Continental",
+    "category": "grill",
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "dinner",
+      "gluten-free",
+      "omega-3"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 20,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 320,
+      "protein": 34,
+      "fibre": 1,
+      "fat": 19,
+      "carbs": 2
+    },
+    "summary": "Simply seasoned salmon grilled to flaky perfection — rich in omega-3 and high-quality protein with almost no carbs.",
+    "channels": [
+      "Fit Tuber",
+      "Guiltfree by Bhumika"
+    ],
+    "videoQuery": "grilled salmon fillet healthy recipe",
+    "ingredients": [
+      {
+        "name": "salmon fillet",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic",
+        "qty": 2,
+        "unit": "pc"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "parsley",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Pat salmon dry and season with salt and pepper.",
+      "Rub with crushed garlic, lemon and olive oil.",
+      "Heat a grill pan till hot.",
+      "Grill salmon skin-side down 4 minutes.",
+      "Flip and cook 3-4 minutes more.",
+      "Finish with parsley and lemon."
+    ]
+  },
+  {
+    "id": "kb-19-021",
+    "title": "Tandoori Fish Fillet",
+    "cuisine": "North Indian",
+    "category": "grill",
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "dinner",
+      "gluten-free",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 240,
+      "protein": 30,
+      "fibre": 2,
+      "fat": 11,
+      "carbs": 4
+    },
+    "summary": "Fish fillets marinated in spiced yogurt and chargrilled tandoori-style — smoky, lean and protein-dense.",
+    "channels": [
+      "Your Food Lab",
+      "Get Curried"
+    ],
+    "videoQuery": "tandoori fish fillet recipe",
+    "ingredients": [
+      {
+        "name": "basa fillet",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "tandoori masala",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "besan",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Whisk curd with ginger garlic, tandoori masala and besan.",
+      "Coat fish in the marinade for 20 minutes.",
+      "Place on a lined tray or skewers.",
+      "Grill or bake at 220C for 12-15 minutes.",
+      "Baste once with lemon.",
+      "Serve with onion rings."
+    ]
+  },
+  {
+    "id": "kb-19-022",
+    "title": "Prawn Masala Dry",
+    "cuisine": "South Indian",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "spicy",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 230,
+      "protein": 28,
+      "fibre": 3,
+      "fat": 9,
+      "carbs": 6
+    },
+    "summary": "Juicy prawns tossed in a dry onion-tomato masala with curry leaves — quick, fiery and very high in lean protein.",
+    "channels": [
+      "Get Curried",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "prawn masala dry recipe",
+    "ingredients": [
+      {
+        "name": "prawns",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "red chilli powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 10,
+        "unit": "pc",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Clean and devein prawns.",
+      "Saute onion and curry leaves in oil.",
+      "Add ginger garlic paste and tomato.",
+      "Add chilli powder and cook to a thick masala.",
+      "Toss in prawns and cook 5-6 minutes.",
+      "Garnish with coriander."
+    ]
+  },
+  {
+    "id": "kb-19-023",
+    "title": "Prawn Brown Rice Pulao",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "dinner",
+      "one-pot",
+      "high-fibre"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 400,
+      "protein": 29,
+      "fibre": 5,
+      "fat": 12,
+      "carbs": 46
+    },
+    "summary": "Aromatic prawn pulao made with fibre-rich brown rice and whole spices — a wholesome, protein-packed one-pot meal.",
+    "channels": [
+      "Get Curried",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "prawn brown rice pulao light recipe",
+    "ingredients": [
+      {
+        "name": "prawns",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "green peas",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak brown rice for 20 minutes.",
+      "Saute whole spices and onion in oil.",
+      "Add ginger garlic paste and prawns, sear briefly.",
+      "Add peas, rice and water.",
+      "Cook covered till rice is tender.",
+      "Rest, fluff and serve."
+    ]
+  },
+  {
+    "id": "kb-19-024",
+    "title": "Lean Keema Matar Curry",
+    "cuisine": "North Indian",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 310,
+      "protein": 30,
+      "fibre": 5,
+      "fat": 15,
+      "carbs": 12
+    },
+    "summary": "Lean minced meat cooked with green peas in a spiced masala — a hearty high-protein keema that stays light on oil.",
+    "channels": [
+      "Your Food Lab",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "lean keema matar curry recipe",
+    "ingredients": [
+      {
+        "name": "mutton mince",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Saute onion in oil till golden.",
+      "Add ginger garlic paste and tomato.",
+      "Add mince and brown well, breaking lumps.",
+      "Add spices and a little water.",
+      "Add peas and simmer covered 20 minutes.",
+      "Finish with garam masala and coriander."
+    ]
+  },
+  {
+    "id": "kb-19-025",
+    "title": "Chicken Bell Pepper Stir-Fry",
+    "cuisine": "Indo-Chinese",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "quick",
+      "dinner",
+      "low-carb",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 20,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 260,
+      "protein": 30,
+      "fibre": 4,
+      "fat": 11,
+      "carbs": 8
+    },
+    "summary": "Lean chicken stir-fried with crunchy bell peppers in a light garlic-soy glaze — fast, colourful and protein-forward.",
+    "channels": [
+      "Your Food Lab",
+      "Cookd"
+    ],
+    "videoQuery": "chicken bell pepper stir fry recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Slice chicken into thin strips.",
+      "Heat oil and stir-fry garlic.",
+      "Add chicken and sear on high heat.",
+      "Add bell pepper and onion, toss quickly.",
+      "Add soy sauce and pepper.",
+      "Stir-fry till glazed and serve."
+    ]
+  },
+  {
+    "id": "kb-19-026",
+    "title": "Chicken Mushroom Stir-Fry",
+    "cuisine": "Indo-Chinese",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "quick",
+      "dinner",
+      "low-carb",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 20,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 250,
+      "protein": 31,
+      "fibre": 3,
+      "fat": 10,
+      "carbs": 7
+    },
+    "summary": "Tender chicken and mushrooms stir-fried in a savoury garlic sauce — a quick, low-carb protein hit.",
+    "channels": [
+      "Cookd",
+      "Your Food Lab"
+    ],
+    "videoQuery": "chicken mushroom stir fry recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "mushroom",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "spring onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Slice chicken thin and season.",
+      "Stir-fry garlic in hot oil.",
+      "Sear chicken till golden.",
+      "Add mushrooms and toss till soft.",
+      "Add soy sauce and pepper.",
+      "Garnish with spring onion."
+    ]
+  },
+  {
+    "id": "kb-19-027",
+    "title": "Chicken Green Beans Stir-Fry",
+    "cuisine": "Pan-Asian",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "quick",
+      "dinner",
+      "low-carb",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 20,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 250,
+      "protein": 30,
+      "fibre": 5,
+      "fat": 10,
+      "carbs": 9
+    },
+    "summary": "Lean chicken and crisp green beans tossed in a light ginger-soy sauce — crunchy, fresh and high in protein.",
+    "channels": [
+      "Cookd",
+      "Your Food Lab"
+    ],
+    "videoQuery": "chicken green beans stir fry recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "green beans",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "ginger",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "sesame oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cut chicken into strips.",
+      "Stir-fry ginger and garlic in oil.",
+      "Add chicken and sear.",
+      "Add green beans and toss till tender-crisp.",
+      "Add soy sauce and sesame oil.",
+      "Serve hot."
+    ]
+  },
+  {
+    "id": "kb-19-028",
+    "title": "Kerala Chicken Stew",
+    "cuisine": "South Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "mild"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 290,
+      "protein": 31,
+      "fibre": 4,
+      "fat": 14,
+      "carbs": 12
+    },
+    "summary": "A gentle Kerala-style chicken stew in light coconut milk with whole spices and vegetables — soothing and protein-rich.",
+    "channels": [
+      "Home Cooking Show",
+      "Steffi's Recipes"
+    ],
+    "videoQuery": "kerala chicken stew light recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "coconut milk",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "potato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 10,
+        "unit": "pc",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Saute onion, ginger and curry leaves.",
+      "Add chicken and sear lightly.",
+      "Add carrot, potato and water, simmer till tender.",
+      "Pour in coconut milk and warm through.",
+      "Season with pepper.",
+      "Rest and serve with appam."
+    ]
+  },
+  {
+    "id": "kb-19-029",
+    "title": "Grilled Chicken Quinoa Salad",
+    "cuisine": "Healthy",
+    "category": "salad",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "gluten-free",
+      "high-fibre",
+      "meal-prep"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 360,
+      "protein": 32,
+      "fibre": 7,
+      "fat": 12,
+      "carbs": 28
+    },
+    "summary": "Protein-packed quinoa salad with grilled chicken, crunchy veggies and a lemon dressing — perfect for meal prep.",
+    "channels": [
+      "Fit Tuber",
+      "Guiltfree by Bhumika"
+    ],
+    "videoQuery": "grilled chicken quinoa salad recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cherry tomato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook quinoa and let it cool.",
+      "Grill seasoned chicken and slice.",
+      "Chop cucumber and tomato.",
+      "Combine quinoa, veggies and chicken.",
+      "Whisk olive oil, lemon and pepper.",
+      "Toss and serve chilled."
+    ]
+  },
+  {
+    "id": "kb-19-030",
+    "title": "Tandoori Chicken Salad Bowl",
+    "cuisine": "North Indian",
+    "category": "salad",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "gluten-free",
+      "low-carb",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 320,
+      "protein": 33,
+      "fibre": 6,
+      "fat": 14,
+      "carbs": 12
+    },
+    "summary": "Smoky tandoori chicken over fresh salad greens with a mint-yogurt drizzle — bold Indian flavour, low in carbs.",
+    "channels": [
+      "Your Food Lab",
+      "Guiltfree by Bhumika"
+    ],
+    "videoQuery": "tandoori chicken salad bowl recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "lettuce",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tandoori masala",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "mint chutney",
+        "qty": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Marinate chicken in curd and tandoori masala.",
+      "Grill till charred, then slice.",
+      "Arrange lettuce, cucumber and onion.",
+      "Top with tandoori chicken.",
+      "Drizzle mint chutney.",
+      "Toss lightly and serve."
+    ]
+  },
+  {
+    "id": "kb-19-031",
+    "title": "Chicken Tikka Masala Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "low-fat"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 330,
+      "protein": 33,
+      "fibre": 4,
+      "fat": 15,
+      "carbs": 14
+    },
+    "summary": "Grilled chicken tikka in a lighter creamy tomato gravy using curd instead of cream — restaurant flavour, fewer calories.",
+    "channels": [
+      "Sanjeev Kapoor Khazana",
+      "Your Food Lab"
+    ],
+    "videoQuery": "chicken tikka masala light recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 180,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "kasuri methi",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Marinate and grill chicken tikka pieces.",
+      "Blend tomato into a puree.",
+      "Cook puree with onion and ginger garlic paste.",
+      "Whisk in curd on low heat.",
+      "Add chicken and simmer.",
+      "Finish with kasuri methi and garam masala."
+    ]
+  },
+  {
+    "id": "kb-19-032",
+    "title": "Baked Chicken Reshmi Kebab",
+    "cuisine": "North Indian",
+    "category": "grill",
+    "tags": [
+      "high-protein",
+      "snack",
+      "gluten-free",
+      "low-oil",
+      "dinner"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 250,
+      "protein": 31,
+      "fibre": 1,
+      "fat": 13,
+      "carbs": 4
+    },
+    "summary": "Creamy, melt-in-mouth reshmi kebabs made with curd and cheese, baked for a lighter high-protein starter.",
+    "channels": [
+      "Your Food Lab",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "baked chicken reshmi kebab recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "processed cheese",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cream",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "white pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cardamom powder",
+        "qty": 0.25,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cut chicken into cubes.",
+      "Mix curd, grated cheese, cream and spices.",
+      "Marinate chicken for 30 minutes.",
+      "Skewer the pieces.",
+      "Bake at 200C for 18 minutes, turning once.",
+      "Serve with mint chutney."
+    ]
+  },
+  {
+    "id": "kb-19-033",
+    "title": "Chicken Lababdar Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "low-fat"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 330,
+      "protein": 32,
+      "fibre": 4,
+      "fat": 16,
+      "carbs": 14
+    },
+    "summary": "Rich-tasting chicken lababdar made lighter with curd and a touch of cream — a creamy, protein-rich gravy.",
+    "channels": [
+      "Sanjeev Kapoor Khazana",
+      "Get Curried"
+    ],
+    "videoQuery": "chicken lababdar light recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 180,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cream",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "kasuri methi",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Make a puree of tomato and onion.",
+      "Cook puree with ginger garlic paste.",
+      "Add chicken and sear.",
+      "Whisk in curd and a splash of water.",
+      "Simmer till chicken is tender.",
+      "Add cream and kasuri methi."
+    ]
+  },
+  {
+    "id": "kb-19-034",
+    "title": "Egg White Curry Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "low-fat",
+      "dinner",
+      "gluten-free",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 200,
+      "protein": 20,
+      "fibre": 4,
+      "fat": 8,
+      "carbs": 12
+    },
+    "summary": "Boiled egg whites simmered in a light spiced gravy — a leaner, lower-fat take on classic egg curry.",
+    "channels": [
+      "Guiltfree by Bhumika",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "egg white curry light recipe",
+    "ingredients": [
+      {
+        "name": "egg white",
+        "qty": 6,
+        "unit": "pc"
+      },
+      {
+        "name": "onion",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "turmeric",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil eggs, separate the whites and halve them.",
+      "Saute onion in minimal oil.",
+      "Add ginger garlic paste and tomato.",
+      "Add spices and cook to a masala.",
+      "Add water and the egg whites.",
+      "Simmer 5 minutes and garnish."
+    ]
+  },
+  {
+    "id": "kb-19-035",
+    "title": "Egg Capsicum Masala",
+    "cuisine": "North Indian",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "quick",
+      "dinner",
+      "gluten-free",
+      "lunch"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 20,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 260,
+      "protein": 16,
+      "fibre": 4,
+      "fat": 17,
+      "carbs": 12
+    },
+    "summary": "Boiled eggs and capsicum tossed in a quick semi-dry masala — a fast, protein-rich dish with crunchy peppers.",
+    "channels": [
+      "Kabita's Kitchen",
+      "Nisha Madhulika"
+    ],
+    "videoQuery": "egg capsicum masala recipe",
+    "ingredients": [
+      {
+        "name": "egg",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "red chilli powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil, peel and quarter the eggs.",
+      "Saute onion and capsicum in oil.",
+      "Add tomato and spices, cook briefly.",
+      "Add eggs and toss to coat.",
+      "Sprinkle garam masala.",
+      "Garnish and serve."
+    ]
+  },
+  {
+    "id": "kb-19-036",
+    "title": "Fish Tikka Masala Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 300,
+      "protein": 30,
+      "fibre": 4,
+      "fat": 15,
+      "carbs": 12
+    },
+    "summary": "Grilled fish tikka in a light tomato-curd gravy — a leaner take with all the smoky tandoori flavour.",
+    "channels": [
+      "Get Curried",
+      "Your Food Lab"
+    ],
+    "videoQuery": "fish tikka masala light recipe",
+    "ingredients": [
+      {
+        "name": "basa fillet",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "tandoori masala",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "kasuri methi",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Marinate fish in curd and tandoori masala, then grill.",
+      "Blend tomato to a puree.",
+      "Cook puree with onion and ginger garlic paste.",
+      "Whisk in remaining curd.",
+      "Add fish gently and simmer briefly.",
+      "Finish with kasuri methi."
+    ]
+  },
+  {
+    "id": "kb-19-037",
+    "title": "Lemon Herb Steamed Fish",
+    "cuisine": "Continental",
+    "category": "grill",
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "dinner",
+      "gluten-free",
+      "low-oil"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 230,
+      "protein": 30,
+      "fibre": 2,
+      "fat": 9,
+      "carbs": 3
+    },
+    "summary": "Fish fillets steamed with lemon, herbs and garlic — moist, delicate and very low in fat and carbs.",
+    "channels": [
+      "Guiltfree by Bhumika",
+      "Fit Tuber"
+    ],
+    "videoQuery": "lemon herb steamed fish recipe",
+    "ingredients": [
+      {
+        "name": "basa fillet",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "lemon juice",
+        "qty": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "parsley",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Season fish with salt and pepper.",
+      "Top with crushed garlic, lemon and herbs.",
+      "Drizzle a little olive oil.",
+      "Place in a steamer.",
+      "Steam 10-12 minutes till flaky.",
+      "Serve with extra lemon."
+    ]
+  },
+  {
+    "id": "kb-19-038",
+    "title": "Grilled Prawn Skewers",
+    "cuisine": "Continental",
+    "category": "grill",
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "dinner",
+      "gluten-free",
+      "quick"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 20,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 200,
+      "protein": 28,
+      "fibre": 1,
+      "fat": 8,
+      "carbs": 3
+    },
+    "summary": "Garlicky, lemony prawns grilled on skewers — fast, lean and loaded with high-quality protein.",
+    "channels": [
+      "Fit Tuber",
+      "Get Curried"
+    ],
+    "videoQuery": "grilled prawn skewers recipe",
+    "ingredients": [
+      {
+        "name": "prawns",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "paprika",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Clean and devein prawns.",
+      "Marinate in garlic, lemon, paprika and oil.",
+      "Thread onto skewers.",
+      "Heat a grill pan.",
+      "Grill 2-3 minutes per side.",
+      "Serve with a lemon wedge."
+    ]
+  },
+  {
+    "id": "kb-19-039",
+    "title": "Garlic Chilli Prawn Stir-Fry",
+    "cuisine": "Indo-Chinese",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "quick",
+      "dinner",
+      "low-carb",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 20,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 220,
+      "protein": 27,
+      "fibre": 2,
+      "fat": 10,
+      "carbs": 6
+    },
+    "summary": "Plump prawns wok-tossed with garlic, chilli and spring onion — quick, fiery and protein-dense.",
+    "channels": [
+      "Cookd",
+      "Get Curried"
+    ],
+    "videoQuery": "garlic chilli prawn stir fry recipe",
+    "ingredients": [
+      {
+        "name": "prawns",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "green chilli",
+        "qty": 2,
+        "unit": "pc"
+      },
+      {
+        "name": "spring onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Clean the prawns.",
+      "Heat oil and stir-fry garlic and chilli.",
+      "Add prawns and sear on high heat.",
+      "Add soy sauce and toss.",
+      "Cook till prawns curl and turn pink.",
+      "Garnish with spring onion."
+    ]
+  },
+  {
+    "id": "kb-19-040",
+    "title": "Hariyali Chicken Curry Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "low-oil"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 290,
+      "protein": 33,
+      "fibre": 5,
+      "fat": 12,
+      "carbs": 10
+    },
+    "summary": "Chicken simmered in a fresh green masala of coriander, mint and spinach — vibrant, aromatic and protein-rich.",
+    "channels": [
+      "Your Food Lab",
+      "Get Curried"
+    ],
+    "videoQuery": "hariyali chicken curry light recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "coriander",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "mint",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "curd",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Blend coriander, mint and spinach to a paste.",
+      "Saute onion and ginger garlic paste in oil.",
+      "Add the green paste and cook 4 minutes.",
+      "Add chicken and sear.",
+      "Whisk in curd and a little water.",
+      "Simmer covered 18 minutes."
+    ]
+  },
+  {
+    "id": "kb-19-041",
+    "title": "Chicken Korma Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "mild"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 330,
+      "protein": 32,
+      "fibre": 4,
+      "fat": 17,
+      "carbs": 12
+    },
+    "summary": "A mild, fragrant chicken korma made light with curd and ground nuts instead of heavy cream — rich taste, less fat.",
+    "channels": [
+      "Sanjeev Kapoor Khazana",
+      "Get Curried"
+    ],
+    "videoQuery": "chicken korma light recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "cashew",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Grind cashews to a smooth paste.",
+      "Saute onion in oil till soft, blend if desired.",
+      "Add ginger garlic paste and cook.",
+      "Add chicken and sear.",
+      "Whisk in curd and cashew paste.",
+      "Simmer gently till tender, finish with garam masala."
+    ]
+  },
+  {
+    "id": "kb-19-042",
+    "title": "Egg Palak Curry",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "iron-rich"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 260,
+      "protein": 18,
+      "fibre": 5,
+      "fat": 16,
+      "carbs": 12
+    },
+    "summary": "Boiled eggs in a creamy spinach gravy — an iron-rich, protein-packed twist on palak curry.",
+    "channels": [
+      "Nisha Madhulika",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "egg palak curry recipe",
+    "ingredients": [
+      {
+        "name": "egg",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "spinach",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Blanch and blend spinach to a puree.",
+      "Boil and halve the eggs.",
+      "Saute onion and ginger garlic paste.",
+      "Add tomato, then the spinach puree.",
+      "Season and simmer.",
+      "Add eggs and warm through."
+    ]
+  },
+  {
+    "id": "kb-19-043",
+    "title": "Chicken Manchurian Light",
+    "cuisine": "Indo-Chinese",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "spicy",
+      "lunch",
+      "low-oil"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 280,
+      "protein": 30,
+      "fibre": 3,
+      "fat": 11,
+      "carbs": 14
+    },
+    "summary": "Pan-tossed chicken balls in a tangy Manchurian sauce, made light with baked dumplings and minimal oil.",
+    "channels": [
+      "Your Food Lab",
+      "Cookd"
+    ],
+    "videoQuery": "chicken manchurian light recipe",
+    "ingredients": [
+      {
+        "name": "chicken mince",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "cornflour",
+        "qty": 2,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "garlic",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "tomato ketchup",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "spring onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Mix mince with cornflour and seasoning, shape into balls.",
+      "Bake or air-fry the balls till cooked.",
+      "Stir-fry garlic in oil.",
+      "Add soy sauce, ketchup and water for the sauce.",
+      "Toss the chicken balls in the sauce.",
+      "Garnish with spring onion."
+    ]
+  },
+  {
+    "id": "kb-19-044",
+    "title": "Chilli Chicken Gravy Light",
+    "cuisine": "Indo-Chinese",
+    "category": "high-protein",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "spicy",
+      "lunch",
+      "low-oil"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 270,
+      "protein": 31,
+      "fibre": 3,
+      "fat": 10,
+      "carbs": 13
+    },
+    "summary": "Lean chicken in a glossy chilli-garlic gravy with peppers — a lighter restaurant-style Indo-Chinese favourite.",
+    "channels": [
+      "Cookd",
+      "Your Food Lab"
+    ],
+    "videoQuery": "chilli chicken gravy light recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "qty": 4,
+        "unit": "pc"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "green chilli sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cornflour",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cut chicken into strips and toss in a little cornflour.",
+      "Sear chicken in minimal oil till golden.",
+      "Stir-fry garlic, onion and peppers.",
+      "Add soy and chilli sauces with water.",
+      "Return chicken and simmer.",
+      "Thicken slightly and serve."
+    ]
+  },
+  {
+    "id": "kb-19-045",
+    "title": "Schezwan Chicken Quinoa Bowl",
+    "cuisine": "Indo-Chinese",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "spicy",
+      "high-fibre",
+      "meal-prep"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 380,
+      "protein": 31,
+      "fibre": 6,
+      "fat": 12,
+      "carbs": 36
+    },
+    "summary": "Spicy schezwan chicken over protein-rich quinoa with stir-fried veggies — a fibre-packed, fiery bowl.",
+    "channels": [
+      "Cookd",
+      "Your Food Lab"
+    ],
+    "videoQuery": "schezwan chicken quinoa bowl recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cabbage",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "schezwan sauce",
+        "qty": 1.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook quinoa and keep aside.",
+      "Stir-fry garlic and chicken strips.",
+      "Add veggies and toss.",
+      "Add schezwan sauce and coat.",
+      "Spoon over the quinoa.",
+      "Garnish with spring onion."
+    ]
+  },
+  {
+    "id": "kb-19-046",
+    "title": "Chicken Shorba Soup",
+    "cuisine": "North Indian",
+    "category": "soup",
+    "tags": [
+      "high-protein",
+      "low-calorie",
+      "dinner",
+      "gluten-free",
+      "light"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 160,
+      "protein": 21,
+      "fibre": 2,
+      "fat": 5,
+      "carbs": 8
+    },
+    "summary": "A spiced Indian chicken shorba with shredded chicken and warming spices — light, comforting and protein-rich.",
+    "channels": [
+      "Nisha Madhulika",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "chicken shorba soup recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "coriander",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil chicken, shred it and reserve stock.",
+      "Saute onion, ginger garlic and tomato in oil.",
+      "Blend the masala smooth and return to pot.",
+      "Add stock and shredded chicken.",
+      "Season with garam masala and simmer.",
+      "Finish with coriander."
+    ]
+  },
+  {
+    "id": "kb-19-047",
+    "title": "Grilled Chicken Hummus Wrap",
+    "cuisine": "Mediterranean",
+    "category": "wrap",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "high-fibre",
+      "mediterranean",
+      "meal-prep"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 370,
+      "protein": 30,
+      "fibre": 7,
+      "fat": 12,
+      "carbs": 36
+    },
+    "summary": "Grilled chicken with hummus and crunchy salad in a whole-wheat wrap — a balanced, protein-and-fibre lunch.",
+    "channels": [
+      "Guiltfree by Bhumika",
+      "Fit Tuber"
+    ],
+    "videoQuery": "grilled chicken hummus wrap whole wheat recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "name": "whole wheat wrap",
+        "qty": 2,
+        "unit": "pc"
+      },
+      {
+        "name": "hummus",
+        "qty": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lettuce",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "paprika",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Season chicken with paprika and grill, then slice.",
+      "Warm the whole-wheat wraps.",
+      "Spread hummus over each wrap.",
+      "Add lettuce and cucumber.",
+      "Layer the grilled chicken.",
+      "Roll tightly and serve."
+    ]
+  },
+  {
+    "id": "kb-19-048",
+    "title": "Egg Veg Quinoa Bowl",
+    "cuisine": "Healthy",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "gluten-free",
+      "high-fibre",
+      "meal-prep"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 360,
+      "protein": 22,
+      "fibre": 7,
+      "fat": 14,
+      "carbs": 38
+    },
+    "summary": "Scrambled eggs tossed through quinoa and colourful veggies — a wholesome, high-protein, high-fibre bowl.",
+    "channels": [
+      "Fit Tuber",
+      "Guiltfree by Bhumika"
+    ],
+    "videoQuery": "egg veg quinoa bowl recipe",
+    "ingredients": [
+      {
+        "name": "egg",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "quinoa",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "spring onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook quinoa and set aside.",
+      "Scramble eggs in a little oil, remove.",
+      "Stir-fry carrot and bell pepper.",
+      "Add quinoa and soy sauce.",
+      "Fold in the scrambled eggs.",
+      "Garnish with spring onion."
+    ]
+  },
+  {
+    "id": "kb-19-049",
+    "title": "Grilled Fish Brown Rice Bowl",
+    "cuisine": "Continental",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "gluten-free",
+      "high-fibre",
+      "meal-prep"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 390,
+      "protein": 31,
+      "fibre": 6,
+      "fat": 12,
+      "carbs": 40
+    },
+    "summary": "Flaky grilled fish over fibre-rich brown rice with steamed veggies and a lemon drizzle — a clean, balanced bowl.",
+    "channels": [
+      "Fit Tuber",
+      "Guiltfree by Bhumika"
+    ],
+    "videoQuery": "grilled fish brown rice bowl recipe",
+    "ingredients": [
+      {
+        "name": "basa fillet",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "broccoli",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook brown rice.",
+      "Season and grill the fish till flaky.",
+      "Steam broccoli and carrot.",
+      "Assemble rice, veggies and fish in a bowl.",
+      "Drizzle olive oil and lemon.",
+      "Season with pepper and serve."
+    ]
+  },
+  {
+    "id": "kb-19-050",
+    "title": "Bengali Prawn Curry Light",
+    "cuisine": "South Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 250,
+      "protein": 27,
+      "fibre": 3,
+      "fat": 12,
+      "carbs": 8
+    },
+    "summary": "Bengali-style prawns in a light mustard-coconut gravy — coastal, aromatic and high in lean protein.",
+    "channels": [
+      "Bong Eats",
+      "Get Curried"
+    ],
+    "videoQuery": "bengali prawn curry light recipe",
+    "ingredients": [
+      {
+        "name": "prawns",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "coconut milk",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "name": "onion",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "mustard paste",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "turmeric",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "green chilli",
+        "qty": 2,
+        "unit": "pc"
+      },
+      {
+        "name": "mustard oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Marinate prawns in turmeric and salt.",
+      "Lightly sear prawns in mustard oil.",
+      "Saute onion and add mustard paste.",
+      "Add a little water and the prawns.",
+      "Pour in coconut milk and simmer gently.",
+      "Add green chillies and serve."
+    ]
+  },
+  {
+    "id": "kb-19-051",
+    "title": "Chicken Spinach Clear Soup",
+    "cuisine": "Pan-Asian",
+    "category": "soup",
+    "tags": [
+      "high-protein",
+      "low-calorie",
+      "dinner",
+      "gluten-free",
+      "iron-rich"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 150,
+      "protein": 20,
+      "fibre": 3,
+      "fat": 4,
+      "carbs": 8
+    },
+    "summary": "A light clear broth with shredded chicken and spinach — low in calories, rich in protein and iron.",
+    "channels": [
+      "Nisha Madhulika",
+      "Your Food Lab"
+    ],
+    "videoQuery": "chicken spinach clear soup recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "qty": 2,
+        "unit": "pc"
+      },
+      {
+        "name": "ginger",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "spring onion",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "cornflour",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil chicken, shred and keep stock.",
+      "Simmer garlic and ginger in the stock.",
+      "Add shredded chicken and spinach.",
+      "Season with pepper.",
+      "Thicken lightly with cornflour slurry.",
+      "Garnish with spring onion."
+    ]
+  },
+  {
+    "id": "kb-19-052",
+    "title": "Tandoori Prawn Tikka",
+    "cuisine": "North Indian",
+    "category": "grill",
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "dinner",
+      "gluten-free",
+      "spicy"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 210,
+      "protein": 27,
+      "fibre": 1,
+      "fat": 9,
+      "carbs": 4
+    },
+    "summary": "Prawns marinated in spiced yogurt and chargrilled tandoori-style — smoky, lean and protein-packed.",
+    "channels": [
+      "Get Curried",
+      "Your Food Lab"
+    ],
+    "videoQuery": "tandoori prawn tikka recipe",
+    "ingredients": [
+      {
+        "name": "prawns",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "tandoori masala",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "lemon juice",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "besan",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Clean and devein prawns.",
+      "Mix curd with ginger garlic, tandoori masala and besan.",
+      "Marinate prawns 20 minutes.",
+      "Thread onto skewers.",
+      "Grill or bake at 220C for 8-10 minutes.",
+      "Finish with lemon."
+    ]
+  },
+  {
+    "id": "kb-19-053",
+    "title": "Chicken Sweet Corn Soup",
+    "cuisine": "Indo-Chinese",
+    "category": "soup",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "comfort",
+      "low-fat",
+      "light"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 180,
+      "protein": 18,
+      "fibre": 3,
+      "fat": 4,
+      "carbs": 18
+    },
+    "summary": "Classic sweet corn soup with shredded chicken — comforting, protein-boosted and low in fat.",
+    "channels": [
+      "Your Food Lab",
+      "Cookd"
+    ],
+    "videoQuery": "chicken sweet corn soup recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "sweet corn",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "spring onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "cornflour",
+        "qty": 1.5,
+        "unit": "tbsp",
+        "staple": true
+      },
+      {
+        "name": "black pepper",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Boil chicken, shred and keep stock.",
+      "Simmer corn and carrot in the stock.",
+      "Add shredded chicken.",
+      "Stir in cornflour slurry to thicken.",
+      "Season with pepper and soy sauce.",
+      "Garnish with spring onion."
+    ]
+  },
+  {
+    "id": "kb-19-054",
+    "title": "Palak Chicken Light",
+    "cuisine": "North Indian",
+    "category": "curry",
+    "tags": [
+      "high-protein",
+      "dinner",
+      "gluten-free",
+      "lunch",
+      "iron-rich"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 300,
+      "protein": 33,
+      "fibre": 6,
+      "fat": 12,
+      "carbs": 10
+    },
+    "summary": "Lean chicken cooked in a smooth spinach gravy — an iron-rich, protein-dense saagwala made light on oil.",
+    "channels": [
+      "Get Curried",
+      "Your Food Lab"
+    ],
+    "videoQuery": "palak chicken light saagwala recipe",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garam masala",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Blanch and blend spinach to a puree.",
+      "Saute onion and ginger garlic paste in oil.",
+      "Add tomato and cook to a masala.",
+      "Add chicken and sear.",
+      "Add spinach puree and a little water.",
+      "Simmer covered 18 minutes, finish with garam masala."
+    ]
+  },
+  {
+    "id": "kb-19-055",
+    "title": "Masala Egg Bhurji Rice Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "lunch",
+      "high-fibre",
+      "meal-prep",
+      "quick"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 380,
+      "protein": 21,
+      "fibre": 6,
+      "fat": 15,
+      "carbs": 40
+    },
+    "summary": "Spiced egg bhurji served over fibre-rich brown rice with veggies — a quick, balanced, high-protein bowl.",
+    "channels": [
+      "Kabita's Kitchen",
+      "Fit Tuber"
+    ],
+    "videoQuery": "masala egg bhurji brown rice bowl recipe",
+    "ingredients": [
+      {
+        "name": "egg",
+        "qty": 3,
+        "unit": "pc"
+      },
+      {
+        "name": "brown rice",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 0.5,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook brown rice and keep warm.",
+      "Saute onion, tomato and bell pepper in oil.",
+      "Add beaten eggs and scramble with turmeric.",
+      "Cook till just set.",
+      "Spoon bhurji over the brown rice.",
+      "Garnish with coriander."
+    ]
+  }
+];
+  if (typeof module !== "undefined" && module.exports) module.exports = DATA;
+  else { (root.KhanaProKBParts = root.KhanaProKBParts || []).push(DATA); }
+})(typeof window !== "undefined" ? window : globalThis);

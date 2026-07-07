@@ -1,0 +1,4935 @@
+;(function (root) {
+  var DATA = [
+    {
+      "id": "kb-40-001",
+      "title": "Sweet Protein Lassi",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "probiotic",
+        "summer-cooler",
+        "gut-health"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 210,
+        "protein": 14,
+        "fibre": 1,
+        "fat": 5,
+        "carbs": 30
+      },
+      "summary": "Thick whisked curd lassi sweetened lightly and boosted with whey protein for a creamy gut-friendly cooler.",
+      "channels": [
+        "Fit Tuber",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "sweet protein lassi recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "whey protein",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "water",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Add chilled curd and water to a blender.",
+        "Add whey protein, honey and cardamom powder.",
+        "Blend 30 seconds until smooth and frothy.",
+        "Pour into glasses and serve chilled."
+      ]
+    },
+    {
+      "id": "kb-40-002",
+      "title": "Mango Protein Lassi",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "probiotic",
+        "summer-cooler",
+        "seasonal"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 15,
+        "fibre": 2,
+        "fat": 5,
+        "carbs": 38
+      },
+      "summary": "Ripe mango blended with curd and protein for a naturally sweet, muscle-friendly summer lassi.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Fit Tuber"
+      ],
+      "videoQuery": "mango protein lassi recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "mango",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "whey protein",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Peel and chop ripe mango into the blender.",
+        "Add curd, whey protein and honey.",
+        "Blend with ice until thick and smooth.",
+        "Serve immediately in tall glasses."
+      ]
+    },
+    {
+      "id": "kb-40-003",
+      "title": "Strawberry Protein Lassi",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "probiotic",
+        "summer-cooler",
+        "seasonal"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 220,
+        "protein": 15,
+        "fibre": 3,
+        "fat": 5,
+        "carbs": 32
+      },
+      "summary": "Fresh strawberries whisked into curd with protein powder for a tangy pink recovery drink.",
+      "channels": [
+        "Fit Tuber",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "strawberry protein lassi recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "strawberry",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "whey protein",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Hull and halve the strawberries.",
+        "Add to blender with curd, protein and honey.",
+        "Blend with ice till creamy and smooth.",
+        "Pour out and garnish with a strawberry slice."
+      ]
+    },
+    {
+      "id": "kb-40-004",
+      "title": "Chocolate Protein Lassi",
+      "cuisine": "Fusion",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "probiotic",
+        "high-protein",
+        "dessert-drink"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 250,
+        "protein": 18,
+        "fibre": 2,
+        "fat": 6,
+        "carbs": 30
+      },
+      "summary": "Cocoa and chocolate whey shaken into curd for a dessert-like yet protein-packed lassi.",
+      "channels": [
+        "Fit Tuber",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "chocolate protein lassi recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 350,
+          "unit": "ml"
+        },
+        {
+          "name": "chocolate whey protein",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "cocoa powder",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "water",
+          "qty": 80,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        "Whisk cocoa powder with a little water to a paste.",
+        "Add curd, chocolate whey, honey and remaining water.",
+        "Blend until smooth and frothy.",
+        "Serve chilled, dusted with cocoa."
+      ]
+    },
+    {
+      "id": "kb-40-005",
+      "title": "Masala Chaas",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "summer-cooler",
+        "caffeine-free",
+        "gut-health"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 60,
+        "protein": 3,
+        "fibre": 1,
+        "fat": 2,
+        "carbs": 6
+      },
+      "summary": "Spiced thin buttermilk with roasted cumin and mint — a cooling probiotic digestive after meals.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "masala chaas buttermilk recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "water",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "mint leaves",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "coriander leaves",
+          "qty": 10,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Whisk curd with water until thin and frothy.",
+        "Add roasted cumin powder and black salt.",
+        "Stir in finely chopped mint and coriander.",
+        "Chill and serve over ice."
+      ]
+    },
+    {
+      "id": "kb-40-006",
+      "title": "Salted Jeera Chaas",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "caffeine-free",
+        "summer-cooler",
+        "gut-health"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 55,
+        "protein": 3,
+        "fibre": 1,
+        "fat": 2,
+        "carbs": 5
+      },
+      "summary": "Simple salted cumin buttermilk that soothes digestion and rehydrates on hot days.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "jeera chaas salted buttermilk",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "water",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "green chilli",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Blend curd and water into smooth buttermilk.",
+        "Add cumin powder, salt and minced green chilli.",
+        "Whisk well until frothy.",
+        "Serve cold."
+      ]
+    },
+    {
+      "id": "kb-40-007",
+      "title": "Mint Buttermilk Cooler",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "summer-cooler",
+        "detox",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 60,
+        "protein": 3,
+        "fibre": 2,
+        "fat": 2,
+        "carbs": 6
+      },
+      "summary": "Blended mint and ginger buttermilk that cools the body and freshens the gut.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "mint buttermilk chaas recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "water",
+          "qty": 350,
+          "unit": "ml"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Blend mint, ginger and a little curd into a paste.",
+        "Add remaining curd and water; blend smooth.",
+        "Season with black salt and cumin.",
+        "Strain, chill and serve."
+      ]
+    },
+    {
+      "id": "kb-40-008",
+      "title": "Nimbu Pani",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "hydration",
+        "vitamin-c",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 70,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 18
+      },
+      "summary": "Classic Indian lemonade with a pinch of salt and cumin — instant electrolyte rehydration.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "nimbu pani lemonade recipe",
+      "ingredients": [
+        {
+          "name": "lemon",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Squeeze fresh lemon juice into a jug.",
+        "Add water and stir in sugar until dissolved.",
+        "Mix in black salt and roasted cumin.",
+        "Add ice and serve chilled."
+      ]
+    },
+    {
+      "id": "kb-40-009",
+      "title": "Aam Panna",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "hydration",
+        "seasonal",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 20,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 90,
+        "protein": 1,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 22
+      },
+      "summary": "Tangy roasted raw-mango cooler that prevents heatstroke and replenishes lost salts.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "aam panna raw mango drink",
+      "ingredients": [
+        {
+          "name": "raw mango",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 600,
+          "unit": "ml"
+        },
+        {
+          "name": "sugar",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "mint leaves",
+          "qty": 10,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Boil raw mango till soft, then cool and scoop pulp.",
+        "Blend pulp with sugar, mint, black salt and cumin.",
+        "Mix the concentrate with chilled water.",
+        "Serve over ice with a mint sprig."
+      ]
+    },
+    {
+      "id": "kb-40-010",
+      "title": "Jaljeera",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "digestive",
+        "detox",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 40,
+        "protein": 1,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 9
+      },
+      "summary": "Zesty cumin-mint spiced water that aids digestion and cools you down instantly.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "jaljeera spiced drink recipe",
+      "ingredients": [
+        {
+          "name": "mint leaves",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "coriander leaves",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "tamarind pulp",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 2,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "water",
+          "qty": 700,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        "Blend mint, coriander and tamarind with a little water.",
+        "Strain the green paste into a jug.",
+        "Add remaining water, cumin and black salt.",
+        "Chill well and serve with boondi if liked."
+      ]
+    },
+    {
+      "id": "kb-40-011",
+      "title": "Sattu Sharbat",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "summer-cooler",
+        "hydration",
+        "gut-health"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 180,
+        "protein": 9,
+        "fibre": 4,
+        "fat": 2,
+        "carbs": 30
+      },
+      "summary": "Roasted gram-flour drink from Bihar that is high in plant protein and keeps you full and cool.",
+      "channels": [
+        "Nisha Madhulika",
+        "Fit Tuber"
+      ],
+      "videoQuery": "sattu sharbat namkeen recipe",
+      "ingredients": [
+        {
+          "name": "sattu",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 450,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Whisk sattu with a little water to remove lumps.",
+        "Add remaining water and lemon juice.",
+        "Season with black salt and roasted cumin.",
+        "Stir well and serve chilled."
+      ]
+    },
+    {
+      "id": "kb-40-012",
+      "title": "Sweet Sattu Drink",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "summer-cooler",
+        "hydration",
+        "energy"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 200,
+        "protein": 9,
+        "fibre": 4,
+        "fat": 2,
+        "carbs": 38
+      },
+      "summary": "Jaggery-sweetened sattu cooler for a quick energising, protein-rich pick-me-up.",
+      "channels": [
+        "Nisha Madhulika",
+        "Fit Tuber"
+      ],
+      "videoQuery": "sweet sattu drink jaggery recipe",
+      "ingredients": [
+        {
+          "name": "sattu",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 450,
+          "unit": "ml"
+        },
+        {
+          "name": "jaggery",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Dissolve jaggery in warm water and cool.",
+        "Whisk in sattu until smooth and lump-free.",
+        "Add cardamom powder and mix.",
+        "Serve cold over ice."
+      ]
+    },
+    {
+      "id": "kb-40-013",
+      "title": "Kokum Sherbet",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "digestive",
+        "hydration",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 80,
+        "protein": 0,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 20
+      },
+      "summary": "Tangy deep-pink Konkani cooler from kokum that aids digestion and beats the heat.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "kokum sherbet sol kadhi drink",
+      "ingredients": [
+        {
+          "name": "kokum",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak kokum in warm water for 10 minutes.",
+        "Squeeze and strain to get the extract.",
+        "Add sugar, cumin and black salt; stir well.",
+        "Serve chilled over ice."
+      ]
+    },
+    {
+      "id": "kb-40-014",
+      "title": "Bel Sharbat",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "digestive",
+        "gut-health",
+        "hydration"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 120,
+        "protein": 1,
+        "fibre": 3,
+        "fat": 0,
+        "carbs": 28
+      },
+      "summary": "Wood-apple cooler famous for soothing the stomach and cooling the body in peak summer.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "bel sharbat wood apple drink",
+      "ingredients": [
+        {
+          "name": "bel pulp",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 450,
+          "unit": "ml"
+        },
+        {
+          "name": "jaggery",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Scoop bel pulp and mash with a little water.",
+        "Strain out the seeds and fibre.",
+        "Mix the pulp water with jaggery and cardamom.",
+        "Chill and serve over ice."
+      ]
+    },
+    {
+      "id": "kb-40-015",
+      "title": "Coconut Water Cooler",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "hydration",
+        "electrolyte",
+        "summer-cooler",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 60,
+        "protein": 1,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 13
+      },
+      "summary": "Fresh tender coconut water with lemon and mint — nature's electrolyte rehydrator.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "coconut water cooler recipe",
+      "ingredients": [
+        {
+          "name": "coconut water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pour fresh coconut water into a jug.",
+        "Add lemon juice and a pinch of black salt.",
+        "Muddle in mint leaves gently.",
+        "Serve chilled over ice."
+      ]
+    },
+    {
+      "id": "kb-40-016",
+      "title": "Watermelon Cooler",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "hydration",
+        "summer-cooler",
+        "seasonal",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 80,
+        "protein": 1,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 19
+      },
+      "summary": "Juicy blended watermelon with lime and mint — over 90 percent water for deep hydration.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Fit Tuber"
+      ],
+      "videoQuery": "watermelon cooler juice recipe",
+      "ingredients": [
+        {
+          "name": "watermelon",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Blend deseeded watermelon to a smooth juice.",
+        "Add lemon juice and a pinch of black salt.",
+        "Stir in muddled mint.",
+        "Pour over ice and serve."
+      ]
+    },
+    {
+      "id": "kb-40-017",
+      "title": "Cucumber Mint Cooler",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "hydration",
+        "detox",
+        "summer-cooler",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 45,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 9
+      },
+      "summary": "Light cucumber and mint juice that hydrates and cools while flushing out toxins.",
+      "channels": [
+        "Fit Tuber",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "cucumber mint cooler detox drink",
+      "ingredients": [
+        {
+          "name": "cucumber",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 12,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "water",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Blend cucumber, mint and water until smooth.",
+        "Strain into a jug for a clear cooler.",
+        "Add lemon juice and black salt.",
+        "Serve chilled over ice."
+      ]
+    },
+    {
+      "id": "kb-40-018",
+      "title": "ABC Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "vitamin-c",
+        "immunity",
+        "juice"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 130,
+        "protein": 2,
+        "fibre": 4,
+        "fat": 1,
+        "carbs": 30
+      },
+      "summary": "The classic apple-beetroot-carrot juice packed with antioxidants for skin and blood health.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "abc juice apple beetroot carrot",
+      "ingredients": [
+        {
+          "name": "apple",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "beetroot",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Wash and chop apple, beetroot and carrot.",
+        "Juice all together with ginger.",
+        "Stir in fresh lemon juice.",
+        "Serve immediately for maximum nutrients."
+      ]
+    },
+    {
+      "id": "kb-40-019",
+      "title": "Beetroot Carrot Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "immunity",
+        "juice",
+        "iron-rich"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 110,
+        "protein": 2,
+        "fibre": 4,
+        "fat": 1,
+        "carbs": 25
+      },
+      "summary": "Earthy beetroot and sweet carrot juice rich in iron and beta-carotene for energy.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "beetroot carrot juice recipe",
+      "ingredients": [
+        {
+          "name": "beetroot",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Peel and chop beetroot and carrot.",
+        "Run through a juicer with ginger.",
+        "Add lemon juice to brighten.",
+        "Serve fresh and chilled."
+      ]
+    },
+    {
+      "id": "kb-40-020",
+      "title": "Green Detox Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "green",
+        "juice",
+        "alkaline"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 90,
+        "protein": 3,
+        "fibre": 5,
+        "fat": 1,
+        "carbs": 18
+      },
+      "summary": "Spinach, cucumber and celery cold-pressed with apple for a cleansing alkaline green juice.",
+      "channels": [
+        "Fit Tuber",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "green detox juice recipe",
+      "ingredients": [
+        {
+          "name": "spinach",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "celery",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "apple",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Wash all greens and produce thoroughly.",
+        "Juice spinach, cucumber, celery and apple.",
+        "Add lemon juice and stir.",
+        "Drink immediately on an empty stomach."
+      ]
+    },
+    {
+      "id": "kb-40-021",
+      "title": "Amla Ginger Shot",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "immunity",
+        "detox",
+        "vitamin-c",
+        "shot"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 35,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 8
+      },
+      "summary": "A potent vitamin-C immunity shot of amla and ginger to kickstart the morning.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "amla ginger immunity shot",
+      "ingredients": [
+        {
+          "name": "amla",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "water",
+          "qty": 100,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        "Deseed and chop amla; peel the ginger.",
+        "Blend amla and ginger with water.",
+        "Strain and stir in lemon juice and honey.",
+        "Down it in small chilled shots."
+      ]
+    },
+    {
+      "id": "kb-40-022",
+      "title": "Turmeric Black Pepper Shot",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "immunity",
+        "anti-inflammatory",
+        "shot",
+        "detox"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 40,
+        "protein": 1,
+        "fibre": 1,
+        "fat": 1,
+        "carbs": 8
+      },
+      "summary": "Anti-inflammatory turmeric-ginger shot with black pepper to boost curcumin absorption.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "turmeric ginger immunity shot",
+      "ingredients": [
+        {
+          "name": "turmeric",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "water",
+          "qty": 120,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        "Blend fresh turmeric and ginger with water.",
+        "Strain through a fine sieve.",
+        "Add lemon juice and a pinch of black pepper.",
+        "Serve as a small concentrated shot."
+      ]
+    },
+    {
+      "id": "kb-40-023",
+      "title": "Lemon Mint Detox Water",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "hydration",
+        "infused-water",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 15,
+        "protein": 0,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 3
+      },
+      "summary": "Refreshing infused water with lemon and mint to keep you hydrated and aid gentle detox.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "lemon mint detox water recipe",
+      "ingredients": [
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 1000,
+          "unit": "ml"
+        },
+        {
+          "name": "cucumber",
+          "qty": 50,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Slice lemon and cucumber thinly.",
+        "Add to a jug with mint leaves.",
+        "Pour in chilled water.",
+        "Refrigerate 2 hours and sip through the day."
+      ]
+    },
+    {
+      "id": "kb-40-024",
+      "title": "Cucumber Infused Water",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "hydration",
+        "infused-water",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 12,
+        "protein": 0,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 2
+      },
+      "summary": "Spa-style cucumber water that hydrates and lightly flushes out toxins all day.",
+      "channels": [
+        "Fit Tuber",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "cucumber infused water recipe",
+      "ingredients": [
+        {
+          "name": "cucumber",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 1000,
+          "unit": "ml"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Slice cucumber and lemon into rounds.",
+        "Add to a large jug with mint.",
+        "Fill with cold water.",
+        "Infuse in the fridge for a few hours before drinking."
+      ]
+    },
+    {
+      "id": "kb-40-025",
+      "title": "Berry Infused Water",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "hydration",
+        "infused-water",
+        "antioxidant"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 20,
+        "protein": 0,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 4
+      },
+      "summary": "Antioxidant-rich berry water that makes plain water exciting and refreshing.",
+      "channels": [
+        "Fit Tuber",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "berry infused water recipe",
+      "ingredients": [
+        {
+          "name": "strawberry",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "blueberry",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 1000,
+          "unit": "ml"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 10,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Slice strawberries and lightly crush blueberries.",
+        "Add berries and mint to a jug.",
+        "Top with chilled water.",
+        "Chill 2-3 hours and serve."
+      ]
+    },
+    {
+      "id": "kb-40-026",
+      "title": "Ragi Malt",
+      "cuisine": "South Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "energy",
+        "gut-health",
+        "calcium-rich"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 12,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 180,
+        "protein": 6,
+        "fibre": 5,
+        "fat": 4,
+        "carbs": 30
+      },
+      "summary": "Finger-millet porridge drink rich in calcium and iron — a wholesome cooling summer cooler.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "ragi malt drink recipe",
+      "ingredients": [
+        {
+          "name": "ragi flour",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "milk",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "name": "jaggery",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Mix ragi flour with cold water to a lump-free paste.",
+        "Cook on low heat, stirring, till thickened.",
+        "Add jaggery and cardamom; cool slightly.",
+        "Whisk in milk and serve warm or chilled."
+      ]
+    },
+    {
+      "id": "kb-40-027",
+      "title": "Turmeric Latte Haldi Doodh",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "immunity",
+        "anti-inflammatory",
+        "caffeine-free",
+        "bedtime"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 150,
+        "protein": 7,
+        "fibre": 1,
+        "fat": 6,
+        "carbs": 16
+      },
+      "summary": "Golden milk simmered with turmeric and pepper — a soothing anti-inflammatory bedtime drink.",
+      "channels": [
+        "Nisha Madhulika",
+        "Fit Tuber"
+      ],
+      "videoQuery": "haldi doodh turmeric latte recipe",
+      "ingredients": [
+        {
+          "name": "milk",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Warm the milk gently in a pan.",
+        "Whisk in turmeric, black pepper and grated ginger.",
+        "Simmer 3-4 minutes on low heat.",
+        "Cool slightly, sweeten with honey and serve."
+      ]
+    },
+    {
+      "id": "kb-40-028",
+      "title": "Badam Milk",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "calcium-rich",
+        "energy",
+        "bedtime"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 15,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 200,
+        "protein": 9,
+        "fibre": 2,
+        "fat": 9,
+        "carbs": 22
+      },
+      "summary": "Lightly sweetened almond-saffron milk — a nourishing protein and calcium-rich drink.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "badam milk almond milk recipe",
+      "ingredients": [
+        {
+          "name": "milk",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "almonds",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "saffron",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak and grind almonds to a fine paste.",
+        "Bring milk to a gentle boil with saffron.",
+        "Whisk in the almond paste and sugar.",
+        "Simmer 5 minutes, add cardamom and serve warm."
+      ]
+    },
+    {
+      "id": "kb-40-029",
+      "title": "Rose Milk",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "dessert-drink",
+        "caffeine-free",
+        "seasonal"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 160,
+        "protein": 7,
+        "fibre": 0,
+        "fat": 6,
+        "carbs": 22
+      },
+      "summary": "Light chilled rose-flavoured milk — a fragrant cooling treat without heavy syrup.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "rose milk recipe light",
+      "ingredients": [
+        {
+          "name": "milk",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "rose syrup",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sugar",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Chill the milk thoroughly.",
+        "Stir in rose syrup and a little sugar.",
+        "Whisk until well combined and frothy.",
+        "Pour over ice and serve cold."
+      ]
+    },
+    {
+      "id": "kb-40-030",
+      "title": "Light Thandai",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "festive",
+        "energy",
+        "protein"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 15,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 180,
+        "protein": 7,
+        "fibre": 2,
+        "fat": 8,
+        "carbs": 22
+      },
+      "summary": "A lighter nut-and-spice thandai with less sugar — cooling and aromatic for summer festivals.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "thandai recipe light healthy",
+      "ingredients": [
+        {
+          "name": "milk",
+          "qty": 600,
+          "unit": "ml"
+        },
+        {
+          "name": "almonds",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "cashews",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "fennel seeds",
+          "qty": 1,
+          "unit": "tbsp",
+          "staple": true
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Soak nuts and fennel for 30 minutes, then grind to a paste.",
+        "Boil and cool the milk.",
+        "Whisk the spiced nut paste into the milk with sugar.",
+        "Strain, chill well and serve over ice."
+      ]
+    },
+    {
+      "id": "kb-40-031",
+      "title": "Buttermilk Smoothie",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "protein",
+        "gut-health",
+        "summer-cooler"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 110,
+        "protein": 6,
+        "fibre": 2,
+        "fat": 3,
+        "carbs": 14
+      },
+      "summary": "A thick blended buttermilk smoothie with mint and roasted spices for gut health and protein.",
+      "channels": [
+        "Fit Tuber",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "buttermilk smoothie chaas recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "water",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 12,
+          "unit": "g"
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Blend curd, water, mint and ginger until frothy.",
+        "Add roasted cumin and black salt.",
+        "Blend again briefly to combine.",
+        "Serve chilled in tall glasses."
+      ]
+    },
+    {
+      "id": "kb-40-032",
+      "title": "Light Masala Chai",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine",
+        "warm",
+        "spiced",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 70,
+        "protein": 3,
+        "fibre": 0,
+        "fat": 2,
+        "carbs": 9
+      },
+      "summary": "A lighter masala chai with less sugar and more spice — comforting without the heaviness.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "masala chai light recipe",
+      "ingredients": [
+        {
+          "name": "water",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "milk",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "name": "tea leaves",
+          "qty": 2,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "sugar",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Boil water with crushed ginger and cardamom.",
+        "Add tea leaves and simmer 2 minutes.",
+        "Pour in milk and bring to a gentle boil.",
+        "Strain, sweeten lightly and serve hot."
+      ]
+    },
+    {
+      "id": "kb-40-033",
+      "title": "Green Tea",
+      "cuisine": "Pan-Asian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine",
+        "detox",
+        "antioxidant",
+        "weight-loss"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 1,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 5,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 1
+      },
+      "summary": "A simple cup of antioxidant-rich green tea to support metabolism and gentle detox.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "green tea how to make recipe",
+      "ingredients": [
+        {
+          "name": "water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "green tea leaves",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Heat water to just below boiling.",
+        "Pour over green tea leaves and steep 2-3 minutes.",
+        "Strain into a cup.",
+        "Add lemon and honey to taste and sip warm."
+      ]
+    },
+    {
+      "id": "kb-40-034",
+      "title": "Lemon Tea",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine",
+        "vitamin-c",
+        "detox",
+        "warm"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 1,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 20,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 5
+      },
+      "summary": "Light black lemon tea with honey — refreshing, low-calorie and soothing for the throat.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "lemon tea recipe",
+      "ingredients": [
+        {
+          "name": "water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "tea leaves",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ginger",
+          "qty": 3,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Boil water with tea leaves and grated ginger.",
+        "Simmer for 2 minutes and strain.",
+        "Stir in lemon juice and honey.",
+        "Serve hot or over ice."
+      ]
+    },
+    {
+      "id": "kb-40-035",
+      "title": "Hibiscus Tea",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine-free",
+        "antioxidant",
+        "detox",
+        "heart-healthy"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 15,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 3
+      },
+      "summary": "Tart ruby-red hibiscus tea rich in antioxidants and known to support healthy blood pressure.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "hibiscus tea recipe",
+      "ingredients": [
+        {
+          "name": "dried hibiscus",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Boil water and add dried hibiscus petals.",
+        "Steep for 5 minutes until deep red.",
+        "Strain into cups.",
+        "Sweeten with honey, add lemon and serve hot or iced."
+      ]
+    },
+    {
+      "id": "kb-40-036",
+      "title": "Tulsi Tea",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine-free",
+        "immunity",
+        "herbal",
+        "detox"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 10,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 2
+      },
+      "summary": "Soothing holy-basil herbal tea that supports immunity and calms stress.",
+      "channels": [
+        "Nisha Madhulika",
+        "Fit Tuber"
+      ],
+      "videoQuery": "tulsi tea holy basil recipe",
+      "ingredients": [
+        {
+          "name": "tulsi leaves",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Boil water with crushed tulsi leaves and ginger.",
+        "Simmer gently for 4-5 minutes.",
+        "Strain into cups.",
+        "Add honey and serve warm."
+      ]
+    },
+    {
+      "id": "kb-40-037",
+      "title": "Kashmiri Kahwa",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine",
+        "warm",
+        "spiced",
+        "antioxidant"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 12,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 60,
+        "protein": 1,
+        "fibre": 1,
+        "fat": 2,
+        "carbs": 9
+      },
+      "summary": "Fragrant Kashmiri green tea with saffron, cardamom and almonds — warming and antioxidant-rich.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "kashmiri kahwa recipe",
+      "ingredients": [
+        {
+          "name": "green tea leaves",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "saffron",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cinnamon",
+          "qty": 1,
+          "unit": "pc",
+          "staple": true
+        },
+        {
+          "name": "almonds",
+          "qty": 10,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Boil water with cinnamon, cardamom and saffron.",
+        "Add green tea leaves and simmer 3 minutes.",
+        "Strain into cups.",
+        "Top with slivered almonds and serve hot."
+      ]
+    },
+    {
+      "id": "kb-40-038",
+      "title": "Homemade ORS Drink",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "electrolyte",
+        "hydration",
+        "recovery",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 4,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 60,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 15
+      },
+      "summary": "Simple homemade oral rehydration drink with the right salt-sugar balance to restore lost fluids.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "homemade ors rehydration drink",
+      "ingredients": [
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Boil and cool the water to be safe.",
+        "Dissolve sugar and salt completely.",
+        "Stir in fresh lemon juice for potassium and taste.",
+        "Sip slowly through the day to rehydrate."
+      ]
+    },
+    {
+      "id": "kb-40-039",
+      "title": "Electrolyte Lemon Cooler",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "electrolyte",
+        "hydration",
+        "summer-cooler",
+        "recovery"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 70,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 17
+      },
+      "summary": "A homemade electrolyte cooler with coconut water and lemon for post-workout rehydration.",
+      "channels": [
+        "Fit Tuber",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "electrolyte drink homemade recipe",
+      "ingredients": [
+        {
+          "name": "coconut water",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "water",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Mix coconut water with plain water.",
+        "Stir in lemon juice and honey.",
+        "Add a pinch of salt for electrolytes.",
+        "Chill and drink after exercise."
+      ]
+    },
+    {
+      "id": "kb-40-040",
+      "title": "Chia Lemonade",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "hydration",
+        "fibre",
+        "summer-cooler",
+        "omega-3"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 12,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 90,
+        "protein": 2,
+        "fibre": 5,
+        "fat": 2,
+        "carbs": 15
+      },
+      "summary": "Lemonade with soaked chia seeds for added fibre and omega-3 — filling and hydrating.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "chia seed lemonade recipe",
+      "ingredients": [
+        {
+          "name": "chia seeds",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "honey",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 8,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Soak chia seeds in a little water for 10 minutes till gel-like.",
+        "Mix lemon juice and honey into the remaining water.",
+        "Stir in the soaked chia and mint.",
+        "Serve over ice."
+      ]
+    },
+    {
+      "id": "kb-40-041",
+      "title": "Banana Peanut Smoothie",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "protein",
+        "smoothie",
+        "energy",
+        "breakfast-drink"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 260,
+        "protein": 11,
+        "fibre": 4,
+        "fat": 9,
+        "carbs": 35
+      },
+      "summary": "Creamy banana and peanut-butter smoothie — a protein-rich breakfast or post-workout drink.",
+      "channels": [
+        "Fit Tuber",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "banana peanut butter smoothie",
+      "ingredients": [
+        {
+          "name": "banana",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "milk",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "peanut butter",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Peel and chop the bananas.",
+        "Add to blender with milk, peanut butter and honey.",
+        "Blend with ice until thick and smooth.",
+        "Pour into glasses and serve."
+      ]
+    },
+    {
+      "id": "kb-40-042",
+      "title": "Berry Smoothie",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "smoothie",
+        "antioxidant",
+        "summer-cooler",
+        "breakfast-drink"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 190,
+        "protein": 8,
+        "fibre": 5,
+        "fat": 4,
+        "carbs": 30
+      },
+      "summary": "Mixed-berry yogurt smoothie loaded with antioxidants and a tangy refreshing taste.",
+      "channels": [
+        "Fit Tuber",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "berry smoothie recipe yogurt",
+      "ingredients": [
+        {
+          "name": "strawberry",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "blueberry",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Add berries, curd and honey to a blender.",
+        "Blend with ice until smooth and creamy.",
+        "Adjust sweetness to taste.",
+        "Serve chilled."
+      ]
+    },
+    {
+      "id": "kb-40-043",
+      "title": "Mango Smoothie",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "smoothie",
+        "seasonal",
+        "summer-cooler",
+        "breakfast-drink"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 220,
+        "protein": 8,
+        "fibre": 3,
+        "fat": 4,
+        "carbs": 40
+      },
+      "summary": "Thick ripe-mango and yogurt smoothie — naturally sweet and rich in vitamin A.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Fit Tuber"
+      ],
+      "videoQuery": "mango smoothie recipe",
+      "ingredients": [
+        {
+          "name": "mango",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "curd",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "milk",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Peel and chop ripe mango.",
+        "Blend with curd, milk and honey.",
+        "Add ice and blend till smooth.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "id": "kb-40-044",
+      "title": "Green Smoothie",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "smoothie",
+        "green",
+        "detox",
+        "fibre"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 7,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 170,
+        "protein": 5,
+        "fibre": 6,
+        "fat": 3,
+        "carbs": 28
+      },
+      "summary": "A filling green smoothie of spinach, banana and apple — fibre-rich and gently detoxifying.",
+      "channels": [
+        "Fit Tuber",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "green smoothie spinach banana recipe",
+      "ingredients": [
+        {
+          "name": "spinach",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "banana",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "apple",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "chia seeds",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Wash spinach well.",
+        "Blend spinach, banana, apple and water until smooth.",
+        "Add chia seeds and lemon juice; blend briefly.",
+        "Serve fresh and chilled."
+      ]
+    },
+    {
+      "id": "kb-40-045",
+      "title": "Sweet Lassi",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "summer-cooler",
+        "gut-health",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 190,
+        "protein": 7,
+        "fibre": 0,
+        "fat": 6,
+        "carbs": 28
+      },
+      "summary": "The classic Punjabi sweet lassi — thick whisked curd lightly sweetened and cooling.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "sweet lassi punjabi recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "water",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Whisk curd with sugar until smooth.",
+        "Add water to reach a pourable consistency.",
+        "Mix in cardamom powder.",
+        "Serve chilled, topped with a little malai if liked."
+      ]
+    },
+    {
+      "id": "kb-40-046",
+      "title": "Mango Lassi",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "summer-cooler",
+        "seasonal",
+        "gut-health"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 230,
+        "protein": 7,
+        "fibre": 2,
+        "fat": 6,
+        "carbs": 38
+      },
+      "summary": "Creamy mango-yogurt lassi — a beloved fruity probiotic summer drink.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "mango lassi recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "mango",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cardamom powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Blend curd, mango pulp and sugar.",
+        "Add cardamom and blend with ice.",
+        "Pour into glasses.",
+        "Garnish with a pinch of cardamom and serve."
+      ]
+    },
+    {
+      "id": "kb-40-047",
+      "title": "Pineapple Cooler",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "hydration",
+        "summer-cooler",
+        "vitamin-c",
+        "juice"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 7,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 95,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 22
+      },
+      "summary": "Tangy-sweet pineapple cooler with mint and a hint of black salt for a tropical refresher.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Fit Tuber"
+      ],
+      "videoQuery": "pineapple cooler juice recipe",
+      "ingredients": [
+        {
+          "name": "pineapple",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Blend pineapple chunks with water.",
+        "Strain for a smooth cooler.",
+        "Add lemon, black salt and muddled mint.",
+        "Serve over ice."
+      ]
+    },
+    {
+      "id": "kb-40-048",
+      "title": "Orange Carrot Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "vitamin-c",
+        "immunity",
+        "juice",
+        "antioxidant"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 110,
+        "protein": 2,
+        "fibre": 3,
+        "fat": 1,
+        "carbs": 25
+      },
+      "summary": "Bright orange-carrot juice loaded with vitamin C and beta-carotene for immunity and skin.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "orange carrot juice recipe",
+      "ingredients": [
+        {
+          "name": "orange",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "carrot",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Peel oranges and chop the carrot.",
+        "Juice together with ginger.",
+        "Add lemon juice and stir.",
+        "Serve fresh and chilled."
+      ]
+    },
+    {
+      "id": "kb-40-049",
+      "title": "Pomegranate Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "antioxidant",
+        "immunity",
+        "juice",
+        "heart-healthy"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 120,
+        "protein": 2,
+        "fibre": 1,
+        "fat": 1,
+        "carbs": 28
+      },
+      "summary": "Fresh pomegranate juice rich in antioxidants that supports heart health and energy.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "pomegranate juice recipe",
+      "ingredients": [
+        {
+          "name": "pomegranate",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Deseed the pomegranates.",
+        "Blend the arils lightly with water.",
+        "Strain out the seeds for clear juice.",
+        "Add lemon and black salt; serve chilled."
+      ]
+    },
+    {
+      "id": "kb-40-050",
+      "title": "Amla Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "immunity",
+        "vitamin-c",
+        "detox",
+        "juice"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 40,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 9
+      },
+      "summary": "Tart Indian-gooseberry juice — one of the richest natural sources of vitamin C.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "amla juice recipe",
+      "ingredients": [
+        {
+          "name": "amla",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Deseed and chop the amla.",
+        "Blend with water until smooth.",
+        "Strain into glasses.",
+        "Stir in honey and black salt; serve fresh."
+      ]
+    },
+    {
+      "id": "kb-40-051",
+      "title": "Wheatgrass Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "green",
+        "alkaline",
+        "juice"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 30,
+        "protein": 2,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 5
+      },
+      "summary": "Concentrated wheatgrass shot diluted into a cleansing alkaline green juice.",
+      "channels": [
+        "Fit Tuber",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "wheatgrass juice recipe",
+      "ingredients": [
+        {
+          "name": "wheatgrass",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "ginger",
+          "qty": 3,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Blend fresh wheatgrass with water and ginger.",
+        "Strain well to remove fibre.",
+        "Add lemon juice.",
+        "Drink immediately on an empty stomach."
+      ]
+    },
+    {
+      "id": "kb-40-052",
+      "title": "Aloe Vera Amla Drink",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "immunity",
+        "gut-health",
+        "juice"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 35,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 8
+      },
+      "summary": "Soothing aloe-amla juice that supports digestion, skin and immunity.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "aloe vera amla juice recipe",
+      "ingredients": [
+        {
+          "name": "aloe vera gel",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "amla",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Scoop fresh aloe gel and chop amla.",
+        "Blend with water until smooth.",
+        "Strain into glasses.",
+        "Add honey and lemon; serve chilled."
+      ]
+    },
+    {
+      "id": "kb-40-053",
+      "title": "Cucumber Lemon Detox Water",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "hydration",
+        "infused-water",
+        "weight-loss"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 5,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 14,
+        "protein": 0,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 3
+      },
+      "summary": "A classic slimming infused water of cucumber, lemon and ginger to stay hydrated all day.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "cucumber lemon ginger detox water",
+      "ingredients": [
+        {
+          "name": "cucumber",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "ginger",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 1000,
+          "unit": "ml"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 10,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Slice cucumber, lemon and ginger thinly.",
+        "Add to a jug with mint leaves.",
+        "Fill with cold water.",
+        "Infuse overnight in the fridge and sip through the day."
+      ]
+    },
+    {
+      "id": "kb-40-054",
+      "title": "Sabja Lemonade",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "hydration",
+        "fibre",
+        "summer-cooler",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 12,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 85,
+        "protein": 1,
+        "fibre": 4,
+        "fat": 1,
+        "carbs": 16
+      },
+      "summary": "Cooling basil-seed lemonade that swells with fibre and helps beat the summer heat.",
+      "channels": [
+        "Nisha Madhulika",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "sabja seeds lemonade recipe",
+      "ingredients": [
+        {
+          "name": "sabja seeds",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak sabja seeds in water for 10 minutes till gelatinous.",
+        "Mix lemon juice, sugar and black salt into the water.",
+        "Stir in the soaked sabja seeds.",
+        "Serve chilled over ice."
+      ]
+    },
+    {
+      "id": "kb-40-055",
+      "title": "Falsa Sharbat",
+      "cuisine": "North Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "seasonal",
+        "antioxidant",
+        "hydration"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 12,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 90,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 21
+      },
+      "summary": "Tangy purple falsa-berry cooler that is cooling and rich in antioxidants.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "falsa sharbat recipe",
+      "ingredients": [
+        {
+          "name": "falsa",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Mash falsa berries with a little water.",
+        "Strain to remove seeds and skin.",
+        "Mix the juice with water, sugar and black salt.",
+        "Serve chilled over ice."
+      ]
+    },
+    {
+      "id": "kb-40-056",
+      "title": "Sol Kadhi",
+      "cuisine": "South Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "digestive",
+        "summer-cooler",
+        "gut-health"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 12,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 120,
+        "protein": 2,
+        "fibre": 2,
+        "fat": 8,
+        "carbs": 10
+      },
+      "summary": "Konkani kokum-and-coconut digestive drink — soothing, tangy and cooling after a meal.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "sol kadhi recipe",
+      "ingredients": [
+        {
+          "name": "kokum",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "coconut milk",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "water",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "name": "garlic",
+          "qty": 2,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "coriander leaves",
+          "qty": 8,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Soak kokum in warm water and extract the juice.",
+        "Blend coconut with water and strain for coconut milk.",
+        "Mix kokum extract into the coconut milk with crushed garlic and chilli.",
+        "Garnish with coriander and serve chilled."
+      ]
+    },
+    {
+      "id": "kb-40-057",
+      "title": "Neer Mor",
+      "cuisine": "South Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "summer-cooler",
+        "caffeine-free",
+        "gut-health"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 55,
+        "protein": 3,
+        "fibre": 1,
+        "fat": 2,
+        "carbs": 5
+      },
+      "summary": "South Indian spiced buttermilk tempered with curry leaves and ginger — a light digestive cooler.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "neer mor spiced buttermilk recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "water",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "name": "curry leaves",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Whisk curd and water into thin buttermilk.",
+        "Add grated ginger, minced chilli and salt.",
+        "Crush curry leaves and stir in.",
+        "Chill and serve cold."
+      ]
+    },
+    {
+      "id": "kb-40-058",
+      "title": "Barley Water",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "hydration",
+        "gut-health",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 25,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 60,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 13
+      },
+      "summary": "Light lemon-barley water that hydrates, soothes the gut and supports kidney health.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "barley water recipe",
+      "ingredients": [
+        {
+          "name": "barley",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 1000,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Rinse barley and boil in water for 20 minutes.",
+        "Strain out the barley and cool the liquid.",
+        "Stir in lemon juice and honey.",
+        "Serve chilled or at room temperature."
+      ]
+    },
+    {
+      "id": "kb-40-059",
+      "title": "Fenugreek Water",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "weight-loss",
+        "gut-health",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 1,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 15,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 3
+      },
+      "summary": "Soaked methi-seed water sipped in the morning to aid digestion and blood-sugar balance.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "methi fenugreek water recipe",
+      "ingredients": [
+        {
+          "name": "fenugreek seeds",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Soak fenugreek seeds in water overnight.",
+        "Strain the water in the morning.",
+        "Add a squeeze of lemon if liked.",
+        "Sip on an empty stomach."
+      ]
+    },
+    {
+      "id": "kb-40-060",
+      "title": "Jeera Water",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "digestive",
+        "weight-loss",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 12,
+        "protein": 0,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 2
+      },
+      "summary": "Roasted cumin water that aids digestion, reduces bloating and supports metabolism.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "jeera cumin water recipe",
+      "ingredients": [
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tbsp",
+          "staple": true
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Dry-roast cumin seeds till fragrant.",
+        "Boil with water for 5 minutes.",
+        "Strain and cool slightly.",
+        "Add lemon and sip warm."
+      ]
+    },
+    {
+      "id": "kb-40-061",
+      "title": "Cinnamon Honey Water",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "weight-loss",
+        "immunity",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 1,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 40,
+        "protein": 0,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 10
+      },
+      "summary": "Warm cinnamon-infused water with honey, a popular morning metabolism booster.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "cinnamon honey water recipe",
+      "ingredients": [
+        {
+          "name": "cinnamon",
+          "qty": 2,
+          "unit": "g",
+          "staple": true
+        },
+        {
+          "name": "water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Boil water with a cinnamon stick or powder.",
+        "Steep for 5 minutes and cool to warm.",
+        "Stir in honey once slightly cooled.",
+        "Sip in the morning on an empty stomach."
+      ]
+    },
+    {
+      "id": "kb-40-062",
+      "title": "Ginger Lemon Tea",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "immunity",
+        "warm",
+        "detox",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 25,
+        "protein": 0,
+        "fibre": 1,
+        "fat": 0,
+        "carbs": 6
+      },
+      "summary": "Warming ginger-lemon herbal tea that soothes the throat and boosts immunity.",
+      "channels": [
+        "Nisha Madhulika",
+        "Fit Tuber"
+      ],
+      "videoQuery": "ginger lemon tea recipe",
+      "ingredients": [
+        {
+          "name": "ginger",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Boil water with crushed ginger for 5 minutes.",
+        "Strain into cups.",
+        "Add lemon juice and honey.",
+        "Serve hot."
+      ]
+    },
+    {
+      "id": "kb-40-063",
+      "title": "Lemongrass Tea",
+      "cuisine": "Pan-Asian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine-free",
+        "herbal",
+        "detox",
+        "antioxidant"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 15,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 3
+      },
+      "summary": "Fragrant lemongrass infusion that calms the stomach and refreshes the senses.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "lemongrass tea recipe",
+      "ingredients": [
+        {
+          "name": "lemongrass",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Crush lemongrass stalks and ginger.",
+        "Boil with water for 5 minutes.",
+        "Strain into cups.",
+        "Sweeten with honey and serve warm."
+      ]
+    },
+    {
+      "id": "kb-40-064",
+      "title": "Peppermint Tea",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine-free",
+        "herbal",
+        "digestive",
+        "detox"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 7,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 8,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 2
+      },
+      "summary": "Cooling peppermint herbal tea that eases digestion and freshens the breath.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "peppermint mint tea recipe",
+      "ingredients": [
+        {
+          "name": "mint leaves",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Boil water and add fresh mint leaves.",
+        "Steep off the heat for 4-5 minutes.",
+        "Strain into cups.",
+        "Add a little lemon and serve hot or iced."
+      ]
+    },
+    {
+      "id": "kb-40-065",
+      "title": "Iced Green Tea Lemonade",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "caffeine",
+        "summer-cooler",
+        "antioxidant",
+        "detox"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 40,
+        "protein": 0,
+        "fibre": 0,
+        "fat": 0,
+        "carbs": 10
+      },
+      "summary": "Chilled green tea blended with lemon and honey — a refreshing antioxidant summer cooler.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "iced green tea lemonade recipe",
+      "ingredients": [
+        {
+          "name": "green tea leaves",
+          "qty": 2,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "name": "lemon",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "honey",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "ice cubes",
+          "qty": 6,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Brew green tea and let it cool fully.",
+        "Stir in lemon juice and honey.",
+        "Add muddled mint.",
+        "Pour over plenty of ice and serve."
+      ]
+    },
+    {
+      "id": "kb-40-066",
+      "title": "Mango Buttermilk",
+      "cuisine": "South Indian",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "probiotic",
+        "seasonal",
+        "summer-cooler",
+        "gut-health"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 6,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 120,
+        "protein": 5,
+        "fibre": 2,
+        "fat": 3,
+        "carbs": 18
+      },
+      "summary": "Sweet-and-spiced mango buttermilk blending fruit with gut-friendly curd.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "mango buttermilk recipe",
+      "ingredients": [
+        {
+          "name": "curd",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "mango",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Blend mango with curd and water.",
+        "Add roasted cumin and black salt.",
+        "Blend until smooth and frothy.",
+        "Serve chilled."
+      ]
+    },
+    {
+      "id": "kb-40-067",
+      "title": "Spinach Apple Detox Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "green",
+        "juice",
+        "fibre"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 9,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 100,
+        "protein": 3,
+        "fibre": 5,
+        "fat": 1,
+        "carbs": 21
+      },
+      "summary": "A mild green detox juice of spinach, apple and cucumber for an easy daily cleanse.",
+      "channels": [
+        "Fit Tuber",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "spinach apple detox juice recipe",
+      "ingredients": [
+        {
+          "name": "spinach",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "apple",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Wash spinach and chop produce.",
+        "Juice spinach, apple, cucumber and ginger.",
+        "Add lemon juice.",
+        "Serve fresh and chilled."
+      ]
+    },
+    {
+      "id": "kb-40-068",
+      "title": "Carrot Ginger Juice",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "immunity",
+        "vitamin-c",
+        "juice",
+        "antioxidant"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 90,
+        "protein": 2,
+        "fibre": 3,
+        "fat": 1,
+        "carbs": 20
+      },
+      "summary": "Sweet carrot juice with a kick of ginger — full of beta-carotene for eyes and immunity.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "carrot ginger juice recipe",
+      "ingredients": [
+        {
+          "name": "carrot",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "orange",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Chop carrots and peel the orange.",
+        "Juice carrots with ginger and orange.",
+        "Stir in lemon juice.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "id": "kb-40-069",
+      "title": "Beetroot Apple Shot",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "detox",
+        "immunity",
+        "shot",
+        "iron-rich"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 8,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 60,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 14
+      },
+      "summary": "A concentrated beetroot-apple shot to boost stamina and support healthy blood.",
+      "channels": [
+        "Fit Tuber",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "beetroot apple shot recipe",
+      "ingredients": [
+        {
+          "name": "beetroot",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "apple",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 5,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Chop beetroot and apple.",
+        "Blend with ginger and a little water.",
+        "Strain into small glasses.",
+        "Add lemon juice and serve as a shot."
+      ]
+    },
+    {
+      "id": "kb-40-070",
+      "title": "Mango Mint Cooler",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "summer-cooler",
+        "seasonal",
+        "hydration",
+        "caffeine-free"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 7,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 95,
+        "protein": 1,
+        "fibre": 2,
+        "fat": 0,
+        "carbs": 22
+      },
+      "summary": "Refreshing mango-mint cooler with lime — fruity, hydrating and not too sweet.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "mango mint cooler recipe",
+      "ingredients": [
+        {
+          "name": "mango",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "mint leaves",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "black salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Blend mango with water until smooth.",
+        "Muddle mint leaves and add to the mango.",
+        "Stir in lemon juice and black salt.",
+        "Serve over ice."
+      ]
+    },
+    {
+      "id": "kb-40-071",
+      "title": "Tender Coconut Smoothie",
+      "cuisine": "Healthy",
+      "category": "drink",
+      "tags": [
+        "drink",
+        "hydration",
+        "smoothie",
+        "electrolyte",
+        "summer-cooler"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": true
+      },
+      "timeMins": 7,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 130,
+        "protein": 2,
+        "fibre": 3,
+        "fat": 5,
+        "carbs": 18
+      },
+      "summary": "Creamy tender-coconut smoothie blending coconut water and flesh for natural electrolytes.",
+      "channels": [
+        "Fit Tuber",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "tender coconut smoothie recipe",
+      "ingredients": [
+        {
+          "name": "coconut water",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "name": "coconut flesh",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "banana",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "honey",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ice cubes",
+          "qty": 4,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Scoop tender coconut flesh.",
+        "Blend with coconut water, banana and honey.",
+        "Add ice and blend till creamy.",
+        "Serve chilled."
+      ]
+    }
+  ];
+  if (typeof module !== "undefined" && module.exports) module.exports = DATA;
+  else { (root.KhanaProKBParts = root.KhanaProKBParts || []).push(DATA); }
+})(typeof window !== "undefined" ? window : globalThis);

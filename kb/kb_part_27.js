@@ -1,0 +1,4746 @@
+;(function (root) {
+  var DATA = [
+  {
+    "id": "kb-27-001",
+    "title": "Mixed Veg Brown Rice Pulao",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 340,
+      "protein": 9,
+      "fibre": 7,
+      "fat": 8,
+      "carbs": 58
+    },
+    "summary": "A light one-pot brown-rice pulao loaded with vegetables and whole-grain fibre for slow-release energy.",
+    "channels": [
+      "Sanjeev Kapoor Khazana",
+      "Nisha Madhulika"
+    ],
+    "videoQuery": "mixed veg brown rice pulao light recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "french beans",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak brown rice 20 minutes, then drain.",
+      "Temper cumin in oil, add onion and ginger garlic paste.",
+      "Add chopped vegetables and saute 3 minutes.",
+      "Stir in garam masala and salt.",
+      "Add rice and 1.5 cups water, pressure-cook 3 whistles.",
+      "Rest 5 minutes, fluff and serve."
+    ]
+  },
+  {
+    "id": "kb-27-002",
+    "title": "Paneer Peas Pulao Light",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "light",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 420,
+      "protein": 20,
+      "fibre": 6,
+      "fat": 15,
+      "carbs": 50
+    },
+    "summary": "Protein-rich paneer and peas folded through fluffy brown rice; satisfying without being heavy.",
+    "channels": [
+      "Hebbars Kitchen",
+      "Cook with Parul"
+    ],
+    "videoQuery": "paneer peas pulao light healthy recipe",
+    "ingredients": [
+      {
+        "name": "paneer",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "whole garam masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak and drain brown rice.",
+      "Lightly pan-sear paneer cubes; set aside.",
+      "Saute whole spices, onion and ginger garlic paste in oil.",
+      "Add peas and rice, toss 2 minutes.",
+      "Add 1.5 cups water and pressure-cook 3 whistles.",
+      "Fold in paneer, rest and serve."
+    ]
+  },
+  {
+    "id": "kb-27-003",
+    "title": "Soya Granule Pulao Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "light",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 32,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 380,
+      "protein": 22,
+      "fibre": 8,
+      "fat": 9,
+      "carbs": 52
+    },
+    "summary": "Soya granules pack plant protein into a fragrant brown-rice pulao that keeps you full for hours.",
+    "channels": [
+      "Nisha Madhulika",
+      "Yaman's Kitchen"
+    ],
+    "videoQuery": "soya granule pulao high protein recipe",
+    "ingredients": [
+      {
+        "name": "soya granules",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "biryani masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak soya granules in hot water, then squeeze dry.",
+      "Saute onion, tomato and ginger garlic paste in oil.",
+      "Add soya and biryani masala, cook 3 minutes.",
+      "Stir in soaked brown rice.",
+      "Add 1.5 cups water and pressure-cook 3 whistles.",
+      "Rest, fluff and serve hot."
+    ]
+  },
+  {
+    "id": "kb-27-004",
+    "title": "White Chana Pulao Protein Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 400,
+      "protein": 16,
+      "fibre": 11,
+      "fat": 8,
+      "carbs": 66
+    },
+    "summary": "Boiled white chana stirred into spiced brown rice for a fibre-and-protein packed midday bowl.",
+    "channels": [
+      "Kabita's Kitchen",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "white chana pulao protein recipe",
+    "ingredients": [
+      {
+        "name": "white chickpeas",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "chana masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil soaked chickpeas till tender.",
+      "Temper cumin, add onion and ginger garlic paste.",
+      "Add chana masala and boiled chana, toss.",
+      "Mix in soaked brown rice.",
+      "Add water and pressure-cook 3 whistles.",
+      "Fluff and serve with raita."
+    ]
+  },
+  {
+    "id": "kb-27-005",
+    "title": "Brown Rice Moong Khichdi Light",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegetarian",
+      "comfort",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": true
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 320,
+      "protein": 12,
+      "fibre": 8,
+      "fat": 7,
+      "carbs": 52
+    },
+    "summary": "Gentle one-pot brown-rice and moong khichdi; easy to digest and quietly protein-rich.",
+    "channels": [
+      "Nisha Madhulika",
+      "Sanjeev Kapoor Khazana"
+    ],
+    "videoQuery": "brown rice moong dal khichdi light recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "yellow moong dal",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Rinse brown rice and moong dal together.",
+      "Add turmeric, ginger and 3.5 cups water.",
+      "Pressure-cook 5 whistles until soft.",
+      "Temper cumin in ghee.",
+      "Pour tempering over khichdi and mix.",
+      "Serve hot with a side of curd."
+    ]
+  },
+  {
+    "id": "kb-27-006",
+    "title": "Brown Rice Vegetable Khichdi",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegetarian",
+      "comfort",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 34,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 340,
+      "protein": 12,
+      "fibre": 9,
+      "fat": 7,
+      "carbs": 56
+    },
+    "summary": "A wholesome vegetable khichdi on a brown-rice base; one bowl covers grains, dal and veg.",
+    "channels": [
+      "Hebbars Kitchen",
+      "Cook with Parul"
+    ],
+    "videoQuery": "brown rice vegetable khichdi healthy recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "yellow moong dal",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Rinse rice and dal.",
+      "Saute cumin and vegetables in ghee.",
+      "Add rice, dal, turmeric and salt.",
+      "Pour in 3.5 cups water.",
+      "Pressure-cook 5 whistles.",
+      "Mash lightly and serve warm."
+    ]
+  },
+  {
+    "id": "kb-27-007",
+    "title": "Foxtail Millet Veg Biryani",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 3,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 360,
+      "protein": 10,
+      "fibre": 9,
+      "fat": 10,
+      "carbs": 58
+    },
+    "summary": "Aromatic dum-style biryani made with foxtail millet instead of rice for a lower-GI festive bowl.",
+    "channels": [
+      "Hebbars Kitchen",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "foxtail millet veg biryani recipe",
+    "ingredients": [
+      {
+        "name": "foxtail millet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "mixed vegetables",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "biryani masala",
+        "qty": 2,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "mint leaves",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak foxtail millet 20 minutes.",
+      "Make a masala with onion, ginger garlic paste and biryani masala.",
+      "Add vegetables, curd and mint, cook 5 minutes.",
+      "Layer drained millet over the masala.",
+      "Add 1.5 cups water, cover and dum on low 15 minutes.",
+      "Rest and fluff before serving."
+    ]
+  },
+  {
+    "id": "kb-27-008",
+    "title": "Light Veg Dum Biryani Brown Rice",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "light",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 45,
+    "servings": 3,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 400,
+      "protein": 11,
+      "fibre": 7,
+      "fat": 12,
+      "carbs": 62
+    },
+    "summary": "A lightened dum biryani using brown rice and minimal oil; full flavour, fewer calories.",
+    "channels": [
+      "Your Food Lab",
+      "Sanjeev Kapoor Khazana"
+    ],
+    "videoQuery": "light veg dum biryani brown rice recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "name": "mixed vegetables",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "biryani masala",
+        "qty": 2,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "mint leaves",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Parboil soaked brown rice 70 percent.",
+      "Cook vegetables with curd, onion and biryani masala.",
+      "Layer rice and masala alternately with mint.",
+      "Sprinkle a little water.",
+      "Seal and dum on low heat 18 minutes.",
+      "Rest 5 minutes, then mix gently and serve."
+    ]
+  },
+  {
+    "id": "kb-27-009",
+    "title": "UP-Style Veg Tehri Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegetarian",
+      "lunch",
+      "comfort"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 32,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 360,
+      "protein": 9,
+      "fibre": 8,
+      "fat": 10,
+      "carbs": 60
+    },
+    "summary": "A homely one-pot turmeric tehri with seasonal veg on brown rice; comforting and high in fibre.",
+    "channels": [
+      "Nisha Madhulika",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "veg tehri brown rice recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "potato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cauliflower",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak brown rice 20 minutes.",
+      "Temper cumin, add vegetables and turmeric.",
+      "Saute 4 minutes, season with garam masala.",
+      "Add drained rice and toss.",
+      "Pour 1.5 cups water and pressure-cook 3 whistles.",
+      "Rest, fluff and serve."
+    ]
+  },
+  {
+    "id": "kb-27-010",
+    "title": "Millet Bisi Bele Grain Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "high-protein",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 38,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 390,
+      "protein": 14,
+      "fibre": 10,
+      "fat": 11,
+      "carbs": 58
+    },
+    "summary": "A millet take on bisi bele bath with toor dal and veg; tangy, spiced and deeply nourishing.",
+    "channels": [
+      "Hebbars Kitchen",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "millet bisi bele bath grain bowl recipe",
+    "ingredients": [
+      {
+        "name": "little millet",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "toor dal",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "mixed vegetables",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "tamarind",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "bisi bele masala",
+        "qty": 2,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook millet and toor dal together until soft.",
+      "Boil vegetables separately.",
+      "Make tamarind extract.",
+      "Combine millet-dal, veg, tamarind and bisi bele masala.",
+      "Simmer 5 minutes to one pot consistency.",
+      "Temper curry leaves in ghee and pour over."
+    ]
+  },
+  {
+    "id": "kb-27-011",
+    "title": "Quinoa Veg Biryani Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 380,
+      "protein": 15,
+      "fibre": 9,
+      "fat": 12,
+      "carbs": 52
+    },
+    "summary": "A protein-dense quinoa biryani with mint and veg; the gluten-free, lower-carb biryani fix.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "quinoa veg biryani healthy recipe",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "mixed vegetables",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "biryani masala",
+        "qty": 2,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "mint leaves",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Rinse quinoa thoroughly.",
+      "Cook masala with onion, ginger garlic paste and biryani masala.",
+      "Add vegetables, curd and mint.",
+      "Stir in quinoa and 1.5 cups water.",
+      "Cover and cook 15 minutes till fluffy.",
+      "Rest and serve."
+    ]
+  },
+  {
+    "id": "kb-27-012",
+    "title": "Barley Vegetable Pulao",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 350,
+      "protein": 11,
+      "fibre": 12,
+      "fat": 8,
+      "carbs": 60
+    },
+    "summary": "Chewy pearl barley pulao with vegetables; one of the highest-fibre grain bowls you can make.",
+    "channels": [
+      "Sanjeev Kapoor Khazana",
+      "Nisha Madhulika"
+    ],
+    "videoQuery": "barley vegetable pulao high fibre recipe",
+    "ingredients": [
+      {
+        "name": "pearl barley",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak barley 30 minutes.",
+      "Temper cumin, add onion and ginger garlic paste.",
+      "Add vegetables and garam masala.",
+      "Stir in drained barley.",
+      "Add 2 cups water and pressure-cook 4 whistles.",
+      "Rest, fluff and serve."
+    ]
+  },
+  {
+    "id": "kb-27-013",
+    "title": "Foxtail Millet Lemon Coriander Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 320,
+      "protein": 8,
+      "fibre": 8,
+      "fat": 9,
+      "carbs": 52
+    },
+    "summary": "Zesty foxtail millet tossed with lemon, peanuts and coriander for a refreshing light bowl.",
+    "channels": [
+      "Home Cooking Show",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "foxtail millet lemon coriander bowl recipe",
+    "ingredients": [
+      {
+        "name": "foxtail millet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "peanuts",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "coriander leaves",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook foxtail millet and cool slightly.",
+      "Roast peanuts in oil, set aside.",
+      "Temper mustard seeds and curry leaves.",
+      "Add millet and turmeric.",
+      "Squeeze in lemon and toss with peanuts.",
+      "Garnish with coriander and serve."
+    ]
+  },
+  {
+    "id": "kb-27-014",
+    "title": "Dalia Veg Pulao Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegetarian",
+      "breakfast",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 300,
+      "protein": 10,
+      "fibre": 8,
+      "fat": 7,
+      "carbs": 50
+    },
+    "summary": "Broken-wheat dalia cooked pulao-style with veg; a quick, fibre-rich savoury bowl.",
+    "channels": [
+      "Nisha Madhulika",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "dalia veg pulao bowl recipe",
+    "ingredients": [
+      {
+        "name": "broken wheat",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Dry-roast dalia 2 minutes.",
+      "Temper cumin and ginger in ghee.",
+      "Add onion and vegetables, saute.",
+      "Add dalia and salt.",
+      "Pour 2.5 cups water and pressure-cook 3 whistles.",
+      "Fluff and serve warm."
+    ]
+  },
+  {
+    "id": "kb-27-015",
+    "title": "Brown Rice Curd Bowl Tempered",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "light",
+      "probiotic",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 20,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 300,
+      "protein": 11,
+      "fibre": 4,
+      "fat": 9,
+      "carbs": 44
+    },
+    "summary": "Cooling brown-rice curd bowl with a classic tempering; gut-friendly and protein-balanced.",
+    "channels": [
+      "Home Cooking Show",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "brown rice curd bowl tempered recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "green chilli",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook brown rice soft and cool it.",
+      "Mash lightly and mix in curd.",
+      "Temper mustard seeds, curry leaves, ginger and chilli.",
+      "Pour tempering over the rice.",
+      "Season with salt and mix.",
+      "Serve chilled or at room temperature."
+    ]
+  },
+  {
+    "id": "kb-27-016",
+    "title": "Quinoa Lemon Peanut Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 22,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 340,
+      "protein": 12,
+      "fibre": 7,
+      "fat": 12,
+      "carbs": 46
+    },
+    "summary": "South-Indian lemon rice reimagined with quinoa and peanuts for extra protein and crunch.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "quinoa lemon peanut bowl recipe",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "peanuts",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook quinoa and let it cool.",
+      "Roast peanuts in oil.",
+      "Temper mustard seeds, curry leaves and turmeric.",
+      "Add quinoa and toss.",
+      "Squeeze in lemon and add peanuts.",
+      "Mix and serve."
+    ]
+  },
+  {
+    "id": "kb-27-017",
+    "title": "Coconut Foxtail Millet Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 22,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 350,
+      "protein": 8,
+      "fibre": 8,
+      "fat": 13,
+      "carbs": 50
+    },
+    "summary": "Fragrant coconut millet bowl tempered with cashew and curry leaves; light yet comforting.",
+    "channels": [
+      "Home Cooking Show",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "coconut foxtail millet bowl recipe",
+    "ingredients": [
+      {
+        "name": "foxtail millet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "grated coconut",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cashew",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "green chilli",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook foxtail millet and cool.",
+      "Roast cashew in oil till golden.",
+      "Temper mustard, curry leaves and chilli.",
+      "Add grated coconut and saute briefly.",
+      "Fold in millet and salt.",
+      "Top with cashew and serve."
+    ]
+  },
+  {
+    "id": "kb-27-018",
+    "title": "Tamarind Millet Puli Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 26,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 340,
+      "protein": 8,
+      "fibre": 8,
+      "fat": 11,
+      "carbs": 52
+    },
+    "summary": "Tangy tamarind millet bowl with roasted spices; a whole-grain twist on puliyodarai.",
+    "channels": [
+      "Home Cooking Show",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "tamarind millet puli bowl recipe",
+    "ingredients": [
+      {
+        "name": "little millet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tamarind",
+        "qty": 12,
+        "unit": "g"
+      },
+      {
+        "name": "peanuts",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "sesame seeds",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook little millet and cool.",
+      "Make thick tamarind extract.",
+      "Roast peanuts and sesame, set aside.",
+      "Temper mustard and curry leaves, add tamarind.",
+      "Simmer paste 3 minutes, then mix with millet.",
+      "Top with peanuts and sesame; serve."
+    ]
+  },
+  {
+    "id": "kb-27-019",
+    "title": "Mexican Brown Rice Veggie Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 410,
+      "protein": 14,
+      "fibre": 12,
+      "fat": 11,
+      "carbs": 64
+    },
+    "summary": "A vibrant Mexican-spiced brown rice bowl with beans and corn; high fibre and naturally vegan.",
+    "channels": [
+      "Your Food Lab",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "mexican brown rice veggie bowl recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "red kidney beans",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "sweet corn",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cumin powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "paprika",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook brown rice and keep aside.",
+      "Saute bell pepper and tomato in oil.",
+      "Add beans, corn, cumin and paprika.",
+      "Cook 4 minutes till thick.",
+      "Toss in cooked rice and salt.",
+      "Squeeze lime, garnish and serve."
+    ]
+  },
+  {
+    "id": "kb-27-020",
+    "title": "Mediterranean Bulgur Grain Bowl",
+    "cuisine": "Mediterranean",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 28,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 390,
+      "protein": 13,
+      "fibre": 10,
+      "fat": 14,
+      "carbs": 52
+    },
+    "summary": "Bulgur tossed with chickpeas, cucumber, olives and feta; a fresh, fibre-rich Mediterranean bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "mediterranean bulgur grain bowl recipe",
+    "ingredients": [
+      {
+        "name": "bulgur wheat",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "chickpeas",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cherry tomato",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "olives",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "feta cheese",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Cook bulgur and fluff with a fork.",
+      "Chop cucumber, tomato and olives.",
+      "Combine bulgur, chickpeas and vegetables.",
+      "Whisk olive oil and lemon for dressing.",
+      "Toss everything together.",
+      "Crumble feta on top and serve."
+    ]
+  },
+  {
+    "id": "kb-27-021",
+    "title": "Baked Falafel Quinoa Bowl",
+    "cuisine": "Mediterranean",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 430,
+      "protein": 18,
+      "fibre": 12,
+      "fat": 15,
+      "carbs": 56
+    },
+    "summary": "Baked chickpea falafel over lemony quinoa with veg; plant protein and fibre in one bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "baked falafel quinoa bowl recipe",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "qty": 2,
+        "unit": "pc",
+        "staple": true
+      },
+      {
+        "name": "cucumber",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tahini",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "coriander leaves",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Blend soaked chickpeas with onion, garlic and coriander.",
+      "Shape into patties and bake 20 minutes.",
+      "Cook quinoa and season with lemon.",
+      "Slice cucumber for the bowl.",
+      "Thin tahini with water for dressing.",
+      "Assemble quinoa, falafel and veg; drizzle tahini."
+    ]
+  },
+  {
+    "id": "kb-27-022",
+    "title": "Veggie Burrito Brown Rice Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "high-protein",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 440,
+      "protein": 17,
+      "fibre": 13,
+      "fat": 12,
+      "carbs": 66
+    },
+    "summary": "All the burrito fillings deconstructed over brown rice; beans, corn and salsa for a loaded bowl.",
+    "channels": [
+      "Your Food Lab",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "veggie burrito brown rice bowl recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "black beans",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "sweet corn",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "avocado",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "cumin powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "lime",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Cook brown rice and keep warm.",
+      "Warm black beans with cumin and salt.",
+      "Make a quick salsa with tomato and onion.",
+      "Mash avocado with lime.",
+      "Layer rice, beans and corn in a bowl.",
+      "Top with salsa and avocado; serve."
+    ]
+  },
+  {
+    "id": "kb-27-023",
+    "title": "Teriyaki Veg Brown Rice Grain Bowl",
+    "cuisine": "Pan-Asian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 28,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 400,
+      "protein": 12,
+      "fibre": 8,
+      "fat": 10,
+      "carbs": 64
+    },
+    "summary": "Glossy teriyaki-glazed vegetables over brown rice; a balanced, lightly sweet Asian bowl.",
+    "channels": [
+      "Your Food Lab",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "teriyaki veg brown rice grain bowl recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "broccoli",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "honey",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "sesame seeds",
+        "qty": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Cook brown rice and set aside.",
+      "Stir-fry broccoli, pepper and carrot.",
+      "Mix soy sauce, honey and ginger for teriyaki.",
+      "Pour sauce over veg and glaze 2 minutes.",
+      "Serve veg over rice.",
+      "Sprinkle sesame seeds and serve."
+    ]
+  },
+  {
+    "id": "kb-27-024",
+    "title": "Autumn Harvest Quinoa Bowl",
+    "cuisine": "Continental",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 420,
+      "protein": 13,
+      "fibre": 11,
+      "fat": 16,
+      "carbs": 56
+    },
+    "summary": "Roasted pumpkin, chickpeas and greens over quinoa with a maple-mustard dressing; a hearty harvest bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "autumn harvest quinoa bowl recipe",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "pumpkin",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "chickpeas",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "walnuts",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "mustard sauce",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "maple syrup",
+        "qty": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Roast pumpkin and chickpeas with oil 20 minutes.",
+      "Cook quinoa and fluff.",
+      "Whisk mustard, maple and oil for dressing.",
+      "Wilt spinach lightly.",
+      "Combine quinoa, pumpkin, chickpeas and spinach.",
+      "Top with walnuts and dressing; serve."
+    ]
+  },
+  {
+    "id": "kb-27-025",
+    "title": "Paneer Quinoa Protein Power Bowl",
+    "cuisine": "Healthy",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 28,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 460,
+      "protein": 28,
+      "fibre": 9,
+      "fat": 17,
+      "carbs": 48
+    },
+    "summary": "A serious protein bowl pairing paneer and quinoa with greens; built for post-workout recovery.",
+    "channels": [
+      "Fit Tuber",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "paneer quinoa protein power bowl recipe",
+    "ingredients": [
+      {
+        "name": "paneer",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cherry tomato",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "black pepper",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook quinoa and cool slightly.",
+      "Pan-sear paneer cubes till golden.",
+      "Toss spinach, tomato and pepper.",
+      "Combine quinoa and vegetables in a bowl.",
+      "Add paneer and season with pepper.",
+      "Drizzle oil and lemon; serve."
+    ]
+  },
+  {
+    "id": "kb-27-026",
+    "title": "Soya Chunk Masala Brown Rice Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 34,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 420,
+      "protein": 26,
+      "fibre": 9,
+      "fat": 10,
+      "carbs": 56
+    },
+    "summary": "Spicy soya chunks simmered in masala over brown rice; a heavyweight plant-protein bowl.",
+    "channels": [
+      "Yaman's Kitchen",
+      "Nisha Madhulika"
+    ],
+    "videoQuery": "soya chunk masala brown rice bowl recipe",
+    "ingredients": [
+      {
+        "name": "soya chunks",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil soya chunks, squeeze and set aside.",
+      "Cook brown rice separately.",
+      "Saute onion, tomato and ginger garlic paste.",
+      "Add soya chunks and garam masala.",
+      "Simmer 5 minutes into a thick masala.",
+      "Serve over brown rice."
+    ]
+  },
+  {
+    "id": "kb-27-027",
+    "title": "Kala Chana Dalia Protein Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 380,
+      "protein": 17,
+      "fibre": 13,
+      "fat": 7,
+      "carbs": 60
+    },
+    "summary": "Black chana cooked with broken wheat dalia; an iron-and-fibre dense savoury grain bowl.",
+    "channels": [
+      "Nisha Madhulika",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "kala chana dalia protein bowl recipe",
+    "ingredients": [
+      {
+        "name": "black chickpeas",
+        "qty": 90,
+        "unit": "g"
+      },
+      {
+        "name": "broken wheat",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "chana masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Boil soaked black chana till tender.",
+      "Roast dalia 2 minutes.",
+      "Saute onion, tomato and ginger garlic paste.",
+      "Add chana and chana masala.",
+      "Add dalia and 2.5 cups water, pressure-cook 3 whistles.",
+      "Fluff and serve."
+    ]
+  },
+  {
+    "id": "kb-27-028",
+    "title": "Foxtail Millet Curd Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "light",
+      "probiotic",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 22,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 300,
+      "protein": 10,
+      "fibre": 6,
+      "fat": 8,
+      "carbs": 46
+    },
+    "summary": "Cooling millet curd bowl with pomegranate and tempering; light, probiotic and gut-friendly.",
+    "channels": [
+      "Home Cooking Show",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "foxtail millet curd bowl recipe",
+    "ingredients": [
+      {
+        "name": "foxtail millet",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "pomegranate",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook foxtail millet soft and cool.",
+      "Mash lightly and mix in curd.",
+      "Temper mustard, curry leaves and ginger.",
+      "Pour tempering over millet.",
+      "Fold in pomegranate.",
+      "Season with salt and serve chilled."
+    ]
+  },
+  {
+    "id": "kb-27-029",
+    "title": "Mexican Quinoa Black Bean Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 28,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 420,
+      "protein": 17,
+      "fibre": 13,
+      "fat": 12,
+      "carbs": 58
+    },
+    "summary": "Smoky Mexican quinoa with black beans, corn and lime; a complete plant-protein bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "mexican quinoa black bean bowl recipe",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "black beans",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "sweet corn",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cumin powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "paprika",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "lime",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Cook quinoa and keep aside.",
+      "Saute bell pepper and tomato.",
+      "Add beans, corn, cumin and paprika.",
+      "Simmer 4 minutes.",
+      "Fold in quinoa and salt.",
+      "Finish with lime and serve."
+    ]
+  },
+  {
+    "id": "kb-27-030",
+    "title": "Greek Farro Grain Bowl",
+    "cuisine": "Mediterranean",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 400,
+      "protein": 14,
+      "fibre": 10,
+      "fat": 15,
+      "carbs": 52
+    },
+    "summary": "Nutty farro with cucumber, tomato, olives and tzatziki; a fresh Greek-style grain bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "greek farro grain bowl recipe",
+    "ingredients": [
+      {
+        "name": "farro",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cherry tomato",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "olives",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "feta cheese",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Cook farro until tender and drain.",
+      "Make tzatziki with curd, cucumber and lemon.",
+      "Chop tomato and olives.",
+      "Combine farro and vegetables.",
+      "Crumble feta over the bowl.",
+      "Spoon tzatziki on top and serve."
+    ]
+  },
+  {
+    "id": "kb-27-031",
+    "title": "Rajma Quinoa Burrito Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 32,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 440,
+      "protein": 18,
+      "fibre": 13,
+      "fat": 13,
+      "carbs": 60
+    },
+    "summary": "Indian rajma meets the burrito bowl over quinoa; double the fibre, double the protein.",
+    "channels": [
+      "Your Food Lab",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "rajma quinoa burrito bowl recipe",
+    "ingredients": [
+      {
+        "name": "red kidney beans",
+        "qty": 90,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "avocado",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "cumin powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "paprika",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "lime",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Cook quinoa and set aside.",
+      "Mash some rajma, keep some whole; season with cumin and paprika.",
+      "Make tomato-onion salsa.",
+      "Mash avocado with lime.",
+      "Layer quinoa and rajma in a bowl.",
+      "Top with salsa and avocado; serve."
+    ]
+  },
+  {
+    "id": "kb-27-032",
+    "title": "Teriyaki Tofu Brown Rice Grain Bowl",
+    "cuisine": "Pan-Asian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 430,
+      "protein": 22,
+      "fibre": 8,
+      "fat": 15,
+      "carbs": 52
+    },
+    "summary": "Pan-glazed teriyaki tofu over brown rice with edamame; a protein-packed Asian grain bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "teriyaki tofu brown rice grain bowl recipe",
+    "ingredients": [
+      {
+        "name": "tofu",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "edamame",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "honey",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "sesame seeds",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook brown rice and keep warm.",
+      "Pan-fry tofu cubes till golden.",
+      "Mix soy sauce, honey and ginger.",
+      "Glaze tofu in the sauce.",
+      "Steam edamame.",
+      "Serve tofu and edamame over rice; top with sesame."
+    ]
+  },
+  {
+    "id": "kb-27-033",
+    "title": "Sweet Potato Barley Harvest Bowl",
+    "cuisine": "Continental",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 38,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 410,
+      "protein": 11,
+      "fibre": 13,
+      "fat": 12,
+      "carbs": 64
+    },
+    "summary": "Roasted sweet potato and chickpeas over chewy barley with a tahini drizzle; a filling harvest bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "sweet potato barley harvest bowl recipe",
+    "ingredients": [
+      {
+        "name": "pearl barley",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "sweet potato",
+        "qty": 90,
+        "unit": "g"
+      },
+      {
+        "name": "chickpeas",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "kale",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "tahini",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "pumpkin seeds",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Soak and boil barley till tender.",
+      "Roast sweet potato and chickpeas 25 minutes.",
+      "Massage kale with a little oil.",
+      "Thin tahini with lemon and water.",
+      "Combine barley, sweet potato, chickpeas and kale.",
+      "Drizzle tahini, top with seeds; serve."
+    ]
+  },
+  {
+    "id": "kb-27-034",
+    "title": "Chickpea Spinach Protein Power Bowl",
+    "cuisine": "Healthy",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 26,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 420,
+      "protein": 18,
+      "fibre": 14,
+      "fat": 13,
+      "carbs": 56
+    },
+    "summary": "Spiced chickpeas and wilted spinach over quinoa; a fibre-loaded vegan power bowl.",
+    "channels": [
+      "Fit Tuber",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "chickpea spinach protein power bowl recipe",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "cumin powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Cook quinoa and set aside.",
+      "Saute onion with cumin and turmeric.",
+      "Add chickpeas and cook 4 minutes.",
+      "Wilt spinach in the pan.",
+      "Combine chickpea mix with quinoa.",
+      "Finish with lemon and serve."
+    ]
+  },
+  {
+    "id": "kb-27-035",
+    "title": "Jeera Brown Rice Peas Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "light",
+      "high-fibre",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 25,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 330,
+      "protein": 9,
+      "fibre": 7,
+      "fat": 8,
+      "carbs": 56
+    },
+    "summary": "Simple cumin-tempered brown rice with green peas; a light everyday grain bowl.",
+    "channels": [
+      "Nisha Madhulika",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "jeera brown rice peas bowl recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "green chilli",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "coriander leaves",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Cook brown rice and keep aside.",
+      "Temper cumin, ginger and chilli in ghee.",
+      "Add green peas and saute 3 minutes.",
+      "Fold in cooked rice.",
+      "Season with salt.",
+      "Garnish with coriander and serve."
+    ]
+  },
+  {
+    "id": "kb-27-036",
+    "title": "Quinoa Bisi Bele Grain Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 400,
+      "protein": 16,
+      "fibre": 10,
+      "fat": 12,
+      "carbs": 54
+    },
+    "summary": "A protein-rich quinoa version of bisi bele bath with toor dal and veg; tangy and wholesome.",
+    "channels": [
+      "Hebbars Kitchen",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "quinoa bisi bele bath grain bowl recipe",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "toor dal",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "mixed vegetables",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "tamarind",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "bisi bele masala",
+        "qty": 2,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook quinoa and toor dal separately.",
+      "Boil mixed vegetables.",
+      "Make tamarind extract.",
+      "Combine quinoa, dal, veg, tamarind and masala.",
+      "Simmer 5 minutes into one pot.",
+      "Temper curry leaves in ghee and pour over."
+    ]
+  },
+  {
+    "id": "kb-27-037",
+    "title": "Kodo Millet Veg Biryani",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 40,
+    "servings": 3,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 350,
+      "protein": 10,
+      "fibre": 9,
+      "fat": 10,
+      "carbs": 56
+    },
+    "summary": "Low-GI kodo millet dum biryani with veg and mint; festive flavour, gentler on blood sugar.",
+    "channels": [
+      "Hebbars Kitchen",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "kodo millet veg biryani recipe",
+    "ingredients": [
+      {
+        "name": "kodo millet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "mixed vegetables",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "biryani masala",
+        "qty": 2,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "mint leaves",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak kodo millet 20 minutes.",
+      "Cook masala with onion, ginger garlic paste and biryani masala.",
+      "Add veg, curd and mint.",
+      "Layer drained millet over masala.",
+      "Add 1.5 cups water and dum 15 minutes.",
+      "Rest and fluff before serving."
+    ]
+  },
+  {
+    "id": "kb-27-038",
+    "title": "Moong Dalia Khichdi Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegetarian",
+      "comfort",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": true
+    },
+    "timeMins": 28,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 320,
+      "protein": 14,
+      "fibre": 9,
+      "fat": 7,
+      "carbs": 50
+    },
+    "summary": "Broken-wheat and moong dal khichdi; a high-protein comfort bowl that is easy on digestion.",
+    "channels": [
+      "Nisha Madhulika",
+      "Sanjeev Kapoor Khazana"
+    ],
+    "videoQuery": "moong dalia khichdi bowl recipe",
+    "ingredients": [
+      {
+        "name": "broken wheat",
+        "qty": 110,
+        "unit": "g"
+      },
+      {
+        "name": "yellow moong dal",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Roast dalia 2 minutes.",
+      "Rinse moong dal.",
+      "Temper cumin and ginger in ghee.",
+      "Add dalia, dal and turmeric.",
+      "Pour 3.5 cups water and pressure-cook 4 whistles.",
+      "Mash lightly and serve."
+    ]
+  },
+  {
+    "id": "kb-27-039",
+    "title": "Lemon Barley Herb Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 350,
+      "protein": 10,
+      "fibre": 12,
+      "fat": 10,
+      "carbs": 56
+    },
+    "summary": "Tangy lemon-tempered barley with peanuts and herbs; a high-fibre take on lemon rice.",
+    "channels": [
+      "Home Cooking Show",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "lemon barley herb bowl recipe",
+    "ingredients": [
+      {
+        "name": "pearl barley",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "peanuts",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak and boil barley till tender.",
+      "Roast peanuts in oil.",
+      "Temper mustard, curry leaves and turmeric.",
+      "Add barley and toss.",
+      "Squeeze in lemon and add peanuts.",
+      "Mix and serve."
+    ]
+  },
+  {
+    "id": "kb-27-040",
+    "title": "Coconut Quinoa Tempered Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 24,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 360,
+      "protein": 11,
+      "fibre": 7,
+      "fat": 15,
+      "carbs": 46
+    },
+    "summary": "Fragrant coconut quinoa with cashew tempering; protein-rich and lightly tropical.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "coconut quinoa tempered bowl recipe",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "grated coconut",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cashew",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "green chilli",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook quinoa and cool.",
+      "Roast cashew in oil.",
+      "Temper mustard, curry leaves and chilli.",
+      "Add coconut and saute briefly.",
+      "Fold in quinoa and salt.",
+      "Top with cashew and serve."
+    ]
+  },
+  {
+    "id": "kb-27-041",
+    "title": "Tamarind Brown Rice Puli Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 28,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 360,
+      "protein": 8,
+      "fibre": 8,
+      "fat": 11,
+      "carbs": 56
+    },
+    "summary": "Whole-grain tamarind brown rice with roasted spices and peanuts; the healthier puli bowl.",
+    "channels": [
+      "Home Cooking Show",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "tamarind brown rice puli bowl recipe",
+    "ingredients": [
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tamarind",
+        "qty": 12,
+        "unit": "g"
+      },
+      {
+        "name": "peanuts",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "sesame seeds",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook brown rice and cool.",
+      "Make thick tamarind extract.",
+      "Roast peanuts and sesame.",
+      "Temper mustard, curry leaves; add tamarind.",
+      "Simmer paste, then mix with rice.",
+      "Top with peanuts and sesame; serve."
+    ]
+  },
+  {
+    "id": "kb-27-042",
+    "title": "Mediterranean Couscous Veg Bowl",
+    "cuisine": "Mediterranean",
+    "category": "bowl",
+    "tags": [
+      "light",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 22,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 380,
+      "protein": 12,
+      "fibre": 8,
+      "fat": 13,
+      "carbs": 54
+    },
+    "summary": "Fluffy couscous with roasted veg, chickpeas and herbs; a quick Mediterranean grain bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "mediterranean couscous veg bowl recipe",
+    "ingredients": [
+      {
+        "name": "couscous",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "zucchini",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "chickpeas",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cherry tomato",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "parsley",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Soak couscous in hot water and fluff.",
+      "Roast zucchini, pepper and tomato.",
+      "Warm chickpeas with salt.",
+      "Combine couscous, veg and chickpeas.",
+      "Whisk oil and lemon for dressing.",
+      "Toss with parsley and serve."
+    ]
+  },
+  {
+    "id": "kb-27-043",
+    "title": "Falafel Bulgur Mezze Bowl",
+    "cuisine": "Mediterranean",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegetarian",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 35,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 440,
+      "protein": 17,
+      "fibre": 12,
+      "fat": 16,
+      "carbs": 56
+    },
+    "summary": "Baked falafel over bulgur with hummus and salad; a mezze-style protein bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "falafel bulgur mezze bowl recipe",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "qty": 110,
+        "unit": "g"
+      },
+      {
+        "name": "bulgur wheat",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "hummus",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "name": "coriander leaves",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Blend soaked chickpeas with onion and coriander.",
+      "Shape and bake falafel 20 minutes.",
+      "Cook bulgur and fluff.",
+      "Chop cucumber and tomato for salad.",
+      "Spread hummus in the bowl base.",
+      "Add bulgur, falafel and salad; drizzle oil."
+    ]
+  },
+  {
+    "id": "kb-27-044",
+    "title": "Chickpea Fajita Brown Rice Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "high-protein",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 430,
+      "protein": 16,
+      "fibre": 13,
+      "fat": 12,
+      "carbs": 64
+    },
+    "summary": "Sizzled fajita peppers and chickpeas over brown rice with lime; a loaded Tex-Mex grain bowl.",
+    "channels": [
+      "Your Food Lab",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "chickpea fajita brown rice bowl recipe",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "qty": 90,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "cumin powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "paprika",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "lime",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Cook brown rice and keep warm.",
+      "Saute peppers and onion till charred.",
+      "Add chickpeas, cumin and paprika.",
+      "Cook 4 minutes.",
+      "Serve fajita mix over rice.",
+      "Finish with lime and serve."
+    ]
+  },
+  {
+    "id": "kb-27-045",
+    "title": "Teriyaki Tempeh Grain Bowl",
+    "cuisine": "Pan-Asian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 440,
+      "protein": 24,
+      "fibre": 9,
+      "fat": 16,
+      "carbs": 50
+    },
+    "summary": "Caramelised teriyaki tempeh over brown rice with greens; fermented soy protein at its best.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "teriyaki tempeh grain bowl recipe",
+    "ingredients": [
+      {
+        "name": "tempeh",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "broccoli",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "soy sauce",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "honey",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "sesame seeds",
+        "qty": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook brown rice and set aside.",
+      "Pan-fry tempeh slices till golden.",
+      "Mix soy sauce, honey and ginger.",
+      "Glaze tempeh in the sauce.",
+      "Steam broccoli.",
+      "Serve tempeh and broccoli over rice; top with sesame."
+    ]
+  },
+  {
+    "id": "kb-27-046",
+    "title": "Roasted Veg Millet Harvest Bowl",
+    "cuisine": "Continental",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 38,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 400,
+      "protein": 11,
+      "fibre": 11,
+      "fat": 13,
+      "carbs": 60
+    },
+    "summary": "Oven-roasted seasonal veg over foxtail millet with a lemon-herb dressing; a colourful harvest bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "roasted veg millet harvest bowl recipe",
+    "ingredients": [
+      {
+        "name": "foxtail millet",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "zucchini",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "chickpeas",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "sunflower seeds",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Cook foxtail millet and fluff.",
+      "Roast zucchini, pepper, carrot and chickpeas 25 minutes.",
+      "Whisk oil and lemon for dressing.",
+      "Combine millet and roasted veg.",
+      "Drizzle dressing and toss.",
+      "Top with sunflower seeds and serve."
+    ]
+  },
+  {
+    "id": "kb-27-047",
+    "title": "Soya Chunk Power Protein Bowl",
+    "cuisine": "Healthy",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 32,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 450,
+      "protein": 30,
+      "fibre": 10,
+      "fat": 12,
+      "carbs": 54
+    },
+    "summary": "A high-protein soya chunk and quinoa bowl with veg; built for muscle recovery on a plant diet.",
+    "channels": [
+      "Fit Tuber",
+      "Yaman's Kitchen"
+    ],
+    "videoQuery": "soya chunk power protein bowl recipe",
+    "ingredients": [
+      {
+        "name": "soya chunks",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "garam masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Boil soya chunks, squeeze and chop.",
+      "Cook quinoa and set aside.",
+      "Saute onion, pepper and soya with garam masala.",
+      "Wilt spinach in the pan.",
+      "Combine soya mix with quinoa.",
+      "Finish with lemon and serve."
+    ]
+  },
+  {
+    "id": "kb-27-048",
+    "title": "Foxtail Millet Veg Pulao",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 340,
+      "protein": 9,
+      "fibre": 9,
+      "fat": 9,
+      "carbs": 54
+    },
+    "summary": "A light foxtail millet pulao with vegetables and whole spices; lower-GI than rice pulao.",
+    "channels": [
+      "Hebbars Kitchen",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "foxtail millet veg pulao recipe",
+    "ingredients": [
+      {
+        "name": "foxtail millet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "whole garam masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak foxtail millet 15 minutes.",
+      "Saute whole spices, onion and ginger garlic paste.",
+      "Add vegetables and toss.",
+      "Stir in drained millet.",
+      "Add 1.5 cups water and cook covered 15 minutes.",
+      "Rest, fluff and serve."
+    ]
+  },
+  {
+    "id": "kb-27-049",
+    "title": "Quinoa Vegetable Khichdi Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegetarian",
+      "comfort",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 28,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 350,
+      "protein": 15,
+      "fibre": 9,
+      "fat": 9,
+      "carbs": 52
+    },
+    "summary": "A protein-rich quinoa and moong khichdi with veg; comforting, gluten-free one-pot nourishment.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Hebbars Kitchen"
+    ],
+    "videoQuery": "quinoa vegetable khichdi bowl recipe",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "yellow moong dal",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "ghee",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Rinse quinoa and moong dal.",
+      "Saute cumin and vegetables in ghee.",
+      "Add quinoa, dal and turmeric.",
+      "Pour 3 cups water.",
+      "Pressure-cook 3 whistles.",
+      "Mash lightly and serve."
+    ]
+  },
+  {
+    "id": "kb-27-050",
+    "title": "Mediterranean Freekeh Veg Bowl",
+    "cuisine": "Mediterranean",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "high-protein",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 32,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 410,
+      "protein": 15,
+      "fibre": 12,
+      "fat": 14,
+      "carbs": 54
+    },
+    "summary": "Smoky freekeh with roasted veg, chickpeas and tahini; a deeply nutty high-fibre bowl.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Your Food Lab"
+    ],
+    "videoQuery": "mediterranean freekeh veg bowl recipe",
+    "ingredients": [
+      {
+        "name": "freekeh",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "zucchini",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "chickpeas",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "name": "tahini",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "parsley",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Cook freekeh until tender and drain.",
+      "Roast zucchini, pepper and chickpeas.",
+      "Thin tahini with lemon and water.",
+      "Combine freekeh and roasted veg.",
+      "Drizzle tahini dressing.",
+      "Garnish with parsley and serve."
+    ]
+  },
+  {
+    "id": "kb-27-051",
+    "title": "Mexican Millet Fiesta Bowl",
+    "cuisine": "Fusion",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "vegan",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 30,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 400,
+      "protein": 13,
+      "fibre": 11,
+      "fat": 11,
+      "carbs": 62
+    },
+    "summary": "Spiced foxtail millet with beans, corn and salsa; a gluten-free Mexican fiesta bowl.",
+    "channels": [
+      "Your Food Lab",
+      "Nutrition by Kylie"
+    ],
+    "videoQuery": "mexican millet fiesta bowl recipe",
+    "ingredients": [
+      {
+        "name": "foxtail millet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "black beans",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "sweet corn",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "cumin powder",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "paprika",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "lime",
+        "qty": 1,
+        "unit": "pc"
+      }
+    ],
+    "steps": [
+      "Cook foxtail millet and keep aside.",
+      "Saute onion and tomato.",
+      "Add beans, corn, cumin and paprika.",
+      "Simmer 4 minutes.",
+      "Fold in millet and salt.",
+      "Finish with lime and serve."
+    ]
+  },
+  {
+    "id": "kb-27-052",
+    "title": "Quinoa Curd Tempered Bowl",
+    "cuisine": "South Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "probiotic",
+      "vegetarian",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 24,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 320,
+      "protein": 14,
+      "fibre": 6,
+      "fat": 9,
+      "carbs": 42
+    },
+    "summary": "A protein-rich quinoa curd bowl with a fragrant tempering; cooling and gut-friendly.",
+    "channels": [
+      "Nutrition by Kylie",
+      "Home Cooking Show"
+    ],
+    "videoQuery": "quinoa curd tempered bowl recipe",
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "mustard seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "curry leaves",
+        "qty": 5,
+        "unit": "g",
+        "staple": true
+      },
+      {
+        "name": "ginger",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "name": "green chilli",
+        "qty": 1,
+        "unit": "pc"
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook quinoa soft and cool.",
+      "Mix in curd and salt.",
+      "Temper mustard, curry leaves, ginger and chilli.",
+      "Pour tempering over quinoa.",
+      "Mix gently.",
+      "Serve chilled or at room temperature."
+    ]
+  },
+  {
+    "id": "kb-27-053",
+    "title": "Millet Veg Tehri Bowl",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-fibre",
+      "light",
+      "vegan",
+      "lunch",
+      "comfort"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 32,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 350,
+      "protein": 9,
+      "fibre": 9,
+      "fat": 10,
+      "carbs": 56
+    },
+    "summary": "A turmeric-spiced millet tehri with seasonal veg; comforting and naturally gluten-free.",
+    "channels": [
+      "Hebbars Kitchen",
+      "Kabita's Kitchen"
+    ],
+    "videoQuery": "millet veg tehri bowl recipe",
+    "ingredients": [
+      {
+        "name": "little millet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "potato",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cauliflower",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "garam masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak little millet 15 minutes.",
+      "Temper cumin, add vegetables and turmeric.",
+      "Season with garam masala.",
+      "Add drained millet and toss.",
+      "Pour 1.5 cups water and cook covered 15 minutes.",
+      "Rest, fluff and serve."
+    ]
+  },
+  {
+    "id": "kb-27-054",
+    "title": "Barley Chana Protein Pulao",
+    "cuisine": "North Indian",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "vegan",
+      "lunch"
+    ],
+    "diet": {
+      "veg": true,
+      "vegan": true,
+      "jain": false,
+      "glutenFree": false,
+      "eggless": true,
+      "noOnionGarlic": false
+    },
+    "timeMins": 42,
+    "servings": 2,
+    "difficulty": "Medium",
+    "nutrition": {
+      "kcal": 420,
+      "protein": 18,
+      "fibre": 14,
+      "fat": 9,
+      "carbs": 64
+    },
+    "summary": "Chewy barley pulao loaded with white chana; a powerhouse of fibre and plant protein.",
+    "channels": [
+      "Sanjeev Kapoor Khazana",
+      "Nisha Madhulika"
+    ],
+    "videoQuery": "barley chana protein pulao recipe",
+    "ingredients": [
+      {
+        "name": "pearl barley",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "white chickpeas",
+        "qty": 90,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger garlic paste",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "chana masala",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "cumin seeds",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Soak barley and chickpeas overnight.",
+      "Boil chickpeas till tender.",
+      "Temper cumin, add onion and ginger garlic paste.",
+      "Add chana and chana masala.",
+      "Stir in barley and 2 cups water.",
+      "Pressure-cook 4 whistles, fluff and serve."
+    ]
+  },
+  {
+    "id": "kb-27-055",
+    "title": "Egg White Brown Rice Power Bowl",
+    "cuisine": "Healthy",
+    "category": "bowl",
+    "tags": [
+      "high-protein",
+      "high-fibre",
+      "lunch",
+      "dinner"
+    ],
+    "diet": {
+      "veg": false,
+      "vegan": false,
+      "jain": false,
+      "glutenFree": true,
+      "eggless": false,
+      "noOnionGarlic": false
+    },
+    "timeMins": 24,
+    "servings": 2,
+    "difficulty": "Easy",
+    "nutrition": {
+      "kcal": 410,
+      "protein": 27,
+      "fibre": 7,
+      "fat": 11,
+      "carbs": 48
+    },
+    "summary": "Scrambled egg whites over brown rice with veg; a lean, high-protein recovery bowl.",
+    "channels": [
+      "Fit Tuber",
+      "Guru Mann Fitness"
+    ],
+    "videoQuery": "egg white brown rice power bowl recipe",
+    "ingredients": [
+      {
+        "name": "egg white",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "brown rice",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "bell pepper",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "black pepper",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      },
+      {
+        "name": "olive oil",
+        "qty": 1,
+        "unit": "tsp",
+        "staple": true
+      }
+    ],
+    "steps": [
+      "Cook brown rice and keep warm.",
+      "Saute onion and pepper in oil.",
+      "Add spinach and wilt.",
+      "Pour in egg whites and scramble.",
+      "Season with black pepper and salt.",
+      "Serve scramble over brown rice."
+    ]
+  }
+];
+  if (typeof module !== "undefined" && module.exports) module.exports = DATA;
+  else { (root.KhanaProKBParts = root.KhanaProKBParts || []).push(DATA); }
+})(typeof window !== "undefined" ? window : globalThis);

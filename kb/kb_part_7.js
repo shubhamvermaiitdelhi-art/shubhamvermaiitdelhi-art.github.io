@@ -1,0 +1,4984 @@
+;(function (root) {
+  var DATA = [
+    {
+      "id": "kb-7-001",
+      "title": "Punjabi Rajma Masala",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "lunch",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 300,
+        "protein": 15,
+        "fibre": 12,
+        "fat": 9,
+        "carbs": 42
+      },
+      "summary": "Classic Punjabi-style kidney beans simmered in a thick onion-tomato gravy - protein and fibre rich, satisfying with rice.",
+      "channels": [
+        "Nisha Madhulika",
+        "Cook with Parul"
+      ],
+      "videoQuery": "punjabi rajma masala recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak rajma overnight, then pressure cook with salt until soft.",
+        "Saute cumin, then onion till golden, add ginger garlic paste.",
+        "Add pureed tomato and spices, cook till oil separates.",
+        "Add cooked rajma with its water and simmer 15 minutes.",
+        "Mash a few beans to thicken, finish with garam masala and serve."
+      ]
+    },
+    {
+      "id": "kb-7-002",
+      "title": "Kashmiri Rajma Curry",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 290,
+        "protein": 14,
+        "fibre": 11,
+        "fat": 8,
+        "carbs": 40
+      },
+      "summary": "A mild, aromatic Jammu-style rajma simmered with fennel and dry ginger for a fragrant high-fibre bean curry.",
+      "channels": [
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "kashmiri rajma curry recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "fennel powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "dry ginger powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "kashmiri red chilli",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "mustard oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak and pressure cook rajma until tender.",
+        "Heat mustard oil, crackle cumin seeds.",
+        "Add tomato puree, fennel, dry ginger and chilli; cook well.",
+        "Add rajma with water and simmer 20 minutes.",
+        "Adjust salt and consistency, garnish and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-003",
+      "title": "Rajma Chawal Bowl",
+      "cuisine": "North Indian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "meal-prep"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 50,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 430,
+        "protein": 17,
+        "fibre": 13,
+        "fat": 8,
+        "carbs": 72
+      },
+      "summary": "A wholesome one-bowl meal of protein-rich rajma over brown rice with fresh salad - balanced macros for lunch.",
+      "channels": [
+        "Your Food Lab",
+        "Cook with Parul"
+      ],
+      "videoQuery": "rajma chawal bowl healthy recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "brown rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Cook brown rice and keep aside.",
+        "Pressure cook soaked rajma until soft.",
+        "Prepare a quick onion-tomato masala and add rajma.",
+        "Simmer to a thick gravy.",
+        "Layer rice and rajma in a bowl, top with cucumber salad and serve."
+      ]
+    },
+    {
+      "id": "kb-7-004",
+      "title": "Rajma Protein Tikki",
+      "cuisine": "North Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "snack",
+        "high-fibre",
+        "evening"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 180,
+        "protein": 9,
+        "fibre": 7,
+        "fat": 5,
+        "carbs": 26
+      },
+      "summary": "Pan-seared kidney bean patties mashed with spices and oats - a crisp, protein-packed snack with minimal oil.",
+      "channels": [
+        "Cook with Parul",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "rajma tikki recipe healthy",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "oats",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "coriander leaves",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook rajma and drain well.",
+        "Mash rajma with oats, onion, chilli and spices.",
+        "Shape into round tikkis.",
+        "Pan-sear on a non-stick tawa with little oil till golden both sides.",
+        "Serve hot with mint chutney."
+      ]
+    },
+    {
+      "id": "kb-7-005",
+      "title": "Rajma Sprout Salad",
+      "cuisine": "Healthy",
+      "category": "salad",
+      "tags": [
+        "high-protein",
+        "salad",
+        "high-fibre",
+        "vegan",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 210,
+        "protein": 12,
+        "fibre": 11,
+        "fat": 5,
+        "carbs": 30
+      },
+      "summary": "A zesty cold salad of boiled rajma and mixed sprouts tossed with lemon and veggies - light yet protein dense.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "rajma sprout salad recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "moong sprouts",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Boil rajma until just soft and cool it.",
+        "Combine with sprouts and chopped veggies.",
+        "Squeeze lemon and add chaat masala and pepper.",
+        "Toss well and chill 10 minutes.",
+        "Serve as a filling salad."
+      ]
+    },
+    {
+      "id": "kb-7-006",
+      "title": "Rajma Veg Soup",
+      "cuisine": "Healthy",
+      "category": "soup",
+      "tags": [
+        "high-protein",
+        "soup",
+        "high-fibre",
+        "dinner",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 160,
+        "protein": 9,
+        "fibre": 9,
+        "fat": 3,
+        "carbs": 26
+      },
+      "summary": "A warming pureed kidney bean soup with carrots and herbs - comforting, low-fat and rich in fibre.",
+      "channels": [
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "rajma bean soup recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook rajma with carrot and onion till soft.",
+        "Blend half the mixture for a creamy base.",
+        "Return to pot, add tomato and spices.",
+        "Simmer 10 minutes to thicken.",
+        "Adjust seasoning and serve hot with pepper."
+      ]
+    },
+    {
+      "id": "kb-7-007",
+      "title": "Rajma Stuffed Paratha",
+      "cuisine": "North Indian",
+      "category": "breakfast",
+      "tags": [
+        "high-protein",
+        "breakfast",
+        "high-fibre"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 3,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 320,
+        "protein": 13,
+        "fibre": 9,
+        "fat": 9,
+        "carbs": 50
+      },
+      "summary": "Whole wheat parathas stuffed with spiced mashed rajma - a hearty protein-boosted breakfast.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Cook with Parul"
+      ],
+      "videoQuery": "rajma stuffed paratha recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "whole wheat flour",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "ajwain",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Knead a soft whole wheat dough and rest it.",
+        "Mash cooked rajma with onion, chilli and spices.",
+        "Stuff the filling into rolled dough balls.",
+        "Roll gently and cook on tawa with little oil.",
+        "Serve hot with curd."
+      ]
+    },
+    {
+      "id": "kb-7-008",
+      "title": "Rajma Galouti Kebab",
+      "cuisine": "North Indian",
+      "category": "grill",
+      "tags": [
+        "high-protein",
+        "snack",
+        "high-fibre",
+        "evening"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 190,
+        "protein": 10,
+        "fibre": 6,
+        "fat": 6,
+        "carbs": 24
+      },
+      "summary": "Melt-in-mouth veg galouti kebabs made from rajma and roasted chana flour - a smoky high-protein starter.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "rajma galouti kebab vegetarian recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "roasted chana flour",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "kebab masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook rajma and mash to a smooth paste.",
+        "Mix with roasted chana flour, ginger garlic and spices.",
+        "Rest the mix 15 minutes to firm up.",
+        "Shape into flat kebabs.",
+        "Sear on a hot tawa with minimal oil until charred and serve."
+      ]
+    },
+    {
+      "id": "kb-7-009",
+      "title": "Dal Makhani Light",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 60,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 280,
+        "protein": 14,
+        "fibre": 10,
+        "fat": 9,
+        "carbs": 36
+      },
+      "summary": "A lighter dal makhani using whole urad and rajma finished with little cream - rich taste, less fat.",
+      "channels": [
+        "Nisha Madhulika",
+        "Cook with Parul"
+      ],
+      "videoQuery": "dal makhani light healthy recipe",
+      "ingredients": [
+        {
+          "name": "whole urad dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "rajma",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "low fat cream",
+          "qty": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak urad and rajma overnight, pressure cook until very soft.",
+        "Saute cumin, ginger garlic and tomato puree.",
+        "Add the cooked dal and simmer on low 25 minutes, mashing lightly.",
+        "Stir in a little low fat cream and garam masala.",
+        "Simmer 5 more minutes and serve."
+      ]
+    },
+    {
+      "id": "kb-7-010",
+      "title": "Yellow Dal Tadka Classic",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 220,
+        "protein": 13,
+        "fibre": 8,
+        "fat": 6,
+        "carbs": 32
+      },
+      "summary": "Comforting toor-moong dal tempered with cumin, garlic and chilli - an everyday protein staple.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "dal tadka classic recipe",
+      "ingredients": [
+        {
+          "name": "toor dal",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "moong dal",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook toor and moong dal with turmeric and salt.",
+        "Whisk the dal smooth and adjust consistency.",
+        "Heat ghee, add cumin and garlic till golden.",
+        "Add chilli powder and tomato, cook briefly.",
+        "Pour tempering over the dal and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-011",
+      "title": "Panchmel Dal Rajasthani",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 14,
+        "fibre": 10,
+        "fat": 6,
+        "carbs": 34
+      },
+      "summary": "Five-lentil Rajasthani dal bursting with protein and fibre, tempered the traditional way.",
+      "channels": [
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "panchmel dal rajasthani recipe",
+      "ingredients": [
+        {
+          "name": "toor dal",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "moong dal",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "chana dal",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "masoor dal",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "urad dal",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Rinse all five dals and soak 20 minutes.",
+        "Pressure cook together with turmeric and salt.",
+        "Prepare a cumin and spice tempering in ghee.",
+        "Add tomato and stir into the cooked dal.",
+        "Simmer 10 minutes and finish with garam masala."
+      ]
+    },
+    {
+      "id": "kb-7-012",
+      "title": "Dal Palak Healthy",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "iron-rich",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 200,
+        "protein": 12,
+        "fibre": 9,
+        "fat": 5,
+        "carbs": 28
+      },
+      "summary": "Moong and toor dal cooked with fresh spinach - an iron and protein rich comforting bowl.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Cook with Parul"
+      ],
+      "videoQuery": "dal palak healthy recipe",
+      "ingredients": [
+        {
+          "name": "moong dal",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "toor dal",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "spinach",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook moong and toor dal with turmeric.",
+        "Blanch and chop spinach finely.",
+        "Temper cumin and garlic, add tomato.",
+        "Add spinach and saute till wilted.",
+        "Mix in the cooked dal, simmer 8 minutes and serve."
+      ]
+    },
+    {
+      "id": "kb-7-013",
+      "title": "Moong Dal Tadka",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "quick",
+        "dinner",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 190,
+        "protein": 13,
+        "fibre": 7,
+        "fat": 4,
+        "carbs": 28
+      },
+      "summary": "Light, easy-to-digest yellow moong dal with a fragrant ghee-cumin tempering - quick weeknight protein.",
+      "channels": [
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "moong dal tadka recipe",
+      "ingredients": [
+        {
+          "name": "moong dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook moong dal with turmeric and salt until soft.",
+        "Whisk dal smooth.",
+        "Heat ghee, crackle cumin, add garlic and chilli.",
+        "Add tomato and saute briefly.",
+        "Pour over dal, simmer 5 minutes and serve."
+      ]
+    },
+    {
+      "id": "kb-7-014",
+      "title": "Masoor Dal Everyday",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "quick",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 195,
+        "protein": 13,
+        "fibre": 8,
+        "fat": 4,
+        "carbs": 29
+      },
+      "summary": "Quick-cooking red masoor dal simmered with tomato and tempered with cumin - fuss-free daily protein.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "masoor dal everyday recipe",
+      "ingredients": [
+        {
+          "name": "masoor dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Rinse masoor dal well.",
+        "Pressure cook with turmeric, salt and water.",
+        "Temper cumin, onion and garlic in oil.",
+        "Add tomato and chilli powder, cook to a masala.",
+        "Stir in the dal, simmer 8 minutes and serve."
+      ]
+    },
+    {
+      "id": "kb-7-015",
+      "title": "Dal Dhokli Gujarati",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "comfort",
+        "one-pot"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 310,
+        "protein": 14,
+        "fibre": 9,
+        "fat": 7,
+        "carbs": 50
+      },
+      "summary": "A wholesome Gujarati one-pot of toor dal simmered with whole wheat dough strips - a complete protein-carb meal.",
+      "channels": [
+        "Cook with Parul"
+      ],
+      "videoQuery": "dal dhokli gujarati recipe",
+      "ingredients": [
+        {
+          "name": "toor dal",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "whole wheat flour",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "peanuts",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "jaggery",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook toor dal with turmeric and salt.",
+        "Knead a spiced whole wheat dough and roll into diamonds.",
+        "Temper cumin, add tomato and peanuts to the dal.",
+        "Bring dal to a boil and drop in the dough pieces.",
+        "Simmer till dhokli cook through, add jaggery and serve."
+      ]
+    },
+    {
+      "id": "kb-7-016",
+      "title": "Chana Dal Tadka",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 230,
+        "protein": 14,
+        "fibre": 10,
+        "fat": 5,
+        "carbs": 32
+      },
+      "summary": "Hearty split chickpea lentil cooked till tender with a garlicky tempering - high in protein and fibre.",
+      "channels": [
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "chana dal tadka recipe",
+      "ingredients": [
+        {
+          "name": "chana dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak chana dal 30 minutes, then pressure cook with turmeric.",
+        "Saute cumin, onion, ginger and garlic.",
+        "Add tomato and cook to a masala.",
+        "Mix in the cooked dal and adjust water.",
+        "Simmer 10 minutes and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-017",
+      "title": "Mixed Lentil Soup",
+      "cuisine": "Healthy",
+      "category": "soup",
+      "tags": [
+        "high-protein",
+        "soup",
+        "high-fibre",
+        "vegan",
+        "dinner",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 170,
+        "protein": 11,
+        "fibre": 9,
+        "fat": 3,
+        "carbs": 25
+      },
+      "summary": "A nourishing blend of moong and masoor lentils with veggies in a light spiced broth - comforting and lean.",
+      "channels": [
+        "Your Food Lab",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "mixed lentil soup recipe",
+      "ingredients": [
+        {
+          "name": "moong dal",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "masoor dal",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook both dals with carrot and onion.",
+        "Blend lightly for a smooth-ish soup.",
+        "Saute garlic and add to the soup.",
+        "Season with cumin, pepper and salt.",
+        "Simmer 8 minutes and serve warm."
+      ]
+    },
+    {
+      "id": "kb-7-018",
+      "title": "Lauki Chana Dal",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 200,
+        "protein": 11,
+        "fibre": 9,
+        "fat": 5,
+        "carbs": 28
+      },
+      "summary": "Bottle gourd cooked with split chickpea lentil - a light, fibre-rich and protein-balanced everyday dal.",
+      "channels": [
+        "Nisha Madhulika",
+        "Cook with Parul"
+      ],
+      "videoQuery": "lauki chana dal recipe",
+      "ingredients": [
+        {
+          "name": "chana dal",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "bottle gourd",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak chana dal 30 minutes.",
+        "Pressure cook dal with chopped lauki and turmeric.",
+        "Temper cumin, onion and tomato.",
+        "Add the cooked dal-lauki mix.",
+        "Simmer 10 minutes, finish with garam masala and serve."
+      ]
+    },
+    {
+      "id": "kb-7-019",
+      "title": "Sambar Protein Dal",
+      "cuisine": "South Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 210,
+        "protein": 12,
+        "fibre": 10,
+        "fat": 5,
+        "carbs": 30
+      },
+      "summary": "Toor dal simmered with mixed vegetables and tangy tamarind sambar masala - protein and fibre forward.",
+      "channels": [
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "sambar protein dal recipe",
+      "ingredients": [
+        {
+          "name": "toor dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "drumstick",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tamarind",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "sambar powder",
+          "qty": 2,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "mustard seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook toor dal until soft.",
+        "Boil vegetables with tamarind extract.",
+        "Add cooked dal and sambar powder.",
+        "Simmer to blend flavours.",
+        "Finish with a mustard seed tempering and serve."
+      ]
+    },
+    {
+      "id": "kb-7-020",
+      "title": "Khatti Meethi Dal",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 225,
+        "protein": 13,
+        "fibre": 8,
+        "fat": 5,
+        "carbs": 36
+      },
+      "summary": "A sweet and tangy Gujarati toor dal with jaggery and tamarind - protein rich with a pleasant balance.",
+      "channels": [
+        "Cook with Parul"
+      ],
+      "videoQuery": "khatti meethi dal recipe",
+      "ingredients": [
+        {
+          "name": "toor dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "tamarind",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "jaggery",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "peanuts",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook toor dal with turmeric.",
+        "Add tamarind pulp, jaggery and peanuts.",
+        "Simmer to dissolve and blend flavours.",
+        "Prepare a cumin tempering and add.",
+        "Adjust seasoning and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-021",
+      "title": "Spinach Moong Dal Khichdi",
+      "cuisine": "North Indian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "one-pot",
+        "light",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 14,
+        "fibre": 10,
+        "fat": 6,
+        "carbs": 56
+      },
+      "summary": "A comforting one-pot of moong dal, rice and spinach - easily digestible, balanced and protein rich.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "spinach moong dal khichdi recipe",
+      "ingredients": [
+        {
+          "name": "moong dal",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "rice",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "spinach",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "ginger",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Rinse rice and moong dal together.",
+        "Temper cumin and ginger in a pressure cooker.",
+        "Add tomato, spinach, rice, dal, turmeric and water.",
+        "Pressure cook to a soft khichdi.",
+        "Mix well and serve hot with a dollop of curd."
+      ]
+    },
+    {
+      "id": "kb-7-022",
+      "title": "Pindi Chole",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 290,
+        "protein": 14,
+        "fibre": 12,
+        "fat": 7,
+        "carbs": 44
+      },
+      "summary": "Dry, dark Rawalpindi-style chickpeas cooked with tea and whole spices - bold flavour, high fibre and protein.",
+      "channels": [
+        "Nisha Madhulika",
+        "Your Food Lab"
+      ],
+      "videoQuery": "pindi chole recipe authentic",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "tea bag",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "onion",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "chole masala",
+          "qty": 2,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "amchur",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak kabuli chana overnight.",
+        "Pressure cook with tea bags for dark colour and salt.",
+        "Saute cumin, onion and ginger garlic paste.",
+        "Add chole masala and amchur, cook to a dry masala.",
+        "Toss the chickpeas till coated and serve dry."
+      ]
+    },
+    {
+      "id": "kb-7-023",
+      "title": "Amritsari Chole",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "lunch",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 55,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 300,
+        "protein": 14,
+        "fibre": 12,
+        "fat": 8,
+        "carbs": 46
+      },
+      "summary": "Rich gravy-style Amritsari chickpeas with a deep onion-tomato masala - a protein and fibre packed classic.",
+      "channels": [
+        "Cook with Parul",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "amritsari chole recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "chole masala",
+          "qty": 2,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak and pressure cook kabuli chana until soft.",
+        "Brown onion, add ginger garlic paste.",
+        "Add tomato puree and spices, cook till oil separates.",
+        "Add chickpeas with water and simmer 20 minutes.",
+        "Mash a few chana to thicken and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-024",
+      "title": "Chana Masala Restaurant Style",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 295,
+        "protein": 14,
+        "fibre": 12,
+        "fat": 8,
+        "carbs": 44
+      },
+      "summary": "Chickpeas in a glossy, spiced tomato gravy with a restaurant finish - protein dense and satisfying.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "chana masala restaurant style recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "kasuri methi",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "chole masala",
+          "qty": 2,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook soaked chana until tender.",
+        "Make a smooth onion-tomato masala with ginger garlic.",
+        "Add spices and cook till glossy.",
+        "Add chana and water, simmer to desired thickness.",
+        "Crush kasuri methi on top and serve."
+      ]
+    },
+    {
+      "id": "kb-7-025",
+      "title": "Chana Palak Curry",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "iron-rich",
+        "dinner"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 45,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 270,
+        "protein": 14,
+        "fibre": 13,
+        "fat": 7,
+        "carbs": 38
+      },
+      "summary": "Chickpeas simmered in a creamy spinach gravy - loaded with iron, protein and fibre.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Cook with Parul"
+      ],
+      "videoQuery": "chana palak curry recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "spinach",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook chana until soft.",
+        "Blanch and puree spinach.",
+        "Saute onion, garlic and tomato into a masala.",
+        "Add spinach puree and the chana.",
+        "Simmer 10 minutes, finish with garam masala and serve."
+      ]
+    },
+    {
+      "id": "kb-7-026",
+      "title": "Chana Protein Salad Bowl",
+      "cuisine": "Healthy",
+      "category": "salad",
+      "tags": [
+        "high-protein",
+        "salad",
+        "high-fibre",
+        "vegan",
+        "lunch",
+        "meal-prep"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 12,
+        "fibre": 11,
+        "fat": 6,
+        "carbs": 34
+      },
+      "summary": "A fresh, crunchy chickpea salad with veggies and lemon dressing - high protein, no cooking masala needed.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "chana protein salad bowl recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "bell pepper",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Boil soaked chana till just soft and cool.",
+        "Chop all the vegetables finely.",
+        "Combine chana and veggies in a bowl.",
+        "Dress with lemon, chaat masala and pepper.",
+        "Toss and serve chilled."
+      ]
+    },
+    {
+      "id": "kb-7-027",
+      "title": "Black Chana Masala Bowl",
+      "cuisine": "North Indian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "meal-prep"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 50,
+      "servings": 3,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 280,
+        "protein": 15,
+        "fibre": 14,
+        "fat": 6,
+        "carbs": 40
+      },
+      "summary": "Nutty kala chana in a spiced gravy served as a bowl - among the most protein and fibre rich legumes.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "black chana masala bowl recipe",
+      "ingredients": [
+        {
+          "name": "kala chana",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 90,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 12,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "coriander powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak kala chana overnight and pressure cook.",
+        "Saute cumin, onion and ginger garlic paste.",
+        "Add tomato and dry spices, cook to a masala.",
+        "Add cooked chana with stock and simmer 15 minutes.",
+        "Serve in a bowl with brown rice or roti."
+      ]
+    },
+    {
+      "id": "kb-7-028",
+      "title": "Kala Chana Chaat",
+      "cuisine": "North Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "snack",
+        "high-fibre",
+        "vegan",
+        "evening"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 200,
+        "protein": 12,
+        "fibre": 12,
+        "fat": 4,
+        "carbs": 30
+      },
+      "summary": "A tangy street-style black chickpea chaat with onion, tomato and lemon - protein-rich guilt-free snacking.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Cook with Parul"
+      ],
+      "videoQuery": "kala chana chaat recipe",
+      "ingredients": [
+        {
+          "name": "kala chana",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "coriander leaves",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "roasted cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Boil soaked kala chana till soft and drain.",
+        "Add chopped onion, tomato, chilli and coriander.",
+        "Sprinkle chaat masala and roasted cumin.",
+        "Squeeze lemon and toss well.",
+        "Serve immediately as a snack."
+      ]
+    },
+    {
+      "id": "kb-7-029",
+      "title": "Chole Tikki",
+      "cuisine": "North Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "snack",
+        "high-fibre",
+        "evening"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 185,
+        "protein": 9,
+        "fibre": 8,
+        "fat": 5,
+        "carbs": 27
+      },
+      "summary": "Crisp chickpea patties mashed with potato and spices, shallow seared - a protein-rich tea-time snack.",
+      "channels": [
+        "Cook with Parul"
+      ],
+      "videoQuery": "chole tikki recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "potato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Boil and mash chana with boiled potato.",
+        "Mix in onion, chilli and spices.",
+        "Shape into tikkis.",
+        "Shallow sear on a tawa with little oil.",
+        "Serve hot with chutney."
+      ]
+    },
+    {
+      "id": "kb-7-030",
+      "title": "Chickpea Pulao",
+      "cuisine": "North Indian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "one-pot"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 360,
+        "protein": 13,
+        "fibre": 11,
+        "fat": 7,
+        "carbs": 62
+      },
+      "summary": "Fragrant basmati pulao studded with chickpeas and whole spices - a balanced one-pot protein meal.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "chickpea pulao recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "basmati rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "bay leaf",
+          "qty": 1,
+          "unit": "pc",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak rice 20 minutes; pre-cook chana.",
+        "Saute whole spices and onion.",
+        "Add carrot, chana and rice, toss briefly.",
+        "Add measured water and salt.",
+        "Pressure cook or simmer covered till fluffy and serve."
+      ]
+    },
+    {
+      "id": "kb-7-031",
+      "title": "Chana Saag Soup",
+      "cuisine": "Healthy",
+      "category": "soup",
+      "tags": [
+        "high-protein",
+        "soup",
+        "high-fibre",
+        "vegan",
+        "dinner",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 165,
+        "protein": 10,
+        "fibre": 10,
+        "fat": 4,
+        "carbs": 24
+      },
+      "summary": "A green soup of chickpeas blended with spinach and herbs - fibre rich, light and protein boosted.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "chana spinach soup recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "spinach",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Cook chana till very soft.",
+        "Saute garlic, onion and spinach.",
+        "Blend chana with the spinach mix and water.",
+        "Return to pot and season with cumin and pepper.",
+        "Simmer 8 minutes and serve warm."
+      ]
+    },
+    {
+      "id": "kb-7-032",
+      "title": "Lobia Masala Curry",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 250,
+        "protein": 14,
+        "fibre": 13,
+        "fat": 5,
+        "carbs": 36
+      },
+      "summary": "Black-eyed peas simmered in a homely onion-tomato masala - quick-cooking, high in protein and fibre.",
+      "channels": [
+        "Nisha Madhulika",
+        "Cook with Parul"
+      ],
+      "videoQuery": "lobia masala curry recipe",
+      "ingredients": [
+        {
+          "name": "lobia",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 12,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak lobia 2 hours and pressure cook.",
+        "Saute cumin, onion and ginger garlic paste.",
+        "Add tomato and spices, cook to a masala.",
+        "Add cooked lobia with water and simmer 12 minutes.",
+        "Garnish and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-033",
+      "title": "Lobia Sprout Stir Fry",
+      "cuisine": "Healthy",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "quick",
+        "vegan",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 190,
+        "protein": 12,
+        "fibre": 11,
+        "fat": 5,
+        "carbs": 26
+      },
+      "summary": "Sprouted black-eyed peas tossed with veggies in a light stir fry - fast, lean and protein-loaded.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "lobia sprout stir fry recipe",
+      "ingredients": [
+        {
+          "name": "lobia sprouts",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "bell pepper",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "soy sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Lightly steam lobia sprouts for 3 minutes.",
+        "Stir fry garlic and onion on high heat.",
+        "Add peppers and carrot, toss briefly.",
+        "Add sprouts, soy sauce and pepper.",
+        "Toss 2 minutes and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-034",
+      "title": "Mixed Bean Chilli Bowl",
+      "cuisine": "Fusion",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "comfort",
+        "one-pot"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 45,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 290,
+        "protein": 16,
+        "fibre": 15,
+        "fat": 6,
+        "carbs": 42
+      },
+      "summary": "A hearty three-bean chilli with rajma, chana and lobia in a smoky tomato base - packed with plant protein.",
+      "channels": [
+        "Your Food Lab",
+        "Cook with Parul"
+      ],
+      "videoQuery": "mixed bean chilli bowl recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "kabuli chana",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "lobia",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garlic",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak and pressure cook all three beans.",
+        "Saute garlic and onion till soft.",
+        "Add tomato, paprika and cumin, cook down.",
+        "Add the cooked beans and a little stock.",
+        "Simmer 15 minutes to a thick chilli and serve."
+      ]
+    },
+    {
+      "id": "kb-7-035",
+      "title": "Three Bean Protein Salad",
+      "cuisine": "Mediterranean",
+      "category": "salad",
+      "tags": [
+        "high-protein",
+        "salad",
+        "high-fibre",
+        "vegan",
+        "meal-prep",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 230,
+        "protein": 14,
+        "fibre": 13,
+        "fat": 6,
+        "carbs": 32
+      },
+      "summary": "A colourful cold salad of rajma, chickpeas and lobia with olive oil-lemon dressing - protein and fibre forward.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "three bean protein salad recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "kabuli chana",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "lobia",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "bell pepper",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "olive oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Boil all beans till just soft and cool.",
+        "Chop cucumber and bell pepper.",
+        "Combine beans and veggies.",
+        "Whisk olive oil, lemon and pepper for dressing.",
+        "Toss and chill before serving."
+      ]
+    },
+    {
+      "id": "kb-7-036",
+      "title": "Rajma Chana Buddha Plate",
+      "cuisine": "Healthy",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "meal-prep",
+        "vegan"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 410,
+        "protein": 18,
+        "fibre": 15,
+        "fat": 8,
+        "carbs": 64
+      },
+      "summary": "A nourishing plate of rajma, chickpeas, quinoa and greens - a complete protein and fibre rich meal.",
+      "channels": [
+        "Cook with Parul"
+      ],
+      "videoQuery": "rajma chana buddha plate recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "kabuli chana",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "quinoa",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "spinach",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cherry tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "olive oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Cook quinoa and keep aside.",
+        "Boil rajma and chana till soft, season lightly.",
+        "Saute spinach briefly.",
+        "Assemble quinoa, beans, greens and tomatoes.",
+        "Drizzle olive oil and lemon, season and serve."
+      ]
+    },
+    {
+      "id": "kb-7-037",
+      "title": "Dal Fry Dhaba Style",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 235,
+        "protein": 13,
+        "fibre": 8,
+        "fat": 7,
+        "carbs": 32
+      },
+      "summary": "Mixed dal cooked dhaba style with a generous onion-tomato fry and ghee tempering - protein rich comfort food.",
+      "channels": [
+        "Kabita's Kitchen",
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "dal fry dhaba style recipe",
+      "ingredients": [
+        {
+          "name": "toor dal",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "moong dal",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook toor and moong dal with turmeric.",
+        "Fry onion and garlic in ghee till golden.",
+        "Add tomato and spices, cook to a masala.",
+        "Add the cooked dal and simmer 8 minutes.",
+        "Finish with garam masala and serve."
+      ]
+    },
+    {
+      "id": "kb-7-038",
+      "title": "Urad Dal Tadka",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 15,
+        "fibre": 9,
+        "fat": 6,
+        "carbs": 32
+      },
+      "summary": "Whole black gram simmered soft and tempered with garlic and ghee - earthy, protein and fibre rich.",
+      "channels": [
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "urad dal tadka recipe",
+      "ingredients": [
+        {
+          "name": "whole urad dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak urad dal overnight, pressure cook till soft.",
+        "Temper cumin, garlic and ginger in ghee.",
+        "Add onion and tomato, cook to a masala.",
+        "Stir in the cooked dal.",
+        "Simmer 10 minutes and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-039",
+      "title": "Toor Dal Spinach Bowl",
+      "cuisine": "Healthy",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "iron-rich",
+        "lunch",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 300,
+        "protein": 15,
+        "fibre": 11,
+        "fat": 5,
+        "carbs": 48
+      },
+      "summary": "Toor dal and spinach over millet - an iron, protein and fibre dense balanced bowl.",
+      "channels": [
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "toor dal spinach millet bowl recipe",
+      "ingredients": [
+        {
+          "name": "toor dal",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "spinach",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "foxtail millet",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Cook foxtail millet and keep aside.",
+        "Pressure cook toor dal with turmeric.",
+        "Saute garlic, tomato and spinach.",
+        "Mix in the dal and simmer briefly.",
+        "Serve the dal over millet in a bowl."
+      ]
+    },
+    {
+      "id": "kb-7-040",
+      "title": "Green Moong Sprout Curry",
+      "cuisine": "Healthy",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "quick",
+        "vegan",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 195,
+        "protein": 13,
+        "fibre": 12,
+        "fat": 4,
+        "carbs": 28
+      },
+      "summary": "Sprouted whole green moong in a light tomato curry - quick, low-fat and very high in protein and fibre.",
+      "channels": [
+        "Cook with Parul",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "green moong sprout curry recipe",
+      "ingredients": [
+        {
+          "name": "moong sprouts",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 90,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Lightly steam the moong sprouts.",
+        "Saute cumin, onion and ginger garlic paste.",
+        "Add tomato and spices, cook to a masala.",
+        "Add sprouts and a little water.",
+        "Simmer 8 minutes and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-041",
+      "title": "Masoor Dal Coconut Curry",
+      "cuisine": "South Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 245,
+        "protein": 13,
+        "fibre": 9,
+        "fat": 8,
+        "carbs": 32
+      },
+      "summary": "Red lentils in a mild coconut and curry leaf gravy - creamy, protein rich and lightly spiced.",
+      "channels": [
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "masoor dal coconut curry recipe",
+      "ingredients": [
+        {
+          "name": "masoor dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "coconut milk",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "curry leaves",
+          "qty": 8,
+          "unit": "pc",
+          "staple": true
+        },
+        {
+          "name": "mustard seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook masoor dal with turmeric.",
+        "Temper mustard seeds and curry leaves.",
+        "Add onion and tomato, saute well.",
+        "Add the dal and coconut milk.",
+        "Simmer gently 8 minutes and serve."
+      ]
+    },
+    {
+      "id": "kb-7-042",
+      "title": "Chana Dal Cabbage Stir Fry",
+      "cuisine": "Healthy",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "quick",
+        "vegan",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 200,
+        "protein": 11,
+        "fibre": 10,
+        "fat": 5,
+        "carbs": 28
+      },
+      "summary": "A dry stir fry of soaked chana dal with shredded cabbage and spices - crunchy, fibre and protein rich.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Cook with Parul"
+      ],
+      "videoQuery": "chana dal cabbage stir fry recipe",
+      "ingredients": [
+        {
+          "name": "chana dal",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "cabbage",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "mustard seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "curry leaves",
+          "qty": 6,
+          "unit": "pc",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak chana dal 1 hour, drain.",
+        "Temper mustard, chilli and curry leaves.",
+        "Add onion and the soaked dal, saute.",
+        "Add shredded cabbage and turmeric.",
+        "Cover and cook till tender, then serve."
+      ]
+    },
+    {
+      "id": "kb-7-043",
+      "title": "Rajma Quesadilla Wrap",
+      "cuisine": "Fusion",
+      "category": "wrap",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "snack"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": false,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 360,
+        "protein": 17,
+        "fibre": 10,
+        "fat": 11,
+        "carbs": 50
+      },
+      "summary": "Spiced rajma mash and cheese folded in a whole wheat wrap and toasted - a protein-rich handheld meal.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "rajma quesadilla wrap recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "whole wheat tortilla",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "low fat cheese",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "bell pepper",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Mash cooked rajma with spices.",
+        "Saute onion and bell pepper lightly.",
+        "Spread rajma mash on a tortilla, add veg and cheese.",
+        "Fold and toast on a tawa till crisp.",
+        "Cut and serve warm."
+      ]
+    },
+    {
+      "id": "kb-7-044",
+      "title": "Chole Wrap Roll",
+      "cuisine": "Fusion",
+      "category": "wrap",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "snack"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 350,
+        "protein": 15,
+        "fibre": 12,
+        "fat": 9,
+        "carbs": 52
+      },
+      "summary": "Spiced chickpea filling rolled in a whole wheat wrap with crunchy veggies - a satisfying protein roll.",
+      "channels": [
+        "Cook with Parul"
+      ],
+      "videoQuery": "chole wrap roll recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "whole wheat tortilla",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "onion",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "cabbage",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "chole masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Mash cooked chana with chole and chaat masala.",
+        "Shred cabbage and slice onion and tomato.",
+        "Warm a tortilla on the tawa.",
+        "Spread chana, add veggies and roll tight.",
+        "Toast briefly and serve."
+      ]
+    },
+    {
+      "id": "kb-7-045",
+      "title": "Baked Dal Vada",
+      "cuisine": "South Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "snack",
+        "high-fibre",
+        "evening"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 170,
+        "protein": 10,
+        "fibre": 7,
+        "fat": 4,
+        "carbs": 24
+      },
+      "summary": "Crisp baked chana dal fritters with onion and curry leaves - protein rich snacking without deep frying.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "baked dal vada recipe",
+      "ingredients": [
+        {
+          "name": "chana dal",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "ginger",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "curry leaves",
+          "qty": 8,
+          "unit": "pc",
+          "staple": true
+        },
+        {
+          "name": "fennel seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak chana dal 2 hours and coarsely grind.",
+        "Mix in onion, chilli, ginger and fennel.",
+        "Shape into flat vadas on a lined tray.",
+        "Brush with oil and bake till golden and crisp.",
+        "Serve hot with chutney."
+      ]
+    },
+    {
+      "id": "kb-7-046",
+      "title": "Sprouted Moong Dosa",
+      "cuisine": "South Indian",
+      "category": "breakfast",
+      "tags": [
+        "high-protein",
+        "breakfast",
+        "high-fibre",
+        "vegan"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 25,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 210,
+        "protein": 12,
+        "fibre": 8,
+        "fat": 5,
+        "carbs": 30
+      },
+      "summary": "Instant dosa from ground sprouted green moong - protein rich, no fermentation and easy on digestion.",
+      "channels": [
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "sprouted moong dosa recipe",
+      "ingredients": [
+        {
+          "name": "moong sprouts",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "rice",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "name": "ginger",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Blend sprouts, rice, ginger and chilli to a batter.",
+        "Add cumin and salt, adjust consistency.",
+        "Pour and spread on a hot tawa.",
+        "Drizzle a little oil and cook till crisp.",
+        "Fold and serve hot with chutney."
+      ]
+    },
+    {
+      "id": "kb-7-047",
+      "title": "Kala Chana Brown Rice Khichdi",
+      "cuisine": "North Indian",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "one-pot",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 45,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 350,
+        "protein": 16,
+        "fibre": 14,
+        "fat": 6,
+        "carbs": 58
+      },
+      "summary": "A rustic one-pot of black chana and brown rice with spices - protein and fibre dense, deeply filling.",
+      "channels": [
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "kala chana brown rice khichdi recipe",
+      "ingredients": [
+        {
+          "name": "kala chana",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "brown rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak kala chana overnight.",
+        "Temper cumin and onion in a cooker.",
+        "Add tomato, spices, chana and brown rice.",
+        "Add water and pressure cook till soft.",
+        "Mix gently and serve hot."
+      ]
+    },
+    {
+      "id": "kb-7-048",
+      "title": "Lobia Rice Bowl",
+      "cuisine": "Healthy",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "meal-prep",
+        "vegan"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 400,
+        "protein": 16,
+        "fibre": 13,
+        "fat": 7,
+        "carbs": 66
+      },
+      "summary": "Black-eyed pea curry over brown rice with a side of salad - a balanced protein and fibre rich bowl.",
+      "channels": [
+        "Cook with Parul"
+      ],
+      "videoQuery": "lobia rice bowl recipe",
+      "ingredients": [
+        {
+          "name": "lobia",
+          "qty": 140,
+          "unit": "g"
+        },
+        {
+          "name": "brown rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Cook brown rice and keep aside.",
+        "Pressure cook lobia till soft.",
+        "Prepare an onion-tomato masala and add lobia.",
+        "Simmer to a thick curry.",
+        "Plate rice and lobia, add cucumber and serve."
+      ]
+    },
+    {
+      "id": "kb-7-049",
+      "title": "Chana Soya Keema",
+      "cuisine": "North Indian",
+      "category": "high-protein",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 280,
+        "protein": 20,
+        "fibre": 12,
+        "fat": 7,
+        "carbs": 30
+      },
+      "summary": "A protein-loaded dry keema of mashed chickpeas and soya granules in a spicy masala - vegan and very filling.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "chana soya keema recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "soya granules",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 90,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 12,
+          "unit": "g"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak soya granules in hot water and squeeze.",
+        "Coarsely mash cooked chana.",
+        "Saute onion and ginger garlic paste.",
+        "Add tomato and spices, then chana and soya.",
+        "Cook dry 8 minutes and serve."
+      ]
+    },
+    {
+      "id": "kb-7-050",
+      "title": "Masoor Pumpkin Dal",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 205,
+        "protein": 12,
+        "fibre": 9,
+        "fat": 4,
+        "carbs": 30
+      },
+      "summary": "Red lentils cooked with sweet pumpkin in a light spiced base - comforting, low-fat and protein rich.",
+      "channels": [
+        "Nisha Madhulika",
+        "Hebbars Kitchen"
+      ],
+      "videoQuery": "masoor pumpkin dal recipe",
+      "ingredients": [
+        {
+          "name": "masoor dal",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "pumpkin",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook masoor dal with cubed pumpkin and turmeric.",
+        "Temper cumin and onion in oil.",
+        "Add tomato and saute well.",
+        "Mix in the cooked dal and pumpkin, mashing lightly.",
+        "Simmer 6 minutes, finish with garam masala and serve."
+      ]
+    },
+    {
+      "id": "kb-7-051",
+      "title": "Rajma Baked Cutlet",
+      "cuisine": "North Indian",
+      "category": "snack",
+      "tags": [
+        "high-protein",
+        "snack",
+        "high-fibre",
+        "evening"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": false,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 175,
+        "protein": 9,
+        "fibre": 8,
+        "fat": 4,
+        "carbs": 26
+      },
+      "summary": "Oven-baked kidney bean cutlets with oats coating - crisp outside, protein rich and oil-light.",
+      "channels": [
+        "Cook with Parul",
+        "Kabita's Kitchen"
+      ],
+      "videoQuery": "rajma baked cutlet recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "oats",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "chaat masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Mash cooked rajma with grated carrot and onion.",
+        "Mix in spices and half the oats.",
+        "Shape cutlets and coat in remaining oats.",
+        "Brush with oil and bake till golden.",
+        "Serve hot with chutney."
+      ]
+    },
+    {
+      "id": "kb-7-052",
+      "title": "Dal Tadka Quinoa Bowl",
+      "cuisine": "Fusion",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "meal-prep"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 35,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 330,
+        "protein": 16,
+        "fibre": 11,
+        "fat": 6,
+        "carbs": 50
+      },
+      "summary": "Classic dal tadka served over quinoa for a complete-protein, fibre rich power bowl.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "dal tadka quinoa bowl recipe",
+      "ingredients": [
+        {
+          "name": "moong dal",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "quinoa",
+          "qty": 90,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "turmeric",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Cook quinoa and keep aside.",
+        "Pressure cook moong dal with turmeric.",
+        "Prepare a cumin-garlic-tomato tempering.",
+        "Mix tempering into the dal and simmer.",
+        "Serve dal over quinoa in a bowl."
+      ]
+    },
+    {
+      "id": "kb-7-053",
+      "title": "Pindi Chana Salad",
+      "cuisine": "Healthy",
+      "category": "salad",
+      "tags": [
+        "high-protein",
+        "salad",
+        "high-fibre",
+        "vegan",
+        "lunch"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 20,
+      "servings": 2,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 225,
+        "protein": 12,
+        "fibre": 11,
+        "fat": 5,
+        "carbs": 33
+      },
+      "summary": "Dry-spiced pindi-style chickpeas tossed cold with onion and lemon - a bold, protein rich salad.",
+      "channels": [
+        "Cook with Parul"
+      ],
+      "videoQuery": "pindi chana salad recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 160,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "green chilli",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "name": "coriander leaves",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "name": "amchur",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "chole masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        }
+      ],
+      "steps": [
+        "Boil chana till just soft and cool.",
+        "Toss with amchur and chole masala while warm.",
+        "Add onion, tomato, chilli and coriander.",
+        "Squeeze lemon and mix well.",
+        "Chill briefly and serve."
+      ]
+    },
+    {
+      "id": "kb-7-054",
+      "title": "Whole Masoor Curry",
+      "cuisine": "North Indian",
+      "category": "curry",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "comfort"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 40,
+      "servings": 4,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 240,
+        "protein": 14,
+        "fibre": 12,
+        "fat": 5,
+        "carbs": 34
+      },
+      "summary": "Whole brown masoor simmered in a robust onion-tomato gravy - earthy, protein and fibre rich.",
+      "channels": [
+        "Nisha Madhulika"
+      ],
+      "videoQuery": "whole masoor curry recipe",
+      "ingredients": [
+        {
+          "name": "whole masoor",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "ginger garlic paste",
+          "qty": 12,
+          "unit": "g"
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "garam masala",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "red chilli powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak whole masoor 1 hour and pressure cook.",
+        "Saute cumin, onion and ginger garlic paste.",
+        "Add tomato and spices, cook to a masala.",
+        "Add the cooked masoor with water.",
+        "Simmer 12 minutes, finish with garam masala and serve."
+      ]
+    },
+    {
+      "id": "kb-7-055",
+      "title": "Moong Dal Palak Soup",
+      "cuisine": "Healthy",
+      "category": "soup",
+      "tags": [
+        "high-protein",
+        "soup",
+        "high-fibre",
+        "iron-rich",
+        "vegan",
+        "light"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 30,
+      "servings": 3,
+      "difficulty": "Easy",
+      "nutrition": {
+        "kcal": 160,
+        "protein": 11,
+        "fibre": 9,
+        "fat": 3,
+        "carbs": 24
+      },
+      "summary": "A silky soup of yellow moong dal and spinach with garlic - iron, protein and fibre rich and very light.",
+      "channels": [
+        "Hebbars Kitchen",
+        "Your Food Lab"
+      ],
+      "videoQuery": "moong dal palak soup recipe",
+      "ingredients": [
+        {
+          "name": "moong dal",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "name": "spinach",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 6,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "black pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin powder",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Pressure cook moong dal till soft.",
+        "Saute garlic, onion and spinach.",
+        "Blend the dal and spinach with water.",
+        "Return to pot, season with cumin and pepper.",
+        "Simmer 6 minutes and serve warm."
+      ]
+    },
+    {
+      "id": "kb-7-056",
+      "title": "Chana Masala Brown Rice Bowl",
+      "cuisine": "Healthy",
+      "category": "bowl",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "lunch",
+        "meal-prep",
+        "vegan"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 50,
+      "servings": 2,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 420,
+        "protein": 17,
+        "fibre": 14,
+        "fat": 8,
+        "carbs": 68
+      },
+      "summary": "Spiced chickpea masala served over brown rice with cucumber - a wholesome protein and fibre rich bowl.",
+      "channels": [
+        "Cook with Parul"
+      ],
+      "videoQuery": "chana masala brown rice bowl recipe",
+      "ingredients": [
+        {
+          "name": "kabuli chana",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "name": "brown rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "onion",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "name": "cucumber",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "name": "chole masala",
+          "qty": 2,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "cumin seeds",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Cook brown rice and keep aside.",
+        "Pressure cook chana till soft.",
+        "Make an onion-tomato masala with chole masala.",
+        "Add chana and simmer to a thick gravy.",
+        "Plate rice and chana, add cucumber and serve."
+      ]
+    },
+    {
+      "id": "kb-7-057",
+      "title": "Five Bean Protein Stew",
+      "cuisine": "Continental",
+      "category": "soup",
+      "tags": [
+        "high-protein",
+        "high-fibre",
+        "dinner",
+        "comfort",
+        "one-pot"
+      ],
+      "diet": {
+        "veg": true,
+        "vegan": true,
+        "jain": false,
+        "glutenFree": true,
+        "eggless": true,
+        "noOnionGarlic": false
+      },
+      "timeMins": 50,
+      "servings": 4,
+      "difficulty": "Medium",
+      "nutrition": {
+        "kcal": 280,
+        "protein": 16,
+        "fibre": 16,
+        "fat": 6,
+        "carbs": 40
+      },
+      "summary": "A rustic stew of five legumes with vegetables and herbs in a tomato broth - exceptionally protein and fibre rich.",
+      "channels": [
+        "Your Food Lab"
+      ],
+      "videoQuery": "five bean protein stew recipe",
+      "ingredients": [
+        {
+          "name": "rajma",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "kabuli chana",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "lobia",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "masoor dal",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "moong",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "name": "tomato",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "name": "carrot",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "name": "garlic",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "name": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "staple": true
+        }
+      ],
+      "steps": [
+        "Soak and pressure cook all the legumes till soft.",
+        "Saute garlic, carrot and tomato.",
+        "Add the cooked legumes with their stock.",
+        "Season and simmer 20 minutes to thicken.",
+        "Adjust herbs and serve hot."
+      ]
+    }
+  ];
+  if (typeof module !== "undefined" && module.exports) module.exports = DATA;
+  else { (root.KhanaProKBParts = root.KhanaProKBParts || []).push(DATA); }
+})(typeof window !== "undefined" ? window : globalThis);
