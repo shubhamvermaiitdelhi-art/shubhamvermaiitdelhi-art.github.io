@@ -1,6 +1,6 @@
-/* KhanaPro SW 2.0.24206 — self-updating */
-const V = "kp-2.0.24206";
-const SHELL = ["/", "/index.html", "/app.js?v=2.0.24206", "/styles.css?v=2.0.24206", "/config.js?v=2.0.24206",
+/* KhanaPro SW 2.0.24287 — self-updating */
+const V = "kp-2.0.24287";
+const SHELL = ["/", "/index.html", "/app.js?v=2.0.24287", "/styles.css?v=2.0.24287", "/config.js?v=2.0.24287",
   "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png",
   "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js",
   "/kb/kb_ingested.js","/kb/kb_part_1.js","/kb/kb_part_10.js"];
