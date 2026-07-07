@@ -688,3 +688,8 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
   .ph img{transition:none;opacity:1}
   .card,.btn,.chip,.qtile,.mood,.deal-chip{transition:none}
 }
+
+/* ===== v26: video-only recipe card ===== */
+.vo-card{padding:16px;border-radius:16px;background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.25)}
+.vo-card b{display:block;margin-bottom:6px}
+.vo-card .btn{margin-top:12px}
