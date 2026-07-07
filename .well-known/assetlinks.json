@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.khanapro.twa",
+        "sha256_cert_fingerprints": ["82:7A:9D:8F:69:3F:BA:21:F6:15:91:36:39:27:55:2F:F0:AE:D2:E3:94:B2:7E:3C:20:29:71:EB:4A:05:56:CE"]
+      }
+    }]
