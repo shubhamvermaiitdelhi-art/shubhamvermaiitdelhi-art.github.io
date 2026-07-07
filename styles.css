@@ -831,3 +831,68 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .ing-name,.cart-name b,.shop-aisle span,.pa-match-main,.pl-count,.deal-chip b{text-transform:capitalize}
 .data-note{font-size:12px;padding:8px 12px;border-radius:10px;background:rgba(245,158,11,.12);color:#92600a;margin:6px 0 10px}
 .rank-chips{margin:4px 0 10px}
+
+/* ===== v32: the brutal declutter — CRED/Swiggy discipline ===== */
+/* spacing scale: sections breathe */
+.view{padding:18px 18px 96px}
+.row-sec{margin:30px 0 0}
+.row-head{margin-bottom:12px}
+.page-head{margin-bottom:18px}
+.home-head{margin-bottom:6px}
+.home-head h1{font-size:26px;letter-spacing:-.03em}
+
+/* quick tiles: quiet text pills, no emoji circus */
+.quick-tiles{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px}
+.quick-tiles::-webkit-scrollbar{display:none}
+.qtile{flex:0 0 auto;display:block;padding:11px 16px;border-radius:999px;background:var(--card,#fff);border:1px solid rgba(0,0,0,.07);box-shadow:none;font-weight:700;font-size:13px}
+.qtile i{display:none}
+.qtile span{font-size:13px}
+
+/* moods: text pills */
+.moods{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:14px 0 0}
+.moods::-webkit-scrollbar{display:none}
+.mood{flex:0 0 auto;padding:9px 15px;border-radius:999px;background:transparent;border:1px solid rgba(0,0,0,.12);font-weight:600;font-size:13px;filter:none}
+.mood span{font-size:13px}
+
+/* hero: bigger, calmer */
+.hero-sec{border-radius:22px;overflow:hidden;margin-top:22px}
+.hero-txt h2{font-size:21px;letter-spacing:-.02em}
+.hero-tag{font-size:10px;letter-spacing:.09em;text-transform:uppercase;font-weight:800}
+
+/* nav: Swiggy-style active pill */
+.bottom-nav{padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+.nav-btn{position:relative;border-radius:14px}
+.nav-btn .lbl{font-size:10px;font-weight:700;letter-spacing:.01em}
+.nav-btn.on{background:rgba(232,66,10,.09)}
+.nav-btn.on .lbl{color:#E8420A}
+
+/* planner meal slot label: small caps text, not emoji */
+.pl-meal-txt i{font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.5}
+
+/* coach: capability story cards */
+.coach{margin:16px 0 4px;overflow:hidden;transition:max-height .35s ease,opacity .35s ease,margin .35s ease}
+.coach.gone{max-height:0 !important;opacity:0;margin:0}
+.coach-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.coach-head b{font-size:15px;letter-spacing:-.01em}
+.coach-x{background:none;border:none;font-size:14px;opacity:.45;cursor:pointer;padding:4px 8px}
+.coach-row{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x mandatory;padding-bottom:4px}
+.coach-row::-webkit-scrollbar{display:none}
+.coach-card{flex:0 0 78%;max-width:300px;scroll-snap-align:start;border-radius:18px;padding:16px;color:#fff;position:relative}
+.coach-card.c1{background:linear-gradient(135deg,#E8420A,#c2330a)}
+.coach-card.c2{background:linear-gradient(135deg,#1F1A14,#3a2f24)}
+.coach-card.c3{background:linear-gradient(135deg,#0f8a3d,#0a6b2e)}
+.coach-n{position:absolute;top:12px;right:14px;font-size:34px;font-weight:800;opacity:.18}
+.coach-card h3{margin:0 0 5px;font-size:16px;letter-spacing:-.01em}
+.coach-card p{margin:0 0 12px;font-size:12.5px;opacity:.85;line-height:1.45}
+.coach-cta{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff;font:inherit;font-size:12.5px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer}
+
+/* buttons: one system */
+.btn{border-radius:999px;font-weight:700}
+.btn.primary{box-shadow:0 6px 18px rgba(232,66,10,.25)}
+.btn.ghost{border:none;background:rgba(0,0,0,.05)}
+
+/* deal chips quieter */
+.deal-chip{border-color:rgba(0,0,0,.08)}
+.deal-chip em{color:#0f8a3d}
+
+@media (prefers-reduced-motion: reduce){.coach{transition:none}}

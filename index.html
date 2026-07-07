@@ -23,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2.0.23846">
-  <script src="config.js?v=2.0.23846"></script>
+  <link rel="stylesheet" href="styles.css?v=2.0.24076">
+  <script src="config.js?v=2.0.24076"></script>
   <script src="vendor/kb_engine.js"></script>
   <script src="vendor/health_classifier.js"></script>
   <script src="vendor/kb_brain.js"></script>
@@ -32,7 +32,14 @@
   <script src="vendor/engine.js"></script>
   <script src="vendor/data.js"></script>
   <script src="vendor/shopping_list.js"></script>
-  <script>window.__KP_PARTS_TOTAL=34;addEventListener("DOMContentLoaded",function(){JSON.parse('["kb/kb_ingested.js","kb/kb_part_1.js","kb/kb_part_10.js","kb/kb_part_11.js","kb/kb_part_12.js","kb/kb_part_13.js","kb/kb_part_14.js","kb/kb_part_15.js","kb/kb_part_16.js","kb/kb_part_17.js","kb/kb_part_18.js","kb/kb_part_19.js","kb/kb_part_2.js","kb/kb_part_20.js","kb/kb_part_21.js","kb/kb_part_22.js","kb/kb_part_23.js","kb/kb_part_24.js","kb/kb_part_25.js","kb/kb_part_26.js","kb/kb_part_27.js","kb/kb_part_28.js","kb/kb_part_29.js","kb/kb_part_3.js","kb/kb_part_31.js","kb/kb_part_32.js","kb/kb_part_4.js","kb/kb_part_40.js","kb/kb_part_41.js","kb/kb_part_5.js","kb/kb_part_6.js","kb/kb_part_7.js","kb/kb_part_8.js","kb/kb_part_9.js"]').forEach(function(u){var s=document.createElement("script");s.src=u;s.async=true;document.head.appendChild(s);});});</script>
+  <script>window.__KP_PARTS_TOTAL=34;(function(){
+var A=JSON.parse('["kb/kb_ingested.js","kb/kb_part_1.js","kb/kb_part_10.js","kb/kb_part_11.js","kb/kb_part_12.js","kb/kb_part_13.js","kb/kb_part_14.js","kb/kb_part_15.js","kb/kb_part_16.js","kb/kb_part_17.js","kb/kb_part_18.js","kb/kb_part_19.js","kb/kb_part_2.js","kb/kb_part_20.js","kb/kb_part_21.js","kb/kb_part_22.js","kb/kb_part_23.js","kb/kb_part_24.js","kb/kb_part_25.js","kb/kb_part_26.js","kb/kb_part_27.js","kb/kb_part_28.js","kb/kb_part_29.js","kb/kb_part_3.js","kb/kb_part_31.js","kb/kb_part_32.js","kb/kb_part_4.js","kb/kb_part_40.js","kb/kb_part_41.js","kb/kb_part_5.js","kb/kb_part_6.js","kb/kb_part_7.js","kb/kb_part_8.js","kb/kb_part_9.js"]');
+function inj(u){var s=document.createElement("script");s.src=u;s.async=true;document.head.appendChild(s);}
+A.slice(0,3).forEach(inj); // first parts NOW: feed paints from these
+var rest=A.slice(3),i=0;
+function next(){for(var k=0;k<6&&i<rest.length;k++,i++)inj(rest[i]);if(i<rest.length)setTimeout(next,350);}
+addEventListener("load",function(){setTimeout(next,200);}); // rest never blocks first paint
+})();</script>
 </head>
 <body>
   <div id="boot" style="position:fixed;inset:0;display:flex;flex-direction:column;background:#FFF9F2;font-family:'Plus Jakarta Sans',sans-serif;z-index:999;padding:24px 18px">
@@ -52,6 +59,6 @@
     </div>
     <span style="color:#6E6258;font-size:12px;font-weight:600;margin-top:auto;text-align:center">First open loads the full 4,458-recipe kitchen — after this it's instant.</span>
   </div>
-  <script defer src="app.js?v=2.0.23846"></script>
+  <script defer src="app.js?v=2.0.24076"></script>
 </body>
 </html>

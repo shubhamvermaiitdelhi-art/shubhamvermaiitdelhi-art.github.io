@@ -1,6 +1,12 @@
-/* KhanaPro SW 2.0.23846 — self-updating */
-const V = "kp-2.0.23846";
-self.addEventListener("install", e => self.skipWaiting());
+/* KhanaPro SW 2.0.24076 — self-updating */
+const V = "kp-2.0.24076";
+const SHELL = ["/", "/index.html", "/app.js?v=2.0.24076", "/styles.css?v=2.0.24076", "/config.js?v=2.0.24076",
+  "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png",
+  "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js",
+  "/kb/kb_ingested.js","/kb/kb_part_1.js","/kb/kb_part_10.js"];
+self.addEventListener("install", e => e.waitUntil(
+  caches.open(V).then(c => c.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting())
+));
 self.addEventListener("activate", e => e.waitUntil(
   caches.keys().then(keys => Promise.all(keys.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())
 ));
