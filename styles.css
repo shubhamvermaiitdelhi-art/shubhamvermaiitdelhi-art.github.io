@@ -774,3 +774,51 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .ad-setup{font-size:13px;line-height:1.7;padding:12px;border-radius:12px;background:rgba(0,0,0,.05)}
 .ad-links{display:flex;flex-direction:column;gap:10px;margin-top:10px}
 @media (max-width:420px){.ad-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== v30: motion suite — expressive but never gimmicky ===== */
+/* burst particles */
+.kp-burst{position:fixed;z-index:9999;pointer-events:none;width:0;height:0}
+.kp-burst i{position:absolute;width:9px;height:9px;border-radius:2px;animation:kpburst .9s cubic-bezier(.16,.84,.44,1) forwards}
+@keyframes kpburst{0%{transform:translate(0,0) rotate(0) scale(1);opacity:1}100%{transform:translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(.4);opacity:0}}
+
+/* signup choreography: card spring in, fields stagger, exit = circle wipe */
+.signup .su-card{animation:sucard .55s cubic-bezier(.2,.9,.3,1.15)}
+@keyframes sucard{from{opacity:0;transform:translateY(28px) scale(.94)}to{opacity:1;transform:none}}
+.signup .su-card>*{animation:sufield .45s cubic-bezier(.22,.61,.36,1) backwards}
+.signup .su-card>*:nth-child(2){animation-delay:.05s}
+.signup .su-card>*:nth-child(3){animation-delay:.1s}
+.signup .su-card>*:nth-child(4){animation-delay:.15s}
+.signup .su-card>*:nth-child(5){animation-delay:.2s}
+.signup .su-card>*:nth-child(6){animation-delay:.25s}
+.signup .su-card>*:nth-child(7){animation-delay:.3s}
+.signup .su-card>*:nth-child(8){animation-delay:.35s}
+@keyframes sufield{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.signup .su-logo-img{animation:sulogo 3.2s ease-in-out infinite}
+@keyframes sulogo{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.signup .su-dots i{transition:width .3s cubic-bezier(.2,.9,.3,1.2),background .3s}
+.signup.bye{animation:subye .6s cubic-bezier(.7,0,.84,0) forwards}
+@keyframes subye{0%{clip-path:circle(120% at 50% 62%);opacity:1}100%{clip-path:circle(0% at 50% 62%);opacity:.6}}
+
+/* directional view slides */
+.view.vt.vt-l{animation:vtl .3s cubic-bezier(.22,.61,.36,1)}
+.view.vt.vt-r{animation:vtr .3s cubic-bezier(.22,.61,.36,1)}
+@keyframes vtl{from{opacity:.001;transform:translateX(26px)}to{opacity:1;transform:none}}
+@keyframes vtr{from{opacity:.001;transform:translateX(-26px)}to{opacity:1;transform:none}}
+
+/* nav icon pop on activation */
+.nav-btn.on .ico{animation:navpop .35s cubic-bezier(.2,.9,.3,1.4)}
+@keyframes navpop{0%{transform:scale(.82)}60%{transform:scale(1.14)}100%{transform:scale(1)}}
+
+/* sheets spring up with slight overshoot */
+.sheet-wrap.open .sheet,#kp-sheet.open .sheet{animation:sheetup .42s cubic-bezier(.2,.9,.3,1.12)}
+@keyframes sheetup{from{transform:translateY(60px);opacity:.4}to{transform:none;opacity:1}}
+
+/* toast springs */
+.toast{animation:toastin .38s cubic-bezier(.2,.9,.3,1.25)}
+@keyframes toastin{from{opacity:0;transform:translateY(14px) scale(.94)}to{opacity:1;transform:none}}
+
+.pantrychip.on{background:#0f8a3d;color:#fff;border-color:#0f8a3d}
+
+@media (prefers-reduced-motion: reduce){
+  .signup .su-card,.signup .su-card>*,.signup .su-logo-img,.signup.bye,.view.vt.vt-l,.view.vt.vt-r,.nav-btn.on .ico,.sheet-wrap.open .sheet,#kp-sheet.open .sheet,.toast{animation:none}
+}
