@@ -1,0 +1,68 @@
+{
+  "name": "KhanaPro — cook smart, order cheap",
+  "short_name": "KhanaPro",
+  "description": "Healthy recipes with real nutrition + grocery price compare across India's quick-commerce apps.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF9F2",
+  "theme_color": "#F4530A",
+  "categories": [
+    "food",
+    "shopping",
+    "health"
+  ],
+  "shortcuts": [
+    {
+      "name": "Ask Cook AI",
+      "url": "/index.html?go=cook",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Compare prices",
+      "url": "/index.html?go=compare",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "7-day plan",
+      "url": "/index.html?go=plan",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
