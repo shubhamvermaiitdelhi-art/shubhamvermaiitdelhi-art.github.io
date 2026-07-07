@@ -701,3 +701,48 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .undo-bar button{background:none;border:none;color:#E8420A;font-weight:800;cursor:pointer;font:inherit}
 #cart-badge.bump{animation:cbump .4s cubic-bezier(.34,1.56,.64,1)}
 @keyframes cbump{0%{transform:scale(1)}40%{transform:scale(1.45)}100%{transform:scale(1)}}
+
+/* ===== v28: card v3 — 3 anchors, quiet metadata (designer spec) ===== */
+.card.v3 .ph-grad,.card.v3 .tier,.card.v3 .on-img,.card.v3 .vegdot{display:none}
+.card.v3 .ph-wrap{aspect-ratio:16/10;border-radius:14px 14px 0 0;overflow:hidden;position:relative}
+.card.v3 .card-body{padding:10px 12px 12px}
+.card.v3 .card-title{font-size:13.5px;font-weight:700;line-height:1.25;margin:0 0 3px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:var(--ink,#1F1A14)}
+.card.v3 .card-meta2{font-size:11px;opacity:.62;margin:0 0 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card.v3 .tiertxt{font-size:10px;font-weight:700;opacity:.55;text-transform:uppercase;letter-spacing:.04em}
+.card.v3 .densechip{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:8px;background:rgba(139,92,246,.12);color:#7c3aed}
+.vegmark{position:absolute;top:8px;left:8px;width:16px;height:16px;border-radius:4px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.18)}
+.vegmark i{width:8px;height:8px;border-radius:50%}
+.vegmark.veg{border:1.5px solid #0f8a3d}.vegmark.veg i{background:#0f8a3d}
+.vegmark.nonveg{border:1.5px solid #b3261e}.vegmark.nonveg i{background:#b3261e}
+.card.v3 .fav{top:6px;right:6px}
+.card.v3 .nut,.card.v3 .card-meta{display:none}
+
+/* chat: centered column on desktop, full-bleed mobile; chips scroll one line */
+.chat-log,.chat-input{max-width:680px;margin-left:auto;margin-right:auto}
+@media (min-width:700px){.chat-input{left:50%;transform:translateX(-50%);width:min(680px,92vw)}}
+.chat-chips{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:8px;padding-bottom:2px}
+.chat-chips::-webkit-scrollbar{display:none}
+.chat-chips .chip{flex:0 0 auto}
+
+/* toast above the chat input, never behind it */
+.toast{bottom:calc(var(--nav-h,68px) + 118px) !important}
+
+/* mobile scale pass (designer spec) */
+@media (max-width:420px){
+  .view{padding-left:14px;padding-right:14px}
+  .home-head h1{font-size:22px}
+  .page-head h1{font-size:20px}
+  .qtile{padding:10px 6px}
+  .qtile i{font-size:18px}
+  .card{flex-basis:46%}
+  .row-sec>h2,.me-sec h2{font-size:15px}
+  .chat-input input{font-size:15px}
+}
+@media (max-width:360px){
+  .card{flex-basis:60%}
+  .quick-tiles{gap:6px}
+}
+
+/* tone down emoji tile icons — smaller, quieter (anti-gimmick) */
+.qtile i,.cat-c i{font-size:17px;filter:saturate(.65);opacity:.85}
+.mood{filter:saturate(.7)}
