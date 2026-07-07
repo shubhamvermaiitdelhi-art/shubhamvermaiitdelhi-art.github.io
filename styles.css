@@ -636,3 +636,17 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .lib-head{display:flex;align-items:center;justify-content:space-between}
 .lib-head .dice{font-size:26px;background:var(--card,#171b22);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:8px 12px;cursor:pointer;transition:transform .2s}
 .lib-head .dice:active{transform:rotate(180deg) scale(.9)}
+
+/* ===== v24: planner 3-meals/day ===== */
+.pl-day{display:flex;flex-direction:column;gap:0;padding:10px 12px}
+.pl-day-head{display:flex;justify-content:space-between;align-items:baseline;padding:4px 2px 8px}
+.pl-day-head b{font-size:15px}
+.pl-day-head em{font-style:normal;font-size:11px;opacity:.65}
+.pl-meal{display:flex;align-items:center;gap:10px;padding:7px 2px;border-top:1px solid rgba(0,0,0,.05);cursor:pointer}
+.pl-meal .pl-thumb{width:44px;height:44px;flex:0 0 44px;border-radius:10px;overflow:hidden}
+.pl-meal .pl-thumb .ph,.pl-meal .pl-thumb img{width:100%;height:100%;object-fit:cover}
+.pl-meal-txt{flex:1;display:flex;flex-direction:column;min-width:0}
+.pl-meal-txt i{font-style:normal;font-size:10px;opacity:.6}
+.pl-meal-txt span{font-weight:600;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl-meal-txt em{font-style:normal;font-size:11px;opacity:.65}
+.pl-meal .pl-swap{flex:0 0 auto}
