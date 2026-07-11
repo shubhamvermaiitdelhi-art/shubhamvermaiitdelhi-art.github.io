@@ -886,3 +886,59 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .ph-mono.t3{background:linear-gradient(135deg,#7c5cbf,#5b3fa0)}
 .ph-mono.t4{background:linear-gradient(135deg,#1F6F8B,#155a72)}
 .searchbar .si{display:flex;align-items:center;color:var(--ink2)}
+
+/* Cook Mode scenes: the step you read is the step you SEE */
+.cm-scene{display:flex;justify-content:center;margin:6px 0 2px;animation:sceneIn .4s cubic-bezier(.2,.8,.3,1) backwards}
+@keyframes sceneIn{0%{opacity:0;transform:translateY(8px) scale(.96)}100%{opacity:1;transform:none}}
+.cm-scene .scn{width:200px;height:110px;color:var(--ink)}
+.cm-scene .ln{stroke:currentColor;stroke-width:2.5;opacity:.85}
+.cm-scene .flame{stroke:var(--accent);stroke-width:2.4;transform-origin:106px 112px;animation:flick 1.1s ease-in-out infinite}
+@keyframes flick{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.18) translateY(-1px)}}
+.cm-scene .heat{stroke:var(--accent);stroke-width:2;opacity:0;animation:heatup 1.6s ease-out infinite}
+.cm-scene .h2{animation-delay:.5s}.cm-scene .h3{animation-delay:1s}
+@keyframes heatup{0%{opacity:0;transform:translateY(4px)}30%{opacity:.7}100%{opacity:0;transform:translateY(-10px)}}
+.cm-scene .tossbit{fill:var(--accent);animation:tossup 1.5s cubic-bezier(.3,.6,.4,1) infinite}
+.cm-scene .t2{animation-delay:.18s}.cm-scene .t3{animation-delay:.36s}
+@keyframes tossup{0%,100%{transform:translateY(0)}38%{transform:translateY(-26px)}}
+.cm-scene .spark{fill:var(--amber,#F5A623);opacity:0;animation:pop2 1s ease-out infinite}
+.cm-scene .s2{animation-delay:.25s}.cm-scene .s3{animation-delay:.5s}.cm-scene .s4{animation-delay:.75s}
+@keyframes pop2{0%{opacity:0;transform:translateY(4px) scale(.6)}35%{opacity:1;transform:translateY(-8px) scale(1.15)}100%{opacity:0;transform:translateY(-16px) scale(.8)}}
+.cm-scene .grain{fill:var(--ink2);opacity:0;animation:fall 1.4s linear infinite}
+.cm-scene .g2{animation-delay:.25s}.cm-scene .g3{animation-delay:.5s}.cm-scene .g4{animation-delay:.75s}.cm-scene .g5{animation-delay:1s}
+@keyframes fall{0%{opacity:0;transform:translateY(0)}15%{opacity:.9}100%{opacity:0;transform:translateY(38px)}}
+.cm-scene .pinch{transform-origin:110px 30px;animation:pinchTilt 1.4s ease-in-out infinite}
+@keyframes pinchTilt{0%,100%{transform:rotate(0)}50%{transform:rotate(-8deg)}}
+.cm-scene .bub{fill:none;stroke:currentColor;stroke-width:2;opacity:0;animation:rise 1.8s ease-in infinite}
+.cm-scene .u2{animation-delay:.4s}.cm-scene .u3{animation-delay:.9s}.cm-scene .u4{animation-delay:1.3s}
+@keyframes rise{0%{opacity:0;transform:translateY(4px) scale(.7)}30%{opacity:.8}100%{opacity:0;transform:translateY(-26px) scale(1.1)}}
+.cm-scene .lid{transform-origin:110px 50px;animation:lidTap 2.2s ease-in-out infinite}
+@keyframes lidTap{0%,80%,100%{transform:translateY(0)}88%{transform:translateY(-3px) rotate(.6deg)}}
+.cm-scene .wisp{stroke:var(--ink2);stroke-width:2;opacity:0;animation:wispup 2.4s ease-out infinite}
+.cm-scene .w2{animation-delay:.7s}.cm-scene .w3{animation-delay:1.3s}
+@keyframes wispup{0%{opacity:0;transform:translateY(6px)}30%{opacity:.6}100%{opacity:0;transform:translateY(-12px)}}
+.cm-scene .knife{transform-origin:84 64px;animation:rockchop .55s ease-in-out infinite}
+@keyframes rockchop{0%,100%{transform:rotate(0)}50%{transform:rotate(-7deg) translateY(-4px)}}
+.cm-scene .bit{fill:var(--accent);animation:scoot 1.6s ease-out infinite}
+.cm-scene .b2{animation-delay:.2s}.cm-scene .b3{animation-delay:.4s}
+@keyframes scoot{0%{opacity:0;transform:translateX(-8px)}30%{opacity:1}100%{opacity:1;transform:translateX(6px)}}
+.cm-scene .whisk{transform-origin:110px 40px;animation:whisking .7s ease-in-out infinite}
+@keyframes whisking{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(14deg)}}
+.cm-scene .swirl{stroke:var(--accent);stroke-width:2.4;stroke-dasharray:60;animation:swirl 1.6s linear infinite}
+@keyframes swirl{0%{stroke-dashoffset:120}100%{stroke-dashoffset:0}}
+.cm-scene .dough{stroke:currentColor;stroke-width:2.5;fill:none;transform-origin:110px 88px;animation:squish 1.2s ease-in-out infinite}
+@keyframes squish{0%,100%{transform:scale(1,1)}50%{transform:scale(1.12,.82)}}
+.cm-scene .press{opacity:0;animation:pressin 1.2s ease-in-out infinite}
+.cm-scene .p2{animation-delay:.6s}
+@keyframes pressin{0%,100%{opacity:0;transform:translateY(-4px)}50%{opacity:.8;transform:translateY(2px)}}
+.cm-scene .stream{stroke:var(--accent);stroke-width:3;stroke-dasharray:8 6;animation:streamflow .5s linear infinite}
+@keyframes streamflow{0%{stroke-dashoffset:14}100%{stroke-dashoffset:0}}
+.cm-scene .ripple{stroke:var(--accent);stroke-width:2;fill:none;animation:ripple2 1.4s ease-out infinite}
+@keyframes ripple2{0%{opacity:.8;transform:scale(.4)}100%{opacity:0;transform:scale(1.5)}}
+.cm-scene .roastp{animation:sizzleShake 1.8s ease-in-out infinite}
+@keyframes sizzleShake{0%,100%{transform:translateX(0)}25%{transform:translateX(-1.5px)}75%{transform:translateX(1.5px)}}
+.cm-scene .spoon{transform-origin:110px 70px;animation:stirring 1.5s ease-in-out infinite}
+@keyframes stirring{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(12deg)}}
+.cm-scene .restdot{fill:var(--ink2);opacity:.25;animation:restpulse 2.4s ease-in-out infinite}
+.cm-scene .r2{animation-delay:.4s}.cm-scene .r3{animation-delay:.8s}
+@keyframes restpulse{0%,100%{opacity:.15}50%{opacity:.75}}
+@media (prefers-reduced-motion:reduce){.cm-scene *{animation:none!important}.cm-scene .heat,.cm-scene .grain,.cm-scene .bub,.cm-scene .wisp,.cm-scene .spark,.cm-scene .press{opacity:.5}}
