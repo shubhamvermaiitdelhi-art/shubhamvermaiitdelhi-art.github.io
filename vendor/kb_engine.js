@@ -152,7 +152,8 @@
       summary: str(r.summary),
       channels: isArray(r.channels) ? r.channels.map(str) : [],
       videoQuery: str(r.videoQuery),
-      ingredients: isArray(r.ingredients) ? r.ingredients.filter(isObj).map(function (ing) {
+      ingredients: isArray(r.ingredients) ? r.ingredients.filter(function (x) { return isObj(x) || typeof x === "string"; }).map(function (ing) {
+        if (typeof ing === "string") return { name: str(ing), qty: null, unit: "", staple: false };
         return {
           name: str(ing.name),
           qty: isFinite(num(ing.qty)) ? num(ing.qty) : null,
@@ -160,6 +161,12 @@
           staple: !!ing.staple
         };
       }) : [],
+      // enriched-KB fields (kb_enrich.js) — the brain's ground truth
+      ing: isArray(r.ing) ? r.ing.map(lc) : [],
+      cls: isArray(r.cls) ? r.cls.map(str) : [],
+      slots: isArray(r.slots) && r.slots.length ? r.slots.map(str) : null,
+      main: isArray(r.main) ? r.main.map(lc) : [],
+      thin: r.thin ? 1 : 0,
       steps: isArray(r.steps) ? r.steps.map(str) : [],
       thumb: r.thumb ? str(r.thumb) : null,
       url: r.url ? str(r.url) : null,
