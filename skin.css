@@ -171,3 +171,11 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 @media (prefers-reduced-motion: reduce) {
   .v2 *, .v2 *::before, .v2 *::after { animation: none !important; transition: opacity 120ms linear !important; }
 }
+
+/* v41.1 FIX: old cookmode was dark (#FFF6EC text); v2 made it light but the
+   inherited near-white text became invisible. Ink everything explicitly. */
+.v2 .cookmode { color: var(--kp-ink); }
+.v2 .cm-head b { color: var(--kp-ink); }
+.v2 .cm-head span { color: var(--kp-ink-3); opacity: 1; }
+.v2 .cm-step { color: var(--kp-ink); }
+.v2 .cm-step.done { color: var(--kp-ink-3); }
