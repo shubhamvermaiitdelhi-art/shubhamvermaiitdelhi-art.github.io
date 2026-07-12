@@ -942,3 +942,5 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .cm-scene .r2{animation-delay:.4s}.cm-scene .r3{animation-delay:.8s}
 @keyframes restpulse{0%,100%{opacity:.15}50%{opacity:.75}}
 @media (prefers-reduced-motion:reduce){.cm-scene *{animation:none!important}.cm-scene .heat,.cm-scene .grain,.cm-scene .bub,.cm-scene .wisp,.cm-scene .spark,.cm-scene .press{opacity:.5}}
+
+.std-note{background:var(--accent-soft,#FCEAE1);color:var(--accent,#E8420A);font-size:12px;font-weight:600;padding:9px 12px;border-radius:12px;margin:0 0 10px;line-height:1.4}
