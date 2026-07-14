@@ -1,8 +1,8 @@
-/* KhanaPro SW 2.0.33950 — self-updating */
-const V = "kp-2.0.33950";
-const SHELL = ["/", "/index.html", "/app.js?v=2.0.33950", "/styles.css?v=2.0.33950", "/tokens.css?v=2.0.33950", "/skin.css?v=2.0.33950", "/config.js?v=2.0.33950",
+/* KhanaPro SW 2.0.34173 — self-updating */
+const V = "kp-2.0.34173";
+const SHELL = ["/", "/index.html", "/app.js?v=2.0.34173", "/styles.css?v=2.0.34173", "/tokens.css?v=2.0.34173", "/skin.css?v=2.0.34173", "/config.js?v=2.0.34173",
   "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png",
-  "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js",
+  "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js","/vendor/scaling.js",
   "/kb/kb_ingested.js","/kb/kb_part_1.js","/kb/kb_part_10.js"];
 self.addEventListener("install", e => e.waitUntil(
   caches.open(V).then(c => c.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting())
