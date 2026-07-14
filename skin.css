@@ -179,3 +179,10 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 .v2 .cm-head span { color: var(--kp-ink-3); opacity: 1; }
 .v2 .cm-step { color: var(--kp-ink); }
 .v2 .cm-step.done { color: var(--kp-ink-3); }
+
+/* Pro plan */
+.v2 .plan-sec{border:1.5px solid var(--kp-accent-tint);box-shadow:var(--kp-e1), 0 0 0 3px var(--kp-accent-tint)}
+.v2 .plan-pill{background:var(--kp-accent);border-radius:6px}
+.v2 .plan-feat b{font-weight:700;letter-spacing:-.01em}
+.v2 .plan-feat span{color:var(--kp-ink-2)}
+.v2 .plan-note{color:var(--kp-ink-2)}

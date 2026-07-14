@@ -944,3 +944,10 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 @media (prefers-reduced-motion:reduce){.cm-scene *{animation:none!important}.cm-scene .heat,.cm-scene .grain,.cm-scene .bub,.cm-scene .wisp,.cm-scene .spark,.cm-scene .press{opacity:.5}}
 
 .std-note{background:var(--accent-soft,#FCEAE1);color:var(--accent,#E8420A);font-size:12px;font-weight:600;padding:9px 12px;border-radius:12px;margin:0 0 10px;line-height:1.4}
+.rep-tag{position:absolute;top:10px;right:10px;z-index:2;background:rgba(24,18,12,.55);color:#F5A623;font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:8px;font-style:normal}
+.plan-sec{border:1.5px solid rgba(232,66,10,.25)}
+.plan-pill{display:inline-block;background:var(--accent);color:#fff;font-size:9.5px;font-weight:800;letter-spacing:.08em;padding:3px 7px;border-radius:7px;vertical-align:2px;margin-left:6px}
+.plan-feats{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
+.plan-feat b{display:block;font-size:14px}
+.plan-feat span{font-size:12.5px;color:var(--ink2)}
+.plan-note{font-size:12.5px;color:var(--ink2);line-height:1.5;margin-top:6px}
