@@ -956,3 +956,12 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .plan-offer span{font-size:13.5px;line-height:1.4}
 .plan-col-h{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);margin:12px 0 8px}
 .plan-col-h.pro{color:var(--accent)}
+
+/* AI-generated recipe block (Cook AI answers for dishes not in the library) */
+.ai-recipe { background: #fff; border-radius: 14px; padding: 12px 14px; margin: 10px 0 4px; box-shadow: 0 1px 4px rgba(20,10,0,.06); }
+.ai-recipe > b { display: block; font-size: 16px; margin: 6px 0 2px; }
+.ai-recipe > em { display: block; font-style: normal; font-size: 12px; color: #8a7f74; margin-bottom: 8px; }
+.ai-recipe .ai-ing { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 10px; }
+.ai-recipe .ai-ing span { background: #FFF3E9; border-radius: 8px; padding: 4px 9px; font-size: 12.5px; }
+.ai-recipe .ai-steps { margin: 0; padding-left: 20px; }
+.ai-recipe .ai-steps li { font-size: 13.5px; line-height: 1.45; margin-bottom: 6px; }
