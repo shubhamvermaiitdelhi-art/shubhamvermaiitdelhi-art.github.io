@@ -951,3 +951,8 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .plan-feat b{display:block;font-size:14px}
 .plan-feat span{font-size:12.5px;color:var(--ink2)}
 .plan-note{font-size:12.5px;color:var(--ink2);line-height:1.5;margin-top:6px}
+.plan-offer{background:linear-gradient(120deg,#1F1A14,#3a2c1c);color:#FBF4EC;border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.plan-offer b{display:block;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#F5A623;margin-bottom:3px}
+.plan-offer span{font-size:13.5px;line-height:1.4}
+.plan-col-h{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);margin:12px 0 8px}
+.plan-col-h.pro{color:var(--accent)}
