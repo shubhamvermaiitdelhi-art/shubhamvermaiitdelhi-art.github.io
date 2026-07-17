@@ -965,3 +965,31 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .ai-recipe .ai-ing span { background: #FFF3E9; border-radius: 8px; padding: 4px 9px; font-size: 12.5px; }
 .ai-recipe .ai-steps { margin: 0; padding-left: 20px; }
 .ai-recipe .ai-steps li { font-size: 13.5px; line-height: 1.45; margin-bottom: 6px; }
+
+/* home action pills (declutter: 2x2 compact, no subtitles) */
+.home-actions.pills { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0 4px; }
+.home-actions.pills .act-card { display: flex; align-items: center; justify-content: center; min-height: 46px; padding: 10px 12px; }
+.home-actions.pills .act-card b { font-size: 13.5px; }
+.home-actions.pills .act-card span, .home-actions.pills .act-card i { display: none; }
+
+/* plan sheet: Rs9 hero + comparison table */
+.plan-hero { text-align: center; padding: 6px 0 14px; }
+.plan-hero .ph-badge { display: inline-block; font: 800 10.5px/1 inherit; letter-spacing: .14em; color: #E8420A; background: #FFEDE4; border-radius: 999px; padding: 6px 12px; }
+.plan-hero .ph-price { font-size: 76px; font-weight: 800; letter-spacing: -.05em; line-height: 1.05; margin: 8px 0 2px; }
+.plan-hero .ph-price em { font-style: normal; font-size: 34px; vertical-align: 22px; margin-right: 2px; }
+.plan-hero .ph-price.ok { color: #0F8A3D; font-size: 54px; }
+.plan-hero .ph-line { color: #6f6459; font-size: 14px; margin: 0 0 12px; }
+.plan-hero .ph-line s { opacity: .6; margin-left: 4px; }
+.plan-hero .ph-cta { display: block; }
+.plan-hero .ph-claim { background: none; border: none; color: #8a7f74; font-size: 12.5px; text-decoration: underline; margin-top: 10px; }
+.ph-utr { display: flex; gap: 8px; margin-top: 10px; }
+.ph-utr input { flex: 1; min-width: 0; border: 1.5px solid #e7dccf; border-radius: 10px; padding: 10px 12px; font-size: 13.5px; background: #fff; }
+.plan-table { width: 100%; border-collapse: collapse; margin: 6px 0 10px; font-size: 13.5px; }
+.plan-table th { text-align: center; font: 800 11px/1 inherit; letter-spacing: .1em; text-transform: uppercase; color: #8a7f74; padding: 8px 4px; }
+.plan-table th.pro, .plan-table td.pro { background: #FFF7F2; }
+.plan-table th:first-child { text-align: left; }
+.plan-table td { padding: 9px 4px; border-top: 1px solid #f0e7db; text-align: center; }
+.plan-table td:first-child { text-align: left; font-weight: 600; }
+.plan-table .pt-y { color: #0F8A3D; font-weight: 800; }
+.plan-table .pt-n { color: #c9beb2; }
+.plan-table .pt-t { font-size: 12px; }

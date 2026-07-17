@@ -186,3 +186,18 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 .v2 .plan-feat b{font-weight:700;letter-spacing:-.01em}
 .v2 .plan-feat span{color:var(--kp-ink-2)}
 .v2 .plan-note{color:var(--kp-ink-2)}
+
+/* v2: home pills + plan sheet */
+.v2 .home-actions.pills .act-card { border-radius: var(--kp-r-md); box-shadow: var(--kp-e1); }
+.v2 .home-actions.pills .act-card b { font-size: 13.5px; letter-spacing: -.01em; }
+.v2 .plan-hero .ph-badge { background: var(--kp-accent-tint); color: var(--kp-accent); }
+.v2 .plan-hero .ph-price { color: var(--kp-ink); font-family: var(--kp-font); }
+.v2 .plan-hero .ph-price.ok { color: var(--kp-live); }
+.v2 .plan-hero .ph-line { color: var(--kp-ink-2); }
+.v2 .plan-hero .ph-claim { color: var(--kp-ink-3); }
+.v2 .ph-utr input { border-color: var(--kp-hair-2); background: var(--kp-surface); font-family: var(--kp-font); }
+.v2 .plan-table th { color: var(--kp-ink-3); }
+.v2 .plan-table th.pro, .v2 .plan-table td.pro { background: var(--kp-accent-tint); }
+.v2 .plan-table td { border-top: 1px solid var(--kp-hair); }
+.v2 .plan-table .pt-y { color: var(--kp-live); }
+.v2 .plan-table .pt-n { color: var(--kp-ink-3); opacity: .5; }
