@@ -1,6 +1,6 @@
-/* KhanaPro SW 2.0.38056 — self-updating */
-const V = "kp-2.0.38056";
-const SHELL = ["/", "/index.html", "/app.js?v=2.0.38056", "/styles.css?v=2.0.38056", "/tokens.css?v=2.0.38056", "/skin.css?v=2.0.38056", "/config.js?v=2.0.38056",
+/* KhanaPro SW 2.0.38082 — self-updating */
+const V = "kp-2.0.38082";
+const SHELL = ["/", "/index.html", "/app.js?v=2.0.38082", "/styles.css?v=2.0.38082", "/tokens.css?v=2.0.38082", "/skin.css?v=2.0.38082", "/config.js?v=2.0.38082",
   "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png",
   "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js","/vendor/scaling.js",
   "/kb/kb_ingested.js","/kb/kb_part_1.js","/kb/kb_part_10.js"];
@@ -26,7 +26,7 @@ self.addEventListener("fetch", e => {
       return hit || net;
     })));
   } else if (url.hostname.includes("ytimg") || url.hostname.includes("wikimedia")) {
-    e.respondWith(caches.open("kp-img-v1").then(c => c.match(e.request).then(hit => hit || fetch(e.request).then(r => { if (r.ok) c.put(e.request, r.clone()); return r; }))));
+    e.respondWith(caches.open("kp-img-v1").then(c => c.match(e.request).then(hit => hit || fetch(e.request).then(r => { if (r.ok || r.type === "opaque") c.put(e.request, r.clone()); return r; }))));
   } else {
     e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request).then(r => { if (r.ok && url.origin === location.origin) { const c = r.clone(); caches.open(V).then(x => x.put(e.request, c)); } return r; })));
   }
