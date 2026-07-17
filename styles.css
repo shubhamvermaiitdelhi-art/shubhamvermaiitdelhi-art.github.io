@@ -993,3 +993,5 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .plan-table .pt-y { color: #0F8A3D; font-weight: 800; }
 .plan-table .pt-n { color: #c9beb2; }
 .plan-table .pt-t { font-size: 12px; }
+.order-links { display: flex; gap: 8px; margin: 10px 0 4px; }
+.order-links .btn { flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; min-height: 44px; }
