@@ -1,11 +1,11 @@
-/* KhanaPro SW 2.0.39739 — self-updating */
-const V = "kp-2.0.39739";
-const SHELL = ["/", "/index.html", "/app.js?v=2.0.39739", "/styles.css?v=2.0.39739", "/tokens.css?v=2.0.39739", "/skin.css?v=2.0.39739", "/config.js?v=2.0.39739",
+/* KhanaPro SW 2.0.39743 — self-updating */
+const V = "kp-2.0.39743";
+const SHELL = ["/", "/index.html", "/app.js?v=2.0.39743", "/styles.css?v=2.0.39743", "/tokens.css?v=2.0.39743", "/skin.css?v=2.0.39743", "/config.js?v=2.0.39743",
   "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png",
   "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js","/vendor/scaling.js",
   "/kb/kb_ingested.js","/kb/kb_part_1.js","/kb/kb_part_10.js"];
 self.addEventListener("install", e => e.waitUntil(
-  caches.open(V).then(c => c.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting())
+  caches.open(V).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: "reload" })))).catch(() => {}).then(() => self.skipWaiting())
 ));
 const KEEP = [V, "kp-kb-v1", "kp-img-v1"]; // KB + images survive deploys: recipes rarely change, users should never re-download 6MB
 self.addEventListener("activate", e => e.waitUntil(
