@@ -37,7 +37,17 @@
     return parts.join("  ");
   }
   function any(text, words) {
-    for (var i = 0; i < words.length; i++) if (text.indexOf(words[i]) !== -1) return true;
+    // WORD-BOUNDED: "pancake" must never match "cake" (the sweet-cheela disease).
+    // A hit counts only when the match is not glued to letters on either side.
+    for (var i = 0; i < words.length; i++) {
+      var w = words[i], from = 0, idx;
+      while ((idx = text.indexOf(w, from)) !== -1) {
+        var b = idx === 0 ? "" : text.charAt(idx - 1);
+        var a = idx + w.length >= text.length ? "" : text.charAt(idx + w.length);
+        if (!/[a-z]/.test(b) && !/[a-z]/.test(a)) return true;
+        from = idx + 1;
+      }
+    }
     return false;
   }
 
@@ -135,14 +145,20 @@
       "halwa", "kheer", "laddoo", "laddu", "ladoo", "barfi", "burfi", "jalebi", "gulab jamun",
       "rasmalai", "rasgulla", "cake", "brownie", "ice cream", "ice-cream", "kulfi", "phirni",
       "payasam", "sheera", "mishti", "sandesh", "modak", "peda", "shrikhand", "custard",
-      "pudding", "mousse", "cheesecake", "cookie", "muffin"
+      "pudding", "mousse", "cheesecake", "cookie", "muffin",
+      "\u0939\u0932\u0935\u093e", "\u0916\u0940\u0930", "\u0932\u0921\u094d\u0921\u0942", "\u092c\u0930\u094d\u092b\u0940", "\u091c\u0932\u0947\u092c\u0940", "\u0930\u0938\u0917\u0941\u0932\u094d\u0932\u093e", "\u092e\u093f\u0920\u093e\u0908", "\u0915\u0947\u0915", "\u0930\u092c\u0921\u093c\u0940", "\u0915\u0941\u0932\u094d\u092b\u0940"
     ]);
     var sweetIng = any(text, [
       "sugar", "jaggery", "gur", "condensed milk", "honey", "maple syrup", "chocolate",
       "cocoa", "dates", "date paste", "khajur", "khoya", "mawa"
     ]);
     var isDessertCat = (cat === "healthy-dessert");
-    return { isDessert: isDessertCat || nameSugar, nameSugar: nameSugar, sweetIng: sweetIng, cat: cat };
+    // ingredient-grounded veto: a dish full of onion/chilli/cumin with ZERO sweet
+    // ingredients is not a dessert, whatever a stray title word suggests
+    var savorySig = any(text, ["onion", "garlic", "chilli", "chili", "mirchi", "cumin", "jeera", "turmeric", "haldi", "masala", "namak"]);
+    var isDessert = isDessertCat || nameSugar;
+    if (isDessert && !isDessertCat && savorySig && !sweetIng) isDessert = false;
+    return { isDessert: isDessert, nameSugar: nameSugar, sweetIng: sweetIng, cat: cat };
   }
 
   // ---------- MAIN CLASSIFY ----------
@@ -153,6 +169,10 @@
     var cat = low(r.category);
     var method = detectMethod(r);
     var dz = dessertSignals(r, text);
+    // DISH TAXONOMY override (kb_enrich dcls): the ontology KNOWS cheela is
+    // savory and laddoo is sweet - taxonomy beats keyword inference, always.
+    if (r.dcls === "savory") { dz.isDessert = false; dz.nameSugar = false; }
+    else if (r.dcls === "sweet") { dz.isDessert = true; }
 
     var deepFried = (method === "deep-fried");
     var fried = (method === "fried");

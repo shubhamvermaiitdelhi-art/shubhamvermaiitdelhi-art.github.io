@@ -167,6 +167,8 @@
       cls: isArray(r.cls) ? r.cls.map(str) : [],
       slots: isArray(r.slots) && r.slots.length ? r.slots.map(str) : null,
       main: isArray(r.main) ? r.main.map(lc) : [],
+      dish: r.dish ? str(r.dish) : null,
+      dcls: r.dcls ? str(r.dcls) : null,
       thin: r.thin ? 1 : 0,
       canon: r.canon ? str(r.canon) : null,
       steps: isArray(r.steps) ? r.steps.map(str) : [],
