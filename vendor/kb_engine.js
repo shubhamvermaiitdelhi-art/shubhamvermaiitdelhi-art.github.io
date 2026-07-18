@@ -24,6 +24,7 @@
 
   // ---- internal cache -------------------------------------------------------
   var _cache = null; // { list, byId, cuisines, categories, tags, channels }
+  var _hindi = null; // id -> {t,i,s} Hindi overlay (survives _reset/rebuilds)
 
   // ---- health classifier (optional dependency; guard if missing) -----------
   // Resolve KhanaProHealth from: browser global, then Node require(). If it is
@@ -250,6 +251,13 @@
       var d = b.count - a.count;
       return d !== 0 ? d : (a.name < b.name ? -1 : (a.name > b.name ? 1 : 0));
     });
+
+    if (_hindi) {
+      for (var hk = 0; hk < list.length; hk++) {
+        var hh = _hindi[list[hk].id];
+        if (hh) { if (hh.t) list[hk].title_hi = hh.t; if (hh.i) list[hk].ing_hi = hh.i; if (hh.s) list[hk].steps_hi = hh.s; }
+      }
+    }
 
     _cache = {
       list: list,
@@ -589,6 +597,21 @@
     } catch (e) { return null; }
   }
 
+  // Hindi overlay: merge {id:{t,i,s}} onto recipes; reapplied on every rebuild.
+  function mergeHindi(map) {
+    if (!isObj(map)) return 0;
+    _hindi = _hindi || {};
+    var n = 0;
+    for (var k in map) { if (Object.prototype.hasOwnProperty.call(map, k)) { _hindi[k] = map[k]; n++; } }
+    if (_cache) {
+      for (var j = 0; j < _cache.list.length; j++) {
+        var h = _hindi[_cache.list[j].id];
+        if (h) { if (h.t) _cache.list[j].title_hi = h.t; if (h.i) _cache.list[j].ing_hi = h.i; if (h.s) _cache.list[j].steps_hi = h.s; }
+      }
+    }
+    return n;
+  }
+
   // Allow callers/tests to force a rebuild after data loads late.
   function _reset() { _cache = null; }
 
@@ -608,6 +631,7 @@
     filter: filter,
     toCartItems: toCartItems,
     backlink: backlink,
+    mergeHindi: mergeHindi,
     _reset: _reset
   };
 });
