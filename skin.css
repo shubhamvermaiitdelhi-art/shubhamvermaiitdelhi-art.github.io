@@ -201,3 +201,10 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 .v2 .plan-table td { border-top: 1px solid var(--kp-hair); }
 .v2 .plan-table .pt-y { color: var(--kp-live); }
 .v2 .plan-table .pt-n { color: var(--kp-ink-3); opacity: .5; }
+
+/* ---- v50 cook companion (v2 light cookmode) ---- */
+.v2 .cm-buddy{background:var(--kp-surface-2,#F6EFE6);border-color:rgba(31,26,20,.08);color:#1F1A14}
+.v2 .cm-ask input{background:#fff;border-color:rgba(31,26,20,.14);color:#1F1A14}
+.v2 .cm-ask input::placeholder{color:rgba(31,26,20,.4)}
+.v2 .cm-ask button{background:#fff;border-color:rgba(31,26,20,.14);color:#1F1A14}
+.v2 .cm-ask button.listening{background:var(--kp-primary,#F4530A);color:#fff}
