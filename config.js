@@ -1,1 +1,1 @@
-window.KP_CONFIG={"version":"2.0.40858","aiEndpoint":"/api/ai","aiFallbacks":[],"pricesEndpoint":"/api/prices","geminiKeyB64":"QUl6YVN5QjJ6Ym9HLUlrUHgybTNkbFNGaHJKYVRlT3ViV0ZadWZB","geminiModel":"gemini-2.5-flash-lite","gaId":"","upiVpa":"8290832434@upi"};
+window.KP_CONFIG={"version":"2.0.40916","aiEndpoint":"/api/ai","aiFallbacks":[],"pricesEndpoint":"/api/prices","geminiKeyB64":"QUl6YVN5QjJ6Ym9HLUlrUHgybTNkbFNGaHJKYVRlT3ViV0ZadWZB","geminiModel":"gemini-2.5-flash-lite","gaId":"","upiVpa":"8290832434@upi"};
