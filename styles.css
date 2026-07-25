@@ -4,15 +4,17 @@
   --card: #FFFFFF;
   --ink: #1F1A14;
   --ink2: #6E6258;
-  --accent: #F4530A;       /* saffron-tomato */
-  --accent-soft: #FFE8DC;
-  --green: #17853C;
-  --green-soft: #E3F5E9;
+  --accent: #E8420A;       /* the one brand accent (matches --kp-accent) */
+  --accent-soft: #FCEAE1;
+  --green: #0F8A3D;
+  --green-soft: #E4F3E9;
+  --hair: rgba(31, 26, 20, .08);
   --gold: #F7B32B;
   --radius: 20px;
-  --shadow: 0 4px 20px rgba(80, 40, 10, .08);
-  --shadow-lift: 0 10px 32px rgba(80, 40, 10, .16);
-  --nav-h: 68px;
+  --shadow: 0 1px 2px rgba(31, 26, 20, .05), 0 6px 18px rgba(31, 26, 20, .06);
+  --shadow-lift: 0 12px 32px rgba(31, 26, 20, .14);
+  --nav-h: 72px;
+  --nav-clear: calc(72px + 34px + env(safe-area-inset-bottom, 0px));
   --font: "Plus Jakarta Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -31,7 +33,7 @@ h3 { font-size: 14.5px; font-weight: 700; }
 .hide { display: none !important; }
 
 /* ---------- layout ---------- */
-.view { padding: 18px 16px calc(var(--nav-h) + 28px); max-width: 560px; margin: 0 auto; }
+.view { padding: 18px 16px var(--nav-clear); max-width: 560px; margin: 0 auto; }
 .page-head { margin: 6px 2px 14px; }
 .cart-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
 .btn.sm { padding: 7px 13px; font-size: 12.5px; border-radius: 11px; }
@@ -39,10 +41,11 @@ h3 { font-size: 14.5px; font-weight: 700; }
 
 /* ---------- bottom nav ---------- */
 .bottom-nav {
-  position: fixed; bottom: 0; left: 0; right: 0; height: calc(var(--nav-h) + env(safe-area-inset-bottom));
-  padding-bottom: env(safe-area-inset-bottom);
-  background: rgba(255, 255, 255, .96); backdrop-filter: saturate(1.4) blur(14px);
-  display: flex; box-shadow: 0 -2px 20px rgba(80, 40, 10, .10); z-index: 50;
+  position: fixed; bottom: calc(10px + env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%);
+  width: min(94vw, 480px); height: 62px; border-radius: 999px;
+  background: rgba(255, 255, 255, .93); backdrop-filter: saturate(1.5) blur(18px); -webkit-backdrop-filter: saturate(1.5) blur(18px);
+  display: flex; box-shadow: 0 10px 32px rgba(80, 40, 10, .16), inset 0 0 0 1px rgba(80, 40, 10, .05); z-index: 50;
+  padding: 0 6px;
 }
 .nav-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #A99D92; transition: color .15s; }
 .nav-btn .ico { font-size: 21px; line-height: 1; position: relative; filter: grayscale(1) opacity(.75); transition: all .18s; }
@@ -88,7 +91,6 @@ h3 { font-size: 14.5px; font-weight: 700; }
 .nut { font-size: 11px; font-weight: 700; color: var(--green); background: var(--green-soft); padding: 3px 8px; border-radius: 10px; }
 .nut-na { color: var(--ink2); background: #F2EDE7; }
 .nut-est { opacity: .8; }
-.meta-t { font-size: 11px; color: var(--ink2); font-weight: 600; }
 
 .ph { height: 118px; background: linear-gradient(135deg, #FFE4CE, #FFD5E0); overflow: hidden; }
 .ph img { width: 100%; height: 100%; object-fit: cover; }
@@ -135,7 +137,7 @@ h3 { font-size: 14.5px; font-weight: 700; }
 }
 .btn:active { transform: scale(.96); }
 .btn:disabled { opacity: .55; }
-.btn.primary { background: var(--accent); color: #fff; box-shadow: 0 6px 18px rgba(244, 83, 10, .32); }
+.btn.primary { background: var(--accent); color: #fff; box-shadow: 0 6px 18px rgba(232, 66, 10, .30); }
 .btn.ghost { background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
 .btn.wide { width: 100%; margin-top: 10px; }
 
@@ -190,7 +192,8 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .rf-space { height: 30px; }
 
 /* ---------- chat (Cook AI) ---------- */
-.chat-log { display: flex; flex-direction: column; gap: 12px; min-height: 40vh; padding-bottom: 76px; }
+.chat-log { display: flex; flex-direction: column; gap: 12px; min-height: 40vh; padding-bottom: 24px; }
+.chat-full { min-height: calc(100dvh - 220px); }
 .msg { max-width: 92%; border-radius: 18px; padding: 12px 14px; font-size: 14.5px; line-height: 1.5; animation: pop .18s ease; }
 .msg.me { align-self: flex-end; background: var(--accent); color: #fff; border-bottom-right-radius: 6px; font-weight: 600; }
 .msg.ai { align-self: flex-start; background: var(--card); box-shadow: var(--shadow); border-bottom-left-radius: 6px; }
@@ -201,8 +204,9 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .chat-cards .vegdot { bottom: 72px; }
 .chat-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
 .chat-input {
-  position: fixed; bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 8px); left: 12px; right: 12px;
-  max-width: 536px; margin: 0 auto; display: flex; gap: 8px; background: var(--card); border-radius: 18px;
+  /* clears the floating pill nav: 10px inset + 62px pill + 10px gap */
+  position: fixed; bottom: calc(82px + env(safe-area-inset-bottom)); left: 14px; right: 14px;
+  max-width: 532px; margin: 0 auto; display: flex; gap: 8px; background: var(--card); border-radius: 18px;
   padding: 7px 7px 7px 16px; box-shadow: var(--shadow-lift); z-index: 40;
 }
 .chat-input input { flex: 1; border: 0; outline: 0; background: none; }
@@ -289,7 +293,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 
 /* ---------- misc ---------- */
 #kp-toast {
-  position: fixed; bottom: calc(var(--nav-h) + 20px); left: 50%; transform: translateX(-50%) translateY(16px);
+  position: fixed; bottom: calc(152px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%) translateY(16px);
   background: var(--ink); color: #fff; font-size: 13.5px; font-weight: 600; padding: 11px 18px;
   border-radius: 14px; box-shadow: var(--shadow-lift); opacity: 0; pointer-events: none; transition: all .22s; z-index: 200;
   max-width: 86vw; text-align: center;
@@ -334,7 +338,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .wb span { font-size: 10px; font-weight: 700; color: var(--ink2); }
 .wb em { font-style: normal; font-size: 9.5px; color: var(--ink2); min-height: 12px; }
 #kp-install {
-  position: fixed; left: 12px; right: 12px; bottom: calc(var(--nav-h) + 14px); z-index: 60;
+  position: fixed; left: 12px; right: 12px; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); z-index: 60;
   background: var(--ink); color: #fff; border-radius: 16px; padding: 12px 14px;
   display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; box-shadow: var(--shadow-lift);
   animation: pop .3s ease;
@@ -389,7 +393,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .cm-nav { display: flex; gap: 10px; padding-bottom: env(safe-area-inset-bottom); }
 .cm-nav button { flex: 1; padding: 16px; border-radius: 16px; font-size: 15px; font-weight: 800; background: rgba(255,255,255,.12); color: #fff; }
 .cm-nav button:disabled { opacity: .35; }
-.cm-nav .primary { flex: 2; background: var(--accent); box-shadow: 0 6px 20px rgba(244,83,10,.4); }
+.cm-nav .primary { flex: 2; background: var(--accent); box-shadow: 0 6px 20px rgba(232,66,10,.4); }
 
 /* ---------- Zomato-grade cards + global topbar ---------- */
 .topbar {
@@ -468,16 +472,16 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 @keyframes viewIn { from { opacity: 0; transform: translateY(14px); } }
 
 /* staggered card entrance */
-.view-enter .card, .view-enter .row-sec, .view-enter .me-sec, .view-enter .plan-card, .view-enter .view-enter .hscroll .card:nth-child(1), .view-enter .grid .card:nth-child(1) { animation-delay: .03s; }
+.view-enter .hscroll .card:nth-child(1), .view-enter .grid .card:nth-child(1) { animation-delay: .03s; }
 .view-enter .hscroll .card:nth-child(2), .view-enter .grid .card:nth-child(2) { animation-delay: .07s; }
 .view-enter .hscroll .card:nth-child(3), .view-enter .grid .card:nth-child(3) { animation-delay: .11s; }
 .view-enter .hscroll .card:nth-child(4), .view-enter .grid .card:nth-child(4) { animation-delay: .15s; }
 .view-enter .hscroll .card:nth-child(n+5), .view-enter .grid .card:nth-child(n+5) { animation-delay: .19s; }
-.view-enter  .view-enter .view-enter  .view-enter @keyframes cardIn { from { opacity: 0; transform: translateY(16px) scale(.98); } }
+@keyframes cardIn { from { opacity: 0; transform: translateY(16px) scale(.98); } }
 
 /* button physics */
 .btn, .chip, .send { transition: transform .18s var(--spring), box-shadow .18s var(--ease-out), background .15s, color .15s; }
-.btn.primary:hover { box-shadow: 0 10px 26px rgba(244, 83, 10, .42); transform: translateY(-1px); }
+.btn.primary:hover { box-shadow: 0 10px 26px rgba(232, 66, 10, .38); transform: translateY(-1px); }
 .btn:active, .send:active { transform: scale(.94); }
 .chip:active { transform: scale(.9); }
 
@@ -491,8 +495,6 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 
 /* bottom nav: sliding dot indicator + icon spring */
 .nav-btn { position: relative; }
-.nav-btn::after { content: ""; position: absolute; top: 4px; left: 50%; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); transform: translateX(-50%) scale(0); transition: transform .25s var(--spring); }
-.nav-btn.on::after { transform: translateX(-50%) scale(1); }
 .nav-btn .ico { transition: transform .25s var(--spring), opacity .2s, color .2s; }
 .nav-btn:active .ico { transform: scale(.82); }
 
@@ -569,41 +571,39 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 
 .hero-cta { display: inline-block; margin-top: 8px; background: rgba(255,255,255,.16); backdrop-filter: blur(6px); color: #fff; font-size: 12px; font-weight: 800; padding: 7px 14px; border-radius: 12px; }
 
-.daytip { font-size: 12px; color: var(--ink2); font-weight: 600; margin: -6px 2px 12px; }
 .from-chip { font-style: normal; font-size: 11px; background: rgba(255,255,255,.25); border-radius: 8px; padding: 2px 7px; margin-left: 4px; }
 
-.langbtn { font-size: 12px; font-weight: 800; background: var(--card); box-shadow: var(--shadow); border-radius: 10px; padding: 6px 10px; margin-right: 10px; color: var(--ink2); }
 .topbar { gap: 8px; }
 
 /* ===== v22: paste list, report card, heatmap, deals, mic, a11y ===== */
-.paste-sheet textarea{width:100%;background:var(--bg2,#171b22);color:inherit;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px;font:inherit;resize:vertical;margin:10px 0 4px}
-.paste-sheet textarea:focus{outline:2px solid var(--acc,#22c55e);outline-offset:1px}
+.paste-sheet textarea{width:100%;background:var(--card);color:inherit;border:1px solid #EADFD3;border-radius:12px;padding:12px;font:inherit;resize:vertical;margin:10px 0 4px}
+.paste-sheet textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
 .sheet-cta{display:flex;gap:10px;margin-top:10px}
 .sheet-cta .btn{flex:1}
 
-.report-card{margin-top:14px;padding:14px;border-radius:16px;background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03));border:1px solid rgba(34,197,94,.25)}
+.report-card{margin-top:14px;padding:14px;border-radius:16px;background:linear-gradient(135deg,rgba(23,133,60,.10),rgba(23,133,60,.02));border:1px solid rgba(23,133,60,.22)}
 .rc-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.rc-grade{font-size:28px;font-weight:800;padding:6px 14px;border-radius:12px;background:rgba(34,197,94,.18)}
+.rc-grade{font-size:28px;font-weight:800;padding:6px 14px;border-radius:12px;background:rgba(23,133,60,.16)}
 .rc-grade.g-c,.rc-grade.g-d,.rc-grade.g-e{background:rgba(245,158,11,.18)}
 .rc-line{margin:8px 0 6px;font-weight:600}
 .rc-stats{display:flex;flex-direction:column;gap:4px;font-size:13px;opacity:.9;margin-bottom:10px}
 
 .heatmap-sec{margin-top:14px}
 .heatmap{display:grid;grid-template-columns:repeat(14,1fr);gap:4px;margin-top:6px}
-.heatmap .hm{aspect-ratio:1;border-radius:4px;background:rgba(255,255,255,.07)}
-.heatmap .hm.l1{background:rgba(34,197,94,.35)}
-.heatmap .hm.l2{background:rgba(34,197,94,.6)}
-.heatmap .hm.l3{background:rgba(34,197,94,.95)}
+.heatmap .hm{aspect-ratio:1;border-radius:4px;background:#F1E9DE}
+.heatmap .hm.l1{background:rgba(23,133,60,.32)}
+.heatmap .hm.l2{background:rgba(23,133,60,.58)}
+.heatmap .hm.l3{background:rgba(23,133,60,.92)}
 
 .deals-sec{margin:10px 0 2px}
 .deals-head{font-weight:700;margin:0 0 8px;display:flex;align-items:center;gap:8px}
-.badge-est{font-size:10px;font-style:normal;opacity:.65;border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:1px 6px}
+.badge-est{font-size:10px;font-style:normal;color:var(--ink2);border:1px solid #E4D9CC;border-radius:6px;padding:1px 6px}
 .deals-row{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
 .deals-row::-webkit-scrollbar{display:none}
-.deal-chip{flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;border-radius:14px;background:var(--card,#171b22);border:1px solid rgba(34,197,94,.3);color:inherit;position:relative;min-width:140px}
+.deal-chip{flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;border-radius:14px;background:var(--card);border:1px solid rgba(23,133,60,.22);color:inherit;position:relative;min-width:140px;box-shadow:var(--shadow)}
 .deal-chip b{text-transform:capitalize}
 .deal-chip span{font-size:12px;opacity:.8}
-.deal-chip em{position:absolute;top:8px;right:8px;font-style:normal;font-size:11px;font-weight:800;color:#22c55e}
+.deal-chip em{position:absolute;top:8px;right:8px;font-style:normal;font-size:11px;font-weight:800;color:var(--green)}
 
 .chat-input .mic{background:none;border:none;font-size:20px;padding:0 6px;cursor:pointer;border-radius:50%}
 .chat-input .mic.listening{animation:micpulse 1.2s ease-in-out infinite}
@@ -611,15 +611,14 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 
 .recent-chips{margin:-2px 0 6px}
 
-:focus-visible{outline:2px solid var(--acc,#22c55e);outline-offset:2px;border-radius:6px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
 @media (prefers-reduced-motion: reduce){.chat-input .mic.listening{animation:none}}
 
 /* ===== v23 ===== */
 .cm-head #cm-tts{opacity:.45;font-size:18px;background:none;border:none;cursor:pointer}
-.cm-head #cm-tts.on{opacity:1;filter:drop-shadow(0 0 6px rgba(34,197,94,.8))}
-.day-strip.tonight{border-color:rgba(139,92,246,.4);background:linear-gradient(135deg,rgba(139,92,246,.14),transparent)}
+.cm-head #cm-tts.on{opacity:1;filter:drop-shadow(0 0 6px rgba(23,133,60,.7))}
 .lib-head{display:flex;align-items:center;justify-content:space-between}
-.lib-head .dice{font-size:26px;background:var(--card,#171b22);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:8px 12px;cursor:pointer;transition:transform .2s}
+.lib-head .dice{font-size:26px;background:var(--card);border:1px solid #EFE6DA;border-radius:14px;padding:8px 12px;cursor:pointer;transition:transform .2s;box-shadow:var(--shadow)}
 .lib-head .dice:active{transform:rotate(180deg) scale(.9)}
 
 /* ===== v24: planner 3-meals/day ===== */
@@ -665,7 +664,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .btn:active,.chip:active,.act-card:active,.mood:active,.deal-chip:active{transform:scale(.96)}
 
 /* toast: quiet, floating, glass */
-.toast{border-radius:14px;box-shadow:0 8px 30px rgba(16,10,4,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-weight:600;letter-spacing:.01em}
+
 
 /* hero: gentle depth */
 .hero-sec{box-shadow:0 10px 34px rgba(16,10,4,.10)}
@@ -677,7 +676,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 }
 
 /* ===== v26: video-only recipe card ===== */
-.vo-card{padding:16px;border-radius:16px;background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.25)}
+.vo-card{padding:16px;border-radius:16px;background:var(--kp-accent-tint,#FCEAE1);border:1px solid rgba(232,66,10,.18)}
 .vo-card b{display:block;margin-bottom:6px}
 .vo-card .btn{margin-top:12px}
 
@@ -696,7 +695,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .card.v3 .card-title{font-size:13.5px;font-weight:700;line-height:1.25;margin:0 0 3px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:var(--ink,#1F1A14)}
 .card.v3 .card-meta2{font-size:11px;opacity:.62;margin:0 0 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card.v3 .tiertxt{font-size:10px;font-weight:700;opacity:.55;text-transform:uppercase;letter-spacing:.04em}
-.card.v3 .densechip{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:8px;background:rgba(139,92,246,.12);color:#7c3aed}
+.card.v3 .densechip{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:8px;background:var(--kp-live-tint,#E4F3E9);color:var(--kp-live,#0F8A3D)}
 .vegmark{position:absolute;top:8px;left:8px;width:16px;height:16px;border-radius:4px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.18)}
 .vegmark i{width:8px;height:8px;border-radius:50%}
 .vegmark.veg{border:1.5px solid #0f8a3d}.vegmark.veg i{background:#0f8a3d}
@@ -712,7 +711,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .chat-chips .chip{flex:0 0 auto}
 
 /* toast above the chat input, never behind it */
-.toast{bottom:calc(var(--nav-h,68px) + 118px) !important}
+
 
 /* mobile scale pass (designer spec) */
 @media (max-width:420px){
@@ -797,13 +796,13 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 @keyframes sheetup{from{transform:translateY(60px);opacity:.4}to{transform:none;opacity:1}}
 
 /* toast springs */
-.toast{animation:toastin .38s cubic-bezier(.2,.9,.3,1.25)}
+#kp-toast.show{animation:toastin .38s cubic-bezier(.2,.9,.3,1.25)}
 @keyframes toastin{from{opacity:0;transform:translateY(14px) scale(.94)}to{opacity:1;transform:none}}
 
 .pantrychip.on{background:#0f8a3d;color:#fff;border-color:#0f8a3d}
 
 @media (prefers-reduced-motion: reduce){
-  .signup .su-card,.signup .su-card>*,.signup .su-logo-img,.signup.bye,.view.vt.vt-l,.view.vt.vt-r,.nav-btn.on .ico,.sheet-wrap.open .sheet,#kp-sheet.open .sheet,.toast{animation:none}
+  .signup .su-card,.signup .su-card>*,.signup .su-logo-img,.signup.bye,.view.vt.vt-l,.view.vt.vt-r,.nav-btn.on .ico,.sheet-wrap.open .sheet,#kp-sheet.open .sheet,#kp-toast{animation:none}
 }
 
 /* v30.1: single-meal swap feedback */
@@ -813,11 +812,11 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 /* ===== v31: casing + data honesty + rank chips ===== */
 .ing-name,.cart-name b,.shop-aisle span,.pa-match-main,.pl-count,.deal-chip b{text-transform:capitalize}
 .data-note{font-size:12px;padding:8px 12px;border-radius:10px;background:rgba(245,158,11,.12);color:#92600a;margin:6px 0 10px}
-.rank-chips{margin:4px 0 10px}
+.rank-chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:4px 0 10px}
 
 /* ===== v32: the brutal declutter — CRED/Swiggy discipline ===== */
 /* spacing scale: sections breathe */
-.view{padding:18px 18px 96px}
+.view{padding:18px 18px var(--nav-clear)}
 .row-sec{margin:30px 0 0}
 .row-head{margin-bottom:12px}
 .page-head{margin-bottom:18px}
@@ -838,7 +837,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .hero-tag{font-size:10px;letter-spacing:.09em;text-transform:uppercase;font-weight:800}
 
 /* nav: Swiggy-style active pill */
-.bottom-nav{padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+.bottom-nav{padding:4px 8px}
 .nav-btn{position:relative;border-radius:14px}
 .nav-btn .lbl{font-size:10px;font-weight:700;letter-spacing:.01em}
 .nav-btn.on{background:rgba(232,66,10,.09)}
@@ -1013,3 +1012,59 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .cm-ask button{flex:0 0 auto;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.09);color:#FFF6EC;font-size:16px;display:flex;align-items:center;justify-content:center}
 .cm-ask button.listening{background:#F4530A;border-color:#F4530A}
 @media (prefers-reduced-motion: reduce){.cm-buddy .cmb-line.fresh{animation:none}}
+
+/* ===== v51: Photoroom-grade declutter pass ===== */
+/* Me: grouped list sections */
+.me-group h2 { margin-bottom: 4px; }
+.me-group .me-row { border-top: 1px solid #F1E9DE; padding: 12px 0; margin: 0; }
+.me-group .me-row:first-of-type { border-top: 0; }
+.me-row-col { display: block; }
+.me-row-col .chips { padding-top: 8px; }
+.chips-inline { margin: 0; padding: 0; overflow: visible; }
+.me-links { padding-top: 8px; padding-bottom: 8px; }
+.me-link { display: flex; align-items: center; justify-content: space-between; width: 100%;
+  padding: 13px 2px; font-size: 14px; font-weight: 700; color: var(--ink);
+  border-top: 1px solid #F1E9DE; text-align: left; }
+.me-link:first-of-type { border-top: 0; }
+.me-link i { font-style: normal; color: #C9BEB2; font-size: 17px; }
+.me-links .ver { padding: 12px 2px 4px; }
+
+/* Cart: one primary action + quiet links */
+.cart-from { font-size: 12.5px; color: var(--ink2); font-weight: 600; margin: 12px 2px 0; }
+.cart-from .from-chip { background: var(--green-soft); color: var(--green); }
+.cart-links { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 14px; }
+.cart-link { font-size: 13px; font-weight: 700; color: var(--ink2); padding: 8px 6px; }
+.cart-dot { width: 3px; height: 3px; border-radius: 50%; background: #D5C9BC; }
+
+/* Cook chat: full-height conversation, welcome state */
+.chat-hello { display: block; font-size: 15px; font-weight: 800; margin-bottom: 2px; }
+
+/* Compare: calm plan cards, best = accent ring (no overhang tag) */
+.plan-card.best { box-shadow: var(--shadow), inset 0 0 0 1.5px var(--accent); }
+.best-tag { position: static; display: inline-block; margin-bottom: 6px; font-size: 10px; font-weight: 800;
+  letter-spacing: .5px; text-transform: uppercase; color: var(--accent); background: var(--accent-soft);
+  padding: 3px 8px; border-radius: 8px; box-shadow: none; }
+.plat-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; }
+
+/* Recipe detail: pairing subline spacing (was inline style) */
+.pair-sub { margin: -4px 0 8px; }
+
+/* Home: more breathing room between shelves */
+.row-sec { margin-bottom: 28px; }
+.hero-sec { margin-bottom: 26px; }
+.home-actions { margin-bottom: 24px; }
+
+/* v51: sheet form atoms (profile editor + friends) */
+.sheet-title { font-size: 18px; font-weight: 800; margin: 4px 2px 10px; }
+.sheet-label { display: block; font-size: 12px; font-weight: 700; color: var(--ink2); margin: 10px 2px 5px; }
+.sheet-input { width: 100%; background: var(--card); border: 1.5px solid #EADFD3; border-radius: 13px; padding: 12px 13px; font-size: 15px; font-weight: 600; color: var(--ink); }
+.sheet-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+/* v51.1: recipe detail - sticky bar is ONE action; share lives in the actions row */
+.rf-sticky #sticky-cart { display: none; }
+.rf-sticky .primary { flex: 1; }
+.rf-sticky .btn { min-height: 52px; }
+.rf-cta .primary { flex: 1.6; }
+.rf-actions { margin-top: 14px; }
+.rf-actions .btn { min-height: 44px; font-size: 13.5px; }
+.rf-share { display: none; }

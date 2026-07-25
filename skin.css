@@ -13,9 +13,10 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 .v2 .page-head p { color: var(--kp-ink-2); font-size: var(--kp-fs-sm); }
 .v2 .row-sec > p:first-child, .v2 .deals-head { font-size: var(--kp-fs-h2); font-weight: var(--kp-fw-h2); letter-spacing: var(--kp-ls-h2); }
 
-/* bottom nav */
-.v2 .bottom-nav { height: 76px; padding: 8px 8px calc(12px + env(safe-area-inset-bottom, 0px));
-  background: rgba(255,249,242,.92); backdrop-filter: blur(14px); border-top: 1px solid var(--kp-hair); box-shadow: none; }
+/* bottom nav - floating pill (base geometry in styles.css; keep heights in sync) */
+.v2 .bottom-nav { height: 62px; padding: 4px 8px;
+  background: rgba(255,255,255,.93); backdrop-filter: saturate(1.5) blur(18px); border-top: 0;
+  box-shadow: 0 10px 32px rgba(80,40,10,.16), inset 0 0 0 1px rgba(80,40,10,.05); }
 .v2 .nav-btn, .v2 .nav-btn.on { background: none; border-radius: 0; }
 .v2 .nav-btn { color: var(--kp-ink-3); font: 700 10px/1 var(--kp-font); gap: 5px; padding-top: 6px; transition: color var(--kp-dur-2); }
 .v2 .nav-btn svg { width: 23px; height: 23px; }
@@ -119,7 +120,8 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 
 /* compare + cart */
 .v2 .plan-card { background: var(--kp-surface); border-radius: var(--kp-r-lg); box-shadow: var(--kp-e1); border: 1.5px solid transparent; }
-.v2 .plan-card.best, .v2 .plan-card.sel { border-color: var(--kp-accent); box-shadow: var(--kp-e2), 0 0 0 4px var(--kp-accent-tint); }
+.v2 .plan-card.best { border-color: var(--kp-accent); box-shadow: var(--kp-e2); }
+.v2 .plan-card.sel { border-color: var(--kp-ink); box-shadow: var(--kp-e2), 0 0 0 4px var(--kp-hair); }
 .v2 .cart-group { background: var(--kp-surface); border-radius: var(--kp-r-lg); box-shadow: var(--kp-e1); }
 .v2 .stepper { background: var(--kp-surface); border-radius: var(--kp-r-pill); box-shadow: inset 0 0 0 1.5px var(--kp-hair-2); height: 36px; padding: 0 4px; }
 .v2 .stepper button { width: 30px; height: 30px; border-radius: 50%; color: var(--kp-ink); background: none; }
@@ -165,8 +167,6 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 .v2 :is(button, input, select, textarea):focus-visible { outline: 2px solid var(--kp-accent); outline-offset: 2px; }
 
 /* motion (transform/opacity only) */
-.v2 .view-enter .card, .v2 .view-enter .row-sec, .v2 .view-enter .me-sec,
-.v2 .view-enter .plan-card, .v2 .view-enter .act-card { animation: kpIn var(--kp-dur-4) var(--kp-ease-out) backwards; }
 @keyframes kpIn { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) {
   .v2 *, .v2 *::before, .v2 *::after { animation: none !important; transition: opacity 120ms linear !important; }
@@ -190,17 +190,6 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 /* v2: home pills + plan sheet */
 .v2 .home-actions.pills .act-card { border-radius: var(--kp-r-md); box-shadow: var(--kp-e1); }
 .v2 .home-actions.pills .act-card b { font-size: 13.5px; letter-spacing: -.01em; }
-.v2 .plan-hero .ph-badge { background: var(--kp-accent-tint); color: var(--kp-accent); }
-.v2 .plan-hero .ph-price { color: var(--kp-ink); font-family: var(--kp-font); }
-.v2 .plan-hero .ph-price.ok { color: var(--kp-live); }
-.v2 .plan-hero .ph-line { color: var(--kp-ink-2); }
-.v2 .plan-hero .ph-claim { color: var(--kp-ink-3); }
-.v2 .ph-utr input { border-color: var(--kp-hair-2); background: var(--kp-surface); font-family: var(--kp-font); }
-.v2 .plan-table th { color: var(--kp-ink-3); }
-.v2 .plan-table th.pro, .v2 .plan-table td.pro { background: var(--kp-accent-tint); }
-.v2 .plan-table td { border-top: 1px solid var(--kp-hair); }
-.v2 .plan-table .pt-y { color: var(--kp-live); }
-.v2 .plan-table .pt-n { color: var(--kp-ink-3); opacity: .5; }
 
 /* ---- v50 cook companion (v2 light cookmode) ---- */
 .v2 .cm-buddy{background:var(--kp-surface-2,#F6EFE6);border-color:rgba(31,26,20,.08);color:#1F1A14}
