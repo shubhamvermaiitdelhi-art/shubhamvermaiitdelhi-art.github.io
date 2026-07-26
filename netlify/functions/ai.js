@@ -17,7 +17,7 @@ async function gemini(text, { system, maxTokens=512, json=false } = {}) {
 // calls repeat, so we serve them from memory and protect the Gemini quota.
 const MEMO = new Map(); // hash -> {t, body}
 const HITS = new Map(); // ip -> {t, n}
-const MEMO_TTL = 6 * 3600 * 1000, MEMO_MAX = 500, RATE_N = 60, RATE_WIN = 60 * 1000; // one rich chat turn = up to ~6 calls; 60/min supports a real conversation
+const MEMO_TTL = 24 * 3600 * 1000, MEMO_MAX = 800, RATE_N = 30, RATE_WIN = 60 * 1000; // live QA: the shared Gemini key is RPM-limited at Google, so cache HARD (planner/nutrition answers repeat across users) and cap each IP at 30/min - the client now spends <=4 calls per turn, so that still covers ~8 chat turns/min while one hot IP can no longer starve everyone else's quota
 function memoKey(s) { let h = 0; for (let i = 0; i < s.length; i++) { h = (h << 5) - h + s.charCodeAt(i); h |= 0; } return (h >>> 0).toString(36); }
 
 exports.handler = async (event) => {

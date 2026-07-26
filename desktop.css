@@ -1,0 +1,177 @@
+/* desktop.css - KhanaPro desktop layer. ASCII only. Loads LAST (after
+ * tokens/styles/skin/filter/pro) so equal-specificity ties resolve here.
+ * Zero renames: every selector already exists in the app DOM. Per-view
+ * scoping uses #view:has(...) / body:has(...) because view JS is frozen;
+ * browsers without :has() simply keep the safe narrow column.
+ *
+ * BP1 >=900px : fixed LEFT RAIL nav + 640px content column, sheets stay
+ *               phone-width centered, chat pinned to true bottom.
+ * BP2 >=1200px: 1120px canvas for Home/Recipes (4-col shelves + grid),
+ *               720px centered column for Compare/Cart/Me/Cook,
+ *               recipe detail becomes a fixed 44vw split view. */
+
+/* keyframes used by the >=900 sheet override (must keep the horizontal
+ * centering translate that styles.css sheetup keyframes would drop) */
+@keyframes kpSheetUpDesk {
+  from { transform: translateX(-50%) translateY(60px); opacity: .4; }
+  to   { transform: translateX(-50%); opacity: 1; }
+}
+
+/* ================= BP1: >=900px ================= */
+@media (min-width: 900px) {
+  /* no bottom pill nav on desktop: reclaim the bottom clearance.
+     48px also keeps #kp-payask (bottom: nav-clear + 64px) above the composer */
+  :root { --nav-clear: 48px; }
+
+  /* content column */
+  .view { max-width: 640px; }
+  .topbar { max-width: 640px; }
+  .view .page-head h1, .view .home-head h1 { font-size: 30px; }
+
+  /* ---- bottom pill -> fixed left rail (same DOM, same buttons) ----
+     .bottom-nav.bottom-nav ties .v2 .bottom-nav (0,2,0) and wins by order;
+     height:auto overrides skin.css height:62px */
+  .bottom-nav.bottom-nav {
+    left: 22px; right: auto; top: 50%; bottom: auto;
+    transform: translateY(-50%);
+    width: 78px; height: auto; max-height: calc(100vh - 44px);
+    flex-direction: column; justify-content: flex-start; gap: 6px;
+    padding: 14px 8px; border-radius: 26px; overflow-y: auto;
+  }
+  .bottom-nav .nav-btn {
+    flex: 0 0 auto; width: 100%; min-height: 56px;
+    border-radius: 14px; padding: 6px 2px; gap: 4px;
+  }
+  /* active dot (skin.css ::after) sits under the label in the column layout */
+  .bottom-nav .nav-btn.on::after { margin-top: 2px; }
+  /* badge hugs the icon inside the narrow rail button */
+  .bottom-nav #cart-badge { top: -5px; right: -8px; }
+
+  /* home: taller hero + stronger gradient for text legibility */
+  .hero-img .ph { height: 300px; }
+  .hero-txt { padding: 70px 20px 18px;
+    background: linear-gradient(transparent, rgba(20, 8, 0, .45) 30%, rgba(20, 8, 0, .88)); }
+  .hero-txt h2 { font-size: 26px; }
+  .home-actions.pills { grid-template-columns: repeat(4, 1fr); }
+
+  /* recipes: align the sticky bar bleed with the 18px view padding */
+  .lib-sticky { margin-left: -18px; margin-right: -18px;
+    padding-left: 18px; padding-right: 18px; }
+
+  /* chat: column matches the view; composer drops to the true bottom
+     (no pill nav to clear) and the log clears the fixed composer */
+  .chat-log { max-width: 640px; padding-bottom: 110px; }
+  .chat-input { left: 50%; right: auto; transform: translateX(-50%);
+    bottom: 26px; width: min(640px, 92vw); max-width: 640px; }
+
+  /* compare: plan cards pair up inside the column */
+  .plans { display: grid; grid-template-columns: 1fr 1fr;
+    gap: 10px; align-items: start; }
+
+  /* recipe detail pre-split: match the 640px column */
+  .rf-body { max-width: 640px; }
+  .rf-sticky { max-width: 640px; }
+
+  /* planner / pantry overlays match the column */
+  .pl-head, .pl-days, .pa-body { max-width: 640px; }
+
+  /* cook mode: readable centered ~760px column, larger step type */
+  .cookmode { padding-left: max(18px, calc(50vw - 380px));
+    padding-right: max(18px, calc(50vw - 380px)); }
+  .cookmode .cm-step { font-size: clamp(24px, 2.6vw, 32px); }
+
+  /* sheets: STAY bottom-anchored but phone-width, centered horizontally.
+     Keyframe override keeps translateX during the sheetup spring. */
+  .sheet-wrap .sheet { left: 50%; right: auto; width: min(560px, 96vw);
+    transform: translateX(-50%) translateY(100%); }
+  .sheet-wrap.open .sheet, #kp-sheet.open .sheet {
+    transform: translateX(-50%); animation-name: kpSheetUpDesk; }
+
+  /* floating chrome: toast above the composer, install prompt as corner card */
+  #kp-toast { bottom: 108px; }
+  #kp-install { left: auto; right: 24px; bottom: 24px; max-width: 380px; }
+}
+
+/* ================= BP2: >=1200px ================= */
+@media (min-width: 1200px) {
+  /* rail clearance: content centers in the space right of the rail;
+     fixed chrome (composer/toast) shifts by half the same offset */
+  :root { --rail-clear: 110px; }
+  body { padding-left: var(--rail-clear); }
+
+  /* narrow tabs (compare/cart/me/cook) read as a 720px centered column */
+  .view { max-width: 720px; }
+  .topbar { max-width: 720px; }
+
+  /* wide canvas for Home + Recipes only */
+  #view:has(.home-head), #view:has(.lib-head) {
+    max-width: 1120px; padding-left: 48px; padding-right: 48px; }
+  body:has(.home-head) .topbar, body:has(.lib-head) .topbar {
+    max-width: 1120px; padding-left: 48px; padding-right: 48px; }
+
+  /* ---- home: cinematic hero ---- */
+  #view:has(.home-head) .hero-img .ph { height: 380px; }
+  #view:has(.home-head) .hero-txt { padding: 110px 28px 24px;
+    background: linear-gradient(transparent, rgba(20, 8, 0, .5) 34%, rgba(20, 8, 0, .92)); }
+  #view:has(.home-head) .hero-txt h2 { font-size: 34px; line-height: 1.12;
+    letter-spacing: -.03em; max-width: 640px; }
+  #view:has(.home-head) .hero-cta { background: var(--accent, #E8420A);
+    margin-top: 14px; padding: 11px 20px; font-size: 13px; }
+  #view:has(.home-head) .search-fake { max-width: 720px; }
+
+  /* home shelves: h-scrollers become 4-col grids (cards need min-width:0) */
+  #view:has(.home-head) .row-sec .hscroll { display: grid;
+    grid-template-columns: repeat(4, 1fr); gap: 14px;
+    overflow: visible; padding: 4px 2px 6px; }
+  #view:has(.home-head) .row-sec .hscroll .card { min-width: 0; max-width: none; }
+
+  /* recipes: 4-col grid; sticky bar bleeds to the 48px view padding */
+  #view:has(.lib-head) .grid { grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  #view:has(.lib-head) .grid .card { min-width: 0; }
+  #view:has(.lib-head) .lib-sticky { margin-left: -48px; margin-right: -48px;
+    padding-left: 48px; padding-right: 48px; }
+
+  /* chat: 760px column centered on the content area (not the viewport) */
+  .chat-log { max-width: 760px; }
+  .chat-input { left: calc(50% + var(--rail-clear) / 2);
+    width: min(760px, 88vw); max-width: 760px; }
+  #kp-toast { left: calc(50% + var(--rail-clear) / 2); }
+
+  /* ---- recipe detail: SPLIT VIEW ----
+     hero fixed to the left 44vw full-height; body + action bar offset.
+     .recipe-full covers the rail (intended: it is modal). */
+  .recipe-full .rf-hero { position: fixed; left: 0; top: 0; bottom: 0;
+    width: 44vw; height: auto; z-index: 1; }
+  .recipe-full .rf-hero .ph, .recipe-full .rf-hero-grad { border-radius: 0; }
+  .recipe-full .rf-title-onimg { font-size: 32px; right: 80px; }
+  .recipe-full .rf-body { margin-left: 44vw; margin-right: 0;
+    max-width: 700px; padding: 34px 48px 30px; }
+  .recipe-full .rf-sticky { left: 44vw; right: 0; max-width: none;
+    margin: 0; padding-left: 48px; padding-right: 48px;
+    justify-content: flex-start; }
+  .recipe-full .rf-sticky .btn { flex: 0 1 auto; min-width: 240px; max-width: 340px; }
+
+  /* planner / pantry overlays widen a touch */
+  .pl-head, .pl-days, .pa-body { max-width: 720px; }
+}
+
+/* ================= pointer polish (mouse only) ================= */
+@media (hover: hover) and (min-width: 900px) {
+  .card:hover { transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(16, 10, 4, .12); }
+  .bottom-nav .nav-btn:hover { color: var(--ink, #1F1A14);
+    background: rgba(0, 0, 0, .045); }
+  .bottom-nav .nav-btn.on:hover { color: var(--accent, #E8420A);
+    background: rgba(232, 66, 10, .09); }
+  .chip:not(.on):hover, .qchip:not(.on):hover, .fbtn:hover,
+  .mood:hover, .me-link:hover { background: rgba(0, 0, 0, .05); }
+  .fav:hover { transform: scale(1.12); }
+  .me-link:hover i { color: var(--accent, #E8420A); }
+  .act-card:hover { transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(16, 10, 4, .1); }
+  .plan-day:hover, .plan-card:hover { box-shadow: var(--shadow-lift,
+    0 12px 32px rgba(31, 26, 20, .14)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card:hover, .fav:hover, .act-card:hover { transform: none; }
+}

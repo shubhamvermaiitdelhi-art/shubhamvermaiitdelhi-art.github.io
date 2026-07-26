@@ -1068,3 +1068,15 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .rf-actions { margin-top: 14px; }
 .rf-actions .btn { min-height: 44px; font-size: 13.5px; }
 .rf-share { display: none; }
+
+/* ===== cook-done card ===== */
+.cook-done { position: fixed; inset: 0; z-index: 130; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(24, 14, 6, .45); }
+.cook-done .cd-card { width: 100%; max-width: 340px; background: #FFF9F2; border-radius: 24px; padding: 30px 22px 22px; text-align: center; box-shadow: 0 20px 50px rgba(0, 0, 0, .28); animation: cd-rise .28s var(--ease-out, ease) both; }
+.cook-done .cd-title { font-size: 23px; font-weight: 800; color: var(--ink); margin: 0 0 4px; line-height: 1.2; }
+.cook-done .cd-line { font-size: 14px; color: var(--ink2); margin: 0; }
+.cook-done .cd-streak { font-size: 15px; font-weight: 800; color: var(--accent); margin: 8px 0 0; }
+.cook-done .cd-nutri { font-size: 13px; font-weight: 700; color: var(--ink2); margin: 6px 0 0; }
+.cook-done .cd-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.cook-done .cd-actions .btn { width: 100%; min-height: 48px; }
+@keyframes cd-rise { from { opacity: 0; transform: translateY(18px) scale(.97); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .cook-done .cd-card { animation: none; } }
