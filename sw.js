@@ -1,9 +1,9 @@
-/* KhanaPro SW 2.0.50852 — self-updating */
-const V = "kp-2.0.50852";
-const SHELL = ["/", "/index.html", "/app.js?v=2.0.50852", "/styles.css?v=2.0.50852", "/tokens.css?v=2.0.50852", "/skin.css?v=2.0.50852", "/filter.css?v=2.0.50852", "/pro.css?v=2.0.50852", "/desktop.css?v=2.0.50852", "/config.js?v=2.0.50852",
+/* KhanaPro SW 2.0.50895 — self-updating */
+const V = "kp-2.0.50895";
+const SHELL = ["/", "/index.html", "/app.js?v=2.0.50895", "/styles.css?v=2.0.50895", "/tokens.css?v=2.0.50895", "/skin.css?v=2.0.50895", "/filter.css?v=2.0.50895", "/pro.css?v=2.0.50895", "/desktop.css?v=2.0.50895", "/config.js?v=2.0.50895",
   "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png",
   "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js","/vendor/scaling.js",
-  "/kb/kb_ingested.js","/kb/kb_part_1.js","/kb/kb_part_10.js"];
+  "/kb/kb_part_1.js","/kb/kb_part_10.js","/kb/kb_part_11.js"];
 self.addEventListener("install", e => e.waitUntil(
   caches.open(V).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: "reload" })))).catch(() => {}).then(() => self.skipWaiting())
 ));
