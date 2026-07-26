@@ -59,8 +59,9 @@
     padding-left: 18px; padding-right: 18px; }
 
   /* chat: column matches the view; composer drops to the true bottom
-     (no pill nav to clear) and the log clears the fixed composer */
-  .chat-log { max-width: 640px; padding-bottom: 110px; }
+     (no pill nav to clear) and the log clears the fixed composer
+     (composer bottom 26px + ~54px tall -> 120px keeps the last reply clear) */
+  .chat-log { max-width: 640px; padding-bottom: 120px; }
   .chat-input { left: 50%; right: auto; transform: translateX(-50%);
     bottom: 26px; width: min(640px, 92vw); max-width: 640px; }
 
