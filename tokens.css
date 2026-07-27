@@ -3,13 +3,13 @@
  * Consumed ONLY by skin.css under .v2 scope. Legacy styles.css untouched. */
 :root{
   /* — surfaces — */
-  --kp-bg:#FFF9F2; --kp-bg-sunk:#F6ECDF; --kp-surface:#FFFFFF; --kp-surface-2:#FFFDFA;
-  --kp-scrim:rgba(24,18,12,.58); --kp-scrim-soft:linear-gradient(180deg,rgba(24,18,12,0) 34%,rgba(24,18,12,.72) 100%);
-  --kp-dark:#171310; --kp-dark-2:#221C16;
+  --kp-bg:#FAFAFA; --kp-bg-sunk:#F1F1F0; --kp-surface:#FFFFFF; --kp-surface-2:#FCFCFC;
+  --kp-scrim:rgba(12,12,12,.58); --kp-scrim-soft:linear-gradient(180deg,rgba(12,12,12,0) 34%,rgba(12,12,12,.72) 100%);
+  --kp-dark:#121212; --kp-dark-2:#1D1D1D;
 
   /* — ink — */
-  --kp-ink:#1F1A14; --kp-ink-2:#6E6258; --kp-ink-3:#9C9186; --kp-ink-4:#C4B9AC;
-  --kp-hair:rgba(31,26,20,.08); --kp-hair-2:rgba(31,26,20,.14); --kp-on-dark:#FBF4EC; --kp-on-dark-2:rgba(251,244,236,.62);
+  --kp-ink:#141414; --kp-ink-2:#5C5C5C; --kp-ink-3:#7E7E7E; --kp-ink-4:#C6C6C5;
+  --kp-hair:rgba(0,0,0,.07); --kp-hair-2:rgba(0,0,0,.13); --kp-on-dark:#F6F6F5; --kp-on-dark-2:rgba(246,246,245,.62);
 
   /* — accent (spend it once per screen) — */
   --kp-accent:#E8420A; --kp-accent-press:#C4370A; --kp-accent-tint:#FCEAE1; --kp-accent-ink:#FFFFFF;
@@ -39,9 +39,9 @@
   --kp-r-xs:8px; --kp-r-sm:12px; --kp-r-md:16px; --kp-r-lg:20px; --kp-r-xl:24px; --kp-r-card:20px; --kp-r-pill:999px;
 
   /* — elevation — */
-  --kp-e1:0 1px 2px rgba(31,26,20,.04),0 1px 3px rgba(31,26,20,.05);
-  --kp-e2:0 6px 18px -6px rgba(31,26,20,.14),0 2px 5px rgba(31,26,20,.05);
-  --kp-e3:0 20px 44px -12px rgba(31,26,20,.24),0 6px 14px rgba(31,26,20,.08);
+  --kp-e1:0 1px 2px rgba(0,0,0,.04),0 1px 3px rgba(0,0,0,.05);
+  --kp-e2:0 6px 18px -6px rgba(0,0,0,.13),0 2px 5px rgba(0,0,0,.05);
+  --kp-e3:0 20px 44px -12px rgba(0,0,0,.22),0 6px 14px rgba(0,0,0,.08);
 
   /* — motion — */
   --kp-dur-1:120ms; --kp-dur-2:200ms; --kp-dur-3:280ms; --kp-dur-4:340ms;
