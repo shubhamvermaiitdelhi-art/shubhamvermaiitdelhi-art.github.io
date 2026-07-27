@@ -21,7 +21,7 @@
   --kp-danger:#C4241A; --kp-danger-tint:#FBE7E5;
 
   /* — type scale — */
-  --kp-font:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --kp-font:'Manrope',system-ui,-apple-system,sans-serif;
   --kp-mono:'JetBrains Mono',ui-monospace,monospace;
   --kp-fs-display:33px; --kp-lh-display:1.04; --kp-ls-display:-.032em; --kp-fw-display:800;
   --kp-fs-h1:25px;      --kp-lh-h1:1.08;      --kp-ls-h1:-.026em;      --kp-fw-h1:800;
