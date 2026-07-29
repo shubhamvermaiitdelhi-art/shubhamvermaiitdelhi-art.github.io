@@ -32,6 +32,11 @@
 .cmpv3 .pc-top { display: flex; align-items: center; gap: 12px; }
 .cmpv3 .pc-tile { width: 34px; height: 34px; border-radius: 9px; background: #F4F3F0; display: flex; align-items: center; justify-content: center; font: 700 15px/15px var(--kp-font); color: var(--kp-ink-2); flex: none; }
 .cmpv3 .plan-card.best .pc-tile { background: rgba(255,255,255,.10); color: rgba(255,255,255,.8); }
+/* branded tile: colour comes from the inline registry style (inline beats both
+   rules above, including on the inverted card) - the store mark is identity,
+   not chrome, so it is never washed out. Only the ring is set here. */
+.cmpv3 .pc-tile.branded { font-weight: 800; letter-spacing: -.02em; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+.cmpv3 .plan-card.best .pc-tile.branded { box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
 .cmpv3 .pc-name { font: 700 17px/17px var(--kp-font); letter-spacing: -.01em; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .cmpv3 .pc-total { font: 800 20px/20px var(--kp-font); letter-spacing: -.03em; font-variant-numeric: tabular-nums; white-space: nowrap; flex: none; }
 
