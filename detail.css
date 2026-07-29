@@ -1,0 +1,168 @@
+/* KhanaPro detail screen - claret/paper redesign (design_handoff_khanapro screen 4).
+   Every selector scoped under .recipe-full. Loads after styles.css/skin.css and
+   overrides the legacy detail rules. 16px gutter. ASCII only. */
+
+.recipe-full { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-font); }
+
+/* ---------- hero: 300px, full-bleed photo, double scrim ---------- */
+.recipe-full .rf-hero { position: relative; height: 300px; }
+.recipe-full .rf-hero .ph { height: 100%; border-radius: 0; }
+.recipe-full .rf-hero .ph img { animation: none; } /* kenburns zoom is off-spec motion */
+.recipe-full .rf-hero .ph-mono span { font-size: 64px; }
+.recipe-full .rf-scrim { position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  background: linear-gradient(to bottom, rgba(19,18,17,.42) 0%, rgba(19,18,17,0) 34%, rgba(19,18,17,0) 46%, rgba(19,18,17,.72) 100%); }
+
+.recipe-full .rf-back { position: absolute; top: calc(16px + env(safe-area-inset-top, 0px)); left: 16px;
+  z-index: 6; width: 38px; height: 38px; border-radius: 50%; border: 0;
+  background: rgba(255,255,255,.92); color: var(--kp-ink); box-shadow: none;
+  display: flex; align-items: center; justify-content: center; cursor: pointer; font-weight: 800; }
+
+.recipe-full .rf-watch { position: absolute; top: calc(16px + env(safe-area-inset-top, 0px)); right: 16px;
+  z-index: 6; height: 38px; padding: 0 14px; border-radius: 999px; border: 0;
+  background: rgba(255,255,255,.92); color: var(--kp-ink);
+  font: 700 13px/13px var(--kp-font); letter-spacing: -.01em; white-space: nowrap; cursor: pointer; }
+
+/* hidden duplicate share hook - id-less, [data-share] kept for the wired pair */
+.recipe-full .rf-share { display: none; }
+
+/* honesty tag on stand-in photos: keep the words, drop the yellow shout */
+.recipe-full .rf-hero .rep-tag { top: auto; bottom: 112px; right: 16px;
+  background: rgba(19,18,17,.45); color: rgba(255,255,255,.75); }
+
+.recipe-full .rf-hero-text { position: absolute; left: 20px; right: 20px; bottom: 20px; z-index: 2; }
+.recipe-full .rf-eyebrow { display: flex; align-items: center; gap: 8px;
+  font: 600 11px/11px var(--kp-font); letter-spacing: .09em; text-transform: uppercase;
+  color: rgba(255,255,255,.7); }
+.recipe-full .rf-eyebrow span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.recipe-full .rf-eyebrow .vegdot { position: static; bottom: auto; right: auto; width: 12px; height: 12px;
+  border-radius: 3px; flex: none; background: rgba(255,255,255,.92);
+  display: flex; align-items: center; justify-content: center; }
+.recipe-full .rf-eyebrow .vegdot::after { width: 5px; height: 5px; }
+.recipe-full .rf-title-onimg { position: static; margin: 8px 0 0; color: #fff;
+  font: 800 27px/31px var(--kp-font); letter-spacing: -.03em; text-shadow: none; text-wrap: pretty; }
+.recipe-full .rf-hero-sub { margin: 6px 0 0; color: rgba(255,255,255,.78);
+  font: 600 14px/18px var(--kp-font); letter-spacing: -.01em; }
+.recipe-full .rf-hero-sub .cost-pill { background: none; box-shadow: none; padding: 0;
+  font: inherit; color: inherit; border-radius: 0; }
+
+/* ---------- body ---------- */
+.recipe-full .rf-body { padding: 0 16px 0; max-width: 560px; margin: 0 auto; }
+.recipe-full .rf-card { background: var(--kp-surface); border-radius: 18px; box-shadow: var(--kp-e1); }
+
+/* ---------- servings + nutrition (TOTAL for N) ---------- */
+.recipe-full .rf-nutri { margin-top: 18px; padding: 16px 18px 18px; }
+.recipe-full .rf-serv-row { display: flex; align-items: center; justify-content: space-between; }
+.recipe-full .rf-serv-lbl { font: 700 15px/15px var(--kp-font); white-space: nowrap; flex: none; }
+.recipe-full .rf-stepper { display: flex; align-items: center; background: #EDEBE6; border-radius: 11px; padding: 3px; }
+.recipe-full .rf-stepper button { width: 34px; height: 32px; border-radius: 9px; border: 0;
+  background: #fff; color: var(--kp-ink); font: 700 18px/18px var(--kp-font);
+  box-shadow: var(--kp-e1); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.recipe-full .rf-stepper b { width: 38px; text-align: center;
+  font: 800 16px/16px var(--kp-font); font-variant-numeric: tabular-nums; }
+.recipe-full .rf-rule { height: 1px; background: var(--kp-hair); margin: 16px -18px 0; }
+.recipe-full .rf-stats { display: flex; justify-content: space-between; padding-top: 16px; }
+.recipe-full .rf-stat b { display: block; font: 800 22px/22px var(--kp-font);
+  letter-spacing: -.03em; font-variant-numeric: tabular-nums; color: var(--kp-ink); }
+.recipe-full .rf-stat span { display: block; margin-top: 5px; font: 700 9px/9px var(--kp-font);
+  letter-spacing: .09em; color: var(--kp-ink-3); white-space: nowrap; }
+.recipe-full .rf-nutri-foot { display: flex; align-items: center; gap: 7px; margin-top: 14px;
+  font: 600 11px/13px var(--kp-font); color: var(--kp-ink-3); }
+.recipe-full .rf-nutri-foot i { width: 6px; height: 6px; border-radius: 50%;
+  border: 1.5px solid #C2BEB5; background: none; flex: none; box-sizing: border-box; }
+.recipe-full .rf-nutri-loading { padding-top: 14px; font: 600 12px/17px var(--kp-font); color: var(--kp-ink-3); }
+
+/* ---------- section eyebrows ---------- */
+.recipe-full .rf-sec { margin: 26px 0 0; }
+.recipe-full .rf-eyerow { display: flex; align-items: baseline; justify-content: space-between; margin-top: 26px; }
+.recipe-full .rf-eye, .recipe-full .rf-sec h2 { margin: 0;
+  font: 800 12px/12px var(--kp-font); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--kp-ink); }
+.recipe-full .rf-eye { white-space: nowrap; flex: none; }
+.recipe-full .rf-hint { font: 600 12px/12px var(--kp-font); color: var(--kp-ink-3); white-space: nowrap; flex: none; }
+.recipe-full .rf-sec h2 .muted { display: none; }
+.recipe-full .rf-sec .pair-sub { margin: 10px 0 0; font: 600 12px/16px var(--kp-font); color: var(--kp-ink-3); }
+.recipe-full .rf-sec .hscroll { margin-top: 12px; }
+
+/* ---------- ingredients: tick what you have ---------- */
+.recipe-full .std-note { margin-top: 12px; }
+.recipe-full .ing-list { margin-top: 12px; list-style: none; background: var(--kp-surface);
+  border-radius: 18px; padding: 0 18px; box-shadow: var(--kp-e1); overflow: hidden; }
+.recipe-full .ing-list li { display: flex; align-items: center; gap: 12px; height: 48px; padding: 0;
+  border-bottom: 1px solid #F0EEE9; background: none; cursor: pointer; transition: none; }
+.recipe-full .ing-list li:last-child { border-bottom: 0; }
+.recipe-full .ing-list li.have { background: none; }
+.recipe-full .ing-check { width: 20px; height: 20px; border-radius: 6px; flex: none;
+  background: #fff; border: 1.5px solid #D3CFC7; box-sizing: border-box; position: relative;
+  color: transparent; font-size: 0; display: block;
+  transition: background var(--t-state) var(--ease-state), border-color var(--t-state) var(--ease-state),
+    transform var(--t-press) var(--ease-state); }
+.recipe-full .ing-check::after { content: ""; position: absolute; left: 6px; top: 2px;
+  width: 5px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0); transform-origin: center;
+  transition: transform var(--t-state) var(--ease-state); }
+.recipe-full .ing-list li.have .ing-check { background: var(--kp-ink); border-color: var(--kp-ink); }
+.recipe-full .ing-list li.have .ing-check::after { transform: rotate(45deg) scale(1); }
+.recipe-full .ing-list li:active .ing-check { transform: scale(.86); } /* MOTION.md 02: ticks press harder */
+/* MOTION.md 07: label colour arrives over 340ms, after the 220ms box */
+.recipe-full .ing-name { flex: 1; font: 600 15px/19px var(--kp-font); letter-spacing: -.01em;
+  color: var(--kp-ink); text-decoration-color: transparent;
+  transition: color 340ms var(--ease-state), text-decoration-color 340ms var(--ease-state); }
+.recipe-full .ing-list li.have .ing-name { color: var(--kp-ink-4); text-decoration: line-through;
+  text-decoration-color: var(--kp-ink-4); }
+.recipe-full .ing-qty { font: 700 13px/13px var(--kp-font); color: var(--kp-ink-2);
+  font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; flex: none; }
+
+/* basket CTA: ink fill while items are missing; quiet outline once you have it all */
+.recipe-full .rf-basket { display: block; width: 100%; margin-top: 12px; height: 50px;
+  border-radius: 14px; border: 0; background: var(--kp-ink); color: #fff;
+  font: 700 15px/15px var(--kp-font); letter-spacing: -.01em; cursor: pointer;
+  transition: background var(--t-state) var(--ease-state), color var(--t-state) var(--ease-state); }
+.recipe-full .rf-basket.all-have { background: var(--kp-surface); color: var(--kp-ink);
+  border: 1px solid var(--kp-border); }
+
+/* ---------- method: 18px numeral column ---------- */
+.recipe-full .rf-steps { margin: 14px 0 0; padding: 0; list-style: none; counter-reset: none;
+  display: flex; flex-direction: column; gap: 20px; }
+.recipe-full .rf-steps li { counter-increment: none; display: flex; gap: 12px; padding: 0;
+  font: 500 15px/22px var(--kp-font); color: #3C3A36; }
+.recipe-full .rf-steps li::before { content: none; }
+.recipe-full .st-num { width: 18px; flex: none; font: 800 13px/22px var(--kp-font);
+  color: var(--kp-ink-4); font-variant-numeric: tabular-nums; }
+.recipe-full .st-body { flex: 1; min-width: 0; text-wrap: pretty; }
+
+/* ---------- quiet secondary actions (demoted: log / share / compare) ---------- */
+.recipe-full .rf-actions { display: flex; gap: 8px; margin-top: 26px; }
+.recipe-full .rf-qbtn { flex: 1; height: 40px; border-radius: 12px; cursor: pointer;
+  background: var(--kp-surface); border: 1px solid var(--kp-border); box-shadow: none;
+  font: 600 13px/13px var(--kp-font); color: var(--kp-ink-2); white-space: nowrap; }
+.recipe-full .rf-qbtn.wide { flex: none; width: 100%; margin-top: 12px; height: 44px; }
+
+/* ---------- video-only honesty card ---------- */
+.recipe-full .vo-card { margin-top: 0; background: var(--kp-surface); border-radius: 18px;
+  padding: 18px; box-shadow: var(--kp-e1); }
+.recipe-full .vo-card b { display: block; font: 800 15px/19px var(--kp-font); letter-spacing: -.01em; }
+.recipe-full .vo-card p { margin: 8px 0 0; font: 500 13px/19px var(--kp-font); color: var(--kp-ink-2); }
+.recipe-full .vo-card .rf-basket { margin-top: 14px; }
+
+/* ---------- sticky bar: save square + cook CTA over a paper fade ---------- */
+.recipe-full .rf-space { height: 112px; }
+.recipe-full .rf-sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
+  display: flex; gap: 12px; max-width: 560px; margin: 0 auto;
+  padding: 14px 16px calc(22px + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(to top, #F4F3F0 62%, transparent); }
+.recipe-full .rf-save { width: 56px; height: 56px; flex: none; border-radius: 16px;
+  background: var(--kp-surface); border: 1px solid var(--kp-border); box-shadow: none;
+  color: var(--kp-ink); font-size: 22px; line-height: 1; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; }
+.recipe-full .rf-save.on { color: var(--kp-accent); }
+.recipe-full .rf-cta { flex: 1; height: 56px; border-radius: 16px; border: 0;
+  background: var(--kp-accent); color: #fff; cursor: pointer;
+  font: 700 17px/17px var(--kp-font); letter-spacing: -.01em; white-space: nowrap;
+  font-variant-numeric: tabular-nums; }
+.recipe-full .rf-cta:active { background: var(--kp-accent-press); }
+
+/* ---------- desktop split view (desktop.css moves the hero to a fixed 44vw
+   panel at >=1200px and bumps the title to 32px; give it matching leading) --- */
+@media (min-width: 1200px) {
+  .recipe-full .rf-title-onimg { line-height: 37px; }
+}

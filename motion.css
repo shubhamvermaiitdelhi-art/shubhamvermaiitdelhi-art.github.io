@@ -1,0 +1,48 @@
+/* KhanaPro motion system - MOTION.md 1:1. Two curves, five durations.
+ * 10 keyframes, press feedback, reveal states, reduced-motion collapse.
+ * Loaded after tokens.css; consumed by every screen. ASCII only. */
+
+@keyframes kpRise  { from { opacity:0; transform:translateY(10px) } to { opacity:1; transform:none } }
+@keyframes kpIn    { from { opacity:0; transform:translateY(6px) scale(.98) } to { opacity:1; transform:none } }
+@keyframes kpBar   { from { transform:scaleX(0) } to { transform:scaleX(1) } }
+@keyframes kpSheet { 0% { transform:translateY(100%) } 72% { transform:translateY(-6px) } 100% { transform:translateY(0) } }
+@keyframes kpScrim { from { opacity:0 } to { opacity:1 } }
+@keyframes kpRing  { 0% { transform:scale(1); opacity:.5 } 70%,100% { transform:scale(2.6); opacity:0 } }
+@keyframes kpDot   { 0%,60%,100% { opacity:.25; transform:translateY(0) } 30% { opacity:1; transform:translateY(-3px) } }
+@keyframes kpMask  { from { opacity:0; transform:translateY(100%) } to { opacity:1; transform:none } }
+@keyframes kpWipe  { from { clip-path:inset(0 100% 0 0) } to { clip-path:inset(0 0 0 0) } }
+@keyframes kpFadeSwap { 0% { opacity:0; transform:translateY(4px) } 10%,100% { opacity:1; transform:none } }
+
+/* 02 - press feedback: every tappable, scale alone, no colour change */
+[data-tap] { transition: transform var(--t-press) var(--ease-state); }
+[data-tap]:active { transform: scale(.972); }
+[data-tap-check]:active { transform: scale(.86); } /* checkbox presses harder */
+
+/* 04 - scroll reveal initial state (motion.js flips it; never traps content) */
+.kp-reveal { opacity:0; transform:translateY(18px);
+  transition: opacity var(--t-reveal) var(--ease-out), transform var(--t-reveal) var(--ease-out); }
+.kp-reveal.kp-shown, .no-anim .kp-reveal { opacity:1; transform:none; }
+
+/* 01 - odometer digit cells (motion.js builds strips; heights set inline per use) */
+.kp-odo { display:inline-flex; overflow:hidden; vertical-align:bottom; }
+.kp-odo b { display:block; font-variant-numeric:tabular-nums; font-weight:inherit; }
+.kp-odo .kp-strip { display:block; transition: transform var(--t-roll) var(--ease-out); }
+
+/* 06 - quantity bars: growth reads as measurement */
+.kp-bar-fill { transform-origin:left; animation: kpBar 800ms var(--ease-out) 250ms both; }
+
+/* 08 - live ring: the only loop in the product */
+.kp-live-dot { position:relative; width:8px; height:8px; border-radius:50%; background:var(--kp-ink); flex:none; }
+.kp-live-dot::after { content:""; position:absolute; inset:-1.5px; border-radius:50%;
+  border:1.5px solid var(--kp-ink); animation: kpRing 2600ms var(--ease-out) infinite; }
+
+/* 09 - thinking dots */
+.kp-think { display:flex; gap:5px; align-items:center; height:24px; }
+.kp-think i { width:6px; height:6px; border-radius:50%; background:var(--kp-ink); animation: kpDot 1100ms infinite; }
+.kp-think i:nth-child(2) { animation-delay:150ms; }
+.kp-think i:nth-child(3) { animation-delay:300ms; }
+
+/* 10 - reduced motion: global, non-negotiable */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration:.001s !important; transition-duration:.001s !important }
+}

@@ -1,0 +1,108 @@
+/* KhanaPro chat screen - claret/paper redesign (spec: README screen 3 - Cook AI).
+ * Scope: EVERY selector lives under .cookai (the chat screen root rendered by
+ * views/cook.js). Loads after styles.css + skin.css so equal-specificity ties win.
+ * ASCII only. Pinned contracts kept: #chat-q #chat-form #chat-log #chat-mic,
+ * .msg.me / .msg.ai, .card + .nut kcal, .dots on the thinking indicator. */
+
+/* ---------- screen frame: 20px gutter (view gives 16, we add 4) ---------- */
+.cookai { padding: 0 4px; }
+
+/* ---------- header ---------- */
+.cookai .ck-head { padding: 6px 0 14px; }
+.cookai .ck-head h1 { margin: 0; font: 800 20px/24px var(--kp-font); letter-spacing: -.02em; color: var(--kp-ink); }
+.cookai .ck-head p { margin: 3px 0 0; font: 600 12px/16px var(--kp-font); letter-spacing: .01em; color: var(--kp-ink-3); }
+
+/* ---------- thread ---------- */
+.cookai .chat-log { gap: 18px; padding-top: 4px; }
+/* uniform 18px turn rhythm - kill the old +4px speaker-change bump */
+.cookai .chat-log .msg.me + .msg.ai, .cookai .chat-log .msg.ai + .msg.me { margin-top: 0; }
+/* paint() re-renders the whole log every turn: only the NEWEST message animates,
+ * older turns must never re-enter */
+.cookai .msg { animation: none; }
+.cookai .msg:last-child { animation: kpIn 380ms var(--ease-out) both; }
+
+/* user message: ink fill, white text, 18 18 6 18 */
+.cookai .msg.me {
+  align-self: flex-end; max-width: 78%;
+  background: var(--kp-ink); color: #fff;
+  border-radius: 18px 18px 6px 18px; padding: 12px 15px;
+  font: 600 15px/21px var(--kp-font); letter-spacing: -.01em;
+  box-shadow: none;
+}
+
+/* assistant message: NO bubble - plain text on the paper */
+.cookai .msg.ai {
+  align-self: flex-start; max-width: 88%;
+  background: transparent; box-shadow: none; border: none;
+  border-radius: 0; padding: 0;
+  font: 500 16px/24px var(--kp-font); letter-spacing: -.01em; color: var(--kp-ink);
+}
+.cookai .chat-hello { font: 600 16px/24px var(--kp-font); letter-spacing: -.01em; margin: 0; }
+
+/* ---------- thinking: 3 x 6px ink dots in a 24px row, nothing else ---------- */
+.cookai .kp-think { height: 24px; }
+.cookai .kp-think i { margin: 0; background: var(--kp-ink); }
+
+/* ---------- in-chat recipe card (v4 anatomy, chat-scoped 16:9 skin) ---------- */
+.cookai .chat-cards { margin-top: 14px; gap: 12px; padding: 2px 2px 6px; }
+.cookai .chat-cards .card {
+  min-width: 256px; max-width: 280px;
+  border-radius: 16px; box-shadow: var(--kp-e1);
+}
+/* newest reply only: card lands 120ms after the text with kpIn */
+.cookai .msg:last-child .chat-cards .card { animation: kpIn 500ms var(--ease-out) 120ms both; }
+.cookai .chat-cards .card.v4 .ph { aspect-ratio: 16 / 9; }
+.cookai .chat-cards .card.v4 .ph-scrim { height: 40%; background: linear-gradient(to top, rgba(19,18,17,.40), rgba(19,18,17,0)); }
+.cookai .chat-cards .card.v4 .card-body { padding: 12px 14px 14px; }
+.cookai .chat-cards .card.v4 .card-title { font-size: 16px; line-height: 20px; min-height: 0; }
+.cookai .chat-cards .card.v4 .card-meta2 { margin-top: 8px; }
+/* "Cook this" CTA: pure CSS affordance - the whole card is (and stays) the one
+ * tap target on the existing open-recipe path. No DOM/text change, no new flow. */
+.cookai .chat-cards .card.v4 .card-body::after {
+  content: "Cook this"; display: flex; align-items: center; justify-content: center;
+  height: 40px; margin-top: 12px; border-radius: 11px;
+  background: var(--kp-ink); color: #fff;
+  font: 700 14px/1 var(--kp-font); letter-spacing: -.01em;
+}
+
+/* day-plan rows keep their compact card look inside the bubble-less message */
+.cookai .dp-plan .chat-cards { margin-top: 8px; }
+
+/* ---------- chips: h36 r18 surface hairline, one scrolling row ---------- */
+.cookai .chat-chips {
+  display: flex; flex-wrap: nowrap; align-items: center; gap: 8px;
+  margin-top: 12px; padding: 2px 0 6px;
+  overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.cookai .chat-chips::-webkit-scrollbar { display: none; }
+.cookai .chat-chips .chip {
+  flex: none; height: 36px; border-radius: 18px; padding: 0 14px;
+  background: var(--kp-surface); color: var(--kp-ink);
+  font: 600 13px/13px var(--kp-font); letter-spacing: -.01em; white-space: nowrap;
+  box-shadow: inset 0 0 0 1px var(--kp-border);
+}
+.cookai .fb { margin-left: auto; flex: none; display: flex; align-items: center; gap: 2px; }
+
+/* ---------- composer: field h56 r18, mic 40 circle, send 40 accent circle ----------
+ * Positioning (fixed bottom, tab-bar clearance, desktop centering) stays 100% in
+ * styles.css / desktop.css - visual skin only here, clearance never reduced. */
+.cookai #chat-form.chat-input {
+  height: 56px; align-items: center; gap: 8px;
+  padding: 0 8px 0 18px; border-radius: 18px; border: none;
+  background: var(--kp-surface);
+  box-shadow: inset 0 0 0 1px var(--kp-border-2), 0 1px 2px rgba(0,0,0,.05);
+}
+.cookai #chat-form.chat-input input { font: 500 15px/20px var(--kp-font); color: var(--kp-ink); }
+.cookai #chat-form.chat-input input::placeholder { color: var(--kp-ink-3); font-weight: 500; }
+.cookai #chat-form.chat-input .mic {
+  width: 40px; height: 40px; border-radius: 50%; flex: none; padding: 0;
+  background: var(--kp-disabled-fill); color: var(--kp-ink-2);
+  display: flex; align-items: center; justify-content: center;
+}
+.cookai #chat-form.chat-input .mic[hidden] { display: none; } /* display:flex must never defeat the no-SpeechRecognition hidden attr */
+.cookai #chat-form.chat-input .mic.listening { background: var(--kp-ink); color: #fff; }
+.cookai #chat-form.chat-input .send {
+  width: 40px; height: 40px; border-radius: 50%; flex: none; padding: 0;
+  background: var(--kp-accent); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 0;
+}

@@ -117,7 +117,7 @@
     background: linear-gradient(transparent, rgba(0,0,0, .5) 34%, rgba(0,0,0, .92)); }
   #view:has(.home-head) .hero-txt h2 { font-size: 34px; line-height: 1.12;
     letter-spacing: -.03em; max-width: 640px; }
-  #view:has(.home-head) .hero-cta { background: var(--accent, #E8420A);
+  #view:has(.home-head) .hero-cta { background: var(--accent, #8E2C3F);
     margin-top: 14px; padding: 11px 20px; font-size: 13px; }
   #view:has(.home-head) .search-fake { max-width: 720px; }
 
@@ -161,14 +161,14 @@
 @media (hover: hover) and (min-width: 900px) {
   .card:hover { transform: translateY(-3px);
     box-shadow: 0 10px 28px rgba(0,0,0, .12); }
-  .bottom-nav .nav-btn:hover { color: var(--ink, #141414);
+  .bottom-nav .nav-btn:hover { color: var(--ink, #131211);
     background: rgba(0, 0, 0, .045); }
-  .bottom-nav .nav-btn.on:hover { color: var(--accent, #E8420A);
+  .bottom-nav .nav-btn.on:hover { color: var(--accent, #8E2C3F);
     background: rgba(232, 66, 10, .09); }
   .chip:not(.on):hover, .qchip:not(.on):hover, .fbtn:hover,
   .mood:hover, .me-link:hover { background: rgba(0, 0, 0, .05); }
   .fav:hover { transform: scale(1.12); }
-  .me-link:hover i { color: var(--accent, #E8420A); }
+  .me-link:hover i { color: var(--accent, #8E2C3F); }
   .act-card:hover { transform: translateY(-2px);
     box-shadow: 0 8px 22px rgba(0,0,0, .1); }
   .plan-day:hover, .plan-card:hover { box-shadow: var(--shadow-lift,

@@ -1,0 +1,171 @@
+/* KhanaPro home v3 - claret/paper redesign (design_handoff_khanapro screen 1).
+ * Every selector scoped under .v2 .home-v3 (view root set by views/home.js).
+ * Loads after styles.css/skin.css/motion.css so equal-or-higher specificity
+ * here wins. Tokens from tokens.css, motion tokens from tokens.css. ASCII only. */
+
+/* root: .view pads 18px; spec gutter is 20px -> +2px here. Bottom padding
+ * clears the fixed ask dock (56 field + fade) above --nav-clear. */
+.v2 .home-v3 { padding: 0 2px 96px; }
+
+/* ---------- 1. eyebrow + mode switch ---------- */
+.v2 .home-v3 .hv3-top { display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin: 0; padding: 0; }
+.v2 .home-v3 .greet { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;
+  font: 600 11px/11px var(--kp-font); letter-spacing: .13em; text-transform: uppercase;
+  color: var(--kp-ink-3); margin: 0; white-space: nowrap; overflow: hidden; }
+.v2 .home-v3 .greet .streak { flex: none; font: 600 10px/1 var(--kp-font); letter-spacing: .02em;
+  text-transform: none; color: var(--kp-ink-3); background: var(--kp-hair);
+  padding: 4px 8px; border-radius: 999px; margin-left: 0; }
+.v2 .home-v3 .moods { display: flex; gap: 0; flex: none; height: 34px; padding: 3px;
+  border-radius: 11px; background: var(--kp-hair); margin: 0; overflow: visible; box-shadow: none; }
+.v2 .home-v3 .mood { flex: none; min-width: 0; height: 28px; padding: 0 12px; border-radius: 9px;
+  border: 0; background: transparent; box-shadow: none; filter: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  font: 700 12px/12px var(--kp-font); letter-spacing: -.01em; color: var(--kp-ink-2);
+  white-space: nowrap;
+  transition: background var(--t-state) var(--ease-state), color var(--t-state) var(--ease-state); }
+.v2 .home-v3 .mood.on { background: var(--kp-ink); color: #fff; }
+
+/* ---------- 2. hero card ---------- */
+.v2 .home-v3 .hero-sec { margin: 14px 0 0; border-radius: 24px; overflow: hidden;
+  background: var(--kp-surface); box-shadow: var(--kp-e1); cursor: default; }
+.v2 .home-v3 .hero-media { position: relative; display: block; width: 100%; cursor: pointer; }
+.v2 .home-v3 .hero-media .ph { height: auto; aspect-ratio: 5 / 4; width: 100%; border-radius: 0;
+  background: var(--kp-tile); animation: none; }
+.v2 .home-v3 .hero-media .ph img { width: 100%; height: 100%; object-fit: cover; display: block;
+  animation: none; }
+.v2 .home-v3 .hero-scrim { position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(19,18,17,.74) 0%, rgba(19,18,17,.12) 46%, rgba(19,18,17,0) 70%); }
+.v2 .home-v3 .hero-txt { position: absolute; left: 20px; right: 20px; bottom: 18px;
+  pointer-events: none; }
+.v2 .home-v3 .hero-txt h2 { margin: 0; font: 800 30px/34px var(--kp-font); letter-spacing: -.03em;
+  color: #fff; text-wrap: pretty; }
+.v2 .home-v3 .hero-why { margin: 8px 0 0; font: 600 14px/19px var(--kp-font);
+  color: rgba(255,255,255,.72); text-wrap: pretty; }
+.v2 .home-v3 .hero-body { padding: 18px 20px 20px; }
+.v2 .home-v3 .hero-stats { display: flex; align-items: center; justify-content: space-between; }
+.v2 .home-v3 .hero-stats .hs { display: flex; flex-direction: column; gap: 5px; flex: none; }
+.v2 .home-v3 .hero-stats .hs b { font: 800 26px/26px var(--kp-font); letter-spacing: -.03em;
+  color: var(--kp-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.v2 .home-v3 .hero-stats .hs i { font: 700 9px/9px var(--kp-font); letter-spacing: .09em;
+  color: var(--kp-ink-3); font-style: normal; text-transform: uppercase; white-space: nowrap; }
+.v2 .home-v3 .hero-stats .hs-div { width: 1px; height: 30px; background: var(--kp-hair); flex: none; }
+.v2 .home-v3 .hero-btns { display: flex; gap: 10px; margin-top: 18px; }
+.v2 .home-v3 .hv3-cook { flex: 1; min-width: 0; height: 52px; border-radius: 14px; border: 0;
+  background: var(--kp-accent); color: #fff; font: 700 16px/16px var(--kp-font);
+  letter-spacing: -.01em; }
+.v2 .home-v3 .hv3-cook:active { background: var(--kp-accent-press); }
+.v2 .home-v3 .hv3-else { flex: none; height: 52px; padding: 0 18px; border-radius: 14px;
+  background: var(--kp-surface); border: 1px solid var(--kp-border); color: var(--kp-ink);
+  font: 700 16px/16px var(--kp-font); letter-spacing: -.01em; white-space: nowrap; }
+.v2 .home-v3 .hv3-else:active { background: var(--kp-bg-sunk); }
+/* re-deal: image fades up over 550ms, body 60ms behind (one object arriving) */
+.v2 .home-v3 .hero-sec.swap .hero-media { animation: kpIn 550ms var(--ease-out) both; }
+.v2 .home-v3 .hero-sec.swap .hero-body { animation: kpIn 550ms var(--ease-out) 60ms both; }
+
+/* ---------- 3. money strip ---------- */
+.v2 .home-v3 .hv3-money { margin: 16px 0 0; }
+/* flex-direction is declared explicitly: legacy styles.css .deal-chip sets
+ * `flex-direction: column`, which otherwise survives here (this rule never
+ * declared the longhand) and stacked the strip into a 142px-tall block. */
+.v2 .home-v3 .deal-chip { display: flex; flex-direction: row; align-items: center;
+  gap: 14px; width: 100%;
+  min-width: 0; padding: 16px 18px; border-radius: 18px; border: 0; position: static;
+  background: var(--kp-surface); box-shadow: var(--kp-e1); color: var(--kp-ink);
+  text-align: left; }
+.v2 .home-v3 .dc-amt { display: flex; flex-direction: column; gap: 5px; flex: none; }
+.v2 .home-v3 .dc-amt b { font: 800 24px/24px var(--kp-font); letter-spacing: -.03em;
+  color: var(--kp-ink); font-variant-numeric: tabular-nums; white-space: nowrap;
+  text-transform: none; }
+.v2 .home-v3 .dc-amt i { font: 700 9px/9px var(--kp-font); letter-spacing: .09em;
+  color: var(--kp-ink-3); font-style: normal; white-space: nowrap; }
+.v2 .home-v3 .dc-mid { flex: 1; min-width: 0; font: 600 13px/18px var(--kp-font);
+  color: var(--kp-ink-2); text-wrap: pretty; }
+
+/* ---------- 4. USP line ---------- */
+.v2 .home-v3 .usp-line { display: flex; align-items: center; justify-content: flex-start;
+  gap: 10px; margin: 22px 0 0; padding: 0; white-space: nowrap;
+  font: 600 12px/12px var(--kp-font); color: var(--kp-ink-3); overflow: hidden; }
+.v2 .home-v3 .usp-line span { flex: none; display: inline-flex; align-items: center; }
+.v2 .home-v3 .usp-line span + span::before { content: ""; width: 3px; height: 3px;
+  border-radius: 50%; background: #C2BEB5; margin: 0 10px 0 0; opacity: 1; }
+.v2 .home-v3 .usp-line b { font: 700 12px/12px var(--kp-font); color: var(--kp-ink);
+  font-variant-numeric: tabular-nums; margin-right: 4px; }
+
+/* ---------- 5. cooked this week ---------- */
+.v2 .home-v3 .hv3-eyebrow { margin: 22px 0 0; font: 800 12px/12px var(--kp-font);
+  letter-spacing: .09em; text-transform: uppercase; color: var(--kp-ink); }
+.v2 .home-v3 .hv3-week-row { display: flex; gap: 12px; overflow-x: auto; margin-top: 12px;
+  padding-bottom: 4px; scrollbar-width: none; }
+.v2 .home-v3 .hv3-week-row::-webkit-scrollbar { display: none; }
+.v2 .home-v3 .hv3-tile { flex: none; width: 112px; padding: 0; border: 0; background: none;
+  text-align: left; color: var(--kp-ink); }
+.v2 .home-v3 .hv3-tile .ph { width: 112px; height: 112px; border-radius: 16px; overflow: hidden;
+  background: var(--kp-tile); animation: none; }
+.v2 .home-v3 .hv3-tile .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.v2 .home-v3 .ht-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden; margin-top: 9px; font: 700 13px/17px var(--kp-font); letter-spacing: -.01em; }
+.v2 .home-v3 .ht-prot { display: block; margin-top: 4px; font: 600 11px/11px var(--kp-font);
+  color: var(--kp-ink-3); }
+
+/* ---------- resume + day strip (kept features, restyled quiet) ---------- */
+.v2 .home-v3 .resume-card { margin: 16px 0 0; padding: 14px 18px; border: 0; border-radius: 18px;
+  background: var(--kp-surface); box-shadow: var(--kp-e1); }
+.v2 .home-v3 .resume-card .rc-label { color: var(--kp-ink-3); letter-spacing: .09em;
+  font: 700 10px/1 var(--kp-font); text-transform: uppercase; }
+.v2 .home-v3 .resume-card .rc-dish { font: 700 15px/1.3 var(--kp-font); color: var(--kp-ink); }
+.v2 .home-v3 .resume-card .rc-step { font: 600 12px/1 var(--kp-font); color: var(--kp-ink-3);
+  opacity: 1; }
+.v2 .home-v3 .resume-card .rc-bar { background: var(--kp-hair); }
+.v2 .home-v3 .resume-card .rc-bar em { background: var(--kp-ink); }
+.v2 .home-v3 .day-strip { display: flex; align-items: center; gap: 8px; width: 100%;
+  margin: 12px 0 0; padding: 14px 18px; border: 0; border-radius: 18px;
+  background: var(--kp-surface); box-shadow: var(--kp-e1);
+  font: 600 13px/18px var(--kp-font); color: var(--kp-ink-2); text-align: left; }
+.v2 .home-v3 .day-strip b { color: var(--kp-ink); font-weight: 700;
+  font-variant-numeric: tabular-nums; }
+.v2 .home-v3 .day-strip span { margin-left: 0; color: var(--kp-ink-4); font-weight: 700; }
+.v2 .home-v3 .day-strip .pbar { flex: 0 0 56px; height: 4px; border-radius: 2px;
+  background: var(--kp-hair); overflow: hidden; margin-left: auto; }
+.v2 .home-v3 .day-strip .pbar em { display: block; height: 100%; border-radius: 2px;
+  background: var(--kp-ink); }
+
+/* ---------- 6. quiet utility rows ---------- */
+.v2 .home-v3 .hv3-links { margin: 22px 0 0; display: flex; flex-direction: column; }
+.v2 .home-v3 .hv3-link { display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; width: 100%; min-height: 48px; padding: 0 2px; border: 0; background: none;
+  border-bottom: 1px solid var(--kp-hair); color: var(--kp-ink);
+  font: 600 14px/1.3 var(--kp-font); letter-spacing: -.01em; text-align: left; }
+.v2 .home-v3 .hv3-link:first-child { border-top: 1px solid var(--kp-hair); }
+.v2 .home-v3 .hv3-link svg { color: var(--kp-ink-4); flex: none; }
+
+/* ---------- 7. ask dock (fixed above the tab bar) ---------- */
+.v2 .home-v3 .hv3-dock { position: fixed; left: 0; right: 0;
+  bottom: calc(62px + env(safe-area-inset-bottom, 0px)); z-index: 40;
+  padding: 26px 18px 10px; pointer-events: none;
+  background: linear-gradient(to top, #F4F3F0 70%, transparent); }
+.v2 .home-v3 .hv3-ask { pointer-events: auto; display: flex; align-items: center; gap: 8px;
+  height: 56px; max-width: 524px; margin: 0 auto; padding: 0 8px 0 18px;
+  border-radius: 18px; background: var(--kp-surface); border: 1px solid #E3E0D9;
+  box-shadow: var(--kp-e1); }
+.v2 .home-v3 .hv3-ask input { flex: 1; min-width: 0; border: 0; background: transparent;
+  outline: 0; font: 500 15px/20px var(--kp-font); color: var(--kp-ink); }
+.v2 .home-v3 .hv3-ask input::placeholder { color: var(--kp-ink-3); }
+.v2 .home-v3 .hv3-ask input.ph-swap { animation: kpFadeSwap 3200ms var(--ease-out) both; }
+.v2 .home-v3 .hv3-send { flex: none; width: 40px; height: 40px; border-radius: 12px; border: 0;
+  background: var(--kp-accent); color: #fff; display: grid; place-items: center; }
+.v2 .home-v3 .hv3-send:active { background: var(--kp-accent-press); }
+
+/* ---------- desktop: left rail exists; dock goes static under the hero ---------- */
+@media (min-width: 900px) {
+  .v2 .home-v3 { max-width: 560px; margin: 0 auto; padding-bottom: 32px;
+    display: flex; flex-direction: column; }
+  .v2 .home-v3 > * { order: 6; }
+  .v2 .home-v3 .hv3-top { order: 1; }
+  .v2 .home-v3 .hero-sec { order: 2; }
+  .v2 .home-v3 .hv3-dock { order: 3; position: static; padding: 16px 0 0;
+    background: none; pointer-events: auto; }
+  .v2 .home-v3 .hv3-ask { max-width: none; margin: 0; }
+  .v2 .home-v3 .hv3-money { order: 4; }
+  .v2 .home-v3 .usp-line { order: 5; }
+}
