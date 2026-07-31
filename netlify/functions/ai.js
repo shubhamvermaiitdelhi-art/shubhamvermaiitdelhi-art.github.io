@@ -1,9 +1,23 @@
 /* Netlify Function: POST /api/ai -> Gemini answer (key stays server-side).
  * GET /api/ai?selftest=1 verifies the key. Cheap model + token caps. */
 const MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
+/* Per-request model tiers. One model for every call site is wrong in both
+ * directions: a one-line chat reply does not need a reasoner, and deciding
+ * "does this dish satisfy 'pulses'?" should not be done by the cheapest model.
+ * The client asks for a TIER, never a raw model name - an open model parameter
+ * on a public endpoint is a way to burn someone else's credits on a big model.
+ * "reason" must be a thinking-capable model AND is always given a large token
+ * budget: at 90 tokens a thinking model spends everything on thoughts and
+ * returns an empty string (measured 2026-07-29). */
+const TIERS = {
+  fast: process.env.GEMINI_MODEL_FAST || MODEL,
+  reason: process.env.GEMINI_MODEL_REASON || MODEL,
+};
+const pickModel = tier => TIERS[tier] || MODEL;
 const KEY = process.env.GEMINI_API_KEY || '';  // set via `netlify env:set GEMINI_API_KEY` — never hardcode a secret here
 const H = { 'Access-Control-Allow-Origin':'*', 'Access-Control-Allow-Headers':'Content-Type', 'Access-Control-Allow-Methods':'POST, GET, OPTIONS', 'Content-Type':'application/json' };
-async function gemini(text, { system, maxTokens=512, json=false } = {}) {
+async function gemini(text, { system, maxTokens=512, json=false, tier='fast' } = {}) {
+  const MODEL = pickModel(tier);
   if (!KEY) return { ok:false, error:'no GEMINI_API_KEY set' };
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${encodeURIComponent(KEY)}`;
   const body = { contents:[{ role:'user', parts:[{ text }] }], generationConfig:{ maxOutputTokens:maxTokens, temperature:0.4, ...(json?{responseMimeType:'application/json'}:{}) }, ...(system?{ systemInstruction:{ parts:[{ text:system }] } }:{}) };
@@ -37,10 +51,14 @@ exports.handler = async (event) => {
     // to burn 2 slots per ask and never recover inside the window
     if (rl.n >= RATE_N) { HITS.set(ip, rl); return { statusCode: 429, headers: H, body: JSON.stringify({ ok:false, error:'rate limited — try again in a minute' }) }; }
     rl.n++; HITS.set(ip, rl);
-    const ck = memoKey(b.message + '|' + (b.system || '') + '|' + !!b.json);
+    const tier = b.tier === 'reason' ? 'reason' : 'fast';
+    // tier is part of the identity: a cheap answer must never be replayed to a reasoning call
+    const ck = memoKey(b.message + '|' + (b.system || '') + '|' + !!b.json + '|' + tier);
     const hit = MEMO.get(ck);
     if (hit && now - hit.t < MEMO_TTL) return { statusCode: 200, headers: H, body: hit.body };
-    const out = await gemini(b.message, { system:b.system, maxTokens:Math.min(+b.maxTokens||512, 1024), json:!!b.json });
+    // a reasoning call needs headroom for thoughts + the answer; a fast call stays capped
+    const cap = tier === 'reason' ? 2048 : 1024;
+    const out = await gemini(b.message, { system:b.system, maxTokens:Math.min(+b.maxTokens||512, cap), json:!!b.json, tier });
     const body = JSON.stringify(out);
     if (out.ok) { if (MEMO.size > MEMO_MAX) MEMO.delete(MEMO.keys().next().value); MEMO.set(ck, { t: now, body }); }
     return { statusCode: out.ok?200:502, headers:H, body };
