@@ -42,7 +42,11 @@
 
 .cmpv3 .pc-fresh { margin-top: 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .cmpv3 .src-badge { display: inline-flex; align-items: center; gap: 7px; font: 600 12px/12px var(--kp-font); color: var(--kp-ink-2); white-space: nowrap; }
-.cmpv3 .plan-card.best .src-badge { color: rgba(255,255,255,.55); }
+/* On the inverted (dark) cheapest card the global amber pill (styles.css
+ * .src-badge.est: cream bg + grey ink) turned into an unreadable wash. Restate
+ * BOTH pill variants for the dark surface - background and ink together. */
+.cmpv3 .plan-card.best .src-badge { color: rgba(255,255,255,.85); background: rgba(255,255,255,.12); }
+.cmpv3 .plan-card.best .src-badge.est::before, .cmpv3 .plan-card.best .src-badge.live::before { display: none; }
 .cmpv3 .pc-dot { width: 6px; height: 6px; border-radius: 50%; border: 1.5px solid #C2BEB5; background: transparent; box-sizing: border-box; flex: none; }
 .cmpv3 .pc-dot.solid { border: 0; background: var(--kp-ink); }
 .cmpv3 .plan-card.best .pc-dot { border-color: rgba(255,255,255,.4); }
@@ -61,6 +65,13 @@
 
 /* ---- quiet tools row (never claret) ---- */
 .cmpv3 .cmp-tools { margin-top: 14px; display: flex; gap: 8px; }
+/* live-prices control lives ABOVE the store list now: buried under 7 cards
+ * nobody ever found it (founder bug 2026-08-08). First row, first thing. */
+.cmpv3 .cmp-tools-top { margin-top: 16px; }
+.cmpv3 .cmp-tool-live { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-color: var(--kp-ink); font-weight: 800; }
+.cmpv3 .cmp-tool-live .live-dot { width: 7px; height: 7px; border-radius: 50%; background: #2E7D32; flex: none; animation: kpLivePulse 1.6s ease-in-out infinite; }
+.cmpv3 .cmp-tool-live[disabled] .live-dot { background: var(--kp-ink-3); animation: none; }
+@keyframes kpLivePulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
 .cmpv3 .cmp-tool { flex: 1; height: 44px; border-radius: 12px; background: var(--kp-surface); border: 1px solid var(--kp-border); font: 700 14px/14px var(--kp-font); letter-spacing: -.01em; color: var(--kp-ink); }
 .cmpv3 .cmp-tool[disabled] { color: var(--kp-ink-3); }
 .cmpv3 .cmp-tool.wide { flex: none; width: 100%; margin-top: 12px; }
@@ -84,6 +95,9 @@
 /* ---- sticky CTA over the paper fade (claret moment #2) ---- */
 /* .view's real gutter is 18px (styles.css last-wins rule), so bleed by 18 */
 .cmpv3 .cmp-ctabar { position: sticky; bottom: calc(62px + env(safe-area-inset-bottom, 0px)); z-index: 5; margin: 14px -18px 0; padding: 14px 18px 22px; background: linear-gradient(to top, #F4F3F0 70%, rgba(244,243,240,0)); }
+/* honesty line above the CTA: what tapping it ACTUALLY does (search item 1,
+ * list on clipboard) - "with this basket" overpromised and read as broken */
+.cmpv3 .cmp-cta-sub { margin: 0 0 8px; font: 500 11px/15px var(--kp-font); color: var(--kp-ink-3); text-align: center; text-wrap: pretty; }
 .cmpv3 .cmp-cta { width: 100%; height: 56px; border-radius: 16px; border: 0; background: var(--kp-accent); color: #FFFFFF; font: 700 17px/17px var(--kp-font); letter-spacing: -.01em; }
 .cmpv3 .cmp-cta:active { background: var(--kp-accent-press); }
 

@@ -179,8 +179,9 @@ li.have .ing-check { background: var(--green); color: #fff; }
 .ing-name { flex: 1; font-weight: 600; font-size: 14px; }
 li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .ing-qty { font-size: 12px; color: var(--ink2); font-weight: 600; }
-.rf-cta { display: flex; gap: 10px; margin-top: 12px; }
-.rf-cta .primary { flex: 1.4; } .rf-cta .ghost { flex: 1; }
+/* (legacy .rf-cta container rules removed 2026-08-08: .rf-cta is now the
+ * sticky BUTTON in detail.css - the old display:flex + margin-top leaked onto
+ * it and pushed the "Start cooking" label to the top-left, off the pill.) */
 .steps { padding-left: 0; list-style: none; counter-reset: st; }
 .steps li { counter-increment: st; display: flex; gap: 12px; padding: 10px 0; font-size: 14px; line-height: 1.5; color: #3D362E; }
 .steps li::before {
@@ -1081,7 +1082,6 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 .rf-sticky #sticky-cart { display: none; }
 .rf-sticky .primary { flex: 1; }
 .rf-sticky .btn { min-height: 52px; }
-.rf-cta .primary { flex: 1.6; }
 .rf-actions { margin-top: 14px; }
 .rf-actions .btn { min-height: 44px; font-size: 13.5px; }
 .rf-share { display: none; }
