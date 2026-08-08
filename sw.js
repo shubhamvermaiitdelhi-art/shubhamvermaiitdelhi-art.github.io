@@ -1,6 +1,6 @@
-/* KhanaPro SW 2.0.58209 — self-updating */
-const V = "kp-2.0.58209";
-const SHELL = ["/", "/index.html", "/app.js?v=2.0.58209", "/styles.css?v=2.0.58209", "/tokens.css?v=2.0.58209", "/skin.css?v=2.0.58209", "/filter.css?v=2.0.58209", "/pro.css?v=2.0.58209", "/motion.css?v=2.0.58209", "/home.css?v=2.0.58209", "/chat.css?v=2.0.58209", "/detail.css?v=2.0.58209", "/compare.css?v=2.0.58209", "/desktop.css?v=2.0.58209", "/config.js?v=2.0.58209",
+/* KhanaPro SW 2.0.70101 — self-updating */
+const V = "kp-2.0.70101";
+const SHELL = ["/", "/index.html", "/app.js?v=2.0.70101", "/styles.css?v=2.0.70101", "/tokens.css?v=2.0.70101", "/skin.css?v=2.0.70101", "/filter.css?v=2.0.70101", "/pro.css?v=2.0.70101", "/motion.css?v=2.0.70101", "/home.css?v=2.0.70101", "/chat.css?v=2.0.70101", "/detail.css?v=2.0.70101", "/compare.css?v=2.0.70101", "/desktop.css?v=2.0.70101", "/config.js?v=2.0.70101",
   "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png",
   "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js","/vendor/scaling.js",
   "/kb/kb_part_1.js","/kb/kb_part_10.js","/kb/kb_part_11.js"];
