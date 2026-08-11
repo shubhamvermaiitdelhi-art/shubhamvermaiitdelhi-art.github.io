@@ -110,3 +110,22 @@
 .cmpv3 .paste-box textarea:focus { outline: none; border-color: var(--kp-ink-4); }
 .cmpv3 .paste-box .cmp-cta { margin-top: 10px; }
 .cmpv3 .empty { padding: 28px 0 0; }
+
+/* ---- live-check ticker (PRD 07): show the work, store by store ---- */
+.cmpv3 .cmp-liveticker { margin-top: 10px; padding: 12px 14px; border-radius: 14px;
+  background: var(--kp-surface); box-shadow: var(--kp-e1); animation: kpRise 420ms var(--ease-out) both; }
+.cmpv3 .lt-store { display: flex; align-items: center; gap: 10px; padding: 7px 0; }
+.cmpv3 .lt-store + .lt-store { border-top: 1px solid var(--kp-hair); }
+.cmpv3 .lt-tile { width: 26px; height: 26px; border-radius: 8px; background: #F4F3F0;
+  display: flex; align-items: center; justify-content: center; font: 800 12px/12px var(--kp-font); color: var(--kp-ink-2); flex: none; }
+.cmpv3 .lt-store b { font: 700 13px/13px var(--kp-font); letter-spacing: -.01em; flex: 1; }
+.cmpv3 .lt-state { font: 600 12px/12px var(--kp-font); color: var(--kp-ink-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.cmpv3 .lt-store.run .lt-state { color: var(--kp-ink); animation: kpLivePulse 1.2s ease-in-out infinite; }
+.cmpv3 .lt-store.done .lt-state { color: #2E7D32; animation: none; }
+.cmpv3 .lt-store.none .lt-state { color: var(--kp-ink-3); }
+.cmpv3 .lt-fact { margin: 10px 0 0; padding-top: 10px; border-top: 1px solid var(--kp-hair);
+  font: 500 12px/17px var(--kp-font); color: var(--kp-ink-2); text-wrap: pretty; }
+@media (prefers-reduced-motion: reduce) {
+  .cmpv3 .cmp-tool-live .live-dot, .cmpv3 .lt-store.run .lt-state { animation: none; }
+  .cmpv3 .cmp-liveticker { animation: none; }
+}
