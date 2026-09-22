@@ -93,6 +93,39 @@
     return Math.round(q * 100) / 100;
   }
 
+  /*
+   * purchaseQty(qty, unit) - what you can actually BUY (KhanaPro v51, audit KP-UNIT-001):
+   *   pc, bunch, packet, pack, dozen, bundle, pod, sprig -> ceil to a whole unit
+   *   everything else -> niceQty (grams/ml/spoons are divisible)
+   * The recipe keeps the precise scaled quantity; only the cart/list rounds up.
+   */
+  var COUNT_UNITS = { pc: 1, pcs: 1, piece: 1, pieces: 1, bunch: 1, packet: 1, pack: 1, dozen: 1, bundle: 1, pod: 1, pods: 1, sprig: 1, sprigs: 1, leaf: 1, leaves: 1, clove: 1, cloves: 1, slice: 1, slices: 1, nos: 1, no: 1 };
+  function isCountUnit(unit) {
+    var u = (typeof unit === "string" ? unit : "").toLowerCase().trim();
+    return !!COUNT_UNITS[u];
+  }
+  function purchaseQty(qty, unit) {
+    var q = num(qty, 0);
+    if (q < 0) q = 0;
+    if (isCountUnit(unit)) return q > 0 ? Math.ceil(q - 1e-9) : 0;
+    return niceQty(q, unit);
+  }
+  /* qtyText(qty, unit) - display form: count units show cook-friendly fractions
+   * ("1/2 pc") while remaining precise; other units print the nice number. */
+  function qtyText(qty, unit) {
+    var q = num(qty, 0);
+    if (q < 0) q = 0;
+    if (isCountUnit(unit)) {
+      var whole = Math.floor(q + 1e-9), frac = q - whole;
+      var fr = frac >= 0.875 ? "" : frac >= 0.625 ? "3/4" : frac >= 0.375 ? "1/2" : frac >= 0.125 ? "1/4" : "";
+      if (frac >= 0.875) whole += 1;
+      if (!whole && !fr) return "0";
+      return (whole ? String(whole) : "") + (whole && fr ? " " : "") + fr;
+    }
+    var n2 = niceQty(q, unit);
+    return String(n2);
+  }
+
   // --- public API ------------------------------------------------------------
 
   function factorFor(recipe, targetServings) {
@@ -165,8 +198,21 @@
     };
   }
 
+  /* toCartItems: the PURCHASE snapshot for the chosen servings - count units
+   * round UP to whole pieces (nobody buys 0.5 of a chilli), precise quantity
+   * kept alongside as qtyExact for the recipe view. */
   function toCartItems(recipe, targetServings) {
-    return scale(recipe, targetServings).ingredients;
+    var r = recipe || {};
+    var target = targetOf(r, targetServings);
+    var factor = factorFor(r, target);
+    var list = (r && Array.isArray(r.ingredients)) ? r.ingredients : [];
+    var out = [];
+    for (var i = 0; i < list.length; i++) {
+      var ing = list[i] || {};
+      var exact = num(ing.qty, 0) * factor;
+      out.push({ name: (ing.name != null) ? ing.name : "", qty: purchaseQty(exact, ing.unit), qtyExact: Math.round(exact * 100) / 100, unit: (ing.unit != null) ? ing.unit : "", servings: target });
+    }
+    return out;
   }
 
   return {
@@ -174,6 +220,9 @@
     factorFor: factorFor,
     toCartItems: toCartItems,
     niceQty: niceQty,
+    purchaseQty: purchaseQty,
+    qtyText: qtyText,
+    isCountUnit: isCountUnit,
     // exposed for host/testing convenience (not in the required surface)
     DEFAULT_SERVINGS: DEFAULT_SERVINGS
   };

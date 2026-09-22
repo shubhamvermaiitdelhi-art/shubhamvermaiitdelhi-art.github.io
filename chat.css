@@ -120,3 +120,15 @@
 .cookai .chat-table tbody tr { cursor: pointer; }
 .cookai .chat-table tbody tr:active { background: var(--kp-disabled-fill); }
 .cookai .chat-note { margin: 6px 2px 0; font: 500 12px/17px var(--kp-font); color: var(--kp-ink-3); }
+
+/* ---- active-context chips (audit KP2-05): every remembered constraint is
+ * VISIBLE and removable; "Clear context" starts a fresh conversation. ---- */
+.v2 .ctx-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 6px 14px 2px; }
+.v2 .ctx-bar .ctx-lbl { font: 700 10px/12px var(--kp-font); letter-spacing: .09em; text-transform: uppercase; color: var(--kp-ink-3); margin-right: 2px; }
+.v2 .ctx-chip { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--kp-border); background: var(--kp-surface); color: var(--kp-ink); border-radius: 999px; padding: 4px 8px 4px 10px; font: 600 12px/14px var(--kp-font); cursor: pointer; }
+.v2 .ctx-chip.strict { border-color: var(--kp-danger); color: var(--kp-danger); }
+.v2 .ctx-chip i { font-style: normal; font-size: 13px; line-height: 12px; color: var(--kp-ink-3); }
+.v2 .ctx-clear { margin-left: auto; border: 0; background: transparent; color: var(--kp-accent); font: 700 12px/14px var(--kp-font); cursor: pointer; padding: 4px 2px; }
+.v2 .chat-note.override { color: var(--kp-ink-2); }
+.v2 .care-box { border-left: 3px solid var(--kp-danger); background: var(--kp-danger-tint); border-radius: 0 12px 12px 0; padding: 10px 12px; margin: 6px 0; font: 500 14px/1.45 var(--kp-font); color: var(--kp-ink); }
+.v2 .care-box b { display: block; margin-bottom: 4px; }

@@ -9,7 +9,7 @@
   --kp-tile:#E9E6DF; --kp-tile-2:#E1DDD5;
 
   /* - ink - */
-  --kp-ink:#131211; --kp-ink-2:#6A6862; --kp-ink-3:#97948D; --kp-ink-4:#B6B2AA;
+  --kp-ink:#131211; --kp-ink-2:#5F5D58; --kp-ink-3:#67645F; --kp-ink-4:#B6B2AA; /* ink-2/ink-3 pass WCAG AA (>=4.5:1) on bg/surface - audit KP-A11Y-001; ink-4 is decorative only */
   --kp-body-ink:#3C3A36;
   --kp-hair:#EAE8E3; --kp-hair-2:#DEDBD4;
   --kp-border:#DEDBD4; --kp-border-2:#E3E0D9;

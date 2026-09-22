@@ -195,3 +195,16 @@
 .v2 .home-v3 .switch.sm input { opacity: 0; width: 0; height: 0; position: absolute; }
 .v2 .home-v3 .switch.sm input:checked + span { background: #2E7D32; }
 .v2 .home-v3 .switch.sm input:checked + span::after { transform: translateX(16px); }
+
+/* ---- narrow phones (audit KP-MOBILE-001): the hero headline and the greeting
+ * must never clip or overflow at 320-400px. Sizes step down, wrapping is allowed. ---- */
+@media (max-width: 400px) {
+  .v2 .home-v3 .hero-txt h2 { font-size: 24px; line-height: 28px; letter-spacing: -.02em; overflow-wrap: anywhere; }
+  .v2 .home-v3 .hero-txt { left: 16px; right: 16px; }
+  .v2 .home-v3 .greet { white-space: normal; overflow-wrap: anywhere; line-height: 14px; }
+  .v2 .home-v3 .hero-stats .hs b { font-size: 22px; line-height: 22px; }
+  .v2 .home-v3 .dc-amt b { font-size: 20px; line-height: 20px; }
+}
+@media (max-width: 340px) {
+  .v2 .home-v3 .hero-txt h2 { font-size: 21px; line-height: 25px; }
+}

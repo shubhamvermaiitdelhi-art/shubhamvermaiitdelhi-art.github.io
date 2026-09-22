@@ -3,7 +3,7 @@
   --bg: #F4F3F0;
   --card: #FFFFFF;
   --ink: #131211;
-  --ink2: #6A6862;
+  --ink2: #5F5D58;
   --accent: #8E2C3F;       /* the one brand accent (matches --kp-accent) */
   --accent-soft: #F3E9EA;
   --green: #0F8A3D;
@@ -672,7 +672,7 @@ li.have .ing-name { text-decoration: line-through; color: var(--ink2); }
 /* typography discipline */
 .page-head h1,.home-head h1{letter-spacing:-.02em;font-weight:800}
 .row-sec>h2,.me-sec h2{letter-spacing:-.01em;font-weight:700;font-size:16px}
-.muted{opacity:.62}
+/* .muted opacity removed (audit KP-A11Y-001): muted text keeps the AA-compliant --ink2 token at full opacity */
 
 /* cards: soft depth, honest press feedback */
 .card{box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.05);transition:transform .18s cubic-bezier(.22,.61,.36,1),box-shadow .18s}
