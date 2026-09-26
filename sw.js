@@ -1,6 +1,6 @@
-/* KhanaPro SW 2.1.2609261919 — self-updating */
-const V = "kp-2.1.2609261919";
-const SHELL = ["/", "/index.html", "/app.js?v=2.1.2609261919", "/styles.css?v=2.1.2609261919", "/tokens.css?v=2.1.2609261919", "/skin.css?v=2.1.2609261919", "/filter.css?v=2.1.2609261919", "/pro.css?v=2.1.2609261919", "/motion.css?v=2.1.2609261919", "/home.css?v=2.1.2609261919", "/chat.css?v=2.1.2609261919", "/detail.css?v=2.1.2609261919", "/compare.css?v=2.1.2609261919", "/desktop.css?v=2.1.2609261919", "/config.js?v=2.1.2609261919", "/kb/thumb_health.js?v=2.1.2609261919",
+/* KhanaPro SW 2.1.2609261942 — self-updating */
+const V = "kp-2.1.2609261942";
+const SHELL = ["/", "/index.html", "/app.js?v=2.1.2609261942", "/styles.css?v=2.1.2609261942", "/tokens.css?v=2.1.2609261942", "/skin.css?v=2.1.2609261942", "/filter.css?v=2.1.2609261942", "/pro.css?v=2.1.2609261942", "/motion.css?v=2.1.2609261942", "/home.css?v=2.1.2609261942", "/chat.css?v=2.1.2609261942", "/detail.css?v=2.1.2609261942", "/compare.css?v=2.1.2609261942", "/desktop.css?v=2.1.2609261942", "/config.js?v=2.1.2609261942", "/kb/thumb_health.js?v=2.1.2609261942",
   "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png",
   "/vendor/kb_engine.js","/vendor/kb_brain.js","/vendor/health_classifier.js","/vendor/cook_bhaiya.js","/vendor/engine.js","/vendor/data.js","/vendor/shopping_list.js","/vendor/scaling.js",
   "/kb/kb_part_1.js","/kb/kb_part_10.js","/kb/kb_part_11.js"];
