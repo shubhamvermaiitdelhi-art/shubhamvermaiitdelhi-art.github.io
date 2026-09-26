@@ -378,27 +378,53 @@
     'oats':'oats','quinoa':'quinoa','pasta':'pasta','noodles':'noodles','cheese':'cheese','butter':'butter','water':'water','paani':'water'
   };
   function _esc(x){ return String(x).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
-  function resolveKey(query){
-    const q=_lc(query); if(!q) return null;
-    const head=q.split(/\s+/)[0];
+  /* resolveKeyInfo(query) -> { key, strong, how } | null  (audit 2026-09-27 P0-B/P1)
+   * "moong sprouts" resolved to MOONG DAL because the first-token Hindi lookup
+   * ("moong") ran before any multi-word alias ("moong sprout") was tried, and
+   * every store then priced sprouts as dal. Order now: the most SPECIFIC phrase
+   * wins - exact alias, exact Hindi word, the longest alias/Hindi phrase
+   * contained in the query (plural-tolerant), and only then the head token and
+   * fuzzy spelling. `strong` says whether the match asserts the item's IDENTITY
+   * (an alias equivalence such as cottage cheese = paneer) or merely guesses it
+   * from one word (tomato KETCHUP is not tomato); the engine's identity gate
+   * treats weak matches as needing the product to carry the asked head noun. */
+  const _pl = a => '\\b'+_esc(a)+'(?:e?s)?\\b';
+  function resolveKeyInfo(query){
+    const q=_lc(query).replace(/\s+/g,' '); if(!q) return null;
+    const head=q.split(' ')[0];
     const KS=Object.keys(DEMO);
-    // 1a) exact alias match (precise — no reverse-substring false hits)
-    for(const k of KS){ if(DEMO[k].aliases.some(a=>_lc(a)===q)) return k; }
+    const R=(key,strong,how)=>({key,strong,how});
+    // 1a) exact alias match. Several keys can own the same alias: when one of them is
+    //     a GENERIC key contained in the query ("dal" inside "moong dal"), the specific
+    //     key wins; plain synonym keys (kidney beans / rajma) keep index order.
+    { const hits=KS.filter(k=>DEMO[k].aliases.some(a=>_lc(a)===q||_lc(a)+'s'===q||_lc(a)===q.replace(/e?s$/,'')));
+      if(hits.length){ const specific=hits.find(k=>k===q&&hits.some(o=>o!==k&&q.indexOf(o)>=0&&q!==o)); return R(specific||hits[0],true,'alias'); } }
     // 1b) Hindi/Hinglish exact word -> canonical key
-    if(HINDI[q] && DEMO[HINDI[q]]) return HINDI[q];
-    // 1c) first token exact alias / hindi
-    for(const k of KS){ if(DEMO[k].aliases.some(a=>_lc(a)===head)) return k; }
-    if(HINDI[head] && DEMO[HINDI[head]]) return HINDI[head];
-    // 2) a full alias WORD appears inside the query (>=3 chars, word boundary)
+    if(HINDI[q] && DEMO[HINDI[q]]) return R(HINDI[q],true,'hindi');
+    // 1c) the LONGEST multi-word alias / Hindi phrase inside the query ("moong sprout" beats "moong")
+    { let best=null;
+      for(const k of KS){ for(const a of DEMO[k].aliases){ const al=_lc(a); if(al.indexOf(' ')<0) continue; if(new RegExp(_pl(al)).test(q) && (!best||al.length>best.al.length)) best={k,al}; } }
+      const hk0=Object.keys(HINDI).filter(h=>h.indexOf(' ')>=0).sort((a,b)=>b.length-a.length);
+      for(const h of hk0){ if(new RegExp(_pl(h)).test(q) && DEMO[HINDI[h]] && (!best||h.length>best.al.length)) best={k:HINDI[h],al:h}; }
+      if(best) return R(best.k,true,'phrase'); }
+    // 1d) the query's HEAD NOUN (last word) is itself an alias: "brown bread", "aashirvaad atta"
+    { const last=q.split(' ').slice(-1)[0];
+      if(last!==head){ for(const k of KS){ if(DEMO[k].aliases.some(a=>_lc(a)===last||_lc(a)+'s'===last||_lc(a)===last.replace(/e?s$/,''))) return R(k,true,'head-noun'); }
+        if(HINDI[last] && DEMO[HINDI[last]]) return R(HINDI[last],true,'head-noun'); } }
+    // 1e) first token exact alias / hindi - a WEAK identity (the rest of the phrase may change the item)
+    for(const k of KS){ if(DEMO[k].aliases.some(a=>_lc(a)===head)) return R(k,false,'first-token'); }
+    if(HINDI[head] && DEMO[HINDI[head]]) return R(HINDI[head],false,'first-token');
+    // 2) a full alias WORD appears inside the query (>=3 chars, word boundary) - weak unless it is the head noun
     const hk=Object.keys(HINDI).sort((a,b)=>b.length-a.length);
-    for(const h of hk){ if(h.length>=4 && new RegExp('\\b'+_esc(h)+'\\b').test(q) && DEMO[HINDI[h]]) return HINDI[h]; }
-    for(const k of KS){ for(const a of DEMO[k].aliases){ const al=_lc(a); if(al.length>=3 && new RegExp('\\b'+_esc(al)+'\\b').test(q)) return k; } }
-    // 3) fuzzy spelling (typos) against aliases + hindi words
+    for(const h of hk){ if(h.length>=4 && new RegExp('\\b'+_esc(h)+'\\b').test(q) && DEMO[HINDI[h]]) return R(HINDI[h],false,'contains'); }
+    for(const k of KS){ for(const a of DEMO[k].aliases){ const al=_lc(a); if(al.length>=3 && new RegExp('\\b'+_esc(al)+'\\b').test(q)) return R(k,false,'contains'); } }
+    // 3) fuzzy spelling (typos) against aliases + hindi words - weak
     let best=null,bd=99;
     for(const k of KS){ for(const a of DEMO[k].aliases){ const al=_lc(a); const d=Math.min(_lev(q,al),_lev(head,al)); const thr=Math.max(1,Math.floor(al.length*0.34)); if(d<=thr&&d<bd){bd=d;best=k;} } }
     for(const h of hk){ const d=_lev(head,h); const thr=Math.max(1,Math.floor(h.length*0.3)); if(d<=thr&&d<bd&&DEMO[HINDI[h]]){bd=d;best=HINDI[h];} }
-    return best;
+    return best?R(best,false,'fuzzy'):null;
   }
+  function resolveKey(query){ const r=resolveKeyInfo(query); return r?r.key:null; }
 
   function demoFetch(platformKey, query) {
     const _live = liveFetch(platformKey, query);
@@ -422,7 +448,7 @@
   }
 
   const api = {
-    PLATFORMS, PLATFORM_ORDER, normalize, fetchPlatform, demoFetch, liveFetch, resolveKey,
+    PLATFORMS, PLATFORM_ORDER, normalize, fetchPlatform, demoFetch, liveFetch, resolveKey, resolveKeyInfo,
     DEMO_ITEMS: Object.keys(DEMO),
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

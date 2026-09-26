@@ -144,6 +144,14 @@
 .md-meal span { flex: 1; min-width: 0; font-size: 13px; font-weight: 600; overflow-wrap: anywhere; }
 .md-meal em { font-style: normal; font-size: 11px; color: var(--ink2); white-space: nowrap; }
 .md-miss, .md-note { flex: 1 0 100%; font-size: 12px; color: var(--ink2); margin: 4px 0 0; }
+/* an under-floor day is a warning, not a soft "light day" (audit 2026-09-27 P0) */
+.md-under { flex: 1 0 100%; margin: 6px 0 0; padding: 8px 10px; border-radius: 10px; font-size: 12px; line-height: 1.45; font-weight: 600; color: var(--kp-danger-ink, #7A1F1F); background: var(--kp-danger-bg, #FBEAEA); }
+.plan-day.md-day.under > em { color: var(--kp-danger-ink, #7A1F1F); }
+.md-floor { font-weight: 600; color: var(--kp-ink, var(--ink)); }
+/* LLM-authored prose is visibly labelled; library cards never sit inside it */
+.ai-prose { position: relative; padding-top: 16px; }
+.ai-prose::before { content: "AI answer"; position: absolute; top: 0; left: 0; font: 700 9.5px/12px var(--kp-font); letter-spacing: .06em; text-transform: uppercase; color: var(--kp-ink-3, #97948D); }
+.ai-intro { display: block; }
 
 /* ===== constraint honesty (audit round-2 P1-3): exact vs closest ===== */
 .chat-match { margin: 0 0 6px; font-weight: 600; }

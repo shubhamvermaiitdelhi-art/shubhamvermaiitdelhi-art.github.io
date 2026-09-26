@@ -410,11 +410,37 @@
     return Math.round(base) + (base === 1 ? ' pc' : ' pcs');
   }
 
+  // ---- Product IDENTITY (audit 2026-09-27 P0-B/P1) ---------------------------
+  // Relevance (half the query tokens) let "Moong dal 1 kg" fulfil "moong sprouts".
+  // A product is the asked item only when it carries the ask's HEAD NOUN (the
+  // last content word: sprouts, bread, atta, ketchup), or when the resolver
+  // asserted the identity through a strong alias (cottage cheese = paneer) and
+  // the product carries that key. Anything else is a different item: never
+  // priced into the basket, named as "not the same item" instead.
+  const HEAD_STOP = new Set(['fresh', 'pack', 'packet', 'organic', 'premium', 'local', 'desi', 'small', 'big', 'large', 'medium', 'whole', 'raw', 'loose', 'brand']);
+  function headNoun(asked) {
+    const t = tokens(asked).filter(x => !/^\d+$/.test(x) && !HEAD_STOP.has(x));
+    return t.length ? t[t.length - 1] : '';
+  }
+  function sameItem(item, prod) {
+    const asked = item.asked || item.label || '';
+    if (!asked) return true; // legacy callers without the user's words: relevance only
+    const p = new Set(tokens(prod.name || prod.title));
+    const head = headNoun(asked);
+    if (head && p.has(head)) return true;
+    if (item.keyStrong) { const kt = tokens(item.name).filter(x => !/^\d+$/.test(x)); if (kt.length && kt.every(x => p.has(x))) return true; }
+    return false;
+  }
+
   // ---- Match one requested item to best product on one platform -------------
   // candidates: normalized products [{name,price,mrp,rating,inStock,...}]
-  function matchItem(item, candidates) {
+  // matchItemFull -> { match, alt }: alt names the closest listing that is NOT
+  // the same item (for the "not found - closest listing" line); matchItem keeps
+  // the old one-value contract.
+  function matchItem(item, candidates) { return matchItemFull(item, candidates).match; }
+  function matchItemFull(item, candidates) {
     const need = toBase(item.qty, item.unit);
-    const scored = candidates
+    const relevant = candidates
       .filter(c => c.inStock !== false && c.price != null && c.price > 0)
       .map(c => {
         const rel = relevance(item.name, c);
@@ -422,8 +448,10 @@
       })
       .filter(x => x.rel >= 0.5)               // must match at least half query tokens
       .sort((a, b) => b.rel - a.rel || a.c.price - b.c.price);
+    const scored = relevant.filter(x => sameItem(item, x.c));
+    const altPick = !scored.length && relevant.length ? relevant[0].c : null;
 
-    if (!scored.length) return null;
+    if (!scored.length) return { match: null, alt: altPick ? (altPick.name || altPick.title || '') : '' };
 
     // Among the most relevant, choose the cheapest *per requested unit*.
     const topRel = scored[0].rel;
@@ -487,9 +515,11 @@
     }
     // Prefer the popular/standard (non-premium) pick unless premium was requested or it's the only option.
     // A plain pick never wins over a premium one with a strictly better fit.
-    if (askedPremium) return bestAny;
-    if (bestPlain && bestAny && FIT_RANK[bestAny.fit] < FIT_RANK[bestPlain.fit]) return bestAny;
-    return bestPlain || bestAny;
+    let out;
+    if (askedPremium) out = bestAny;
+    else if (bestPlain && bestAny && FIT_RANK[bestAny.fit] < FIT_RANK[bestPlain.fit]) out = bestAny;
+    else out = bestPlain || bestAny;
+    return { match: out, alt: '' };
   }
 
   // ---- Build a single-platform basket --------------------------------------
@@ -498,7 +528,7 @@
     let goods = 0, ratingSum = 0, ratingN = 0, maxEta = 0, found = 0, exactFound = 0;
     for (const item of items) {
       const cands = (productsByItem[item.name] && productsByItem[item.name][platformKey]) || [];
-      const m = matchItem(item, cands);
+      const { match: m, alt } = matchItemFull(item, cands);
       if (m) {
         found++;
         if (fitOk(m.fit)) exactFound++;
@@ -508,7 +538,8 @@
         if (eta > maxEta) maxEta = eta;
         lines.push({ item, match: m, eta });
       } else {
-        lines.push({ item, match: null, eta: 0 });
+        // a relevant-but-different listing is reported, never counted (P0-B identity)
+        lines.push({ item, match: null, eta: 0, alt: alt || '' });
       }
     }
     const fees = estimateFees(platformMeta, goods);
@@ -832,7 +863,7 @@
 
   const api = {
     parseList, parseLine, toBase, canonUnit, parseProductSize, relevance,
-    matchItem, buildBasket, optimize, planComparator, round2, fmtBase, fitOk,
+    matchItem, matchItemFull, sameItem, headNoun, buildBasket, optimize, planComparator, round2, fmtBase, fitOk,
     normalizeName, defaultServing, finalizeItem, fuzzyCorrect, segmentBlob, countHeads,
     parseCoupon, normalizeCoupon, normalizeCoupons, computeCouponDiscount, applyCoupon,
     formatBasketText, buildShareUrl, parseShareHash,

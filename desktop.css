@@ -157,6 +157,13 @@
 
   /* planner / pantry overlays widen a touch */
   .pl-head, .pl-days, .pa-body { max-width: 720px; }
+  /* the Plan has no split hero: its action bar spans the content column, never
+     the recipe-detail's 44vw offset (audit 2026-09-27 P2: "Add week to cart"
+     ran 75 px past a 1280 px viewport). Three equal, unclipped actions. */
+  .planner-full .rf-sticky { left: var(--rail-clear); right: 0; max-width: 720px; margin: 0 auto;
+    padding-left: 16px; padding-right: 16px; justify-content: stretch; }
+  .planner-full .rf-sticky .btn { flex: 1 1 0; min-width: 0; max-width: none; }
+  .planner-full .rf-sticky .btn.primary { flex: 1.4 1 0; }
 }
 
 /* ================= pointer polish (mouse only) ================= */
