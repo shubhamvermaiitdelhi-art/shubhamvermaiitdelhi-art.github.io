@@ -8,14 +8,23 @@
 .recipe-full .rf-hero { position: relative; height: 300px; }
 .recipe-full .rf-hero .ph { height: 100%; border-radius: 0; }
 .recipe-full .rf-hero .ph img { animation: none; } /* kenburns zoom is off-spec motion */
-.recipe-full .rf-hero .ph-mono span { font-size: 64px; }
+.recipe-full .rf-hero .ph-mono .ph-ch { font-size: 64px; }
 .recipe-full .rf-scrim { position: absolute; inset: 0; pointer-events: none; z-index: 1;
   background: linear-gradient(to bottom, rgba(19,18,17,.42) 0%, rgba(19,18,17,0) 34%, rgba(19,18,17,0) 46%, rgba(19,18,17,.72) 100%); }
 
 .recipe-full .rf-back { position: absolute; top: calc(16px + env(safe-area-inset-top, 0px)); left: 16px;
-  z-index: 6; width: 38px; height: 38px; border-radius: 50%; border: 0;
+  z-index: 6; width: 44px; height: 44px; border-radius: 50%; border: 0;
   background: rgba(255,255,255,.92); color: var(--kp-ink); box-shadow: none;
   display: flex; align-items: center; justify-content: center; cursor: pointer; font-weight: 800; }
+/* The 7-day planner reuses the .recipe-full shell (class "recipe-full
+ * planner-full"), so the absolute recipe-detail back button above used to win
+ * over styles.css ".pl-head .rf-back" and sit on top of "Your 7-day plan"
+ * (audit P0-1). In the plan header the button is a normal flex item. */
+.recipe-full .pl-head .rf-back { position: static; inset: auto; transform: none; flex: 0 0 auto; z-index: auto; }
+.recipe-full .pl-head { min-width: 0; }
+.recipe-full .pl-head > div { min-width: 0; }
+.recipe-full .pl-head h1 { overflow-wrap: anywhere; }
+.recipe-full .pl-head .pl-regen { flex: 0 0 auto; min-width: 44px; min-height: 44px; }
 
 .recipe-full .rf-watch { position: absolute; top: calc(16px + env(safe-area-inset-top, 0px)); right: 16px;
   z-index: 6; height: 38px; padding: 0 14px; border-radius: 999px; border: 0;

@@ -1,0 +1,44 @@
+# KhanaPro Cook AI synthetic check + alert (audit round-2 P1-4).
+# Lives in the GitHub Pages repo (shubhamvermaiitdelhi-art.github.io) next to
+# the site; the script is copied to ops/synthetic_ai_check.js on every deploy
+# from tools/synthetic_ai_check.js in the source repo.
+#
+# ALERT DELIVERY: a failed run makes GitHub email the repo owner (default
+# notification setting "Actions: failed workflows"). Optional extra channel:
+# add repository secret KP_ALERT_WEBHOOK (Slack / Discord / ntfy URL).
+# Optional: add repository secret KP_ADMIN_KEY to include the server's
+# last-hour error rate and p95 latency in the check.
+#
+# TEST ALERT: push a change to ops/ALERT_TEST, or run the workflow manually
+# with test_alert = true. The run fails on purpose; confirm the email arrives.
+name: ai-synthetic
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      test_alert:
+        description: "Force an alert to verify delivery"
+        type: boolean
+        default: false
+  push:
+    paths:
+      - "ops/ALERT_TEST"
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Synthetic check
+        env:
+          KP_ADMIN_KEY: ${{ secrets.KP_ADMIN_KEY }}
+          KP_ALERT_WEBHOOK: ${{ secrets.KP_ALERT_WEBHOOK }}
+          TEST_ALERT: ${{ github.event_name == 'push' || inputs.test_alert == true }}
+        run: |
+          if [ "$TEST_ALERT" = "true" ]; then node ops/synthetic_ai_check.js --test-alert; else node ops/synthetic_ai_check.js; fi

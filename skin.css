@@ -106,7 +106,7 @@ body.v2 { background: var(--kp-bg); color: var(--kp-ink); font-family: var(--kp-
 .v2 .ph-mono.t3 { background: linear-gradient(140deg,#8A8A89,#6A6A69); }
 .v2 .ph-mono.t4 { background: linear-gradient(140deg,#4E4E4E,#333332); }
 .v2 .ph-mono::before { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 110% at 18% 12%, rgba(255,255,255,.22), transparent 55%); }
-.v2 .ph-mono span { letter-spacing: -.04em; opacity: .96; position: relative; }
+.v2 .ph-mono .ph-ch { letter-spacing: -.04em; opacity: .96; position: relative; }
 
 /* home */
 .v2 .greet { color: var(--kp-ink-2); font-size: var(--kp-fs-sm); font-weight: 600; }

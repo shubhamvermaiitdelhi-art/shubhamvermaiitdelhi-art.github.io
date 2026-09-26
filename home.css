@@ -47,9 +47,14 @@
 .v2 .home-v3 .hero-stats .hs { display: flex; flex-direction: column; gap: 5px; flex: none; }
 .v2 .home-v3 .hero-stats .hs b { font: 800 26px/26px var(--kp-font); letter-spacing: -.03em;
   color: var(--kp-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.v2 .home-v3 .hero-stats .hs i { font: 700 9px/9px var(--kp-font); letter-spacing: .09em;
-  color: var(--kp-ink-3); font-style: normal; text-transform: uppercase; white-space: nowrap; }
-.v2 .home-v3 .hero-stats .hs-div { width: 1px; height: 30px; background: var(--kp-hair); flex: none; }
+/* label: a REAL line box (audit round-2 P2-8). The old 9px/9px box left glyph
+ * ink outside the element, so any clip/zoom/font fallback cut the bottom of
+ * "PER SERVING" ("SERVINO"). Labels may wrap (Hindi, 200% zoom); cells top-align. */
+.v2 .home-v3 .hero-stats { align-items: flex-start; flex-wrap: wrap; row-gap: 10px; }
+.v2 .home-v3 .hero-stats .hs { min-width: 0; }
+.v2 .home-v3 .hero-stats .hs i { display: block; font: 700 9.5px/1.35 var(--kp-font); letter-spacing: .08em; padding-bottom: 1px;
+  color: var(--kp-ink-3); font-style: normal; text-transform: uppercase; white-space: normal; overflow-wrap: anywhere; max-width: 14ch; }
+.v2 .home-v3 .hero-stats .hs-div { width: 1px; height: auto; min-height: 30px; align-self: stretch; background: var(--kp-hair); flex: none; }
 .v2 .home-v3 .hero-btns { display: flex; gap: 10px; margin-top: 18px; }
 .v2 .home-v3 .hv3-cook { flex: 1; min-width: 0; height: 52px; border-radius: 14px; border: 0;
   background: var(--kp-accent); color: #fff; font: 700 16px/16px var(--kp-font);
@@ -86,11 +91,13 @@
 .v2 .home-v3 .usp-line { display: flex; align-items: center; justify-content: flex-start;
   gap: 10px; margin: 22px 0 0; padding: 0; white-space: nowrap;
   font: 600 12px/12px var(--kp-font); color: var(--kp-ink-3); overflow: hidden; }
-.v2 .home-v3 .usp-line span { flex: none; display: inline-flex; align-items: center; }
+/* NOT inline-flex: a flex container drops the whitespace between "healthy" and
+ * its comma, which rendered "healthy ,sasta ,20 minutes ." (audit 2026-09-26) */
+.v2 .home-v3 .usp-line span { flex: none; display: inline-block; white-space: nowrap; }
 .v2 .home-v3 .usp-line span + span::before { content: ""; width: 3px; height: 3px;
   border-radius: 50%; background: #C2BEB5; margin: 0 10px 0 0; opacity: 1; }
 .v2 .home-v3 .usp-line b { font: 700 12px/12px var(--kp-font); color: var(--kp-ink);
-  font-variant-numeric: tabular-nums; margin-right: 4px; }
+  font-variant-numeric: tabular-nums; margin-right: 0; } /* a comma follows each word: no gap before it */
 
 /* ---------- 5. cooked this week ---------- */
 .v2 .home-v3 .hv3-eyebrow { margin: 22px 0 0; font: 800 12px/12px var(--kp-font);

@@ -1,1 +1,1 @@
-window.KP_CONFIG={"version":"2.1.2609220822","aiEndpoint":"/api/ai","aiFallbacks":[],"pricesEndpoint":"/api/prices","claimEndpoint":"/api/claim","kbCount":4441,"gaId":"","upiVpa":"8290832434@upi"};
+window.KP_CONFIG={"version":"2.1.2609261919","aiEndpoint":"/api/ai","aiFallbacks":[],"pricesEndpoint":"/api/prices","claimEndpoint":"/api/claim","kbCount":4441,"gaId":"","upiVpa":"8290832434@upi"};

@@ -132,3 +132,26 @@
 .v2 .chat-note.override { color: var(--kp-ink-2); }
 .v2 .care-box { border-left: 3px solid var(--kp-danger); background: var(--kp-danger-tint); border-radius: 0 12px 12px 0; padding: 10px 12px; margin: 6px 0; font: 500 14px/1.45 var(--kp-font); color: var(--kp-ink); }
 .v2 .care-box b { display: block; margin-bottom: 4px; }
+
+/* ===== multi-day plan (audit round-2 P1-2): day block = header + meal rows ===== */
+.plan-day.md-day { flex-wrap: wrap; align-items: baseline; gap: 4px 10px; padding: 10px 12px; cursor: default; }
+.plan-day.md-day > b { min-width: 0; font-size: 12.5px; }
+.plan-day.md-day > em { flex: 1; text-align: right; }
+.md-meals { flex: 1 0 100%; display: flex; flex-direction: column; gap: 2px; }
+.md-meal { display: flex; align-items: baseline; gap: 8px; width: 100%; min-height: 40px; padding: 6px 0; border: 0; background: none; text-align: left; font: inherit; color: var(--kp-ink, var(--ink)); cursor: pointer; border-top: 1px solid var(--kp-line, rgba(0,0,0,.06)); }
+.md-meal:first-child { border-top: 0; }
+.md-meal i { font-style: normal; font-size: 11px; font-weight: 700; color: var(--ink2); min-width: 64px; }
+.md-meal span { flex: 1; min-width: 0; font-size: 13px; font-weight: 600; overflow-wrap: anywhere; }
+.md-meal em { font-style: normal; font-size: 11px; color: var(--ink2); white-space: nowrap; }
+.md-miss, .md-note { flex: 1 0 100%; font-size: 12px; color: var(--ink2); margin: 4px 0 0; }
+
+/* ===== constraint honesty (audit round-2 P1-3): exact vs closest ===== */
+.chat-match { margin: 0 0 6px; font-weight: 600; }
+.chat-closest { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--kp-line, rgba(0,0,0,.12)); }
+.chat-closest-h { font-size: 12.5px; font-weight: 700; color: var(--ink2); margin: 0 0 6px; }
+
+/* ===== provider failure UX (audit round-2 P1-4) ===== */
+.chat-aifail { margin: 0 0 4px; font-weight: 600; }
+.chat-chips .chip-retry { font-weight: 800; }
+.ai-degraded { margin: 0 16px 8px; padding: 8px 12px; border-radius: 12px; font-size: 12.5px; line-height: 1.4; background: var(--kp-warn-tint, #FFF4E0); color: var(--kp-ink, #131211); }
+.ai-degraded[hidden] { display: none; }

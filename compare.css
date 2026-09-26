@@ -62,6 +62,15 @@
 
 .cmpv3 .pc-miss, .cmpv3 .pc-eta { margin-top: 8px; font: 600 11px/11px var(--kp-font); color: var(--kp-ink-3); white-space: nowrap; }
 .cmpv3 .plan-card.best .pc-miss, .cmpv3 .plan-card.best .pc-eta { color: rgba(255,255,255,.55); }
+/* the reason a basket is NOT the same basket (pack-size or missing item) may
+ * run long: let it wrap - a clipped reason is a hidden reason */
+.cmpv3 .plan-card.partial .pc-miss { white-space: normal; line-height: 15px; }
+.cmpv3 .pc-delta.na { color: var(--kp-ink-3); }
+/* quantity-truth section (P0-B): divider between exact and non-exact baskets,
+ * and the header notice when no store meets the asked quantities */
+.cmpv3 .cmp-divider { margin: 6px 0 -2px; padding: 8px 0 0; font: 600 11px/14px var(--kp-font); letter-spacing: .06em; text-transform: uppercase; color: var(--kp-ink-3); border-top: 1px solid var(--kp-hair); }
+.cmpv3 .cmp-warn { margin: 12px 0 0; padding: 12px 14px; border-radius: 14px; background: var(--kp-surface); box-shadow: var(--kp-e1); border-left: 3px solid var(--kp-ink); font: 500 13px/18px var(--kp-font); color: var(--kp-ink); text-wrap: pretty; }
+.cmpv3 .cmp-warn.soft { border-left-color: var(--kp-ink-4); color: var(--kp-ink-2); }
 
 /* ---- quiet tools row (never claret) ---- */
 .cmpv3 .cmp-tools { margin-top: 14px; display: flex; gap: 8px; }
@@ -88,13 +97,28 @@
 .cmpv3 .line-list li b { font: 700 13px/17px var(--kp-font); font-variant-numeric: tabular-nums; text-align: right; }
 .cmpv3 .line-list li em { grid-column: 1 / -1; font: 500 11px/14px var(--kp-font); font-style: normal; color: var(--kp-ink-3); }
 .cmpv3 .line-list li.miss span, .cmpv3 .line-list li.miss b { color: var(--kp-ink-4); }
+/* a substituted line (pack size differs / unknown) reads as the warning it is */
+.cmpv3 .line-list li.sub em { color: var(--kp-ink); font-weight: 600; }
+.cmpv3 .line-list li.sub b { color: var(--kp-ink-3); text-decoration: underline dotted; text-underline-offset: 3px; }
 
 /* ---- honesty footnote ---- */
 .cmpv3 .cmp-foot { padding: 20px 0 0; margin: 0; font: 500 12px/18px var(--kp-font); color: var(--kp-ink-3); text-wrap: pretty; }
 
 /* ---- sticky CTA over the paper fade (claret moment #2) ---- */
 /* .view's real gutter is 18px (styles.css last-wins rule), so bleed by 18 */
-.cmpv3 .cmp-ctabar { position: sticky; bottom: calc(62px + env(safe-area-inset-bottom, 0px)); z-index: 5; margin: 14px -18px 0; padding: 14px 18px 22px; background: linear-gradient(to top, #F4F3F0 70%, rgba(244,243,240,0)); }
+/* the paper fade is ONLY the top 14px: the sub-line and the button sit on solid
+ * paper, so scrolling card text never shows through the honesty line
+ * (audit 2026-09-26 screenshot: sub-line rendered over a store card) */
+.cmpv3 .cmp-ctabar { position: sticky; bottom: calc(62px + env(safe-area-inset-bottom, 0px)); z-index: 5; margin: 14px -18px 0; padding: 14px 18px 22px; background: linear-gradient(to top, #F4F3F0 0, #F4F3F0 calc(100% - 14px), rgba(244,243,240,0) 100%); }
+/* desktop: cards pair up in the column at full width. desktop.css's generic
+ * .plans{align-items:start} was leaking into this flex column and shrank every
+ * card to its text width (ragged 265px cards beside a 684px detail block). */
+@media (min-width: 900px) {
+  .cmpv3 .plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: stretch; }
+  .cmpv3 .plan-card { min-width: 0; }
+  .cmpv3 .cmp-divider { grid-column: 1 / -1; }
+  .cmpv3 .cmp-ctabar { margin-left: 0; margin-right: 0; border-radius: 18px 18px 0 0; }
+}
 /* honesty line above the CTA: what tapping it ACTUALLY does (search item 1,
  * list on clipboard) - "with this basket" overpromised and read as broken */
 .cmpv3 .cmp-cta-sub { margin: 0 0 8px; font: 500 11px/15px var(--kp-font); color: var(--kp-ink-3); text-align: center; text-wrap: pretty; }
@@ -129,3 +153,10 @@
   .cmpv3 .cmp-tool-live .live-dot, .cmpv3 .lt-store.run .lt-state { animation: none; }
   .cmpv3 .cmp-liveticker { animation: none; }
 }
+
+/* ===== live-price outcome (audit round-2 P1-5) ===== */
+.cmp-livenote { margin: 8px 16px 4px; padding: 10px 12px; border-radius: 12px; background: var(--kp-surface, #fff); box-shadow: var(--kp-e1, 0 1px 3px rgba(0,0,0,.08)); display: flex; flex-direction: column; gap: 8px; }
+.cmp-livenote p { margin: 0; font-size: 13px; line-height: 1.45; }
+.cmp-livenote.ok { background: var(--kp-ok-tint, #E9F6EE); }
+.cmp-livenote .cmp-tool { align-self: flex-start; min-height: 44px; }
+.cmp-livenote:focus { outline: 2px solid var(--kp-ink, #131211); outline-offset: 2px; }

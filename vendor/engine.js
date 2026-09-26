@@ -391,6 +391,25 @@
     for(var k in PIECE_G){ if(n.indexOf(k)>=0) return PIECE_G[k]; }
     return null; // not known produce -> caller keeps 1-piece=1-unit behavior
   }
+  // ---- Quantity fit (audit 2026-09-26 P0-B) ---------------------------------
+  // A store line is only an EXACT fulfilment when the product is the right item
+  // AND the packs bought add up to the requested total. Fits:
+  //   exact   packs x pack size == requested (2 x 200 g == 400 g)
+  //   approx  pieces of produce priced by weight via typical per-piece grams
+  //   pack    the user gave no quantity (we assumed one) or asked for "1 loaf":
+  //           the pack IS the quantity, shown as such
+  //   over    the smallest whole-pack cover is bigger than asked (5 kg for 2 kg)
+  //   unknown pack size missing / different unit dimension - cannot be verified
+  // Only exact/approx/pack lines may enter the comparable-basket ranking.
+  const FIT_RANK = { exact: 0, approx: 0, pack: 0, over: 1, unknown: 2 };
+  function fitOk(fit) { return FIT_RANK[fit] === 0; }
+  function fmtBase(base, dim) {
+    if (base == null || !isFinite(base)) return '';
+    if (dim === 'weight') return base >= 1000 ? (Math.round(base / 10) / 100) + ' kg' : Math.round(base) + ' g';
+    if (dim === 'volume') return base >= 1000 ? (Math.round(base / 10) / 100) + ' L' : Math.round(base) + ' ml';
+    return Math.round(base) + (base === 1 ? ' pc' : ' pcs');
+  }
+
   // ---- Match one requested item to best product on one platform -------------
   // candidates: normalized products [{name,price,mrp,rating,inStock,...}]
   function matchItem(item, candidates) {
@@ -413,47 +432,76 @@
     // Avoid premium/organic/imported unless the user explicitly asked for it.
     const PREMIUM = /\b(organic|organi[sc]ally|premium|exotic|imported|gourmet|artisan|cold[\s-]?pressed|specialty|handpicked)\b/i;
     const askedPremium = PREMIUM.test(item.name);
+    // no quantity typed ("bread"): the ask is N units of the thing, N = the
+    // cart multiplier; that is a whole-pack ask, never an unknown one
+    const noQty = item.qty == null || !item.unit;
+    const assumed = !!item.assumed || (noQty && !(item.mult > 1)); // quantity was OUR default, not the user's ask
+    const pcQty = noQty ? Math.max(1, item.mult || 1) : item.qty;
+    const byPiece = item.unit === 'pc' || noQty;
     let bestPlain = null, bestAny = null;
     for (const { c } of pool) {
       const size = parseProductSize(c);
-      let packs = 1, effQty = 1;
+      let packs = 1, effQty = 1, effDim = need ? need.dim : 'count', fit = 'unknown', approxBase = null;
       if (need && size && size.dim === need.dim && size.base > 0) {
         packs = Math.max(1, Math.ceil(need.base / size.base));
         effQty = packs * size.base;
-      } else if (item.unit === 'pc' && size && size.dim === 'weight' && size.base > 0 && pieceGrams(item.name) != null) {
+        fit = assumed ? 'pack' : (Math.abs(effQty - need.base) <= need.base * 0.01 ? 'exact' : 'over');
+      } else if (byPiece && size && size.dim === 'weight' && size.base > 0 && pieceGrams(item.name) != null) {
         // pieces of produce sold by weight -> convert via typical per-piece grams
-        const grams = Math.max(1, item.qty) * pieceGrams(item.name);
+        const grams = Math.max(1, pcQty) * pieceGrams(item.name);
         packs = Math.max(1, Math.ceil(grams / size.base));
-        effQty = packs * size.base;
-      } else if (item.unit === 'pc') {
-        const per = (size && size.dim === 'count') ? size.base : 1; // a loaf/jar = 1 piece
-        packs = Math.max(1, Math.ceil(item.qty / per));
-        effQty = packs * per;
+        effQty = packs * size.base; effDim = 'weight'; approxBase = grams;
+        fit = 'approx';
+      } else if (byPiece) {
+        if (size && size.dim === 'count') {
+          packs = Math.max(1, Math.ceil(pcQty / size.base));
+          effQty = packs * size.base;
+          fit = assumed ? 'pack' : (effQty === pcQty ? 'exact' : 'over');
+        } else {
+          // a loaf / jar / bottle = 1 piece; its printed weight is not a mismatch
+          packs = Math.max(1, Math.ceil(pcQty));
+          effQty = packs; fit = 'pack';
+        }
+      } else if (need && !size) {
+        fit = 'unknown'; effQty = null; // pack size not listed: cannot verify the quantity
+      } else if (need && size && size.dim !== need.dim) {
+        fit = 'unknown'; effQty = null; // sold in a different unit (asked ml, listed g)
       }
       const lineCost = packs * c.price;
       const cand = {
-        product: c, packs, lineCost,
+        product: c, packs, lineCost, fit,
         unitPrice: need && size && size.dim === need.dim ? c.price / size.base : c.price,
-        effQty, sizeKnown: !!size,
+        effQty, effDim, sizeKnown: !!size,
+        needBase: need ? need.base : (byPiece ? pcQty : null), needDim: need ? need.dim : 'count',
+        approxBase,
+        packText: size ? fmtBase(size.base, size.dim) : '',
+        needText: need ? fmtBase(need.base, need.dim) : (byPiece ? fmtBase(pcQty, 'count') : ''),
+        gotText: effQty != null ? fmtBase(effQty, effDim) : '',
       };
-      const better = (a, b) => !b || a.lineCost < b.lineCost ||
-        (a.lineCost === b.lineCost && (a.product.ratingCount || a.product.rating || 0) > (b.product.ratingCount || b.product.rating || 0));
+      // fit first (an exact 2 x 200 g beats a cheaper 5 kg sack), then money, then rating
+      const better = (a, b) => !b || FIT_RANK[a.fit] < FIT_RANK[b.fit] ||
+        (FIT_RANK[a.fit] === FIT_RANK[b.fit] && (a.lineCost < b.lineCost ||
+        (a.lineCost === b.lineCost && (a.product.ratingCount || a.product.rating || 0) > (b.product.ratingCount || b.product.rating || 0))));
       if (better(cand, bestAny)) bestAny = cand;
       if (!PREMIUM.test(c.name || '') && better(cand, bestPlain)) bestPlain = cand;
     }
     // Prefer the popular/standard (non-premium) pick unless premium was requested or it's the only option.
-    return askedPremium ? bestAny : (bestPlain || bestAny);
+    // A plain pick never wins over a premium one with a strictly better fit.
+    if (askedPremium) return bestAny;
+    if (bestPlain && bestAny && FIT_RANK[bestAny.fit] < FIT_RANK[bestPlain.fit]) return bestAny;
+    return bestPlain || bestAny;
   }
 
   // ---- Build a single-platform basket --------------------------------------
   function buildBasket(platformKey, platformMeta, items, productsByItem) {
     const lines = [];
-    let goods = 0, ratingSum = 0, ratingN = 0, maxEta = 0, found = 0;
+    let goods = 0, ratingSum = 0, ratingN = 0, maxEta = 0, found = 0, exactFound = 0;
     for (const item of items) {
       const cands = (productsByItem[item.name] && productsByItem[item.name][platformKey]) || [];
       const m = matchItem(item, cands);
       if (m) {
         found++;
+        if (fitOk(m.fit)) exactFound++;
         goods += m.lineCost;
         if (m.product.rating) { ratingSum += m.product.rating; ratingN++; }
         const eta = m.product.etaMinutes || platformMeta.etaMinutes || 0;
@@ -471,6 +519,11 @@
       itemsFound: found,
       itemsTotal: items.length,
       complete: found === items.length,
+      // comparable = every requested quantity is met exactly (P0-B); a basket
+      // with a substituted pack size is NOT the same basket as the others
+      exactFound,
+      substituted: found - exactFound,
+      comparable: found === items.length && exactFound === items.length,
       goods: round2(goods),
       deliveryFee: fees.delivery,
       handlingFee: fees.handling,
@@ -510,6 +563,9 @@
       itemsFound: b.itemsFound,
       itemsTotal: b.itemsTotal,
       complete: b.complete,
+      exactFound: b.exactFound,
+      substituted: b.substituted,
+      comparable: b.comparable,
       total: b.total,
       avgRating: b.avgRating,
       maxEta: b.maxEta,
@@ -528,8 +584,10 @@
     return { baskets, plans, top3: plans.slice(0, 3), splitConsidered: splitPlan || null };
   }
 
-  // Rank: completeness first (all-items plans win), then cost, rating, eta.
+  // Rank: exact-quantity baskets first (only those are the SAME basket), then
+  // completeness (all-items plans win), then cost, rating, eta.
   function planComparator(a, b) {
+    if (!!a.comparable !== !!b.comparable) return a.comparable ? -1 : 1; // quantity gate (P0-B)
     if (a.complete !== b.complete) return a.complete ? -1 : 1;        // availability gate
     if (!a.complete && a.itemsFound !== b.itemsFound) return b.itemsFound - a.itemsFound;
     if (a.total !== b.total) return a.total - b.total;                // cost
@@ -541,12 +599,15 @@
   function buildBestSplit(items, productsByItem, platforms, splitThreshold, singlePlans, coupons) {
     coupons = coupons || {};
     // cheapest source per item
+    // an exact-quantity pack on a dearer store beats a substituted sack on a cheaper one
+    const betterPick = (m, best) => !best || FIT_RANK[m.fit] < FIT_RANK[best.m.fit] ||
+      (FIT_RANK[m.fit] === FIT_RANK[best.m.fit] && m.lineCost < best.m.lineCost);
     const perItem = items.map(item => {
       let best = null;
       for (const k in platforms) {
         const cands = (productsByItem[item.name] && productsByItem[item.name][k]) || [];
         const m = matchItem(item, cands);
-        if (m && (!best || m.lineCost < best.m.lineCost)) best = { platform: k, m };
+        if (m && betterPick(m, best)) best = { platform: k, m };
       }
       return { item, best };
     });
@@ -579,7 +640,7 @@
         for (const k of keep) {
           const cands = (productsByItem[x.item.name] && productsByItem[x.item.name][k]) || [];
           const m = matchItem(x.item, cands);
-          if (m && (!bb || m.lineCost < bb.m.lineCost)) bb = { platform: k, m };
+          if (m && betterPick(m, bb)) bb = { platform: k, m };
         }
         if (!bb) return null; // item not available on either kept platform -> abort split
         target = bb.platform; entry = { item: x.item, best: bb };
@@ -594,6 +655,7 @@
     orders.forEach(o => { if (coupons[o.platform]) applyCoupon(o, coupons[o.platform]); });
 
     const itemsFound = orders.reduce((s, o) => s + o.itemsFound, 0);
+    const exactFound = orders.reduce((s, o) => s + (o.exactFound || 0), 0);
     const total = round2(orders.reduce((s, o) => s + o.total, 0));
     const ratings = orders.map(o => o.avgRating).filter(r => r != null);
     const plan = {
@@ -603,19 +665,24 @@
       itemsFound,
       itemsTotal: items.length,
       complete: itemsFound === items.length,
+      exactFound,
+      substituted: itemsFound - exactFound,
+      comparable: itemsFound === items.length && exactFound === items.length,
       total,
       avgRating: ratings.length ? round2(ratings.reduce((a, b) => a + b, 0) / ratings.length) : null,
       maxEta: Math.max(...orders.map(o => o.maxEta), 0),
     };
 
-    // Apply split rule: only worth it if it beats best COMPLETE single by > threshold.
-    const bestSingle = singlePlans
-      .filter(p => p.complete)
+    // Apply split rule: only worth it if it beats the best single basket of the
+    // SAME kind (exact-quantity if any exists, else complete) by > threshold.
+    const comparableSingles = singlePlans.filter(p => p.comparable);
+    const bestSingle = (comparableSingles.length ? comparableSingles : singlePlans.filter(p => p.complete))
       .sort((a, b) => a.total - b.total)[0];
     if (bestSingle) {
       plan.savingVsBestSingle = round2(bestSingle.total - plan.total);
-      plan.savingVsBestSingle = round2(bestSingle.total - plan.total);
-      plan.beatsThreshold = plan.complete && plan.savingVsBestSingle > splitThreshold;
+      // a split that only wins by substituting pack sizes is not a saving
+      const sameKind = bestSingle.comparable ? plan.comparable : plan.complete;
+      plan.beatsThreshold = sameKind && plan.savingVsBestSingle > splitThreshold;
       if (!plan.beatsThreshold) plan.suppressed = true; // kept but UI hides suppressed
     } else {
       // no complete single exists; a split that covers more is inherently valuable
@@ -765,7 +832,7 @@
 
   const api = {
     parseList, parseLine, toBase, canonUnit, parseProductSize, relevance,
-    matchItem, buildBasket, optimize, planComparator, round2,
+    matchItem, buildBasket, optimize, planComparator, round2, fmtBase, fitOk,
     normalizeName, defaultServing, finalizeItem, fuzzyCorrect, segmentBlob, countHeads,
     parseCoupon, normalizeCoupon, normalizeCoupons, computeCouponDiscount, applyCoupon,
     formatBasketText, buildShareUrl, parseShareHash,
